@@ -36,7 +36,7 @@ namespace Prime_Number
             {
                 chiffreDiviseur = 2;
                 estUnNombrePremier = true;
-                while (chiffreDiviseur <= (chiffreATester / 2) && estUnNombrePremier == true)
+                while (chiffreDiviseur <= (chiffreATester / 2) && estUnNombrePremier)
                 {
                     if(chiffreATester % chiffreDiviseur == 0)
                         estUnNombrePremier = false;
@@ -46,8 +46,7 @@ namespace Prime_Number
 
                 if (estUnNombrePremier)
                 {
-                    resultat += chiffreATester;
-                    resultat += " ";
+                    resultat += chiffreATester + " ";
                     compteur++;
                 }
 
