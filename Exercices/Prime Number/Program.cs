@@ -17,42 +17,41 @@ namespace Prime_Number
             saisie = Console.ReadLine();
 
             nombreNPVoulu = int.Parse(saisie);
-            resultat = NombrePremier(nombreNPVoulu);
+            resultat = CalculNombresPremiers(nombreNPVoulu);
 
             Console.WriteLine("Les " + nombreNPVoulu + " premiers nombres premiers sont : " + resultat);
             Console.ReadKey();
 
         }
 
-        static string NombrePremier(int nombreNPVoulu)
+        static string CalculNombresPremiers(int nombreNPVoulu)
         {
             string resultat = "";               // Liste des nombres premiers
-            int n;  
-            int chiffreTesté = 2;               // Chiffre que je suis en train de testé    
+            int chiffreDiviseur;                // Chiffre par lequel le chiffre à tester sera divisé
+            int chiffreATester = 2;             // Chiffre que je suis en train de testé    
             int compteur = 0;                   // Nombre de nombres premiers actuellement trouvés
             bool estUnNombrePremier;     
 
             while (compteur < nombreNPVoulu) 
             {
-                n = 2;
+                chiffreDiviseur = 2;
                 estUnNombrePremier = true;
-                while (n < (chiffreTesté / 2) && estUnNombrePremier == true)
+                while (chiffreDiviseur <= (chiffreATester / 2) && estUnNombrePremier == true)
                 {
-                    if(chiffreTesté % n == 0)
-                    {
+                    if(chiffreATester % chiffreDiviseur == 0)
                         estUnNombrePremier = false;
-                    }
-                    n++;
+                    else
+                        chiffreDiviseur++;
                 }
 
                 if (estUnNombrePremier)
                 {
-                    resultat += chiffreTesté;
+                    resultat += chiffreATester;
                     resultat += " ";
                     compteur++;
                 }
 
-                chiffreTesté++;
+                chiffreATester++;
             }
 
             return resultat;

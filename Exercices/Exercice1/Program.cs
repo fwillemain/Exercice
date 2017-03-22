@@ -34,12 +34,9 @@ namespace Exercice1
             while(p != q)
             {
                 if(p > q)
-                {
                     p -= q;
-                } else
-                {
+                else
                     q -= p;
-                }
             }
 
             return p;
