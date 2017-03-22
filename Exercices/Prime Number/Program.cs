@@ -26,27 +26,17 @@ namespace Prime_Number
 
         static string NombrePremier(int nombreNPVoulu)
         {
-            string resultat = "1 ";
-
-            if (nombreNPVoulu == 0)
-            {
-                return resultat;
-            }
-
-            if (nombreNPVoulu == 1)
-            {
-                return resultat;
-            }
-
+            string resultat = "";               // Liste des nombres premiers
             int n;  
             int chiffreTesté = 2;               // Chiffre que je suis en train de testé    
-            int compteur = 1;                   // Nombre de nombres premiers actuellement trouvés
-            bool estUnNombrePremier = true;     
+            int compteur = 0;                   // Nombre de nombres premiers actuellement trouvés
+            bool estUnNombrePremier;     
 
             while (compteur < nombreNPVoulu) 
             {
                 n = 2;
-                while (n < chiffreTesté && estUnNombrePremier == true)
+                estUnNombrePremier = true;
+                while (n < (chiffreTesté / 2) && estUnNombrePremier == true)
                 {
                     if(chiffreTesté % n == 0)
                     {
@@ -63,7 +53,6 @@ namespace Prime_Number
                 }
 
                 chiffreTesté++;
-                estUnNombrePremier = true;
             }
 
             return resultat;
