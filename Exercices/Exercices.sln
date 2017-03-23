@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tri tableau", "Tri tableau\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compteur Voyelles Consoles", "Compteur Voyelles Consoles\Compteur Voyelles Consoles.csproj", "{2A831F34-8524-4792-B5B9-D7AC26EEC5C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Login", "Login\Login.csproj", "{9CF73A8C-8D8F-49EB-B513-9A52FE13E987}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{2A831F34-8524-4792-B5B9-D7AC26EEC5C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A831F34-8524-4792-B5B9-D7AC26EEC5C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A831F34-8524-4792-B5B9-D7AC26EEC5C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CF73A8C-8D8F-49EB-B513-9A52FE13E987}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CF73A8C-8D8F-49EB-B513-9A52FE13E987}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CF73A8C-8D8F-49EB-B513-9A52FE13E987}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CF73A8C-8D8F-49EB-B513-9A52FE13E987}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

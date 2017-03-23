@@ -37,7 +37,7 @@ namespace Entrainement
             Console.WriteLine("La lettre : " + lettre + "\n");
 
             int[] tabPos = new int[3] { 3, 4, 40 };
-            
+
             Console.WriteLine("La longueur du tableau est : " + tabPos.Length + "\n");
 
             Console.WriteLine("Boucle for");
@@ -58,12 +58,12 @@ namespace Entrainement
             Console.WriteLine(texte);
 
             nbPhrases = 0;
-            for(int i = 0; i < texte.Length; i++)
+            for (int i = 0; i < texte.Length; i++)
             {
                 if (texte[i] == '\n')
                 {
                     nbPhrases++;
-                }       
+                }
             }
 
             Console.WriteLine("Il y a " + nbPhrases + " phrases dans le texte.");
@@ -71,9 +71,9 @@ namespace Entrainement
 
 
             nbMots = 0;
-            for(int i = 0; i < phrase.Length; i++)
+            for (int i = 0; i < phrase.Length; i++)
             {
-                if(phrase[i] == ' ' || phrase[i] == '\n' || phrase[i] == '\'')
+                if (phrase[i] == ' ' || phrase[i] == '\n' || phrase[i] == '\'')
                 {
                     nbMots++;
                 }
@@ -86,5 +86,11 @@ namespace Entrainement
             int x = int.Parse(valeur);
         }
 
+
+
     }
 }
+
+
+
+
