@@ -41,16 +41,16 @@ namespace MachineCafé
             public enum Paiement { Espèces, Badge }
 
             #region Champs privés
-            Boisson _boissonChoisie;            // la boisson choisie
-            bool _boissonChoisieBool;           // booléen indiquant si une boisson a été choisie par l'utilisateur
+            private Boisson _boissonChoisie;            // la boisson choisie
+            private bool _boissonChoisieBool;           // booléen indiquant si une boisson a été choisie par l'utilisateur
 
-            Paiement _paiementChoisi;           // le paiement choisi
-            bool _paiementChoisiBool;           // booléen indiquant si un paiement a été choisi par l'utilisateur
+            private Paiement _paiementChoisi;           // le paiement choisi
+            private bool _paiementChoisiBool;           // booléen indiquant si un paiement a été choisi par l'utilisateur
 
-            int _quantitéSucre;                 // la quantité de sucre choisi
-            bool _quantitéSucreBool;            // booléen indiquant si la quantité de sucre a été choisi par l'utilisateur
+            private int _quantitéSucre;                 // la quantité de sucre choisi
+            private bool _quantitéSucreBool;            // booléen indiquant si la quantité de sucre a été choisi par l'utilisateur
 
-            bool _sélectionsValidées;           // booléen indiquant si les sélections précédentes ont été validées par l'utilisateur
+            private bool _sélectionsValidées;           // booléen indiquant si les sélections précédentes ont été validées par l'utilisateur
             #endregion
 
             #region Propriétés
