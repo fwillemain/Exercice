@@ -109,18 +109,23 @@ namespace MachineCafé
             /// </summary>
             private void AfficherBoissonSelectionnée()
             {
-                switch (_boissonChoisie)
+                if (_boissonChoisieBool)
                 {
-                    case Boisson.Café:
-                        Console.WriteLine("Café sélectionné");
-                        break;
-                    case Boisson.Chocolat:
-                        Console.WriteLine("Chocolat sélectionné");
-                        break;
-                    case Boisson.Soupe:
-                        Console.WriteLine("Soupe sélectionnée");
-                        break;
+                    switch (_boissonChoisie)
+                    {
+                        case Boisson.Café:
+                            Console.WriteLine("Café sélectionné");
+                            break;
+                        case Boisson.Chocolat:
+                            Console.WriteLine("Chocolat sélectionné");
+                            break;
+                        case Boisson.Soupe:
+                            Console.WriteLine("Soupe sélectionnée");
+                            break;
+                    }
                 }
+                else
+                    Console.WriteLine("Pas de boisson sélectionnée");
             }
 
             /// <summary>
@@ -128,15 +133,20 @@ namespace MachineCafé
             /// </summary>
             private void AfficherPaiementSelectionné()
             {
-                switch (_paiementChoisi)
+                if (_paiementChoisiBool)
                 {
-                    case Paiement.Espèces:
-                        Console.WriteLine("Paiement en espèces sélectionné");
-                        break;
-                    case Paiement.Badge:
-                        Console.WriteLine("Paiement par badge sélectionné");
-                        break;
+                    switch (_paiementChoisi)
+                    {
+                        case Paiement.Espèces:
+                            Console.WriteLine("Paiement en espèces sélectionné");
+                            break;
+                        case Paiement.Badge:
+                            Console.WriteLine("Paiement par badge sélectionné");
+                            break;
+                    }
                 }
+                else
+                    Console.WriteLine("Pas de mode de paiement sélectionné");
             }
 
             /// <summary>
@@ -144,7 +154,20 @@ namespace MachineCafé
             /// </summary>
             private void AfficherQuantitéSucre()
             {
-                Console.WriteLine("{0} grammes de sucre à ajouter", _quantitéSucre);
+                if (_boissonChoisie != Boisson.Soupe)
+                {
+                    if (_quantitéSucreBool)
+                        Console.WriteLine("{0} grammes de sucre à ajouter", _quantitéSucre);
+                    else
+                        Console.WriteLine("Pas de quantité de sucre sélectionnée");
+                }
+            }
+
+            private void AfficherSélction()
+            {
+                AfficherBoissonSelectionnée();
+                AfficherQuantitéSucre();
+                AfficherPaiementSelectionné();
             }
 
             /// <summary>
@@ -152,14 +175,6 @@ namespace MachineCafé
             /// </summary>
             private void ValiderSélection()
             {
-                //TODO : gérer les sélections non efféctuées
-
-                // Affichage des séléctions
-                AfficherBoissonSelectionnée();
-                if (_boissonChoisie != Boisson.Soupe)
-                    AfficherQuantitéSucre();
-                AfficherPaiementSelectionné();
-
                 // Tant que l'utilisateur ne choisi pas "oui" ou "non"
                 while (!_sélectionsValidées)
                 {
@@ -171,7 +186,6 @@ namespace MachineCafé
                             _sélectionsValidées = true;
                         else if (choix.Equals("non"))
                         {
-                            _sélectionsValidées = false;
                             _boissonChoisieBool = false;
                             _paiementChoisiBool = false;
                             _quantitéSucreBool = false;
@@ -206,11 +220,14 @@ namespace MachineCafé
                         _quantitéSucreBool = true;
 
                     if (_paiementChoisiBool && _quantitéSucreBool)
+                    {
+                        AfficherSélction();
                         ValiderSélection();
+                    }
                 }
-                catch (Exception)
+                catch (FormatException)
                 {
-                    throw new IndexOutOfRangeException("Cette boisson n'existe pas!");
+                    throw new FormatException("Cette boisson n'existe pas!");
                 }
             }
 
@@ -245,7 +262,10 @@ namespace MachineCafé
                 }
 
                 if (_boissonChoisieBool && _paiementChoisiBool)
+                {
+                    AfficherSélction();
                     ValiderSélection();
+                }
             }
 
             /// <summary>
@@ -259,11 +279,14 @@ namespace MachineCafé
                     _paiementChoisi = (Paiement)(int.Parse(Console.ReadLine()) - 1);
                     _paiementChoisiBool = true;
                     if (_boissonChoisieBool && _quantitéSucreBool)
+                    {
+                        AfficherSélction();
                         ValiderSélection();
+                    }
                 }
-                catch (Exception)
+                catch (FormatException)
                 {
-                    throw new IndexOutOfRangeException("Cette méthode de paiement n'existe pas!");
+                    throw new FormatException("Cette méthode de paiement n'existe pas!");
                 }
             }
             #endregion
