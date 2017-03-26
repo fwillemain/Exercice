@@ -163,6 +163,9 @@ namespace MachineCafé
                 }
             }
 
+            /// <summary>
+            /// Affiche toutes les sélections
+            /// </summary>
             private void AfficherSélction()
             {
                 AfficherBoissonSelectionnée();
@@ -171,7 +174,7 @@ namespace MachineCafé
             }
 
             /// <summary>
-            /// Affiche les sélections de l'utilisateur et lui demande de les valider ou d'annuler
+            /// Demande de valider ou d'annuler ses sélections
             /// </summary>
             private void ValiderSélection()
             {
@@ -200,12 +203,12 @@ namespace MachineCafé
                     }
                 }
             }
-
             #endregion
 
             #region Méthodes publiques
             /// <summary>
-            /// Demande à l'utilisateur de choisir une boisson entre Café, Chocolat et Soupe
+            /// Demande à l'utilisateur de choisir une boisson entre Café, Chocolat et Soupe. Si la quantité de sucre et le mode de paiement sont
+            /// déjà sélectionnés, demandera à l'utilisateur de tout valider définitivement.
             /// </summary>
             public void ChoisirBoisson()
             {
@@ -232,7 +235,8 @@ namespace MachineCafé
             }
 
             /// <summary>
-            /// Demande à l'utilisateur de choisir la quantité de sucre à ajouter si une boisson a été sélectionnée et qu'il ne s'agit pas d'une soupe
+            /// Demande à l'utilisateur de choisir la quantité de sucre à ajouter si une boisson a été sélectionnée et qu'il ne s'agit pas d'une soupe.
+            /// Si la boisson et le mode de paiement sont déjà sélectionnés, demandera à l'utilisateur de tout valider définitivement.
             /// </summary>
             public void ChoisirQuantitéSucre()
             {
@@ -269,7 +273,8 @@ namespace MachineCafé
             }
 
             /// <summary>
-            /// Demande à l'utilisateur de choisir un mode de paiement entre Espèces et Badge
+            /// Demande à l'utilisateur de choisir un mode de paiement entre Espèces et Badge. Si la boisson et la quantité de sucre sont
+            /// déjà sélectionnées, demandera à l'utilisateur de tout valider définitivement.
             /// </summary>
             public void ChoisirPaiement()
             {
