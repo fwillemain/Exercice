@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entrainement", "Entrainement\Entrainement.csproj", "{2429F087-2BE6-4FB1-9E85-8959FA96235D}"
 EndProject
@@ -16,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Login", "Login\Login.csproj", "{9CF73A8C-8D8F-49EB-B513-9A52FE13E987}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meteo", "Meteo\Meteo.csproj", "{303BA2C8-32F9-4C00-B077-6CA263FE862F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boites", "Boites\Boites.csproj", "{B852A97F-9153-4A74-97D3-45083C358E5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{303BA2C8-32F9-4C00-B077-6CA263FE862F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{303BA2C8-32F9-4C00-B077-6CA263FE862F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{303BA2C8-32F9-4C00-B077-6CA263FE862F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B852A97F-9153-4A74-97D3-45083C358E5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B852A97F-9153-4A74-97D3-45083C358E5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B852A97F-9153-4A74-97D3-45083C358E5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B852A97F-9153-4A74-97D3-45083C358E5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

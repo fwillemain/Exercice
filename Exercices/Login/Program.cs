@@ -21,7 +21,8 @@ namespace Login
                 try
                 {
                     login = SaisirLogin();
-                    VerifierLogin(login, ref loginValide);
+                    VerifierLogin(login);
+                    loginValide = true;
                 }
                 catch (FormatException e)
                 {
@@ -34,13 +35,13 @@ namespace Login
                 try
                 {
                     mdp = SaisirMdp();
-                    VerifierMdp(mdp, ref mdpValide);
+                    VerifierMdp(mdp);
+                    mdpValide = true;
                 }
                 catch (FormatException e)
                 {
                     Console.WriteLine(e.Message);
                 }
-
             }
 
             Console.WriteLine("Compte bien créé, votre login est {0} et votre mdp {1}.", login, mdp);
@@ -61,16 +62,13 @@ namespace Login
             return mdp;
         }
 
-        static void VerifierLogin(string login, ref bool valide)
+        static void VerifierLogin(string login)
         {
-
             if (login.Length < 5)
                 throw new FormatException("Erreur de saisie : le login doit contenir au moins 5 caractères.");
-            
-            valide = true;
         }
 
-        static void VerifierMdp(string mdp, ref bool valide)
+        static void VerifierMdp(string mdp)
         {
             if (mdp.Length < 6)
                 throw new FormatException("Erreur de saisie : le mdp doit contenir au moins 6 caractères.");
@@ -83,8 +81,6 @@ namespace Login
 
             if (mdp[mdp.Length - 1].Equals(' '))
                 throw new FormatException("Erreur de saisie : le mdp ne peut pas finir par un espace.");
-
-            valide = true;
         }
     }
 }
