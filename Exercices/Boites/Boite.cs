@@ -15,6 +15,8 @@ namespace Boites
         private double _hauteur;
         private double _largeur;
         private double _longueur;
+        private Etiquette _etiquetteDest;
+        private Etiquette _etiquetteFragile;
         #endregion
 
         #region Propriétés
@@ -22,35 +24,64 @@ namespace Boites
 
         public Matières Matière { get; private set; }
 
+        public bool Fragile { get; set; }
+
         public double Volume
         {
             get { return _largeur * _longueur * _hauteur; }
         }
+
+        public static int CompteurInstance { get; private set; }
         #endregion
 
         #region Constructeurs
         public Boite()
         {
-            _hauteur = 30;
-            _largeur = 30;
-            _longueur = 30;
-            Matière = Matières.Carton;
+            CompteurInstance++;
         }
 
+        public Boite(double hauteur, double largeur, double longueur) : this()
+        {
+            _hauteur = hauteur;
+            _largeur = largeur;
+            _longueur = longueur;
+        }
+
+        public Boite(double hauteur, double largeur, double longueur, Matières matière) : this(hauteur, largeur, longueur)
+        {
+            Matière = matière;
+        }
         #endregion
 
         #region Méthodes publiques
-        public string Etiqueter(string destinataire)
+        public void Etiqueter(string destinataire)
         {
-            throw new NotImplementedException();
-            //TODO : ajouter des fonctionnalités
+            _etiquetteDest = new Etiquette { Couleur = Couleurs.Blanc, Format = Formats.L, Texte = destinataire };
         }
 
-        public string Etiqueter(string destinataire, bool fragile)
+        public void Etiqueter(string destinataire, bool fragile)
         {
-            throw new NotImplementedException();
+            if (fragile)
+            {
+                _etiquetteFragile = new Etiquette { Couleur = Couleurs.Rouge, Format = Formats.S, Texte = "FRAGILE" };
+            }
+
+            Etiqueter(destinataire);
+            Fragile = fragile;
+       
             //TODO : ajouter des fonctionnalités
 
+        }
+
+        public void Etiqueter(Etiquette etqDest, Etiquette etqFrag)
+        {
+            _etiquetteDest = etqDest;
+            _etiquetteFragile = etqFrag;
+        }
+
+        public bool Compare(Boite b)
+        {
+            return (_largeur == b._largeur && _hauteur == b._hauteur && _longueur == b._longueur && Matière == b.Matière);
         }
 
         #endregion

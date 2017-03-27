@@ -10,9 +10,45 @@ namespace Boites
     {
         static void Main(string[] args)
         {
-            Boite test = new Boite();
-            
-            //TODO : utiliser la classe Boite
+            Boite boite = new Boite();
+            boite.Etiqueter("Florian", true);
+
+            Boite boite2 = new Boites.Boite(30, 40, 50, Matières.Plastique);
+            Etiquette etqV = new Etiquette
+            {
+                Couleur = Couleurs.Blanc,
+                Format = Formats.L,
+                Texte = "Virginie"
+            };
+
+            Etiquette etqFrag = new Etiquette
+            {
+                Couleur = Couleurs.Blanc,
+                Format = Formats.L,
+                Texte = "FRAGILE"
+            };
+
+            boite2.Etiqueter(etqV, etqFrag);
+
+
+            //Boite boite2 = new Boite(20, 20, 20);
+            //Boite boite3 = new Boite(20, 20, 20, Matières.Métal);
+
+            //Console.WriteLine("J'ai {0} instances de boite.", Boite.CompteurInstance);
+
+            //Etiquette etiquette = new Etiquette
+            //{
+            //    Couleur = Couleurs.Jaune,
+            //    Format = Formats.S,
+            //    Texte = "Coucou"
+            //};
+
+
+            //Console.WriteLine("Mon étiquette est {0}, au format {1} avec l'inscription \"{2}\"", etiquette.Couleur, etiquette.Format, etiquette.Texte);
+
+            // Console.WriteLine("Les boites sont-elles identiques ? {0}", boite.Compare(boite2));
+
+            Console.ReadKey();
 
         }
 

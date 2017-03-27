@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,7 +12,26 @@ namespace Entrainement
         static void Main(string[] args)
         {
             //Test pour Github
-            Demo();
+            try
+            {
+                Afficher("Coucou");
+                //Demo();
+            }
+            //catch (FormatException)
+            //{
+            //    Console.WriteLine("Y a un problème de format!!");
+            //}
+            catch (Exception e)
+            {
+               // StreamWriter log = File.OpenWrite(cheminDuLog);
+                Console.WriteLine("Y a un problème, Message d'erreur : {0}!!", e.Message);
+            }
+            finally
+            {
+                Console.WriteLine("Finally de Main()!");
+            }
+
+
             Console.ReadKey();
         }
 
@@ -88,6 +108,22 @@ namespace Entrainement
         }
 
 
+        static public void Afficher(string toto)
+        {
+            try
+            {
+                throw new EntryPointNotFoundException("Salut, je bug et je suis content!");
+                Console.WriteLine(toto);
+            }
+            catch(FormatException)
+            {
+
+            }
+            finally
+            {
+                Console.WriteLine("Finally dans Afficher()");
+            }
+        }
 
     }
 }
