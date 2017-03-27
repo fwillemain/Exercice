@@ -38,8 +38,7 @@ namespace Meteo
 
         static string[] ChargerFichierMeteo(string chemin)
         {
-            string[] donnees = File.ReadAllLines(chemin);
-            return donnees;
+            return File.ReadAllLines(chemin);
         }
 
         static void RechercherRecordTemperature(string[] donnees, out double tempMin, out DateTime dateTempMin,
