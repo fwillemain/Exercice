@@ -14,6 +14,10 @@ namespace Boites
             boite.Etiqueter("Florian", true);
 
             Boite boite2 = new Boites.Boite(30, 40, 50, Matières.Plastique);
+
+            bool resultat = boite.Compare(boite2);
+            
+            
             Etiquette etqV = new Etiquette
             {
                 Couleur = Couleurs.Blanc,
@@ -30,6 +34,7 @@ namespace Boites
 
             boite2.Etiqueter(etqV, etqFrag);
 
+            boite.Etiqueter(etqV, etqFrag);
 
             //Boite boite2 = new Boite(20, 20, 20);
             //Boite boite3 = new Boite(20, 20, 20, Matières.Métal);

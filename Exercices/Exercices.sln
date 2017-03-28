@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MachineCafé", "MachineCafe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boites", "Boites\Boites.csproj", "{B852A97F-9153-4A74-97D3-45083C358E5A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voiture", "Voiture\Voiture.csproj", "{0DB5FB4D-49D5-49FD-A3D4-3732E4E4A1FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{B852A97F-9153-4A74-97D3-45083C358E5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B852A97F-9153-4A74-97D3-45083C358E5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B852A97F-9153-4A74-97D3-45083C358E5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DB5FB4D-49D5-49FD-A3D4-3732E4E4A1FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DB5FB4D-49D5-49FD-A3D4-3732E4E4A1FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DB5FB4D-49D5-49FD-A3D4-3732E4E4A1FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DB5FB4D-49D5-49FD-A3D4-3732E4E4A1FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
