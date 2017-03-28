@@ -10,38 +10,35 @@ namespace Voiture
     {
         static void Main(string[] args)
         {
-            Voiture VoitureYannick = new Voiture();
-            Voiture VoitureVirginie = new Voiture();
-
-            Console.WriteLine("La marque de la voiture est : {0}", Voiture._marque);
-
-            VoitureYannick.ChangerMarque("Ferrari");
-
-            Console.WriteLine("La marque de la voiture de Yannick est : {0}", VoitureYannick.AfficherMarque());
-
-            Console.WriteLine("La marque de la voiture de Virginie est : {0}", VoitureVirginie.AfficherMarque());
-
+            var v = new Voiture();
+           
             Console.ReadKey();
         }
 
-        public class Voiture
+        class Véhicule
         {
-            public static string _marque;
-
-            public Voiture()
+            public Véhicule()
             {
-                _marque = "Renault";
             }
 
-            public void ChangerMarque(string marque)
+            public Véhicule(string marque) : this()
             {
-                _marque = marque;
-            }
-
-            public string AfficherMarque()
-            {
-                return _marque;
             }
         }
+
+        class Voiture : Véhicule
+        {
+            public Voiture() : base()
+            {
+                // Initialisation importante
+                Console.WriteLine("Coucou");      
+            }
+
+            public Voiture(string marque): base(marque)
+            {
+                
+            }
+        }
+
     }
 }
