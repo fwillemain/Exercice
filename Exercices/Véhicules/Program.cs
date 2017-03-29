@@ -10,90 +10,37 @@ namespace Véhicules
 
     class Program
     {
+        
         static void Main(string[] args)
         {
             Véhicule voit = new Voiture("VoitureFlo", Energies.Essence);
             Véhicule moto = new Moto("MotoFlo", Energies.Gazole);
-            Console.WriteLine(voit.Description);
-            Console.WriteLine(moto.Description);
+
+            //Console.WriteLine(voit.Description);
+            //Console.WriteLine(moto.Description);
+
+            int res = voit.CompareTo(moto);
+            if (res < 0)
+                Console.WriteLine("Le véhicule {0} est plus économique que le véhicule {1}.", voit.Nom, moto.Nom);
+            else if (res == 0)
+                Console.WriteLine("Les 2 véhicules ont le même PRK.");
+            else
+                Console.WriteLine("Le véhicule {0} est plus économique que le véhicule {1}.", moto.Nom, voit.Nom);
+
+            Véhicule[] tabV = new Véhicule[4] { voit, moto, new Voiture(), new Moto() };
+
+            //for (int i = 0; i < tabV.Length; i++)
+            //    if (tabV[i] is Voiture)
+            //        Console.WriteLine(((Voiture)tabV[i]).RefaireParallélisme());
+            
+            foreach(Véhicule v in tabV)
+                if (v is Voiture)
+                    Console.WriteLine(((Voiture)v).RefaireParallélisme());
+
+            //Impossible car Véhicule est une classe abstraite
+            //Véhicule test = new Véhicule();  
 
             Console.ReadKey();
         }
     }
-
-    class Véhicule
-    {
-        #region Propriétés
-        public string Nom { get; }
-        public int NbRoues { get; protected set; }
-        public Energies Energie { get; }
-        public virtual string Description
-        {
-            get { return string.Format("Véhicule {0} roule sur {1} roues et à l'énergie {2}.", Nom, NbRoues, Energie); }
-        }
-        #endregion
-
-        #region Constructeurs
-        public Véhicule()
-        {
-            NbRoues = 4;
-        }
-
-        public Véhicule(string nom, int nbRoues, Energies energie) : this()
-        {
-            Nom = nom;
-            NbRoues = nbRoues;
-            Energie = energie;
-        }
-        #endregion
-    }
-
-    class Voiture : Véhicule
-    {
-        #region Propriétés
-        public override string Description
-        {
-            get
-            {
-                return string.Format("Je suis une voiture. \r\n") + base.Description;
-            }
-        }
-        #endregion
-
-        #region Constructeurs
-        public Voiture() : base()
-        {
-
-        }
-
-        public Voiture(string nom, Energies energie) : base(nom, 4, energie)
-        { 
-        }
-        #endregion
-    }
-
-    class Moto : Véhicule
-    {
-        #region Propriétés
-        public override string Description
-        {
-            get
-            {
-                return string.Format("Je suis une moto. \r\n") + base.Description;
-            }
-        }
-        #endregion
-
-        #region Constructeurs
-        public Moto() : base()
-        {
-            NbRoues = 2;
-        }
-
-        public Moto(string nom, Energies energie) : base(nom, 2, energie)
-        {
-        }
-        #endregion
-    }
-
 }
