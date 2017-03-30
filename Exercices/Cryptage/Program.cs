@@ -13,14 +13,15 @@ namespace Cryptages
         {
             Cryptage.ChargerFichier("../../cle.txt");
 
-            string tCrypté, texte = "Coucou, je ne suis pas crypté!";
+            string texte = "Coucou, je ne suis pas crypté!";
 
             Console.WriteLine(texte);
 
-            tCrypté = Cryptage.CrypterTexte(texte);
-            Console.WriteLine(tCrypté);
+            Cryptage.CrypterTexte(ref texte);
+            Console.WriteLine(texte);
 
-            Console.WriteLine(Cryptage.DecrypterTexte(tCrypté));
+            Cryptage.DecrypterTexte(ref texte);
+            Console.WriteLine(texte);
 
             Console.ReadKey();
         }
@@ -39,6 +40,19 @@ namespace Cryptages
         }
         #endregion
 
+        #region Méthodes privées
+        private static void InverserClefCryptage()
+        {
+            var clefInversée = new Dictionary<char, char>();
+
+            foreach (var a in ClefCryptage)
+            {
+                clefInversée.Add(a.Value, a.Key);
+            }
+            ClefCryptage = clefInversée;
+        }
+        #endregion
+
         #region Méthodes publiques
         public static void ChargerFichier(string path)
         {
@@ -51,7 +65,7 @@ namespace Cryptages
             }
         }
 
-        public static string CrypterTexte(string texte)
+        public static void CrypterTexte(ref string texte)
         {
             char[] c = texte.ToCharArray();
             char ch;
@@ -61,28 +75,14 @@ namespace Cryptages
                     c[i] = Convert.ToChar(ch);
             }
 
-            return new string(c);
+            texte = new string(c);
         }
 
-        public static string DecrypterTexte(string texte)
+        public static void DecrypterTexte(ref string texte)
         {
-            char[] c = texte.ToCharArray();
-            bool décrypt;   //Informe si caractère déjà décrypté
-
-            for (int i = 0; i < c.Length; i++)
-            {
-                décrypt = false;
-                foreach(var a in ClefCryptage)
-                {
-                    if (a.Value == c[i] && !décrypt)
-                    {
-                        c[i] = a.Key;
-                        décrypt = true;
-                    }
-                }
-            }
-
-            return new string(c);
+            InverserClefCryptage();
+            CrypterTexte(ref texte);
+            InverserClefCryptage();
         }
         #endregion
 
