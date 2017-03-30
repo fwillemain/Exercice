@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,23 +22,24 @@ namespace Boites
 
         #region Propriétés
         public Couleurs Couleur { get; set; }
-
         public Matières Matière { get; private set; }
-
         public bool Fragile { get; set; }
-
         public double Volume
         {
             get { return _largeur * _longueur * _hauteur; }
         }
-
-        public static int CompteurInstance { get; private set; }
+        public static int CompteurInstance { get; }
+        public List<Article> Articles { get; }
         #endregion
 
         #region Constructeurs
+        static Boite()
+        {
+            CompteurInstance++;   
+        }
         public Boite()
         {
-            CompteurInstance++;
+            Articles = new List<Article>();
         }
 
         public Boite(double hauteur, double largeur, double longueur) : this()
@@ -46,7 +48,6 @@ namespace Boites
             _largeur = largeur;
             _longueur = longueur;
         }
-
         public Boite(double hauteur, double largeur, double longueur, Matières matière) : this(hauteur, largeur, longueur)
         {
             Matière = matière;

@@ -17,7 +17,7 @@ namespace Véhicules
             get { return string.Format("Véhicule {0} roule sur {1} roues et à l'énergie {2}.", Nom, NbRoues, Energie); }
         }
         public abstract int PRK { get; }
-
+        public float Prix { get; set; }
         #endregion
 
         #region Constructeurs
@@ -25,7 +25,11 @@ namespace Véhicules
         {
             NbRoues = 4;
         }
-
+        public Véhicule(string nom, float prix)
+        {
+            Nom = nom;
+            Prix = prix;
+        }
         public Véhicule(string nom, int nbRoues, Energies energie)
         {
             Nom = nom;
@@ -40,7 +44,7 @@ namespace Véhicules
         public int CompareTo(object v)
         {
             if(v is Véhicule)          
-                return PRK.CompareTo(((Véhicule)v).PRK);
+                return Prix.CompareTo(((Véhicule)v).Prix);
             else
                 throw new ArgumentException();
         }
@@ -66,7 +70,10 @@ namespace Véhicules
         {
 
         }
+        public Voiture(string nom, float prix) : base(nom, prix)
+        {
 
+        }
         public Voiture(string nom, Energies energie) : base(nom, 4, energie)
         {
 
@@ -102,7 +109,10 @@ namespace Véhicules
         {
             NbRoues = 2;
         }
+        public Moto(string nom, float prix) : base(nom, prix)
+        {
 
+        }
         public Moto(string nom, Energies energie) : base(nom, 2, energie)
         {
         }

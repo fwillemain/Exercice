@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Véhicules", "Véhicules\V�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{9B0C8670-59DD-4A1A-A8CD-79D4A46E7C8D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cryptages", "Cryptage\Cryptages.csproj", "{754A13FB-87FC-4142-AAFD-ED1027133D31}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{9B0C8670-59DD-4A1A-A8CD-79D4A46E7C8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B0C8670-59DD-4A1A-A8CD-79D4A46E7C8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B0C8670-59DD-4A1A-A8CD-79D4A46E7C8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{754A13FB-87FC-4142-AAFD-ED1027133D31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{754A13FB-87FC-4142-AAFD-ED1027133D31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{754A13FB-87FC-4142-AAFD-ED1027133D31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{754A13FB-87FC-4142-AAFD-ED1027133D31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
