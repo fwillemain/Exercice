@@ -14,8 +14,8 @@ namespace Boites
             boite.Etiqueter("Florian", true);
 
             Boite b1 = new Boites.Boite(30, 40, 50, Matières.Plastique);
-            bool resultat = boite.Compare(b1);           
-            
+            bool resultat = boite.Compare(b1);
+
             Etiquette etqV = new Etiquette
             {
                 Couleur = Couleurs.Blanc,

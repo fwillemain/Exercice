@@ -31,25 +31,29 @@ namespace Cryptages
     {
         #region Propriétés
         public static Dictionary<char, char> ClefCryptage { get; set; }
+        public static Dictionary<char, char> ClefDécryptage { get; set; }
         #endregion
 
         #region Constructeurs
         static Cryptage()
         {
             ClefCryptage = new Dictionary<char, char>();
+            ClefDécryptage = new Dictionary<char, char>();
         }
         #endregion
 
         #region Méthodes privées
-        private static void InverserClefCryptage()
+        private static void CrypterTexteAvecClef(ref string texte, Dictionary<char, char> clefCryptage)
         {
-            var clefInversée = new Dictionary<char, char>();
-
-            foreach (var a in ClefCryptage)
+            char[] c = texte.ToCharArray();
+            char ch;
+            for (int i = 0; i < c.Length; i++)
             {
-                clefInversée.Add(a.Value, a.Key);
+                if (clefCryptage.TryGetValue(c[i], out ch))
+                    c[i] = Convert.ToChar(ch);
             }
-            ClefCryptage = clefInversée;
+
+            texte = new string(c);
         }
         #endregion
 
@@ -62,27 +66,18 @@ namespace Cryptages
             {
                 ligne = clef[i].Split(' ');
                 ClefCryptage.Add(Convert.ToChar(ligne[0]), Convert.ToChar(ligne[1]));
+                ClefDécryptage.Add(Convert.ToChar(ligne[1]), Convert.ToChar(ligne[0]));
             }
         }
 
         public static void CrypterTexte(ref string texte)
         {
-            char[] c = texte.ToCharArray();
-            char ch;
-            for (int i = 0; i < c.Length; i++)
-            {
-                if (ClefCryptage.TryGetValue(c[i], out ch))
-                    c[i] = Convert.ToChar(ch);
-            }
-
-            texte = new string(c);
+            CrypterTexteAvecClef(ref texte, ClefCryptage);
         }
 
         public static void DecrypterTexte(ref string texte)
         {
-            InverserClefCryptage();
-            CrypterTexte(ref texte);
-            InverserClefCryptage();
+            CrypterTexteAvecClef(ref texte, ClefDécryptage);
         }
         #endregion
 

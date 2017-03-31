@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cryptages", "Cryptage\Crypt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Statuts", "Statuts\Statuts.csproj", "{3EB1281F-6E03-4CF7-9AC0-C06A7372F78C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalyseurLINQ", "AnalyseurLINQ\AnalyseurLINQ.csproj", "{9916F720-16E6-4E5A-855A-73605E1C9765}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{3EB1281F-6E03-4CF7-9AC0-C06A7372F78C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EB1281F-6E03-4CF7-9AC0-C06A7372F78C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EB1281F-6E03-4CF7-9AC0-C06A7372F78C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9916F720-16E6-4E5A-855A-73605E1C9765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9916F720-16E6-4E5A-855A-73605E1C9765}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9916F720-16E6-4E5A-855A-73605E1C9765}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9916F720-16E6-4E5A-855A-73605E1C9765}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

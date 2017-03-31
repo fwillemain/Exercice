@@ -28,17 +28,19 @@ namespace Boites
         {
             get { return _largeur * _longueur * _hauteur; }
         }
-        public static int CompteurInstance { get; }
+        public static int CompteurInstance { get; private set; }
         public List<Article> Articles { get; }
         #endregion
 
         #region Constructeurs
         static Boite()
         {
-            CompteurInstance++;   
+            CompteurInstance = 0;
         }
+
         public Boite()
         {
+            CompteurInstance++;
             Articles = new List<Article>();
         }
 
@@ -86,10 +88,6 @@ namespace Boites
         }
 
         #endregion
-
-
-
-
 
     }
 }

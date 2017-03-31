@@ -40,13 +40,13 @@ namespace Véhicules
             string[] marque = { "Clio", "Mégane", "Golf", "Enzo", "Polo" };
 
             Console.WriteLine();
-            Véhicule v;
-            foreach(var m in marque)
             {
-                if (sList.TryGetValue(m, out v))
-                    Console.WriteLine("{0} : {1}", v.Nom, v.Prix);
+                Véhicule v;
+                foreach (var m in marque)
+                    if (sList.TryGetValue(m, out v))
+                        Console.WriteLine("{0} : {1}", v.Nom, v.Prix);
             }
-
+            
             Console.ReadKey();
         }
     }
