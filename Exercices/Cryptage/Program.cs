@@ -13,15 +13,20 @@ namespace Cryptages
         {
             Cryptage.ChargerFichier("../../cle.txt");
 
-            string texte = "Coucou, je ne suis pas crypté!";
-
-            Console.WriteLine(texte);
+            Console.WriteLine("Entrez la phrase que vous souhaitez crypter.");
+            string texte = Console.ReadLine();
 
             Cryptage.CrypterTexte(ref texte);
             Console.WriteLine(texte);
 
-            Cryptage.DecrypterTexte(ref texte);
-            Console.WriteLine(texte);
+            Console.WriteLine("Voulez-vous décrypter la phrase? (o/N)");
+            string res = Console.ReadLine().ToLower();
+
+            if (res.Equals("o"))
+            {
+                Cryptage.DecrypterTexte(ref texte);
+                Console.WriteLine(texte);
+            }
 
             Console.ReadKey();
         }

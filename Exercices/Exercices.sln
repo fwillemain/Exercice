@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entrainement", "Entrainement\Entrainement.csproj", "{2429F087-2BE6-4FB1-9E85-8959FA96235D}"
 EndProject
@@ -30,6 +30,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Statuts", "Statuts\Statuts.csproj", "{3EB1281F-6E03-4CF7-9AC0-C06A7372F78C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalyseurLINQ", "AnalyseurLINQ\AnalyseurLINQ.csproj", "{9916F720-16E6-4E5A-855A-73605E1C9765}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeuRoulette", "JeuRoulette\JeuRoulette.csproj", "{4A1EF109-34C5-4F3D-A300-2E15F584BFEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{9916F720-16E6-4E5A-855A-73605E1C9765}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9916F720-16E6-4E5A-855A-73605E1C9765}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9916F720-16E6-4E5A-855A-73605E1C9765}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A1EF109-34C5-4F3D-A300-2E15F584BFEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A1EF109-34C5-4F3D-A300-2E15F584BFEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A1EF109-34C5-4F3D-A300-2E15F584BFEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A1EF109-34C5-4F3D-A300-2E15F584BFEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -72,8 +72,6 @@ namespace Boites
             Etiqueter(destinataire);
             Fragile = fragile;
        
-            //TODO : ajouter des fonctionnalités
-
         }
 
         public void Etiqueter(Etiquette etqDest, Etiquette etqFrag)
