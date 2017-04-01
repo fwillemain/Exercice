@@ -56,7 +56,8 @@ namespace Stat
                     listeCdiDp.Add(a);
 
                 // Si qualif CDI ou DP
-                if ((a.Statut & masque2) == a.Statut) ;
+                if ((a.Statut & masque2) == a.Statut)
+                { }
             }
 
             Console.WriteLine("Personnes avec au moins CDD & CHSCT :");

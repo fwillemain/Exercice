@@ -39,9 +39,9 @@ namespace Entrainement
         {
             string texte;
             string phrase;
-            int nbPhrases, nbMots, nbCaractères; // plusieurs déclarations
+            int nbPhrases, nbMots; // plusieurs déclarations
 
-            const double PI = 3.1415926;
+            //const double PI = 3.1415926;
             const string DEB_LISTE = " - ";
 
             phrase = "Le C# est un langage moderne et puissant!";
@@ -113,7 +113,6 @@ namespace Entrainement
             try
             {
                 throw new EntryPointNotFoundException("Salut, je bug et je suis content!");
-                Console.WriteLine(toto);
             }
             catch(FormatException)
             {
