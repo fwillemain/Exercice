@@ -51,7 +51,7 @@ namespace JeuRoulette
         private void SaisirMise(out Mise mise)
         {
             int miseJetons = 0;
-            double coefGain = 0;
+            double coefGain = 1;
             int? nbMisé = null;
             string choixCombi = string.Empty;
             Combinaisons combi = Combinaisons.Aucune;
