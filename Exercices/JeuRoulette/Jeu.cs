@@ -18,9 +18,6 @@ namespace JeuRoulette
         Pair = 32
     }
 
-    // TODO : rajouter commentaires et summary
-    // TODO : gérer le coef de gain/perte
-
     public class Jeu
     {
         #region Champs privés
@@ -37,6 +34,9 @@ namespace JeuRoulette
         #endregion
 
         #region Méthodes privées
+        /// <summary>
+        /// Fait saisir le nombre de jetons initial à l'utilisateur.
+        /// </summary>
         private void SaisirNbJetonsInit()
         {
             Console.WriteLine("Combien de jetons avez-vous achetés?");
@@ -44,6 +44,10 @@ namespace JeuRoulette
             _nbJetonsActuel = _nbJetonsInitial;
         }
 
+        /// <summary>
+        /// Fait saisir le montant de la mise à l'utilisateur.
+        /// </summary>
+        /// <param name="mise"></param>
         private void SaisirMise(out Mise mise)
         {
             int miseJetons = 0;
@@ -104,6 +108,11 @@ namespace JeuRoulette
             mise.CoefGain = coefGain;
         }
 
+        /// <summary>
+        /// Affiche le résultat de la mise par rapport au lancé.
+        /// </summary>
+        /// <param name="lancé"></param>
+        /// <param name="mise"></param>
         private void AfficherRésultat(Lancé lancé, Mise mise)
         {
             Console.WriteLine(lancé.GetResultatTexte());
@@ -123,6 +132,10 @@ namespace JeuRoulette
             Console.WriteLine(mise.GetResultatTexte());
         }
 
+        /// <summary>
+        /// Demande à l'utilisateur si il souhaite continuer à jouer.
+        /// </summary>
+        /// <returns></returns>
         private bool SaisirContinuation()
         {
             Console.WriteLine("Souhaitez-vous continuer (O/N)?");
@@ -143,6 +156,9 @@ namespace JeuRoulette
             }
         }
 
+        /// <summary>
+        /// Affiche les statistiques de jeu de l'utilisateur.
+        /// </summary>
         private void AfficherStats()
         {
             Console.WriteLine("{0} mise(s) réalisée(s) dont {1} gagnée(s) et {2} perdue(s).", Mise.Compteur, Mise.PartiesGagnées, Mise.Compteur - Mise.PartiesGagnées);
@@ -153,6 +169,9 @@ namespace JeuRoulette
         #endregion
 
         #region Méthodes publiques
+        /// <summary>
+        /// Lance le jeu de la roulette.
+        /// </summary>
         public void Jouer()
         {
             Mise mise;
@@ -180,8 +199,8 @@ namespace JeuRoulette
     public class Roulette
     {
         #region Champs privés
-        Random _rnd;
-        //Lancé _lancé;
+        private Random _rnd;
+        // private Lancé _lancé;
         #endregion
 
         #region Constructeurs
@@ -222,6 +241,11 @@ namespace JeuRoulette
             return new Lancé(res, combi);
         }
 
+        /// <summary>
+        /// Renvoi vrai si le nombre est rouge, faux sinon.
+        /// </summary>
+        /// <param name="nb"></param>
+        /// <returns></returns>
         static public bool EstRouge(int nb)
         {
             int[] nbRouges = { 1, 3, 5, 7, 9, 12, 14, 16, 18, 19, 21, 23, 25, 27, 30, 32, 34, 36 };
@@ -246,6 +270,11 @@ namespace JeuRoulette
         #endregion
 
         #region Méthodes publiques
+        /// <summary>
+        /// Renvoi vrai si le lancé passé en paramètre correspond au lancé appelant la méthode.
+        /// </summary>
+        /// <param name="l"></param>
+        /// <returns></returns>
         public bool CorrespondA(Lancé l)
         {
             if (l.Combinaison == Combinaisons.Aucune)
@@ -254,24 +283,13 @@ namespace JeuRoulette
                 return (Combinaison & l.Combinaison) == l.Combinaison;
         }
 
+        /// <summary>
+        /// Renvoi un string contenant le résultat du lancé.
+        /// </summary>
+        /// <returns></returns>
         public string GetResultatTexte()
         {
-            string aff = string.Empty;
-            //if ((Combinaison & Combinaisons.Derniers24) == Combinaisons.Derniers24)
-            //    aff += "dans les 24 derniers nombres";
-            //else
-            //    aff += "dans les 24 premiers nombres";
-
-            if ((Combinaison & Combinaisons.Noir) == Combinaisons.Noir)
-                aff += "noir";
-            else
-                aff += "rouge";
-
-            if ((Combinaison & Combinaisons.Impair) == Combinaisons.Impair)
-                aff += " et impair";
-            else
-                aff += " et pair";
-
+            string aff = string.Format("{0} et {1}", Roulette.EstRouge((int)Numéro) ? "rouge" : "noir", Numéro % 2 == 0 ? "pair" : "impair");          
             return string.Format("La bille est tombée sur le N°{0}, qui est {1}.", Numéro, aff);
         }
         #endregion
@@ -312,7 +330,7 @@ namespace JeuRoulette
         /// Créé une instance de Mise
         /// </summary>
         /// <param name="nb">Nombre sur lequel la mise a été effectué (peut être nul)</param>
-        /// <param name="combi">Combinaison sur laquelle la mise a été effectué</param>
+        /// <param name="combi">Combinaison sur laquelle la mise a été effectuée</param>
         /// <param name="mise">Valeur de la mise</param>
         public Mise(int? nb, Combinaisons combi, int mise) : this()
         {
@@ -322,6 +340,10 @@ namespace JeuRoulette
         #endregion
 
         #region Méthodes publiques
+        /// <summary>
+        /// Renvoi le résultat de la mise.
+        /// </summary>
+        /// <returns></returns>
         public string GetResultatTexte()
         {
             string res;
