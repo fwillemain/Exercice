@@ -4,13 +4,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using POO;
 
 namespace Boites
 {
     public enum Couleurs { Blanc, Bleu, Vert, Jaune, Orange, Rouge, Marron }
     public enum Matières { Carton, Plastique, Bois, Métal }
 
-    public class Boite
+    public class Boite : IAlertable
     {    
         #region Champs privés
         private double _hauteur;

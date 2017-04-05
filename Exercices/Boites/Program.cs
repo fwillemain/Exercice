@@ -1,4 +1,5 @@
-﻿using System;
+﻿using POO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,40 +31,43 @@ namespace Boites
                 Texte = "FRAGILE"
             };
 
+            BoiteAlertable b = new BoiteAlertable(new Boite());
+            b.AlerterClient();
+
             //b1.Etiqueter(etqV, etqFrag);
             //boite.Etiqueter(etqV, etqFrag);
 
-            var a1 = new Article(1, "Article 1", 540);
-            var a2 = new Article(2, "Article 2", 200);
-            var a3 = new Article(3, "Article 3", 600);
+            //var a1 = new Article(1, "Article 1", 540);
+            //var a2 = new Article(2, "Article 2", 200);
+            //var a3 = new Article(3, "Article 3", 600);
 
-            Dictionary<string, Article> test = new Dictionary<string, Article>();
-            test.Add("coucou", a1);
-            test["coucou1"] = new Article(1, "1", 0);
-            test["coucou2"] = new Article(1, "2", 0);
+            //Dictionary<string, Article> test = new Dictionary<string, Article>();
+            //test.Add("coucou", a1);
+            //test["coucou1"] = new Article(1, "1", 0);
+            //test["coucou2"] = new Article(1, "2", 0);
 
-            //var indispensable car est de type KeyValuePair...
-            foreach (var a in test)
-                a.Value.Poids = 123;
+            ////var indispensable car est de type KeyValuePair...
+            //foreach (var a in test)
+            //    a.Value.Poids = 123;
 
             
 
 
-            b1.Articles.Add(a1);
-            b1.Articles.Add(a2);
-            b1.Articles.Add(a3);
+            //b1.Articles.Add(a1);
+            //b1.Articles.Add(a2);
+            //b1.Articles.Add(a3);
 
-            for (int i = 0; i < b1.Articles.Count; i++)
-            {
-                // Appelle par défaut ToString(), comme on l'override ça affiche la bonne.
-                // Console.WriteLine(b1.Articles[i]);
-                b1.Articles[i].Libellé = "toto";
-            }
+            //for (int i = 0; i < b1.Articles.Count; i++)
+            //{
+            //    // Appelle par défaut ToString(), comme on l'override ça affiche la bonne.
+            //    // Console.WriteLine(b1.Articles[i]);
+            //    b1.Articles[i].Libellé = "toto";
+            //}
 
-            b1.Articles.Sort();
+            //b1.Articles.Sort();
 
-            foreach (Article a in b1.Articles)
-                Console.WriteLine(a);
+            //foreach (Article a in b1.Articles)
+            //    Console.WriteLine(a);
 
             //Boite boite2 = new Boite(20, 20, 20);
             //Boite boite3 = new Boite(20, 20, 20, Matières.Métal);

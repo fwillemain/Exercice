@@ -11,10 +11,14 @@ namespace Entrainement
     {
         static void Main(string[] args)
         {
+            
+
             //Test pour Github
             try
             {
-                Afficher("Coucou");
+                TestException test = new TestException();
+                test.RetourException();
+               // Afficher("Coucou");
                 //Demo();
             }
             //catch (FormatException)
@@ -23,12 +27,12 @@ namespace Entrainement
             //}
             catch (Exception e)
             {
-               // StreamWriter log = File.OpenWrite(cheminDuLog);
-                Console.WriteLine("Y a un problème, Message d'erreur : {0}!!", e.Message);
+                // StreamWriter log = File.OpenWrite(cheminDuLog);
+
+                Console.WriteLine("Exception : {0}\n{1}", e.StackTrace, e.Message);
             }
             finally
             {
-                Console.WriteLine("Finally de Main()!");
             }
 
 
@@ -121,6 +125,14 @@ namespace Entrainement
             finally
             {
                 Console.WriteLine("Finally dans Afficher()");
+            }
+        }
+
+        public class TestException
+        {
+            public void RetourException()
+            {
+                throw new Exception();
             }
         }
 
