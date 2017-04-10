@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E40F4F6E-4514-AE67-BE64-03A6FC80FCAE" name="Commande">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-03-16 20:47:34 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<engineerTo>
+<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="D9957FFE-C5D0-FF9E-B741-3CDA1A66E632">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-03-16 20:51:42 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<engineerTo>
+<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C12ED81C-82AF-1FAF-5F61-558D4710BBC1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DateCmde" id="3E85D1EC-AC2A-69B6-CA18-7EA54FA553A1">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-03-16 20:52:05 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<engineerTo>
+<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PrixTotal" id="FD5B8ECE-62A1-FE67-F4E7-FAFC09F6F65D">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-03-16 21:01:48 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<engineerTo>
+<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<domain>FAFCBEBA-E87A-904F-F76B-D7A590DD90A9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id1" id="88D2F07E-1D28-3555-800F-4C641F7CB555">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-03-16 21:12:45 UTC</createdTime>
+<generatorID>404E59E5-7EE6-3D66-38CD-B23C15BE5698</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<engineerTo>
+<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>E457B386-5413-E2EA-2F9F-40470E1951FF</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C12ED81C-82AF-1FAF-5F61-558D4710BBC1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MontantChèqueCadeau" id="32088C5B-AFF0-5EF7-2278-2A33BB1D4DE0">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-03-16 21:55:29 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<engineerTo>
+<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<domain>FAFCBEBA-E87A-904F-F76B-D7A590DD90A9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cloturée" id="45628FC4-CA09-7B6E-98F5-495A362451CA">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-03-16 22:09:23 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<engineerTo>
+<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id2" id="4DDE0816-579B-23D4-6836-EE148C3A1D76">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-03-16 22:38:28 UTC</createdTime>
+<generatorID>1290AF50-3229-6407-3775-92C7AEAE0A88</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<engineerTo>
+<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>39887ED0-47B4-8367-33D5-1923373048C3</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C12ED81C-82AF-1FAF-5F61-558D4710BBC1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="56348B61-5297-46BA-A38B-1E7B65FB9CF7" name="Commande PK">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-03-16 20:52:02 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<engineerTo>
+<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D9957FFE-C5D0-FF9E-B741-3CDA1A66E632</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

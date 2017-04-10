@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FE45E0C4-A001-6851-9EAB-C39CB07B21DA" name="Lieu">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-07 12:44:29 UTC</createdTime>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<engineerTo>
+<item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="F68C209B-01E9-4D14-3F43-8C35EE25845E">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-07 12:44:48 UTC</createdTime>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<engineerTo>
+<item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Adresse" id="E5D78F11-2725-DE82-8654-469FA197149B">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-07 12:45:01 UTC</createdTime>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<engineerTo>
+<item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Code" id="5C7271A8-106A-14DE-BDFB-52C498F5708A">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-07 12:46:31 UTC</createdTime>
+<generatorID>C76917CA-0FA9-8704-9F4B-CC3DB4A3E711</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<engineerTo>
+<item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>8C8C2ACB-9257-BB66-1175-089510EF7BF1</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FAE9E12C-53BE-F832-E923-9389F3C0B08D" name="Lieu PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-07 12:44:59 UTC</createdTime>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<engineerTo>
+<item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F68C209B-01E9-4D14-3F43-8C35EE25845E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8A45003E-EEFF-F64E-67F0-AAD6EEB556C1" name="Projet">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 12:06:12 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Code" id="EF65FB8B-6FDC-C832-54FA-3C212E33F10C">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 12:09:06 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nom" id="053DF88C-DDA5-5BE2-7E5B-942D541B46C8">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 12:09:13 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id" id="C69C5268-400F-46D4-EC3D-0CDD5FCE880D">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 12:13:49 UTC</createdTime>
+<generatorID>DC4E8020-D762-D00F-25EF-3F93B7DB1EF5</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>B5665958-B27A-D688-BE5B-DA7B060EB887</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id1" id="4B398B30-D7C1-DD37-4A7C-759D1F3011F3">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 13:47:15 UTC</createdTime>
+<generatorID>DC4E8020-D762-D00F-25EF-3F93B7DB1EF5</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>97C37575-2194-258E-A97A-75D8F887DAD7</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0703CABF-E5FE-7E6A-4537-315924C92AC4" name="Projet PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 12:09:11 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EF65FB8B-6FDC-C832-54FA-3C212E33F10C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

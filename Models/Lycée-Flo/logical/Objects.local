@@ -1,0 +1,34 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="0FBF6C21-5EDF-F7AA-4DFD-99C136EA781C" name="" seqName="seg_0"/>
+   <object objectType="Entity" objectID="1E1A167A-305C-4876-3EB6-74493F27BE63" name="Elève" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="3944704C-4694-241F-79DD-65CD7016802F" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="34C6CDC8-D495-302A-3F7A-D4146862CBB0" name="Classe" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="3944704C-4694-241F-79DD-65CD7016802F" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="3F1C2ED7-60FE-C1AD-F88B-0C249EE62ECD" name="Note" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="3944704C-4694-241F-79DD-65CD7016802F" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="4A3B44F1-C7A1-4760-D5B0-8220DCCA93CA" name="" seqName="seg_0"/>
+   <object objectType="Entity" objectID="8CD37907-A99A-597C-5DF0-7CC529022C68" name="" seqName="seg_0"/>
+   <object objectType="Entity" objectID="AFB25FEC-3B4F-7B32-7398-3ADEFFF74A65" name="" seqName="seg_0"/>
+   <object objectType="Entity" objectID="B36C867F-766A-7577-FCAA-060BEBF7BB56" name="" seqName="seg_0"/>
+   <object objectType="Entity" objectID="B4C99BAF-9134-107F-1CA3-137FD1245C44" name="Matière" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="3944704C-4694-241F-79DD-65CD7016802F" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="C8A7D98A-B578-718A-5757-E6DC732C4409" name="Personne" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="3944704C-4694-241F-79DD-65CD7016802F" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="C967E846-39B5-6629-8C97-CC5565F0E45F" name="" seqName="seg_0"/>
+   <object objectType="Entity" objectID="E21BA5EF-1BE4-602F-3D70-495701DAA86D" name="" seqName="seg_0"/>
+   <object objectType="Entity" objectID="FF2AE892-38D2-E226-2F49-0A43CBEA9660" name="Professeur" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="3944704C-4694-241F-79DD-65CD7016802F" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Relation" objectID="2D97CD62-EEBA-B051-13DD-0A3D2862B94A" name="Relation_3" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Relation" propertyParentId="3944704C-4694-241F-79DD-65CD7016802F" propertySourceId="1E1A167A-305C-4876-3EB6-74493F27BE63" propertyTargetId="34C6CDC8-D495-302A-3F7A-D4146862CBB0"/>
+   <object objectType="Relation" objectID="378838B9-F815-1394-2FA4-74676DC764C3" name="Relation_7" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Relation" propertyParentId="3944704C-4694-241F-79DD-65CD7016802F" propertySourceId="1E1A167A-305C-4876-3EB6-74493F27BE63" propertyTargetId="3F1C2ED7-60FE-C1AD-F88B-0C249EE62ECD"/>
+   <object objectType="Relation" objectID="4C9C865C-0117-033F-42BB-061E390F913B" name="Relation_4" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Relation" propertyParentId="3944704C-4694-241F-79DD-65CD7016802F" propertySourceId="FF2AE892-38D2-E226-2F49-0A43CBEA9660" propertyTargetId="B4C99BAF-9134-107F-1CA3-137FD1245C44"/>
+   <object objectType="Relation" objectID="5FCB3F4E-20C9-9233-C775-9B011DA09F60" name="" seqName="seg_0"/>
+   <object objectType="Relation" objectID="6683024C-71CE-377D-64D6-654C07A5463D" name="Relation_8" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Relation" propertyParentId="3944704C-4694-241F-79DD-65CD7016802F" propertySourceId="FF2AE892-38D2-E226-2F49-0A43CBEA9660" propertyTargetId="34C6CDC8-D495-302A-3F7A-D4146862CBB0"/>
+   <object objectType="Relation" objectID="73AF8BD5-1C99-6C02-60DA-F3CE62F305C9" name="" seqName="seg_0"/>
+   <object objectType="Relation" objectID="85AA0D50-35DA-82B2-52F3-7E558B735568" name="" seqName="seg_0"/>
+   <object objectType="Relation" objectID="88734A0E-3F87-8642-F5FE-230EB33981F8" name="" seqName="seg_0"/>
+   <object objectType="Relation" objectID="8C1EE5E1-A871-6194-45FB-3511F65EEF8B" name="" seqName="seg_0"/>
+   <object objectType="Relation" objectID="CD282148-93E1-123E-61E0-B231B8BF3582" name="Relation_6" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Relation" propertyParentId="3944704C-4694-241F-79DD-65CD7016802F" propertySourceId="3F1C2ED7-60FE-C1AD-F88B-0C249EE62ECD" propertyTargetId="B4C99BAF-9134-107F-1CA3-137FD1245C44"/>
+   <object objectType="Relation" objectID="D8FF73E4-AA6A-88D9-8259-92003CF11772" name="Relation_9" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Relation" propertyParentId="3944704C-4694-241F-79DD-65CD7016802F" propertySourceId="34C6CDC8-D495-302A-3F7A-D4146862CBB0" propertyTargetId="B4C99BAF-9134-107F-1CA3-137FD1245C44"/>
+   <object objectType="Relation" objectID="FC1918B8-1F66-9FAB-FC1F-841C6D1AF14C" name="Relation_10" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Relation" propertyParentId="3944704C-4694-241F-79DD-65CD7016802F" propertySourceId="3F1C2ED7-60FE-C1AD-F88B-0C249EE62ECD" propertyTargetId="FF2AE892-38D2-E226-2F49-0A43CBEA9660"/>
+   <object objectType="Relation" objectID="FE350689-2677-24A9-D847-AC973CFBB42F" name="" seqName="seg_0"/>
+   <object objectType="Relation" objectID="FE9F9957-79B2-3441-23D7-6F6F98F629BD" name="" seqName="seg_0"/>
+   <object objectType="Hierarchy relation" objectID="146D9985-6D20-11D6-CA0A-E77CF3E22FA0" name="" seqName="seg_0"/>
+   <object objectType="Hierarchy relation" objectID="35AAE633-6899-3E2C-F552-A2FD0A5C4C49" name="Hierarchy_6" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.InheritanceRelation" propertyParentId="3944704C-4694-241F-79DD-65CD7016802F" propertySourceId="C8A7D98A-B578-718A-5757-E6DC732C4409" propertyTargetId="FF2AE892-38D2-E226-2F49-0A43CBEA9660"/>
+   <object objectType="Hierarchy relation" objectID="A57127FB-C50D-04CB-AB59-15957126A145" name="" seqName="seg_0"/>
+   <object objectType="Hierarchy relation" objectID="B0577793-93FC-5EBD-4398-A24C20506D20" name="Hierarchy_5" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.InheritanceRelation" propertyParentId="3944704C-4694-241F-79DD-65CD7016802F" propertySourceId="C8A7D98A-B578-718A-5757-E6DC732C4409" propertyTargetId="1E1A167A-305C-4876-3EB6-74493F27BE63"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

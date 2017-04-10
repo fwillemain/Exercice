@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AFB25FEC-3B4F-7B32-7398-3ADEFFF74A65" name="Enseignement">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-07 08:35:46 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="875B20A3-DE2C-E494-9F94-EE30D02CE557" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="1EC20D73-ECED-D47D-D8A9-8B2A8BB0176D">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-07 08:56:55 UTC</createdTime>
+<generatorID>85AA0D50-35DA-82B2-52F3-7E558B735568</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="875B20A3-DE2C-E494-9F94-EE30D02CE557" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>E41B96E6-7901-FD68-E5D4-CAC4A0D90EF9</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Code" id="768C657B-452D-E4B7-EE5D-2C6EC6A67D36">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-07 09:27:13 UTC</createdTime>
+<generatorID>88734A0E-3F87-8642-F5FE-230EB33981F8</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="875B20A3-DE2C-E494-9F94-EE30D02CE557" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>482F8672-89F3-3014-25D6-C066130EA3C0</referedAttribute>
+<use>0</use>
+<domain>3C8D8AD8-B00E-140B-22A3-62EEC3F7C8B1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id1" id="DD99706E-3EA9-7FDF-C09E-0C818F2F2D2F">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-07 09:33:24 UTC</createdTime>
+<generatorID>FE350689-2677-24A9-D847-AC973CFBB42F</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="875B20A3-DE2C-E494-9F94-EE30D02CE557" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>525B9622-CCA3-6412-A2EF-9C6FA90135F5</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

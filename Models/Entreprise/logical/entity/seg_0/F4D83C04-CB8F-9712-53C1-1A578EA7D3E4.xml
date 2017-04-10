@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F4D83C04-CB8F-9712-53C1-1A578EA7D3E4" name="Salarié">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 12:06:23 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="N°Secu" id="03E9C07C-36CB-6B5C-353C-1CBCFB5D39C7">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 12:09:55 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nom" id="9C548005-7B18-A813-C68F-0A8C4D7E90FE">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 12:10:05 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Prénom" id="AB6E5628-B59F-DA9D-0815-12423CA82EDB">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 12:10:13 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Sexe" id="2412C6ED-FD36-BB51-34BA-75C6EA3D8621">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 12:10:18 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Adresse" id="A8DE7DEA-E2DE-6AA7-F716-BE19AA7D3B10">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 12:10:20 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="N°Tel" id="35C1F2F9-A4FB-42D9-3677-9EE5AD947CE3">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 12:10:31 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id1" id="0F59318B-5664-E420-56A0-07A2252EA7C0">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 12:20:10 UTC</createdTime>
+<generatorID>720CBE66-192F-06B2-A904-F8B0A4B6B5E6</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>B5665958-B27A-D688-BE5B-DA7B060EB887</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="N°Secu1" id="AAF6AAE7-7BF5-CCB7-710D-8150CCEB65FC">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 13:09:55 UTC</createdTime>
+<generatorID>1B8CEF64-243F-B10A-99C2-D2219BF7F30E</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>03E9C07C-36CB-6B5C-353C-1CBCFB5D39C7</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id11" id="650FD145-512F-E2AB-9914-ADA0DD1BDFBE">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 13:47:15 UTC</createdTime>
+<generatorID>720CBE66-192F-06B2-A904-F8B0A4B6B5E6</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>97C37575-2194-258E-A97A-75D8F887DAD7</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EF0E0FAC-0443-6BAE-9985-9BA7FD6FF216" name="Salarié PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 12:10:02 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>03E9C07C-36CB-6B5C-353C-1CBCFB5D39C7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

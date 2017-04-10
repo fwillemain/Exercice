@@ -1,0 +1,43 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D80C3B5D-B550-3C65-1246-C8082D4EE3C5" name="Entreprise">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 13:46:21 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="14B46907-F9E9-9610-7805-2DB0D97A424C">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 13:47:04 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="04FD3F12-34E7-1F7A-D967-3857EE77E258" name="Entreprise PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 13:47:14 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>14B46907-F9E9-9610-7805-2DB0D97A424C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8ACC0A39-BBAE-5123-A2BF-B80208966113" name="Tournoi">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-07 12:21:58 UTC</createdTime>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<engineerTo>
+<item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="E3F180B1-4837-9A89-B6A1-BAD4A558E8BD">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-07 12:22:18 UTC</createdTime>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<engineerTo>
+<item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Année" id="626D9F02-66A0-8A5A-86C7-137F2FBED6C5">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-07 12:36:05 UTC</createdTime>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<engineerTo>
+<item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Prix" id="11BAE4DF-7B38-11D3-D6C7-368360DDCA23">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-07 12:47:09 UTC</createdTime>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<engineerTo>
+<item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id1" id="56E3D8B0-4AF0-FFAE-AD0E-2A8D38D564EA">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-07 12:46:25 UTC</createdTime>
+<generatorID>0C351A93-0312-9CE8-1CC2-FB67AD4803B7</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<engineerTo>
+<item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>F68C209B-01E9-4D14-3F43-8C35EE25845E</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E2D9EE9D-AF10-B19C-EBDD-347A1490646A" name="Tournoi PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-07 12:22:22 UTC</createdTime>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<engineerTo>
+<item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E3F180B1-4837-9A89-B6A1-BAD4A558E8BD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

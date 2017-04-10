@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Rassemble" directorySegmentName="seg_0" id="DC4E8020-D762-D00F-25EF-3F93B7DB1EF5">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 12:13:49 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+</engineerTo>
+<sourcePk>796E60BD-70C3-BA1E-9703-6E207296F768</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9353645D-7A82-C89C-121B-5876585AE4DC</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8A45003E-EEFF-F64E-67F0-AAD6EEB556C1</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

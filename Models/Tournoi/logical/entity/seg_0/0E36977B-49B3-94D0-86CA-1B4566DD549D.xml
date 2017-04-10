@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0E36977B-49B3-94D0-86CA-1B4566DD549D" name="Match">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 12:22:21 UTC</createdTime>
+<ownerDesignName>Tournoi</ownerDesignName>
+<engineerTo>
+<item key="8220ECDF-168B-44EC-B378-D82ECAF0AE09" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="CDCE209F-3B4D-831B-B1ED-4BCDE2686A1F">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 12:29:28 UTC</createdTime>
+<ownerDesignName>Tournoi</ownerDesignName>
+<engineerTo>
+<item key="8220ECDF-168B-44EC-B378-D82ECAF0AE09" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Date" id="02F5F619-9004-1225-7A66-49FF7E8962F7">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 12:35:05 UTC</createdTime>
+<ownerDesignName>Tournoi</ownerDesignName>
+<engineerTo>
+<item key="8220ECDF-168B-44EC-B378-D82ECAF0AE09" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Indemnisation perdant" id="FC15D118-8037-DC6F-DC85-C7A5AE96E419">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 12:40:31 UTC</createdTime>
+<ownerDesignName>Tournoi</ownerDesignName>
+<engineerTo>
+<item key="8220ECDF-168B-44EC-B378-D82ECAF0AE09" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Score" id="6DFF3BC6-F880-A570-F140-DFE07CD94800">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 12:49:13 UTC</createdTime>
+<ownerDesignName>Tournoi</ownerDesignName>
+<engineerTo>
+<item key="8220ECDF-168B-44EC-B378-D82ECAF0AE09" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id2" id="8161DED7-46FE-2C01-F4CB-300A67282B64">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 12:53:10 UTC</createdTime>
+<generatorID>9E4FD678-EF65-3990-82F8-78D510FE8440</generatorID>
+<ownerDesignName>Tournoi</ownerDesignName>
+<engineerTo>
+<item key="8220ECDF-168B-44EC-B378-D82ECAF0AE09" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>132E4DB2-1FCA-64E7-27A5-54AFCC4035F4</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Rang" id="190ABE7C-645F-939C-106F-245B8163072E">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 13:38:12 UTC</createdTime>
+<ownerDesignName>Tournoi</ownerDesignName>
+<engineerTo>
+<item key="8220ECDF-168B-44EC-B378-D82ECAF0AE09" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id1" id="B4C6982D-BC19-37B1-12CE-6DA670F8BB6F">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 14:05:38 UTC</createdTime>
+<generatorID>B2C8C880-F7A7-3B75-60D9-CEF9A792B1B9</generatorID>
+<ownerDesignName>Tournoi</ownerDesignName>
+<engineerTo>
+<item key="8220ECDF-168B-44EC-B378-D82ECAF0AE09" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>B26D82B9-F980-3D2F-73BE-465845B56F53</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FA9E0099-E6EE-2241-F962-8583FCA028A7" name="Match PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 12:29:33 UTC</createdTime>
+<ownerDesignName>Tournoi</ownerDesignName>
+<engineerTo>
+<item key="8220ECDF-168B-44EC-B378-D82ECAF0AE09" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CDCE209F-3B4D-831B-B1ED-4BCDE2686A1F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

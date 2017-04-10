@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4E559EAF-D757-6E08-0A94-94DAD4DE6B8F" name="Catégorie">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-03-16 21:45:45 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<engineerTo>
+<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="A5B91576-88FA-3A66-CFE2-4FF29CFB3FA8">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-03-16 21:45:52 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<engineerTo>
+<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C12ED81C-82AF-1FAF-5F61-558D4710BBC1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Libellé" id="BEAC9239-17EF-D13E-17CF-32AC3DDF3FF3">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-03-16 21:46:01 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<engineerTo>
+<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>680A30BF-342B-4E15-4F53-EB84BFCF4A74</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id1" id="F1F90684-F7D5-B5C4-9D85-83944BF78FE1">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-03-16 21:48:02 UTC</createdTime>
+<generatorID>9E291799-252A-8C3A-2A06-BE9E6EAF9B1D</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<engineerTo>
+<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
+</engineerTo>
+<referedAttribute>A5B91576-88FA-3A66-CFE2-4FF29CFB3FA8</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C12ED81C-82AF-1FAF-5F61-558D4710BBC1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9F16AAA5-4240-69EE-3F07-6D829E43892D" name="Catégorie PK">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-03-16 21:45:59 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<engineerTo>
+<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A5B91576-88FA-3A66-CFE2-4FF29CFB3FA8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

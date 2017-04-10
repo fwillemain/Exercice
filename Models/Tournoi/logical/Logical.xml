@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="21741C03-4758-DEB1-B650-3C7204C5F7A9" mainViewID="1343F2C6-2D96-036B-E309-0600449AB6EE">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 12:19:38 UTC</createdTime>
+<ownerDesignName>Tournoi</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EC4CCF6A-F341-20F4-A99F-7988D912E4B9" name="Chambre">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 10:26:08 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="BDC7AC73-CC70-22C9-93F3-026591349A43" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Numéro" id="4127E9C5-3310-6299-80EE-7263C8B4D1F5">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 10:29:12 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="BDC7AC73-CC70-22C9-93F3-026591349A43" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Type de chambre" id="F1478787-97B3-07B1-191C-80F15EE78073">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 10:35:30 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="BDC7AC73-CC70-22C9-93F3-026591349A43" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id" id="38721741-46EF-ADAB-DCB6-36420BBFD361">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 11:42:34 UTC</createdTime>
+<generatorID>DDF9ADC8-7E5B-8516-3680-699E4E37231F</generatorID>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="BDC7AC73-CC70-22C9-93F3-026591349A43" value="true"/>
+</engineerTo>
+<referedAttribute>561F0DE3-2311-5279-A1AF-CEB1D6B881AE</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F5FD22A2-28CD-C4A5-FE3D-A084FFA6DC4F" name="Chambre PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 10:29:17 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="BDC7AC73-CC70-22C9-93F3-026591349A43" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4127E9C5-3310-6299-80EE-7263C8B4D1F5</attributeRef>
+<attributeRef>38721741-46EF-ADAB-DCB6-36420BBFD361</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

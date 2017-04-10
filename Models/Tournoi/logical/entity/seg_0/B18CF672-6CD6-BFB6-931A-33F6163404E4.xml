@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B18CF672-6CD6-BFB6-931A-33F6163404E4" name="Tournoi">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 12:22:10 UTC</createdTime>
+<ownerDesignName>Tournoi</ownerDesignName>
+<engineerTo>
+<item key="8220ECDF-168B-44EC-B378-D82ECAF0AE09" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="EC130F89-F840-9516-B624-3D68E9AA1AB2">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 12:40:46 UTC</createdTime>
+<ownerDesignName>Tournoi</ownerDesignName>
+<engineerTo>
+<item key="8220ECDF-168B-44EC-B378-D82ECAF0AE09" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nom" id="86FDDFFC-02BE-62F9-B1B4-F9338B9EDD21">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 14:00:37 UTC</createdTime>
+<ownerDesignName>Tournoi</ownerDesignName>
+<engineerTo>
+<item key="8220ECDF-168B-44EC-B378-D82ECAF0AE09" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Lieu" id="5B75BD1A-0610-A871-B9D5-A5C8C4E49DE4">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 12:45:30 UTC</createdTime>
+<ownerDesignName>Tournoi</ownerDesignName>
+<engineerTo>
+<item key="8220ECDF-168B-44EC-B378-D82ECAF0AE09" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Gain vainqueur" id="3FE7E51F-62BC-ACD8-1B94-BF3E4CC420E8">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 12:41:08 UTC</createdTime>
+<ownerDesignName>Tournoi</ownerDesignName>
+<engineerTo>
+<item key="8220ECDF-168B-44EC-B378-D82ECAF0AE09" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8BCBAD3F-D2FE-9475-B5A5-999763542CE3" name="Tournoi PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 12:36:22 UTC</createdTime>
+<ownerDesignName>Tournoi</ownerDesignName>
+<engineerTo>
+<item key="8220ECDF-168B-44EC-B378-D82ECAF0AE09" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EC130F89-F840-9516-B624-3D68E9AA1AB2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
