@@ -35,11 +35,13 @@ namespace JeuPendu
             {
                 Console.WriteLine("Proposer une lettre.");
                 string res = Console.ReadLine();
+                
                 // Si la lettre est vide ou null met par defaut un espace, sinon prendre le premier caractère
                 char lettre = string.IsNullOrEmpty(res) ? ' ' : res[0];
                 jeu.ProposerLettre(lettre);
                 Console.Clear();
 
+                // Choix de la couleur si gagné ou non quand le jeu est fini
                 if (jeu.Fini)
                 {
                     if (!jeu.Gagné)
@@ -47,23 +49,26 @@ namespace JeuPendu
                     else
                         Console.ForegroundColor = ConsoleColor.Green;
                 }
+
                 // Affichage de l'évolution du mot à déchiffrer
                 Console.WriteLine("Mot en cours de déchiffrage : {0}, ({1}/11 erreur(s))", jeu.MotAAfficher, jeu.CompteurErreur);
                 // Affichage du pendu
                 Console.WriteLine(jeu.RetournerPendu());
             }
+
             // En pause pour 2s
             Thread.Sleep(2000);
-
             Console.Clear();
+
+            // Affiche le mec vivant ou la tombe si tu as gagné ou non
             Console.WriteLine("{0}", jeu.Gagné ? jeu.RetournerHumain() : jeu.RetournerTombe());
             
+            // Affichage du message en fonction de si tu as gagné ou non
             Console.WriteLine("{0}! Tu es {1}!", jeu.Gagné ? "Bravo" : "Dommage", jeu.Gagné ? "vivant" : "mort");
             Console.WriteLine("Le mot à deviner était : {0}.", jeu.MotADeviner);
 
             // En pause pour 5s
             Thread.Sleep(5000);
-
         }
 
         class Pendu
@@ -106,19 +111,21 @@ namespace JeuPendu
                 if (MotADeviner.Contains(l))
                 {
                     int index = 0;
+                    // Pour pouvoir modifier en live une lettre à un index d'un string (qui est read-only)
+                    char[] tmp = MotAAfficher.ToCharArray();
+
                     // Tant que toutes les occurences de la lettre n'ont pas été sélectionnées dans le mot 
                     while ((index = MotADeviner.IndexOf(l, index)) != -1)
                     {
-                        // Astuce pour modifier en live une lettre d'un string (qui est read-only)
-                        char[] tmp = MotAAfficher.ToCharArray();
                         tmp[index] = l;
-                        MotAAfficher = new string(tmp);
 
                         // Si on arrive au bout du mot, index = valeur pour sortir de la boucle while
                         if (index++ >= MotADeviner.Length)
                             index = -1;
                     }
 
+                    // Maj MotAAfficher avec le string modifié
+                    MotAAfficher = new string(tmp);
                 }
                 // Si la lettre n'est pas dans le mot
                 else
@@ -260,6 +267,7 @@ ____
                        |  |
                 _______|  |______";
             }
+
             public string RetournerHumain()
             {
                 return @"
@@ -268,7 +276,6 @@ ____
 |             \o/
 |              |
 |____         / \";
-           
             }
             #endregion
         }
