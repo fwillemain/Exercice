@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace JeuPendu
@@ -14,48 +15,72 @@ namespace JeuPendu
             string mot = Console.ReadLine();
             Pendu jeu = null;
 
-            if (mot.Contains(' '))
-                Console.WriteLine("Le mot ne doit pas contenir d'espace.");
-            else
+            // Tant que le mot est nul ou contient un espace
+            while (string.IsNullOrWhiteSpace(mot) || mot.Contains(' '))
             {
                 Console.Clear();
-                jeu = new Pendu(mot);
-                Console.WriteLine("Mot en cours : {0}", jeu.MotAAfficher);
-                while (!jeu.Fini)
-                {
-                    Console.WriteLine("Proposer une lettre.");
-                    string res = Console.ReadLine();
-                    char lettre = string.IsNullOrEmpty(res) ? ' ' : res[0];
-                    jeu.ProposerLettre(lettre);
-                    Console.Clear();
-                    Console.WriteLine("Mot en cours : {0}", jeu.MotAAfficher);
-                    Console.WriteLine(jeu.RetournerPendu());
-                }
-                Console.WriteLine("Tu as {0}!", jeu.Gagné ? "gagné" : "perdu");
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.WriteLine("Le mot ne doit pas contenir d'espace ni être vide.");
+                Console.ResetColor();
+                Console.WriteLine("Saisissez un mot : ");
+                mot = Console.ReadLine();
             }
 
-            Console.ReadKey();
+            Console.Clear();
+            jeu = new Pendu(mot);
+            Console.WriteLine("Mot en cours de déchiffrage : {0}", jeu.MotAAfficher);
+
+            // Tant que le jeu n'est pas fini
+            while (!jeu.Fini)
+            {
+                Console.WriteLine("Proposer une lettre.");
+                string res = Console.ReadLine();
+                // Si la lettre est vide ou null met par defaut un espace, sinon prendre le premier caractère
+                char lettre = string.IsNullOrEmpty(res) ? ' ' : res[0];
+                jeu.ProposerLettre(lettre);
+                Console.Clear();
+
+                if (jeu.Fini)
+                {
+                    if (!jeu.Gagné)
+                        Console.ForegroundColor = ConsoleColor.Red;
+                    else
+                        Console.ForegroundColor = ConsoleColor.Green;
+                }
+                // Affichage de l'évolution du mot à déchiffrer
+                Console.WriteLine("Mot en cours de déchiffrage : {0}, ({1}/11 erreur(s))", jeu.MotAAfficher, jeu.CompteurErreur);
+                // Affichage du pendu
+                Console.WriteLine(jeu.RetournerPendu());
+            }
+            // En pause pour 2s
+            Thread.Sleep(2000);
+
+            Console.Clear();
+            Console.WriteLine("{0}", jeu.Gagné ? jeu.RetournerHumain() : jeu.RetournerTombe());
+            
+            Console.WriteLine("{0}! Tu es {1}!", jeu.Gagné ? "Bravo" : "Dommage", jeu.Gagné ? "vivant" : "mort");
+            Console.WriteLine("Le mot à deviner était : {0}.", jeu.MotADeviner);
+
+            // En pause pour 5s
+            Thread.Sleep(5000);
+
         }
 
         class Pendu
         {
-
-            #region Champs privés
-            private string _motADeviner; 
-            #endregion
-
             #region Propriétés
             public string MotAAfficher { get; private set; }
             public bool Fini { get; private set; }
             public bool Gagné { get; private set; }
             public int CompteurErreur { get; private set; }
+            public string MotADeviner { get; }
             #endregion
 
             #region Constructeurs
             public Pendu(string mot)
             {
-                _motADeviner = mot.ToLower();
-                MotAAfficher = InitialiserMAA(_motADeviner);
+                MotADeviner = mot.ToLower();
+                MotAAfficher = InitialiserMAA(MotADeviner);
                 Fini = false;
                 Gagné = false;
                 CompteurErreur = 0;
@@ -68,33 +93,39 @@ namespace JeuPendu
                 string res = string.Empty;
 
                 for (int i = 0; i < mot.Length; i++)
+                    // Remplace les lettres par '_' et garde les caractères spéciaux tel quels
                     res += char.IsLetter(mot[i]) ? '_' : mot[i];
                 return res;
             }
-
             #endregion
 
-            #region
+            #region Méthodes public
             public void ProposerLettre(char l)
             {
-                if (_motADeviner.Contains(l))
+                // Si le mot à déchiffrer contient la lettre indiquée
+                if (MotADeviner.Contains(l))
                 {
                     int index = 0;
-                    while ((index = _motADeviner.IndexOf(l, index)) != -1)
+                    // Tant que toutes les occurences de la lettre n'ont pas été sélectionnées dans le mot 
+                    while ((index = MotADeviner.IndexOf(l, index)) != -1)
                     {
+                        // Astuce pour modifier en live une lettre d'un string (qui est read-only)
                         char[] tmp = MotAAfficher.ToCharArray();
                         tmp[index] = l;
                         MotAAfficher = new string(tmp);
-                        if (index++ >= _motADeviner.Length)
+
+                        // Si on arrive au bout du mot, index = valeur pour sortir de la boucle while
+                        if (index++ >= MotADeviner.Length)
                             index = -1;
                     }
 
                 }
+                // Si la lettre n'est pas dans le mot
                 else
                     CompteurErreur++;
 
                 // Si il me reste des lettres à trouver ou j'ai trop d'erreurs
-                if (!MotAAfficher.Contains('_') || CompteurErreur == 11)
+                if (!MotAAfficher.Contains('_') || CompteurErreur > 10)
                 {
                     Fini = true;
                     if (CompteurErreur < 11)
@@ -105,10 +136,10 @@ namespace JeuPendu
             public string RetournerPendu()
             {
                 string res = string.Empty;
+                // Choisi l'affichage du pendu à renvoyer en fonction du compteur d'erreur
                 switch (CompteurErreur)
                 {
                     case 1:
-
                         res = @"
 
  
@@ -118,17 +149,15 @@ namespace JeuPendu
 ____";
                         break;
                     case 2:
-
                         res = @"
 
 |
 |   
 |  
 |   
-___";
+|____";
                         break;
                     case 3:
-
                         res = @"
 ____
 |
@@ -138,7 +167,6 @@ ____
 |____";
                         break;
                     case 4:
-
                         res = @"
 ____
 |/  
@@ -148,7 +176,6 @@ ____
 |____";
                         break;
                     case 5:
-
                         res = @"
 ____
 |/  |
@@ -158,7 +185,6 @@ ____
 |____";
                         break;
                     case 6:
-
                         res = @"
 ____
 |/  |
@@ -168,7 +194,6 @@ ____
 |____";
                         break;
                     case 7:
-
                         res = @"
 ____
 |/  |
@@ -178,7 +203,6 @@ ____
 |____";
                         break;
                     case 8:
-
                         res = @"
 ____
 |/  |
@@ -188,7 +212,6 @@ ____
 |____";
                         break;
                     case 9:
-
                         res = @"
 ____
 |/  |
@@ -198,7 +221,6 @@ ____
 |____";
                         break;
                     case 10:
-
                         res = @"
 ____
 |/  |
@@ -208,16 +230,14 @@ ____
 |____";
                         break;
                     case 11:
-
                         res = @"
 ____
 |/  |
-|   o
+|  ~o~
 |  /|\
 |  / \
 |____";
                         break;
-                    //TODO : faire l'affichage du pendu
                     default:
                         res = @"
 
@@ -231,8 +251,26 @@ ____
                 return res;
             }
 
+            public string RetournerTombe()
+            {
+                return @"
+                        __
+                     __|  |__
+                    |__    __|
+                       |  |
+                _______|  |______";
+            }
+            public string RetournerHumain()
+            {
+                return @"
+____
+|/  |
+|             \o/
+|              |
+|____         / \";
+           
+            }
             #endregion
-
         }
     }
 }
