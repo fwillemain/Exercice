@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="03AE3F83-C688-1A2B-4B09-879BCD66F839" name="Evaluation">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 13:13:25 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="29ED7560-9C41-4D2A-BC13-1BED54C60496" value="true"/>
+<item key="875B20A3-DE2C-E494-9F94-EE30D02CE557" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="DateEval" id="75B88F7D-DA44-6749-FB92-C163A5DD1EF2">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 13:13:33 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="29ED7560-9C41-4D2A-BC13-1BED54C60496" value="true"/>
+<item key="875B20A3-DE2C-E494-9F94-EE30D02CE557" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Note" id="955EC7C0-36B2-E496-8360-29E2B985CD0C">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 13:13:48 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="29ED7560-9C41-4D2A-BC13-1BED54C60496" value="true"/>
+<item key="875B20A3-DE2C-E494-9F94-EE30D02CE557" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id" id="6352F864-C1F1-3D71-785F-C3F07599649E">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 13:15:09 UTC</createdTime>
+<generatorID>10A62F3A-FB2B-4FEF-F125-3A9CFF01D3D8</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="29ED7560-9C41-4D2A-BC13-1BED54C60496" value="true"/>
+<item key="875B20A3-DE2C-E494-9F94-EE30D02CE557" value="true"/>
+</engineerTo>
+<referedAttribute>525B9622-CCA3-6412-A2EF-9C6FA90135F5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id1" id="AD6C6CFB-25A2-AE42-9EEF-C686FD25395C">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 13:15:18 UTC</createdTime>
+<generatorID>A68A4A9A-3321-9959-9C55-588464D5AC84</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="29ED7560-9C41-4D2A-BC13-1BED54C60496" value="true"/>
+<item key="875B20A3-DE2C-E494-9F94-EE30D02CE557" value="true"/>
+</engineerTo>
+<referedAttribute>E41B96E6-7901-FD68-E5D4-CAC4A0D90EF9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7D6E06A8-3819-8D99-0E4F-07D1BC04A819" name="Evaluation PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 13:14:16 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="29ED7560-9C41-4D2A-BC13-1BED54C60496" value="true"/>
+<item key="875B20A3-DE2C-E494-9F94-EE30D02CE557" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>75B88F7D-DA44-6749-FB92-C163A5DD1EF2</attributeRef>
+<attributeRef>6352F864-C1F1-3D71-785F-C3F07599649E</attributeRef>
+<attributeRef>AD6C6CFB-25A2-AE42-9EEF-C686FD25395C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

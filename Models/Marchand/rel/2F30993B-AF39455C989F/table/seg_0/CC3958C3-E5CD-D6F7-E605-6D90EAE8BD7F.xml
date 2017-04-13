@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CC3958C3-E5CD-D6F7-E605-6D90EAE8BD7F" name="Commande">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>E40F4F6E-4514-AE67-BE64-03A6FC80FCAE</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="86DCF09B-F218-795E-3403-A185D50DFD7B">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>D9957FFE-C5D0-FF9E-B741-3CDA1A66E632</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DateCmde" id="BB29C6A7-1AD2-C096-2A6F-420AFB010176">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>3E85D1EC-AC2A-69B6-CA18-7EA54FA553A1</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DatePréparation" id="5EE3FA9B-1AD1-0C72-E8B7-40327E560901">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>C769D1A1-DBCD-4F66-8A6D-BE0E5BB6F602</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MoyenPaiement_Id" id="9EEB4B1D-8618-B089-7488-AB0FAF5E8E0E">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>88D2F07E-1D28-3555-800F-4C641F7CB555</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>58C558AA-944A-9E5E-2EF8-8080C457B1D9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="165B17EC-251B-848C-D6E7-33B2951BB238" referredColumn="1FE63D54-8C01-68A1-0CCA-0001F8DEB14D"/>
+</associations>
+</Column>
+<Column name="Cloturée" id="A7F10D2A-F97A-A805-3709-FB09C6FD1C13">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>45628FC4-CA09-7B6E-98F5-495A362451CA</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Client_Id" id="00650351-93B4-27D3-3DC1-F89B1F5117DF">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>F8A67D8B-2F20-5B74-5F3A-8C8F901C8DBF</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C0397499-03E4-1C95-2080-07FF9CEEA54D" referredColumn="0B876BB6-004B-8E31-2E2C-52EF8C7A1BDD"/>
+</associations>
+</Column>
+<Column name="Salarié_Id" id="9F3A8756-9E7E-9269-113B-9E725B12A16E">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>81ECD739-8877-A7F6-C1DF-C92427DDCE09</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4DBE86EA-6C14-DB0A-BB2A-9B4741F6ABEE" referredColumn="177691F0-2CE9-E7A4-A829-24A513B3C568"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6D14EF78-C60E-3F4B-1932-27586E49C210" name="Commande_PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>56348B61-5297-46BA-A38B-1E7B65FB9CF7</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86DCF09B-F218-795E-3403-A185D50DFD7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="467DF682-4535-6F9E-360D-7759267DDA1B" name="Commande_MoyenPaiement_FK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>404E59E5-7EE6-3D66-38CD-B23C15BE5698</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9EEB4B1D-8618-B089-7488-AB0FAF5E8E0E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="825F331A-C859-B4A8-CCE4-EB1D4A651FA8" name="Commande_Salarié_FK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>D69E787A-E814-B757-FC8E-DFFDAD050ADB</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F3A8756-9E7E-9269-113B-9E725B12A16E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="91EF850E-9492-931E-7E25-07C1066916F6" name="Commande_Client_FK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>10ACF18E-028E-E7E5-C55B-3A0275662AE3</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00650351-93B4-27D3-3DC1-F89B1F5117DF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

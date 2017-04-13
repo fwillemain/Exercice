@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="122217DC-3156-1C00-B772-ED5532B8ECC5" name="Classe">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>B36C867F-766A-7577-FCAA-060BEBF7BB56</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Code" id="B02F6064-38E3-81CE-897D-785FD1686FCA">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>482F8672-89F3-3014-25D6-C066130EA3C0</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Professeur_Id" id="D2BE8572-72BF-A3F3-1544-6B0CB11EF555">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>8A90E27A-3CA5-0CEC-98FA-C1A7C235F42F</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="48BA6C20-6FB9-62F2-FC8C-F2F937FFF7A1" referredColumn="B0EAB98C-C476-AA44-3C94-3273D68CFFFF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F5A86163-F60A-7FB1-6747-D5D10594734C" name="Classe_PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>2E96ED5D-469F-1AE9-71FD-A92E01E67A48</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B02F6064-38E3-81CE-897D-785FD1686FCA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A122254-37A5-EC52-E117-7D5C9E45CCFE" name="Classe_Professeur_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>73AF8BD5-1C99-6C02-60DA-F3CE62F305C9</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D2BE8572-72BF-A3F3-1544-6B0CB11EF555"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

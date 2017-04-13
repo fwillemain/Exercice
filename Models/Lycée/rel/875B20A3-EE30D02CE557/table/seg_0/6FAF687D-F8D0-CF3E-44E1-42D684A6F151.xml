@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6FAF687D-F8D0-CF3E-44E1-42D684A6F151" name="Matière">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-09 16:37:33 UTC</createdTime>
+<generatorID>0FBF6C21-5EDF-F7AA-4DFD-99C136EA781C</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="9C946705-CAA9-8E5E-5A31-96A0457E7240">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-09 16:37:33 UTC</createdTime>
+<generatorID>E41B96E6-7901-FD68-E5D4-CAC4A0D90EF9</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C12ED81C-82AF-1FAF-5F61-558D4710BBC1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Libellé" id="643CDFCC-8265-8C10-C5D3-0B781B912028">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-09 16:37:33 UTC</createdTime>
+<generatorID>7FB99161-31C2-FD07-0F19-66E70E7CD776</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>680A30BF-342B-4E15-4F53-EB84BFCF4A74</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8CF0BCA3-39E5-8E4F-139E-044EEEB13F95" name="Matière_PK">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-09 16:37:33 UTC</createdTime>
+<generatorID>5BA407B9-0F33-AC0A-0200-BA76BF53E46E</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9C946705-CAA9-8E5E-5A31-96A0457E7240"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

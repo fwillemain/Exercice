@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C75B37F4-4978-F761-3A9A-45CC2385681B" name="HistoriqueLieu">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-06 21:37:42 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<engineerTo>
+<item key="A7437857-EAA1-7F69-5923-50EE6F0AF293" value="true"/>
+<item key="C664864A-B0DB-C2BD-9758-9AF193D64972" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="0F1832FE-154E-D6DF-CF18-3F0B7D3FC00D">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-06 21:39:30 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<engineerTo>
+<item key="A7437857-EAA1-7F69-5923-50EE6F0AF293" value="true"/>
+<item key="C664864A-B0DB-C2BD-9758-9AF193D64972" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DateDébut" id="8BCA3D4F-2B54-86AC-8F94-93DA5BB46DC0">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-06 21:39:35 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<engineerTo>
+<item key="A7437857-EAA1-7F69-5923-50EE6F0AF293" value="true"/>
+<item key="C664864A-B0DB-C2BD-9758-9AF193D64972" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DateFin" id="D0B5C4D2-30EE-BB30-99E7-912E637D79A3">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-06 21:39:48 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<engineerTo>
+<item key="A7437857-EAA1-7F69-5923-50EE6F0AF293" value="true"/>
+<item key="C664864A-B0DB-C2BD-9758-9AF193D64972" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HeuresParJourPrincipal" id="0E5DE24E-57EF-BFF3-7E25-CC9D7F2A63B4">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-06 21:40:07 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<engineerTo>
+<item key="A7437857-EAA1-7F69-5923-50EE6F0AF293" value="true"/>
+<item key="C664864A-B0DB-C2BD-9758-9AF193D64972" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LieuPrinc Id" id="3DD5CC3B-73F8-6B37-C8E7-4182CFF8C1E9">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-06 21:49:58 UTC</createdTime>
+<generatorID>6CE9DF7A-EBAC-043D-B2C2-7C02E396CD17</generatorID>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<engineerTo>
+<item key="A7437857-EAA1-7F69-5923-50EE6F0AF293" value="true"/>
+<item key="C664864A-B0DB-C2BD-9758-9AF193D64972" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>4D76CF54-0294-D565-3893-C4DB783FC452</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LieuSec Id" id="373EE1FB-3633-E7EF-47A5-000302BFADED">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-06 22:11:45 UTC</createdTime>
+<generatorID>39EA971D-948E-8CA3-FCCE-41BDA0EDE7A4</generatorID>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<engineerTo>
+<item key="A7437857-EAA1-7F69-5923-50EE6F0AF293" value="true"/>
+<item key="C664864A-B0DB-C2BD-9758-9AF193D64972" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>4D76CF54-0294-D565-3893-C4DB783FC452</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Vache Id" id="8A74840D-25BC-A747-B7A1-A3DD76DE85CE">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-09 18:13:00 UTC</createdTime>
+<generatorID>34C93B06-6A86-030E-8622-245B2B830BE1</generatorID>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<engineerTo>
+<item key="A7437857-EAA1-7F69-5923-50EE6F0AF293" value="true"/>
+<item key="C664864A-B0DB-C2BD-9758-9AF193D64972" value="true"/>
+</engineerTo>
+<referedAttribute>563B4EEE-9066-BAD8-99CC-E20EEEF9EDD7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E881595C-B044-F49F-B049-5AB2C3B42FEC" name="HistoriqueLieu PK">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-06 21:39:34 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<engineerTo>
+<item key="A7437857-EAA1-7F69-5923-50EE6F0AF293" value="true"/>
+<item key="C664864A-B0DB-C2BD-9758-9AF193D64972" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0F1832FE-154E-D6DF-CF18-3F0B7D3FC00D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

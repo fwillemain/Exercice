@@ -4,13 +4,14 @@
 <createdTime>2017-04-07 08:54:16 UTC</createdTime>
 <ownerDesignName>Lycée</ownerDesignName>
 <engineerTo>
+<item key="29ED7560-9C41-4D2A-BC13-1BED54C60496" value="true"/>
 <item key="875B20A3-DE2C-E494-9F94-EE30D02CE557" value="true"/>
 </engineerTo>
 <sourcePk>EF55444E-729F-76DD-4477-28206758AD2D</sourcePk>
 <identifying>false</identifying>
 <nameOnSource>prof principal</nameOnSource>
-<optionalSource>false</optionalSource>
-<optionalTarget>true</optionalTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>4A3B44F1-C7A1-4760-D5B0-8220DCCA93CA</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>

@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1B8A2A8A-D431-F478-1B12-16C7076DD3B7" schemaObject="BCDA7C52-AC4A-21F7-FC56-FCDF841B5D12" name="Vache">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 10:21:59 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="DC08952C-23B0-4963-A6DA-044BA80C6086">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 10:24:03 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nom" id="0B8F9D98-6E34-2B93-37C5-C42498608E30">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 10:24:03 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ABF34102-86D3-6285-B386-4251F3C7ED5F" name="Vache_PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 10:24:03 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DC08952C-23B0-4963-A6DA-044BA80C6086"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

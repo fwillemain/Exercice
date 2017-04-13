@@ -22,9 +22,10 @@
 <engineerTo>
 <item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
 </engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>5412AD9F-6422-FDBF-6956-FFF1ABCAE16E</domain>
+<domain>3C8D8AD8-B00E-140B-22A3-62EEC3F7C8B1</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Libellé" id="DDE0BA0E-10AC-A184-FD57-2A5553D638C1">
@@ -34,9 +35,10 @@
 <engineerTo>
 <item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
 </engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
-<domain>0DA7911D-08BA-FABF-FEDB-358A480C9EC1</domain>
+<domain>0CB5EFB0-AD54-1DC8-ED7E-5EEBEDC93A2B</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="PrixUnitaire" id="B452650D-770F-DBE7-8120-BB3F1F75CF31">
@@ -46,10 +48,9 @@
 <engineerTo>
 <item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT043</logicalDatatype>
-<domain>FAFCBEBA-E87A-904F-F76B-D7A590DD90A9</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="QtéStock" id="D648AA30-40E3-19DC-C8EF-4EB2F68734DB">
@@ -64,41 +65,15 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Livré" id="762687AA-D606-A5F6-5AF1-501E292F2401">
-<createdBy>Cyril</createdBy>
-<createdTime>2017-03-16 21:10:16 UTC</createdTime>
-<ownerDesignName>Marchand</ownerDesignName>
-<engineerTo>
-<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT034</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Id" id="F0FF13AF-8050-8F7B-E563-8AF2C0CB70F0">
-<createdBy>Cyril</createdBy>
-<createdTime>2017-03-16 21:47:33 UTC</createdTime>
-<generatorID>B549CB35-842E-30FA-9247-6ACFCFE3F16A</generatorID>
-<ownerDesignName>Marchand</ownerDesignName>
-<engineerTo>
-<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>A5B91576-88FA-3A66-CFE2-4FF29CFB3FA8</referedAttribute>
-<use>0</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<domain>C12ED81C-82AF-1FAF-5F61-558D4710BBC1</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="C12FB126-9ECB-9EA4-9E19-18B85281638C" name="Article PK">
 <createdBy>Cyril</createdBy>
 <createdTime>2017-03-16 20:53:31 UTC</createdTime>
 <ownerDesignName>Marchand</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
+<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

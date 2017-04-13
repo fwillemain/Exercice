@@ -8,6 +8,7 @@
 </engineerTo>
 <targetPk>841FC6C8-F974-C4E6-BBA8-D939FB1E54F6</targetPk>
 <identifying>false</identifying>
+<nameOnTarget>Livraison</nameOnTarget>
 <optionalSource>false</optionalSource>
 <optionalTarget>true</optionalTarget>
 <sourceCardinality>1</sourceCardinality>

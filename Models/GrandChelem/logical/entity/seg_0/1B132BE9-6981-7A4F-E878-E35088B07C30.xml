@@ -22,7 +22,10 @@
 <engineerTo>
 <item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
 </engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C473CA17-FD47-5170-4376-4822F9175FD8</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Montant" id="E15BD09C-430D-19B4-35A6-D4C4EFA8087A">
@@ -32,7 +35,9 @@
 <engineerTo>
 <item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
 </engineerTo>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Id" id="1F37211D-F7CD-4E0C-2962-4BE0BB5D90E5">
@@ -43,9 +48,10 @@
 <engineerTo>
 <item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <referedAttribute>E3F180B1-4837-9A89-B6A1-BAD4A558E8BD</referedAttribute>
 <use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C473CA17-FD47-5170-4376-4822F9175FD8</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -54,8 +60,9 @@
 <createdBy>Formateur_DEV</createdBy>
 <createdTime>2017-04-07 14:11:56 UTC</createdTime>
 <ownerDesignName>GrandChelem</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
+<item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

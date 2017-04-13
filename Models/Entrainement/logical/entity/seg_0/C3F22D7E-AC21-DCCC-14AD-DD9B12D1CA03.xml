@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C3F22D7E-AC21-DCCC-14AD-DD9B12D1CA03" name="TypeChambre">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 10:37:12 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="97480CC8-6592-DCDC-CD11-5AC8D7A0FE9A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="A88506A5-1F40-F2CE-1381-683F981D3B7F">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 11:37:28 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="97480CC8-6592-DCDC-CD11-5AC8D7A0FE9A" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TypeSalleEau" id="27BBC224-A49A-9705-3BCE-3AEA4E54654A">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 11:33:33 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="97480CC8-6592-DCDC-CD11-5AC8D7A0FE9A" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Surface" id="9FC616E8-F086-8F69-4909-77DE45B60586">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 11:33:52 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="97480CC8-6592-DCDC-CD11-5AC8D7A0FE9A" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1D31A123-07CE-2F1C-4BD3-D78EE0EBAB42" name="TypeChambre PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 11:37:39 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="97480CC8-6592-DCDC-CD11-5AC8D7A0FE9A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A88506A5-1F40-F2CE-1381-683F981D3B7F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

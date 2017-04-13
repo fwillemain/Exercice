@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6618CCB1-812D-C9FC-437A-8DC24D66D72A" name="Salarié">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:22:46 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<engineerTo>
+<item key="DF95D5EE-E0BD-F425-0DC0-A5E5BBEEAA76" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>42C9D5A0-FBE1-44EB-9116-E71A0E8272EA</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="NumSecu" id="05C5A0D7-A899-8E0E-3D22-C5F685CDDF64">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:23:02 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<engineerTo>
+<item key="DF95D5EE-E0BD-F425-0DC0-A5E5BBEEAA76" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DateEntrée" id="C61F021A-70EF-244A-E242-4D8AF1EEE2C5">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:23:13 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<engineerTo>
+<item key="DF95D5EE-E0BD-F425-0DC0-A5E5BBEEAA76" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DateSortie" id="FD20611E-86AE-77F9-2F6B-6617BDF64F05">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:23:21 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<engineerTo>
+<item key="DF95D5EE-E0BD-F425-0DC0-A5E5BBEEAA76" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id" id="752B99F4-76B5-DA13-E34F-9EFA358B0B61">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:24:09 UTC</createdTime>
+<generatorID>BC68F2D8-7F09-465F-CEB6-6237EB53BB00</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<engineerTo>
+<item key="DF95D5EE-E0BD-F425-0DC0-A5E5BBEEAA76" value="true"/>
+</engineerTo>
+<referedAttribute>09D467D2-D2D0-32B0-4D94-57EF0C42F5E0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C44E23A1-BE56-B23B-F278-92FA343052DE" name="Salarié PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:23:05 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<engineerTo>
+<item key="DF95D5EE-E0BD-F425-0DC0-A5E5BBEEAA76" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>05C5A0D7-A899-8E0E-3D22-C5F685CDDF64</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

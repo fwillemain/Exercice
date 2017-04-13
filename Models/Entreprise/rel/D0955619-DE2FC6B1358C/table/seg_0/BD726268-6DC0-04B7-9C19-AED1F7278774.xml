@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BD726268-6DC0-04B7-9C19-AED1F7278774" name="Site">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:20:30 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="2E04B92A-4848-2F3A-E226-034EEBC5329F">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:23:19 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nom" id="72C93E21-0BD2-B3FE-6A28-75E14F0FFAFD">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:23:19 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>6D1C2157-754A-83DD-4B48-2AF727A94D15</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9135A437-D081-E063-CC1D-4E8BAA84E1AD" name="Site_PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:23:19 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E04B92A-4848-2F3A-E226-034EEBC5329F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

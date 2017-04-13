@@ -296,8 +296,8 @@
 	</comparemapping>
 	<engineering_params>
 		<delete_without_origin value="false"/>
-		<engineer_coordinates value="true"/>
-		<engineer_generated value="false"/>
+		<engineer_coordinates value="false"/>
+		<engineer_generated value="true"/>
 		<show_engineering_intree value="false"/>
 		<apply_naming_std value="true"/>
 		<use_pref_abbreviation value="true"/>
@@ -429,17 +429,6 @@
 				<subviews value="70"/>
 				<arcs value="70"/>
 				<physical_models_estimates>
-							<physical_model_2F30993B-38A8-1BBC-F96E-AF39455C989F_SQL_Server_2012>
-								<physical_model_name value="SQL Server 2012"/>
-								<data_bases value="70"/>
-								<logins value="70"/>
-								<tables value="70"/>
-								<views value="70"/>
-								<user_defined_types value="70"/>
-								<triggers value="70"/>
-								<users value="70"/>
-								<roles value="70"/>
-							</physical_model_2F30993B-38A8-1BBC-F96E-AF39455C989F_SQL_Server_2012>
 							<physical_model_2F30993B-38A8-1BBC-F96E-AF39455C989F_SQL_Server_2008>
 								<physical_model_name value="SQL Server 2008"/>
 								<data_bases value="70"/>
@@ -451,6 +440,17 @@
 								<users value="70"/>
 								<roles value="70"/>
 							</physical_model_2F30993B-38A8-1BBC-F96E-AF39455C989F_SQL_Server_2008>
+							<physical_model_2F30993B-38A8-1BBC-F96E-AF39455C989F_SQL_Server_2012>
+								<physical_model_name value="SQL Server 2012"/>
+								<data_bases value="70"/>
+								<logins value="70"/>
+								<tables value="70"/>
+								<views value="70"/>
+								<user_defined_types value="70"/>
+								<triggers value="70"/>
+								<users value="70"/>
+								<roles value="70"/>
+							</physical_model_2F30993B-38A8-1BBC-F96E-AF39455C989F_SQL_Server_2012>
 				</physical_models_estimates>
 			</relational_model_0_estimates>
 		</relational_model_estimates>

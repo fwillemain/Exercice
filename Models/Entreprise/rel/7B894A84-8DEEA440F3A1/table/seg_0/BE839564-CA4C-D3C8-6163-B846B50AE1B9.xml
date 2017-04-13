@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BE839564-CA4C-D3C8-6163-B846B50AE1B9" name="Fonction">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 12:37:16 UTC</createdTime>
+<generatorID>D4470D07-C3E3-A4E5-4AD5-2A67B1E980AB</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Fonction_ID" id="841DDB66-A60D-273B-C3BB-BEF331E763D8">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 12:37:16 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E438ABC6-D794-D144-866E-511AAB8931EC" name="Fonction_PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 12:37:16 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="841DDB66-A60D-273B-C3BB-BEF331E763D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9289E91D-7267-AF2B-8CCC-5981866A2CBF" name="Professeur">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>4A3B44F1-C7A1-4760-D5B0-8220DCCA93CA</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="B0EAB98C-C476-AA44-3C94-3273D68CFFFF">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>525B9622-CCA3-6412-A2EF-9C6FA90135F5</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9AF45548-D8C6-219F-1E8C-056A440D98B2" referredColumn="6DB43DC7-6903-8204-A4F1-3BF9ED6F94B3"/>
+</associations>
+</Column>
+<Column name="DateArrivée" id="DD737AD7-FBBD-A6CF-A583-ED5EE13F79D1">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>143A4987-ACC8-0E1B-3B8D-E7805DE629F9</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2635733C-82BB-7EAE-A4AE-C0F61A31CBA0" name="Professeur_PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>EF55444E-729F-76DD-4477-28206758AD2D</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0EAB98C-C476-AA44-3C94-3273D68CFFFF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7B629E03-6E65-99D7-ECA1-818A64EA49E5" name="Professeur_Personne_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>146D9985-6D20-11D6-CA0A-E77CF3E22FA0</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0EAB98C-C476-AA44-3C94-3273D68CFFFF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

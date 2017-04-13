@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="HistoriqueLieu LieuSec FK" directorySegmentName="seg_0" id="39EA971D-948E-8CA3-FCCE-41BDA0EDE7A4">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-06 22:11:45 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<engineerTo>
+<item key="A7437857-EAA1-7F69-5923-50EE6F0AF293" value="true"/>
+<item key="C664864A-B0DB-C2BD-9758-9AF193D64972" value="true"/>
+</engineerTo>
+<sourcePk>8BEF18E9-B6A7-B26F-DC2B-20535C2F7E9D</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>secondaire</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>416C671C-6E48-2BCE-81A6-EDF1D0A17AE6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C75B37F4-4978-F761-3A9A-45CC2385681B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

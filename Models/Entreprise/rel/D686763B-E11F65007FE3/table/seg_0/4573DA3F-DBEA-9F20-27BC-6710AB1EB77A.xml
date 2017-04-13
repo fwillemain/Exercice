@@ -1,0 +1,146 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4573DA3F-DBEA-9F20-27BC-6710AB1EB77A" name="Salarié">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 09:23:36 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NuméroSécu" id="F959F3D7-F48E-454C-E387-D705FFE8017D">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 09:27:28 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Manager_NuméroSécu" id="96A3E7A0-299B-46D8-1ACF-E356CC9996F8">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 09:36:47 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D80393F1-CAC6-74FB-466D-5F5DFA757C73" referredColumn="F959F3D7-F48E-454C-E387-D705FFE8017D"/>
+</associations>
+</Column>
+<Column name="Service_Code" id="5FC023CE-A6AC-82F1-41B4-853B5B732C57">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 09:38:30 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3C8D8AD8-B00E-140B-22A3-62EEC3F7C8B1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="094390AF-4941-74FE-5FF1-1B0D4F65B428" referredColumn="9A8B22DB-3BB9-55DE-3104-6147F97B5CAD"/>
+</associations>
+</Column>
+<Column name="Sexe" id="03490BDC-6A57-3CC4-1519-6D01A7E20C17">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 09:27:28 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nom" id="3EB51FED-BC0E-4F74-9A05-D6C99E9E2F18">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 09:27:28 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>F09CCBF4-7EDC-C2BD-35E1-A7380CFD3230</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Prénom" id="E0A887A8-FE45-ECB8-B162-46C966A167C6">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 09:28:03 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>F09CCBF4-7EDC-C2BD-35E1-A7380CFD3230</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DateNaissance" id="787B4455-2ECC-8563-F413-7111FE52998B">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 09:28:03 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Adresse" id="8E2B1DDB-4BE6-907C-5052-A8EBAEC0C79E">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 09:28:28 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>0CB5EFB0-AD54-1DC8-ED7E-5EEBEDC93A2B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tel" id="32E647C2-6165-E362-96BB-A7E9529F7449">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 09:28:28 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>F09CCBF4-7EDC-C2BD-35E1-A7380CFD3230</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="191E6791-D651-6885-6F8D-A6B5B0B1C2C5" name="Salarié_PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 09:27:28 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F959F3D7-F48E-454C-E387-D705FFE8017D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4438DE7D-CE95-4175-B430-298E31E9C41A" name="Salarié_Manager_FK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 09:36:47 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="96A3E7A0-299B-46D8-1ACF-E356CC9996F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BABCDC43-4662-07EE-AE27-4980FA3D33E3" name="Salarié_Service_FK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 09:38:30 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5FC023CE-A6AC-82F1-41B4-853B5B732C57"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

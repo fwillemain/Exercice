@@ -4,6 +4,7 @@
 <createdTime>2017-04-07 09:30:35 UTC</createdTime>
 <ownerDesignName>Lycée</ownerDesignName>
 <engineerTo>
+<item key="29ED7560-9C41-4D2A-BC13-1BED54C60496" value="true"/>
 <item key="875B20A3-DE2C-E494-9F94-EE30D02CE557" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
@@ -20,9 +21,12 @@
 <createdTime>2017-04-07 09:30:54 UTC</createdTime>
 <ownerDesignName>Lycée</ownerDesignName>
 <engineerTo>
+<item key="29ED7560-9C41-4D2A-BC13-1BED54C60496" value="true"/>
 <item key="875B20A3-DE2C-E494-9F94-EE30D02CE557" value="true"/>
 </engineerTo>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Nom" id="ABBE4A1C-AC17-E82C-5EC2-0F06FBD0CC77">
@@ -30,9 +34,12 @@
 <createdTime>2017-04-07 09:30:42 UTC</createdTime>
 <ownerDesignName>Lycée</ownerDesignName>
 <engineerTo>
+<item key="29ED7560-9C41-4D2A-BC13-1BED54C60496" value="true"/>
 <item key="875B20A3-DE2C-E494-9F94-EE30D02CE557" value="true"/>
 </engineerTo>
 <use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>F09CCBF4-7EDC-C2BD-35E1-A7380CFD3230</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Prénom" id="04B7341C-5C19-E269-7A2E-89BA56E8305C">
@@ -40,9 +47,12 @@
 <createdTime>2017-04-07 09:30:45 UTC</createdTime>
 <ownerDesignName>Lycée</ownerDesignName>
 <engineerTo>
+<item key="29ED7560-9C41-4D2A-BC13-1BED54C60496" value="true"/>
 <item key="875B20A3-DE2C-E494-9F94-EE30D02CE557" value="true"/>
 </engineerTo>
 <use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>F09CCBF4-7EDC-C2BD-35E1-A7380CFD3230</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -51,8 +61,10 @@
 <createdBy>Formateur_DEV</createdBy>
 <createdTime>2017-04-07 09:30:56 UTC</createdTime>
 <ownerDesignName>Lycée</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="875B20A3-DE2C-E494-9F94-EE30D02CE557" value="true"/>
+<item key="29ED7560-9C41-4D2A-BC13-1BED54C60496" value="true"/>
+<item key="875B20A3-DE2C-E494-9F94-EE30D02CE557" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

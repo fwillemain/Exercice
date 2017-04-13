@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A7998B45-BA96-C59C-3AAF-FCD6D7963B02" name="Article">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>B139782C-6049-FBD8-D77A-549FAB8DF728</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Code" id="23BF157A-08B6-F524-7D62-2944B9B84D60">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>69617754-F4C2-0C63-A012-F2D335E07EA4</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3C8D8AD8-B00E-140B-22A3-62EEC3F7C8B1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Libellé" id="21285C3F-231D-26F2-ACEC-35BBF611ABD0">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>DDE0BA0E-10AC-A184-FD57-2A5553D638C1</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>0CB5EFB0-AD54-1DC8-ED7E-5EEBEDC93A2B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PrixUnitaire" id="10E629B6-0342-C777-A503-C156CB0149ED">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>B452650D-770F-DBE7-8120-BB3F1F75CF31</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QtéStock" id="FD4D75CA-5F21-B973-CE6B-AE174ED78691">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>D648AA30-40E3-19DC-C8EF-4EB2F68734DB</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="73CACF51-610B-AA5B-7B14-10E856478676" name="Article_PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>C12FB126-9ECB-9EA4-9E19-18B85281638C</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="23BF157A-08B6-F524-7D62-2944B9B84D60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

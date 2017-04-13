@@ -8,8 +8,8 @@
 </engineerTo>
 <sourcePk>5FF06C47-6D24-CBD0-79CF-431142DE414A</sourcePk>
 <identifying>false</identifying>
-<optionalSource>false</optionalSource>
-<optionalTarget>true</optionalTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>C130A1F6-0060-D50A-9D52-19CF29943739</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>

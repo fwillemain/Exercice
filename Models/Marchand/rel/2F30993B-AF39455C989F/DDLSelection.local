@@ -1,7 +1,2 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<oracle.dbtools.crest.model.design.storage.sqlserver.v2k8.StorageDesignSqlServerv2k8>
-   <object objectID="DB_NULLELEMENT" markedGenerate="false"/>
-   <object objectID="DB_NULLELEMENT_dbo" markedGenerate="false"/>
-   <object objectID="GUEST" markedGenerate="false"/>
-   <object objectID="DB_NULLELEMENT_PUBLIC" markedGenerate="false"/>
-</oracle.dbtools.crest.model.design.storage.sqlserver.v2k8.StorageDesignSqlServerv2k8>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign objectID="2F30993B-38A8-1BBC-F96E-AF39455C989F"/>

@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="345DA100-007B-65E7-6D1F-711D00189A0B" name="Personne">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>E21BA5EF-1BE4-602F-3D70-495701DAA86D</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="6DB43DC7-6903-8204-A4F1-3BF9ED6F94B3">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>525B9622-CCA3-6412-A2EF-9C6FA90135F5</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nom" id="79B7E267-AC0F-9BC5-BBB1-EB7263D7A995">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>ABBE4A1C-AC17-E82C-5EC2-0F06FBD0CC77</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>6D1C2157-754A-83DD-4B48-2AF727A94D15</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Prénom" id="9ABDA575-813B-C5D6-1C08-5718D78FBE24">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>04B7341C-5C19-E269-7A2E-89BA56E8305C</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>6D1C2157-754A-83DD-4B48-2AF727A94D15</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9A348EA2-ED66-3F54-3995-27FA0F500E03" name="Personne_PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>EF55444E-729F-76DD-4477-28206758AD2D</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6DB43DC7-6903-8204-A4F1-3BF9ED6F94B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

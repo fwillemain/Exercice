@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4A89F8E0-F960-30EA-3FB4-03D4FE504124" schemaObject="BCDA7C52-AC4A-21F7-FC56-FCDF841B5D12" name="Case">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 11:39:48 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="0A247FA8-A00A-021B-795D-E02322AF53B0">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 11:42:14 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C2AD062B-A98F-A482-DC98-75901CC35B58" referredColumn="AC882A27-2A8A-53F9-E57C-76EEB65345E1"/>
+</associations>
+</Column>
+<Column name="Batiment_Id" id="E637E73D-B10B-52DB-EAC3-58732F3864D5">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 11:43:41 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7BAD9093-38C1-C253-4F44-14AD5F337FFA" referredColumn="4952541E-9F74-5DD2-33BF-9B5B10DE6324"/>
+</associations>
+</Column>
+<Column name="NbPlaces" id="CCFB4524-9942-CE43-CE4D-3911B8CC2812">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 11:43:30 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FE6C91A9-90AB-56E0-9BF2-651979D2B6B1" name="Case_PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 11:42:14 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0A247FA8-A00A-021B-795D-E02322AF53B0"/>
+<colUsage columnID="E637E73D-B10B-52DB-EAC3-58732F3864D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7E51BCCA-C2A4-8401-7D9F-400BB1FD2590" name="Case_Lieu_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 11:42:25 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0A247FA8-A00A-021B-795D-E02322AF53B0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C9B96F3C-3D07-8E68-468E-D52FA083F5EF" name="Case_Batiment_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 11:43:41 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E637E73D-B10B-52DB-EAC3-58732F3864D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

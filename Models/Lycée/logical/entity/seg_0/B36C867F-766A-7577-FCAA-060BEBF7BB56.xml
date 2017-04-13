@@ -4,6 +4,7 @@
 <createdTime>2017-04-07 08:37:34 UTC</createdTime>
 <ownerDesignName>Lycée</ownerDesignName>
 <engineerTo>
+<item key="29ED7560-9C41-4D2A-BC13-1BED54C60496" value="true"/>
 <item key="875B20A3-DE2C-E494-9F94-EE30D02CE557" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
@@ -20,9 +21,12 @@
 <createdTime>2017-04-07 09:27:09 UTC</createdTime>
 <ownerDesignName>Lycée</ownerDesignName>
 <engineerTo>
+<item key="29ED7560-9C41-4D2A-BC13-1BED54C60496" value="true"/>
 <item key="875B20A3-DE2C-E494-9F94-EE30D02CE557" value="true"/>
 </engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
 <domain>3C8D8AD8-B00E-140B-22A3-62EEC3F7C8B1</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
@@ -32,11 +36,13 @@
 <generatorID>73AF8BD5-1C99-6C02-60DA-F3CE62F305C9</generatorID>
 <ownerDesignName>Lycée</ownerDesignName>
 <engineerTo>
+<item key="29ED7560-9C41-4D2A-BC13-1BED54C60496" value="true"/>
 <item key="875B20A3-DE2C-E494-9F94-EE30D02CE557" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <referedAttribute>525B9622-CCA3-6412-A2EF-9C6FA90135F5</referedAttribute>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -45,8 +51,10 @@
 <createdBy>Formateur_DEV</createdBy>
 <createdTime>2017-04-07 09:27:13 UTC</createdTime>
 <ownerDesignName>Lycée</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="875B20A3-DE2C-E494-9F94-EE30D02CE557" value="true"/>
+<item key="29ED7560-9C41-4D2A-BC13-1BED54C60496" value="true"/>
+<item key="875B20A3-DE2C-E494-9F94-EE30D02CE557" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

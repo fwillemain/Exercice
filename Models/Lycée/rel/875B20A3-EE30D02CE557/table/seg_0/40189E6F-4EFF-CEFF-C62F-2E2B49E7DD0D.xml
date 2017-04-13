@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="40189E6F-4EFF-CEFF-C62F-2E2B49E7DD0D" name="Evaluation">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>720900F3-C5DC-57BE-0E89-609F32F72DB2</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DateEval" id="CECCD651-D36C-E818-02D5-44C6D95844BE">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>8A951BC7-A288-79FC-7909-35F8E0817B7B</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Note" id="B31CC417-52BD-0E0A-0BC9-AE6725EE929D">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>281FE1F3-1E7E-9D44-15EB-F440575EA596</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DateEval1" id="5313EA1B-4406-52F9-BFC4-A591F378AB91">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>33AE2C28-45C5-D32E-33D8-43339D465973</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Matière_Id" id="4C9B3CAE-31E0-2308-8247-C9982C562AC2">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>3FFC448C-168E-519C-DDF5-A2CFCFAA8044</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FFFD8480-22B1-7FF0-95B9-33158266B6B7" referredColumn="D4BC758A-3941-7861-55A7-1577A79F80B8"/>
+</associations>
+</Column>
+<Column name="DateEval2" id="A144A7C5-1B4C-BDD3-4186-854F2ABF18A0">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>FEC0C2E4-C552-A403-2A7D-70E6000C0ECF</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="63C002A8-75DF-C96C-DC93-E1CAFF4E7E27" name="Evaluation_PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>BB601EAB-36EB-0658-0654-C990BB550EC3</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CECCD651-D36C-E818-02D5-44C6D95844BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B14BAF29-6D88-80AC-3F47-5456DDFBB243" name="Evaluation_Elève_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>3F1BDA95-C177-71A0-1CB6-FECFC9C6C64B</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="4BB02890-0C71-DD4E-8A67-7AD45D610E6F" name="Evaluation_Matière_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>46EC2976-992A-877A-5AF2-3A7906D81656</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C9B3CAE-31E0-2308-8247-C9982C562AC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

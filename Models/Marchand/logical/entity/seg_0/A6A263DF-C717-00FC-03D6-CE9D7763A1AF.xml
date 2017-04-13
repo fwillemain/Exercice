@@ -23,9 +23,9 @@
 <engineerTo>
 <item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
 </engineerTo>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>5412AD9F-6422-FDBF-6956-FFF1ABCAE16E</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="DateEntrée" id="5EFD2691-1559-F1EF-3F6C-1B4BC3A51B65">
@@ -61,12 +61,22 @@
 <engineerTo>
 <item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <referedAttribute>09D467D2-D2D0-32B0-4D94-57EF0C42F5E0</referedAttribute>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<domain>C12ED81C-82AF-1FAF-5F61-558D4710BBC1</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="02AC53DF-CBD4-986A-1676-66318B4FD71A" name="Salarié PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-07 07:58:38 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<engineerTo>
+<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+</identifier>
+</identifiers>
 </Entity>

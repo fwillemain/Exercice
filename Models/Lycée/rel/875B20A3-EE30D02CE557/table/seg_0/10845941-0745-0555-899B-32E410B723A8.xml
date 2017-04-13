@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="10845941-0745-0555-899B-32E410B723A8" name="Elève">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 13:16:23 UTC</createdTime>
+<generatorID>C967E846-39B5-6629-8C97-CC5565F0E45F</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="3E5C5FC5-E67F-A217-51D1-4922F6DB4260">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 13:16:23 UTC</createdTime>
+<generatorID>525B9622-CCA3-6412-A2EF-9C6FA90135F5</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0CA03A45-7756-2828-2F6B-DA7234D0C797" referredColumn="D6631F41-DA89-7268-D630-30C2B89553E1"/>
+</associations>
+</Column>
+<Column name="Classe_Code" id="821B2D65-7682-F817-02D3-3AFA1F7A2A7A">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 13:16:23 UTC</createdTime>
+<generatorID>B0CA7668-C78F-E931-D4D7-70369ECF886A</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3C8D8AD8-B00E-140B-22A3-62EEC3F7C8B1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A5D72D88-C12E-52E2-EB9C-C84D342CD811" referredColumn="7F8CE878-9EDB-1210-72B9-689A96730F8B"/>
+</associations>
+</Column>
+<Column name="Délégué" id="FC6AF1C7-0220-E506-06B8-7C4E40980998">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 13:16:23 UTC</createdTime>
+<generatorID>BF817371-8E47-1DCC-3874-FCBE647BEE2D</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<dependOnForeignKeyID>A5D72D88-C12E-52E2-EB9C-C84D342CD811</dependOnForeignKeyID>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EC8D1E4E-DFAA-2944-D87A-B5324754A858" name="Elève_PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 13:16:23 UTC</createdTime>
+<generatorID>EF55444E-729F-76DD-4477-28206758AD2D</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E5C5FC5-E67F-A217-51D1-4922F6DB4260"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ABCE9B9C-D3CC-6C46-A86E-C3CF4B1CDBA6" name="Elève_Personne_FK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 13:16:23 UTC</createdTime>
+<generatorID>A57127FB-C50D-04CB-AB59-15957126A145</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E5C5FC5-E67F-A217-51D1-4922F6DB4260"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B5DF1411-FD36-3833-03BE-D3D3030A23E9" name="Elève_Classe_FK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 13:16:23 UTC</createdTime>
+<generatorID>8C1EE5E1-A871-6194-45FB-3511F65EEF8B</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="821B2D65-7682-F817-02D3-3AFA1F7A2A7A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

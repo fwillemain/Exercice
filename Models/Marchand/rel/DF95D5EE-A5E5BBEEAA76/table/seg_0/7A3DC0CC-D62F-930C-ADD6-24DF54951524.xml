@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7A3DC0CC-D62F-930C-ADD6-24DF54951524" name="Salarié">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<generatorID>6618CCB1-812D-C9FC-437A-8DC24D66D72A</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<ordsAlias>salarie</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="626297B3-590C-60F3-EAE2-6797946E3BEA">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<generatorID>39887ED0-47B4-8367-33D5-1923373048C3</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4DE99886-56F4-ADE4-E229-C0008240E5BD" referredColumn="F9A90C45-FEFC-662F-FF09-9EA2418A0C4A"/>
+</associations>
+</Column>
+<Column name="Service_Id" id="C4151D1E-BEE3-5911-B505-BFA8043E509B">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<generatorID>752B99F4-76B5-DA13-E34F-9EFA358B0B61</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="707FDDF0-AC95-D350-DF15-54E7278EB523" referredColumn="6BB0C849-0257-CCB5-893F-F208D081186B"/>
+</associations>
+</Column>
+<Column name="NumSecu" id="D6ECA483-6369-8D74-D5A9-AD89C24A19E3">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<generatorID>05C5A0D7-A899-8E0E-3D22-C5F685CDDF64</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DateEntrée" id="11766726-07C8-C60E-5B47-BA3D53FB4BE9">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<generatorID>C61F021A-70EF-244A-E242-4D8AF1EEE2C5</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DateSortie" id="1653AB94-907C-B63A-A4CB-B80773CBFE73">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<generatorID>FD20611E-86AE-77F9-2F6B-6617BDF64F05</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3E267C79-56A6-843C-0C41-F7C8AB959524" name="Salarié_PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<generatorID>0310EF2E-A852-999F-98B9-5CA53B001EB3</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="626297B3-590C-60F3-EAE2-6797946E3BEA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0056B662-EF4A-41DC-EECB-1A9A82381517" name="Salarié_PKv1">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<generatorID>C44E23A1-BE56-B23B-F278-92FA343052DE</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D6ECA483-6369-8D74-D5A9-AD89C24A19E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="086DE0E5-9DCB-D90D-2C34-74C2FA6F102F" name="Salarié_Personne_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<generatorID>C99FBE0F-3B9B-E1D6-42B2-933E83C1F3F5</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="626297B3-590C-60F3-EAE2-6797946E3BEA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FD58653C-2B33-5848-3985-F8961D854489" name="Salarié_Service_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<generatorID>BC68F2D8-7F09-465F-CEB6-6237EB53BB00</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C4151D1E-BEE3-5911-B505-BFA8043E509B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

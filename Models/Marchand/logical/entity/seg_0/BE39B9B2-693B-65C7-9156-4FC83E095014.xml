@@ -15,18 +15,6 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Id" id="5B1D4BDE-7459-41B9-AE3F-A95788057626">
-<createdBy>Cyril</createdBy>
-<createdTime>2017-03-16 20:56:37 UTC</createdTime>
-<ownerDesignName>Marchand</ownerDesignName>
-<engineerTo>
-<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
-</engineerTo>
-<use>0</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<domain>C12ED81C-82AF-1FAF-5F61-558D4710BBC1</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="Quantité" id="ADB3166A-B2FF-B7E2-137F-CBA97A8F7C40">
 <createdBy>Cyril</createdBy>
 <createdTime>2017-03-16 22:10:27 UTC</createdTime>
@@ -46,9 +34,9 @@
 <engineerTo>
 <item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
 </engineerTo>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT043</logicalDatatype>
-<domain>FAFCBEBA-E87A-904F-F76B-D7A590DD90A9</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="PourcentRemise" id="3C6750F2-04F3-06D7-8802-F5A46317B9AB">
@@ -72,11 +60,10 @@
 <engineerTo>
 <item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <referedAttribute>D9957FFE-C5D0-FF9E-B741-3CDA1A66E632</referedAttribute>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<domain>C12ED81C-82AF-1FAF-5F61-558D4710BBC1</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Code" id="E0DC8457-B859-617C-3273-5557A520C5B0">
@@ -87,25 +74,39 @@
 <engineerTo>
 <item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <referedAttribute>69617754-F4C2-0C63-A012-F2D335E07EA4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>5412AD9F-6422-FDBF-6956-FFF1ABCAE16E</domain>
+<domain>3C8D8AD8-B00E-140B-22A3-62EEC3F7C8B1</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-</attributes>
-<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="2E68C896-88F2-75A5-E54D-5E6AC944EA37" name="LigneCommande PK">
-<createdBy>Cyril</createdBy>
-<createdTime>2017-03-16 21:02:45 UTC</createdTime>
+<Attribute name="EtatLivraison" id="FDFD23FA-E6A0-5A78-CDBF-EE466B24869B">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-07 07:51:51 UTC</createdTime>
 <ownerDesignName>Marchand</ownerDesignName>
 <engineerTo>
 <item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
 </engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9205C483-BF7B-E050-B6BD-81BE6B431F96" name="LigneCommande PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 13:38:16 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="false"/>
+</engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>5B1D4BDE-7459-41B9-AE3F-A95788057626</attributeRef>
+<attributeRef>01935470-D211-EF4A-6187-AF0180BA76A3</attributeRef>
+<attributeRef>E0DC8457-B859-617C-3273-5557A520C5B0</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

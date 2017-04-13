@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="HistoriqueLieu Vache FK" directorySegmentName="seg_0" id="34C93B06-6A86-030E-8622-245B2B830BE1">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-06 21:50:40 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<engineerTo>
+<item key="A7437857-EAA1-7F69-5923-50EE6F0AF293" value="true"/>
+<item key="C664864A-B0DB-C2BD-9758-9AF193D64972" value="true"/>
+</engineerTo>
+<sourcePk>05BB10FD-E323-4844-541A-34FF97A041F4</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>26777191-25E4-A022-B077-A84ABD1F2B79</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C75B37F4-4978-F761-3A9A-45CC2385681B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

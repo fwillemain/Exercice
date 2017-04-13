@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C37F9CAE-20D5-8070-636F-3DADE77A1EAF" name="Client">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 09:01:40 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="C0AB1A44-8D7B-1FC6-C7D9-7D0ADAE0BAD7">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 09:03:05 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>58C558AA-944A-9E5E-2EF8-8080C457B1D9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nom" id="E96B9A05-78C7-0045-C685-2F34941100DF">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 09:03:49 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>F09CCBF4-7EDC-C2BD-35E1-A7380CFD3230</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Prénom" id="8B4BAFB2-D0DB-6336-1A5C-B1B9824E84AF">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 09:03:49 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>F09CCBF4-7EDC-C2BD-35E1-A7380CFD3230</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1C3F26AD-D45E-E75F-1A48-1A45F9BDE613" name="Client_PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 09:03:05 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0AB1A44-8D7B-1FC6-C7D9-7D0ADAE0BAD7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Supérieur hiérarchique" directorySegmentName="seg_0" id="976069A2-2994-E601-2A25-DA8CBB299B1E">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 12:18:21 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D686763B-43DF-3978-1B0C-E11F65007FE3" value="true"/>
+</engineerTo>
+<targetPk>1A4AB022-95A8-0967-847F-E7C2EB7DD6BC</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>81FD86E6-E2E2-017C-23F6-C88879C7184C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>81FD86E6-E2E2-017C-23F6-C88879C7184C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

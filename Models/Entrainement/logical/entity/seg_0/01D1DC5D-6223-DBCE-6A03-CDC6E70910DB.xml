@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="01D1DC5D-6223-DBCE-6A03-CDC6E70910DB" name="Lit">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 11:32:46 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="97480CC8-6592-DCDC-CD11-5AC8D7A0FE9A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="D0FBAA5F-F41D-BB0C-1AD3-D77AB23C4B6D">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 11:40:28 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="97480CC8-6592-DCDC-CD11-5AC8D7A0FE9A" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Type" id="CB294D55-49FC-6F0F-4386-AC467E8C1AA3">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 11:33:10 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="97480CC8-6592-DCDC-CD11-5AC8D7A0FE9A" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id1" id="0DBEC8FB-D968-1328-6775-CE012FAD66F5">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 11:40:50 UTC</createdTime>
+<generatorID>27035388-055A-FC43-949E-469807C9CCB1</generatorID>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="97480CC8-6592-DCDC-CD11-5AC8D7A0FE9A" value="true"/>
+</engineerTo>
+<referedAttribute>A88506A5-1F40-F2CE-1381-683F981D3B7F</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="56886A30-D2DE-AB9B-5DBC-44F1CFAC814F" name="Lit PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 11:38:12 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="97480CC8-6592-DCDC-CD11-5AC8D7A0FE9A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D0FBAA5F-F41D-BB0C-1AD3-D77AB23C4B6D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

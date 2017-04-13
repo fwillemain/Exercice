@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="64FA4919-BAEC-AA80-C701-5F01E6F551A9" name="Lieu">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:56:20 UTC</createdTime>
+<generatorID>FE45E0C4-A001-6851-9EAB-C39CB07B21DA</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="189CFD7D-7ADD-DD2C-B19B-2CE2EECEB0AC">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:56:20 UTC</createdTime>
+<generatorID>F68C209B-01E9-4D14-3F43-8C35EE25845E</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Adresse" id="32D3C51A-134B-2B85-B904-C1BC7F17ED83">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:56:20 UTC</createdTime>
+<generatorID>E5D78F11-2725-DE82-8654-469FA197149B</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>0CB5EFB0-AD54-1DC8-ED7E-5EEBEDC93A2B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pays_Code" id="39F9FEA6-E840-7E06-D412-F2B9B7D5F614">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:56:20 UTC</createdTime>
+<generatorID>5C7271A8-106A-14DE-BDFB-52C498F5708A</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3C8D8AD8-B00E-140B-22A3-62EEC3F7C8B1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="32EFE946-6F48-3D59-9713-36EEBF4A93FB" referredColumn="B8D01905-4B44-4AA4-C1AB-73C9F6C78A46"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3C18624F-31E4-AD47-0D0B-43D3D5CFECF1" name="Lieu_PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:56:20 UTC</createdTime>
+<generatorID>FAE9E12C-53BE-F832-E923-9389F3C0B08D</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="189CFD7D-7ADD-DD2C-B19B-2CE2EECEB0AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="37C43E6F-974A-CA7F-324E-5200BCDC6A57" name="Lieu_Pays_FK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:56:20 UTC</createdTime>
+<generatorID>C76917CA-0FA9-8704-9F4B-CC3DB4A3E711</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39F9FEA6-E840-7E06-D412-F2B9B7D5F614"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

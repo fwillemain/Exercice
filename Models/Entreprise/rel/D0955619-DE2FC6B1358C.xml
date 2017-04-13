@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" mainViewID="A309B497-6D0B-50A8-1313-13A64BEC1614">
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="MPD manuel" id="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" mainViewID="A309B497-6D0B-50A8-1313-13A64BEC1614">
 <createdBy>fwillemain</createdBy>
 <createdTime>2017-04-06 12:04:19 UTC</createdTime>
 <ownerDesignName>Entreprise</ownerDesignName>
-<shouldBeOpen>false</shouldBeOpen>
+<shouldBeOpen>true</shouldBeOpen>
 <selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
 </relationalModel>

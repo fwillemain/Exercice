@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9813A9CA-30E9-6FCF-2DE4-1CE3C0D48958" name="SalariéProjet">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Salarié_Numéro_sécu" id="777D2537-0881-1EB1-5076-5AA14CA9D4D4">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="24477A5D-794F-DCD1-46E6-D1D81F7D4A29" referredColumn="9B65133A-128A-85D7-AAF6-D5BCD9E1DAA9"/>
+</associations>
+</Column>
+<Column name="Projet_Code" id="C1BF5C28-DE48-5CD8-6C57-E633B97BBEFC">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3C8D8AD8-B00E-140B-22A3-62EEC3F7C8B1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B49E8006-6F46-A67A-9604-625DDEC42E3A" referredColumn="937DEF91-43C3-9102-57C2-CD794AD42D9A"/>
+</associations>
+</Column>
+<Column name="HeuresTravaillées" id="F3310E0C-DF82-C6D7-C30A-5CBBA2E55A52">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<generatorID>E682F1F5-0008-8169-4095-C6678E060223</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="22E79430-12C0-7190-94EF-D3FDEAC6EA70" name="Relation_9_PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="777D2537-0881-1EB1-5076-5AA14CA9D4D4"/>
+<colUsage columnID="C1BF5C28-DE48-5CD8-6C57-E633B97BBEFC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EC0125DC-1C38-C483-2AD6-A17C4DFE4BA5" name="FK_ASS_8">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<generatorID>D68E2BB8-690E-2F17-CFED-EB448FA25B95</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="777D2537-0881-1EB1-5076-5AA14CA9D4D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A998DCF1-96FF-AEA3-0027-37C8F46A502D" name="FK_ASS_9">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<generatorID>D68E2BB8-690E-2F17-CFED-EB448FA25B95</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C1BF5C28-DE48-5CD8-6C57-E633B97BBEFC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,14 +1,15 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Travaille" directorySegmentName="seg_0" id="1A77814A-FF83-40B3-16BA-143D6613CF25">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SalariéProjet" directorySegmentName="seg_0" id="1A77814A-FF83-40B3-16BA-143D6613CF25">
 <createdBy>fwillemain</createdBy>
 <createdTime>2017-04-06 12:18:02 UTC</createdTime>
 <ownerDesignName>Entreprise</ownerDesignName>
 <engineerTo>
 <item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+<item key="7B894A84-1A38-7670-3CD3-8DEEA440F3A1" value="true"/>
 </engineerTo>
 <identifying>false</identifying>
-<optionalSource>true</optionalSource>
-<optionalTarget>false</optionalTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
 <sourceCardinality>*</sourceCardinality>
 <sourceEntity>F4D83C04-CB8F-9712-53C1-1A578EA7D3E4</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
@@ -22,9 +23,11 @@
 <ownerDesignName>Entreprise</ownerDesignName>
 <engineerTo>
 <item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+<item key="7B894A84-1A38-7670-3CD3-8DEEA440F3A1" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </attribute>
 </attributes>

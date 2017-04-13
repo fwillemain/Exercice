@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="77051D54-CCD1-5F97-EAAC-8E169E4FB3B3" name="Article">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:02:09 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Code" id="FEB8D99A-C932-D8F6-45EB-DE14ED55641A">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:05:29 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Libellé" id="472F5377-27F3-EB03-0768-D4DE5B45DC69">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:05:29 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>B7068136-5693-33BA-92E9-A6641F047A7B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PU" id="42F04F8C-A55C-E723-BBBA-77D28956234E">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:05:29 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<domain>BC7DF8F1-F927-7927-2CEE-EB9C01E86DC5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2A4C7BC9-51E1-01D8-08B3-404A444E11A1" name="Article_PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:05:29 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FEB8D99A-C932-D8F6-45EB-DE14ED55641A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

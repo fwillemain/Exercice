@@ -1,2 +1,60 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<oracle.dbtools.crest.model.design.relational.RelationalDesign/>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="01D6AFEF-0DC5-587B-1737-72E7376D3C92" name="Classe" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="875B20A3-DE2C-E494-9F94-EE30D02CE557" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="052BB50C-7561-16A8-541A-E14366DF11AD" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="10845941-0745-0555-899B-32E410B723A8" name="Elève" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="875B20A3-DE2C-E494-9F94-EE30D02CE557" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="122217DC-3156-1C00-B772-ED5532B8ECC5" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="1BCA7485-0CC2-9278-C361-3BCA99CE89E5" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="1E67783D-1C39-284A-BC70-B6914519D880" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="1FDB231D-A70D-4292-1791-87FBFB6242E2" name="Enseignement" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="875B20A3-DE2C-E494-9F94-EE30D02CE557" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="29EC2AD0-D24C-4455-0490-2AF765517E1D" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="340EF7F5-9636-E392-A9E8-42EAC2058595" name="Matière" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="875B20A3-DE2C-E494-9F94-EE30D02CE557" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="345DA100-007B-65E7-6D1F-711D00189A0B" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="40189E6F-4EFF-CEFF-C62F-2E2B49E7DD0D" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="4356F435-50F4-A297-CA90-A055A472CBD6" name="Conseil" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="875B20A3-DE2C-E494-9F94-EE30D02CE557" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="4C804DCD-6F19-6C92-BD52-5FDE65B58A17" name="Professeur" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="875B20A3-DE2C-E494-9F94-EE30D02CE557" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="575D5408-7E69-DF26-6DC0-A23C5B08A1E4" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="588B5999-C133-D1EA-BE07-B875C0F09BEE" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="6F590EA3-C6B7-93FD-E806-573CCA6BBF6F" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="6FAF687D-F8D0-CF3E-44E1-42D684A6F151" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="8D3C2951-C9A5-2D44-AA09-5A2B5CDFA6B1" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="9289E91D-7267-AF2B-8CCC-5981866A2CBF" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="A8D3177B-3D7A-7544-D008-D54B7FFF72D9" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="B5D2B03E-7BA2-778E-4D37-03EBE4484591" name="Evaluation" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="875B20A3-DE2C-E494-9F94-EE30D02CE557" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="C6A5E596-2A0A-9A0C-258A-AF54CAB4A10D" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="CE463446-2B16-38C0-138D-67B373B9B203" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="FA512A04-B802-5401-FBBA-0A5EA864FC08" name="Personne" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="875B20A3-DE2C-E494-9F94-EE30D02CE557" propertySourceId="" propertyTargetId=""/>
+   <object objectType="FKIndexAssociation" objectID="02BDA31E-4F23-173F-2F3E-947746F92695" name="" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="0CA03A45-7756-2828-2F6B-DA7234D0C797" name="Elève_Personne_FK" containerID="10845941-0745-0555-899B-32E410B723A8" refContainerID="FA512A04-B802-5401-FBBA-0A5EA864FC08" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" propertyParentId="875B20A3-DE2C-E494-9F94-EE30D02CE557" propertySourceId="FA512A04-B802-5401-FBBA-0A5EA864FC08" propertyTargetId="10845941-0745-0555-899B-32E410B723A8"/>
+   <object objectType="FKIndexAssociation" objectID="11CDFCA5-E9EA-1E9A-2FE0-B0D49C06AC3F" name="" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="2078CF3C-4A46-5CB3-F8ED-C39AEFFE319E" name="Professeur_Personne_FK" containerID="4C804DCD-6F19-6C92-BD52-5FDE65B58A17" refContainerID="FA512A04-B802-5401-FBBA-0A5EA864FC08" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" propertyParentId="875B20A3-DE2C-E494-9F94-EE30D02CE557" propertySourceId="FA512A04-B802-5401-FBBA-0A5EA864FC08" propertyTargetId="4C804DCD-6F19-6C92-BD52-5FDE65B58A17"/>
+   <object objectType="FKIndexAssociation" objectID="297DC205-7E30-3676-8030-ED76B2B1F4C1" name="Enseignement_Classe_FK" containerID="1FDB231D-A70D-4292-1791-87FBFB6242E2" refContainerID="01D6AFEF-0DC5-587B-1737-72E7376D3C92" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" propertyParentId="875B20A3-DE2C-E494-9F94-EE30D02CE557" propertySourceId="01D6AFEF-0DC5-587B-1737-72E7376D3C92" propertyTargetId="1FDB231D-A70D-4292-1791-87FBFB6242E2"/>
+   <object objectType="FKIndexAssociation" objectID="2B605912-F9A1-6858-E970-5991E55F2DBD" name="" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="315CB4D2-0240-197E-A6E4-D59E46371FA9" name="Conseil_Classe_FK" containerID="4356F435-50F4-A297-CA90-A055A472CBD6" refContainerID="01D6AFEF-0DC5-587B-1737-72E7376D3C92" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" propertyParentId="875B20A3-DE2C-E494-9F94-EE30D02CE557" propertySourceId="01D6AFEF-0DC5-587B-1737-72E7376D3C92" propertyTargetId="4356F435-50F4-A297-CA90-A055A472CBD6"/>
+   <object objectType="FKIndexAssociation" objectID="340E4ACA-7490-AACD-B7CC-1D66510A3EC9" name="" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="371A54A7-CCD8-82B7-D109-2F6293C450EA" name="" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="3B07FEDF-4581-A435-04F7-05EC4B45F20F" name="" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="48BA6C20-6FB9-62F2-FC8C-F2F937FFF7A1" name="" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="50CCA9F5-42C4-6549-0FB2-10DC19553253" name="" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="5BC4D53E-963C-F055-1391-B21DFF549598" name="" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="63453088-467B-75A2-BEEE-12701BA81169" name="Enseignement_Matière_FK" containerID="1FDB231D-A70D-4292-1791-87FBFB6242E2" refContainerID="340EF7F5-9636-E392-A9E8-42EAC2058595" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" propertyParentId="875B20A3-DE2C-E494-9F94-EE30D02CE557" propertySourceId="340EF7F5-9636-E392-A9E8-42EAC2058595" propertyTargetId="1FDB231D-A70D-4292-1791-87FBFB6242E2"/>
+   <object objectType="FKIndexAssociation" objectID="7116999B-6027-63FF-9317-0B6C1883618D" name="" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="73EA39B4-4A2D-1FA7-F9C3-EE906752E5DF" name="" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="91DEC5C2-F03A-44F8-A9D1-26584BC64D94" name="" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="9AF45548-D8C6-219F-1E8C-056A440D98B2" name="" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="9BCA2EBE-A1E6-F829-5725-2C30221B1B99" name="" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="9C37DA57-BC52-762F-2250-914300F4CF52" name="" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="9E8F4C09-366B-0A3F-E4BA-4B8F921BF231" name="Enseignement_Professeur_FK" containerID="1FDB231D-A70D-4292-1791-87FBFB6242E2" refContainerID="4C804DCD-6F19-6C92-BD52-5FDE65B58A17" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" propertyParentId="875B20A3-DE2C-E494-9F94-EE30D02CE557" propertySourceId="4C804DCD-6F19-6C92-BD52-5FDE65B58A17" propertyTargetId="1FDB231D-A70D-4292-1791-87FBFB6242E2"/>
+   <object objectType="FKIndexAssociation" objectID="A5D72D88-C12E-52E2-EB9C-C84D342CD811" name="Elève_Classe_FK" containerID="10845941-0745-0555-899B-32E410B723A8" refContainerID="01D6AFEF-0DC5-587B-1737-72E7376D3C92" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" propertyParentId="875B20A3-DE2C-E494-9F94-EE30D02CE557" propertySourceId="01D6AFEF-0DC5-587B-1737-72E7376D3C92" propertyTargetId="10845941-0745-0555-899B-32E410B723A8"/>
+   <object objectType="FKIndexAssociation" objectID="BF4DF4EE-10EB-5E21-D463-DF4FAAD35FCE" name="Evaluation_Matière_FK" containerID="B5D2B03E-7BA2-778E-4D37-03EBE4484591" refContainerID="340EF7F5-9636-E392-A9E8-42EAC2058595" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" propertyParentId="875B20A3-DE2C-E494-9F94-EE30D02CE557" propertySourceId="340EF7F5-9636-E392-A9E8-42EAC2058595" propertyTargetId="B5D2B03E-7BA2-778E-4D37-03EBE4484591"/>
+   <object objectType="FKIndexAssociation" objectID="CA21FA2B-4BDD-4D4F-D7C8-9A779CAEA3A6" name="" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="D3F4D3D3-C7EE-9CB9-F5FC-60B3CE2B8D34" name="" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="E2312198-661E-F996-6C1E-F9BF65DFB49A" name="Classe_Professeur_FK" containerID="01D6AFEF-0DC5-587B-1737-72E7376D3C92" refContainerID="4C804DCD-6F19-6C92-BD52-5FDE65B58A17" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" propertyParentId="875B20A3-DE2C-E494-9F94-EE30D02CE557" propertySourceId="4C804DCD-6F19-6C92-BD52-5FDE65B58A17" propertyTargetId="01D6AFEF-0DC5-587B-1737-72E7376D3C92"/>
+   <object objectType="FKIndexAssociation" objectID="E2A8AE8A-86F5-F7D3-14A8-D82548B750C4" name="" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="EB667CFF-46CB-7B59-C497-B4CE6972B0E2" name="Evaluation_Elève_FK" containerID="B5D2B03E-7BA2-778E-4D37-03EBE4484591" refContainerID="10845941-0745-0555-899B-32E410B723A8" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" propertyParentId="875B20A3-DE2C-E494-9F94-EE30D02CE557" propertySourceId="10845941-0745-0555-899B-32E410B723A8" propertyTargetId="B5D2B03E-7BA2-778E-4D37-03EBE4484591"/>
+   <object objectType="FKIndexAssociation" objectID="FFF6510A-4344-57AF-B448-E0D6380E7CC6" name="" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="FFFD8480-22B1-7FF0-95B9-33158266B6B7" name="" seqName="seg_0"/>
+   <object objectType="FKArc" objectID="6DF2EBC7-E0A7-6EE4-37DF-D9AB4218F146" name="FKArc_2" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.FKArc" propertyParentId="875B20A3-DE2C-E494-9F94-EE30D02CE557" propertySourceId="" propertyTargetId=""/>
+   <object objectType="FKArc" objectID="AB1A0514-5E35-08B6-B599-AC67DA4D5E2E" name="" seqName="seg_0"/>
+   <object objectType="FKArc" objectID="CD58F164-76D4-9633-F682-623E18E352A0" name="" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

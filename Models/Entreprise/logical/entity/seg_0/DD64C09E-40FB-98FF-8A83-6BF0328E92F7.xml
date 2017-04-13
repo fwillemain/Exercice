@@ -5,6 +5,7 @@
 <ownerDesignName>Entreprise</ownerDesignName>
 <engineerTo>
 <item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+<item key="7B894A84-1A38-7670-3CD3-8DEEA440F3A1" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -21,8 +22,11 @@
 <ownerDesignName>Entreprise</ownerDesignName>
 <engineerTo>
 <item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+<item key="7B894A84-1A38-7670-3CD3-8DEEA440F3A1" value="true"/>
 </engineerTo>
 <use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Nom" id="7226F503-4090-D5B0-94F1-5F3A901551B2">
@@ -31,8 +35,11 @@
 <ownerDesignName>Entreprise</ownerDesignName>
 <engineerTo>
 <item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+<item key="7B894A84-1A38-7670-3CD3-8DEEA440F3A1" value="true"/>
 </engineerTo>
 <use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>6D1C2157-754A-83DD-4B48-2AF727A94D15</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -41,8 +48,10 @@
 <createdBy>fwillemain</createdBy>
 <createdTime>2017-04-06 12:09:34 UTC</createdTime>
 <ownerDesignName>Entreprise</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
 <item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+<item key="7B894A84-1A38-7670-3CD3-8DEEA440F3A1" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

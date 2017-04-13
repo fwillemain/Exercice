@@ -1,0 +1,192 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="81FD86E6-E2E2-017C-23F6-C88879C7184C" name="Salarié">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 12:06:04 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D686763B-43DF-3978-1B0C-E11F65007FE3" value="true"/>
+<item key="A73FB2C5-CA3B-8FB2-5A3E-FC5A41009102" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Numéro sécu" id="EE7C46FC-D8A6-9DA1-F0CA-D8A3E8096F01">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 12:08:47 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D686763B-43DF-3978-1B0C-E11F65007FE3" value="true"/>
+<item key="A73FB2C5-CA3B-8FB2-5A3E-FC5A41009102" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Sexe" id="D7552DCE-6CBA-CE80-EA8C-8DDEE4BBD0CC">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 12:10:28 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D686763B-43DF-3978-1B0C-E11F65007FE3" value="true"/>
+<item key="A73FB2C5-CA3B-8FB2-5A3E-FC5A41009102" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nom" id="D045192F-E1B8-6AD5-FF16-2905B78EFE12">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 12:10:04 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D686763B-43DF-3978-1B0C-E11F65007FE3" value="true"/>
+<item key="A73FB2C5-CA3B-8FB2-5A3E-FC5A41009102" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Prénom" id="8CE4B270-E3F5-8833-D6A4-A989AC5692E0">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 12:10:16 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D686763B-43DF-3978-1B0C-E11F65007FE3" value="true"/>
+<item key="A73FB2C5-CA3B-8FB2-5A3E-FC5A41009102" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DateNaissance" id="807EE07F-E52A-3025-D455-88EB8C4D6EF4">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 12:28:24 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D686763B-43DF-3978-1B0C-E11F65007FE3" value="true"/>
+<item key="A73FB2C5-CA3B-8FB2-5A3E-FC5A41009102" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Adresse" id="7C80CF12-E5BA-234B-C020-C3D797C3FFAC">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 12:10:56 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D686763B-43DF-3978-1B0C-E11F65007FE3" value="true"/>
+<item key="A73FB2C5-CA3B-8FB2-5A3E-FC5A41009102" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NumTel" id="544C599D-FDAF-F1A0-68EE-66446C397FD8">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 12:11:31 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D686763B-43DF-3978-1B0C-E11F65007FE3" value="true"/>
+<item key="A73FB2C5-CA3B-8FB2-5A3E-FC5A41009102" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Salaire" id="09916480-F656-D950-1AF9-A550D79B1D5D">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 12:12:02 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D686763B-43DF-3978-1B0C-E11F65007FE3" value="true"/>
+<item key="A73FB2C5-CA3B-8FB2-5A3E-FC5A41009102" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Code1" id="6FCD989E-01AC-9857-7B88-AEA057305A06">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 12:30:37 UTC</createdTime>
+<generatorID>71007938-74BB-06D1-7A03-B793755365BB</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D686763B-43DF-3978-1B0C-E11F65007FE3" value="true"/>
+<item key="A73FB2C5-CA3B-8FB2-5A3E-FC5A41009102" value="true"/>
+</engineerTo>
+<referedAttribute>E8960B71-4D93-C733-3836-5B53C10A749E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3C8D8AD8-B00E-140B-22A3-62EEC3F7C8B1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Numéro sécu1" id="4A60E6F2-4491-5B90-E3C2-D0AB21DCD1E0">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-09 17:53:22 UTC</createdTime>
+<generatorID>92D319F5-65F8-B4D8-EEAB-B41A759A182E</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D686763B-43DF-3978-1B0C-E11F65007FE3" value="true"/>
+<item key="A73FB2C5-CA3B-8FB2-5A3E-FC5A41009102" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>EE7C46FC-D8A6-9DA1-F0CA-D8A3E8096F01</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Numéro sécu2" id="A84C9CAA-787D-9828-37F5-0F975EF5E723">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:35:52 UTC</createdTime>
+<generatorID>976069A2-2994-E601-2A25-DA8CBB299B1E</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D686763B-43DF-3978-1B0C-E11F65007FE3" value="true"/>
+<item key="A73FB2C5-CA3B-8FB2-5A3E-FC5A41009102" value="true"/>
+</engineerTo>
+<referedAttribute>EE7C46FC-D8A6-9DA1-F0CA-D8A3E8096F01</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1A4AB022-95A8-0967-847F-E7C2EB7DD6BC" name="Salarié PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 12:09:31 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="D686763B-43DF-3978-1B0C-E11F65007FE3" value="true"/>
+<item key="A73FB2C5-CA3B-8FB2-5A3E-FC5A41009102" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EE7C46FC-D8A6-9DA1-F0CA-D8A3E8096F01</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ED1E7A73-F0E4-089D-38E7-356F20581FDC" name="Commande">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:02:05 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="E743F749-62EB-1305-6BCF-E8CB144EF695">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:04:31 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DateCmd" id="5896AC96-8B86-EB4A-E48B-6D8D5E6CA81A">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:04:50 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Client_Id" id="93447110-2AA7-9D48-80EC-8BCD9C8D18B5">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:08:38 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="88B0DDB2-D397-C583-7250-56A3AB204F1C" referredColumn="CB79E8DA-25AF-83EE-F7EF-6F133EF8C1B8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D13CB3DA-B725-4E94-2D93-99558AF63DDC" name="Commande_PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:04:31 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E743F749-62EB-1305-6BCF-E8CB144EF695"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0C865665-2347-638B-B2DD-15D1A5B071C4" name="Commande_Client_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:08:38 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="93447110-2AA7-9D48-80EC-8BCD9C8D18B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

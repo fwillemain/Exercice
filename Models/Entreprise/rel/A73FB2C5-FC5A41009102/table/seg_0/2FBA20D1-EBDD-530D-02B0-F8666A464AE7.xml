@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2FBA20D1-EBDD-530D-02B0-F8666A464AE7" name="Fonction">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<generatorID>DBDBE8F1-04D9-3BF9-C2D9-570813812E79</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Code" id="9636F20D-B09A-11EB-FB0C-D7940D9D7E8D">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<generatorID>28AE591F-748A-DFB2-0587-307BFD199BB0</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3C8D8AD8-B00E-140B-22A3-62EEC3F7C8B1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Libellé" id="184FB2E1-79EC-BAD3-944F-7ADFD7F38C07">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<generatorID>858A9CE0-5A7D-8AAC-0B9D-0CC2567FB1A8</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>F09CCBF4-7EDC-C2BD-35E1-A7380CFD3230</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3788D3B8-6FAA-950F-24C9-BABFBE854A2F" name="Fonction_PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<generatorID>CCE7568A-CA6D-E9D5-0488-1A9BAF978820</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9636F20D-B09A-11EB-FB0C-D7940D9D7E8D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

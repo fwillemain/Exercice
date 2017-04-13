@@ -23,6 +23,8 @@
 <item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
 </engineerTo>
 <use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C473CA17-FD47-5170-4376-4822F9175FD8</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Nom" id="4144BF13-6973-3551-C0B7-E433EE91A908">
@@ -33,6 +35,8 @@
 <item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
 </engineerTo>
 <use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>B50956F4-7C3F-31CE-F6D8-AD20C1D54CB4</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Prénom" id="E0804303-B58F-D73E-AE0B-34C33F4CAAA2">
@@ -43,6 +47,8 @@
 <item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
 </engineerTo>
 <use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>B50956F4-7C3F-31CE-F6D8-AD20C1D54CB4</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -51,8 +57,9 @@
 <createdBy>Formateur_DEV</createdBy>
 <createdTime>2017-04-07 12:31:47 UTC</createdTime>
 <ownerDesignName>GrandChelem</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
+<item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Box Batiment FK" directorySegmentName="seg_0" id="FC091DB4-8AA8-DB29-559E-CEB1CD9999DF">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-06 21:49:17 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<engineerTo>
+<item key="A7437857-EAA1-7F69-5923-50EE6F0AF293" value="true"/>
+<item key="C664864A-B0DB-C2BD-9758-9AF193D64972" value="true"/>
+</engineerTo>
+<sourcePk>8BEF18E9-B6A7-B26F-DC2B-20535C2F7E9D</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3355AC90-305C-3363-B20B-E884C3D79FF9</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>02059CCE-3A76-2D7C-0B21-3A5A6F2C9B4B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

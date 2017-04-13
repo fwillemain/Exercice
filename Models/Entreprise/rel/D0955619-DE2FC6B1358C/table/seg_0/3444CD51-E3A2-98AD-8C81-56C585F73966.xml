@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3444CD51-E3A2-98AD-8C81-56C585F73966" name="Service">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:20:23 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="FF9D5E8C-DC26-C6BE-34A5-8E327C2D34AE">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:22:47 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Entreprise_Id" id="A46176AA-F6E2-E0E1-BBA6-A0F9E10F8A60">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:26:46 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B2C954F8-0D12-05CD-6076-64A73FD32CF2" referredColumn="3176CF83-D11E-BC3A-AC27-E70D0CD310BC"/>
+</associations>
+</Column>
+<Column name="Nom" id="04C811E2-84F3-9107-1FE0-87A35CCEFAB9">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:22:58 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>6D1C2157-754A-83DD-4B48-2AF727A94D15</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6553D138-0673-A5C9-8165-6879A31C6E27" name="Service_PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:22:47 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF9D5E8C-DC26-C6BE-34A5-8E327C2D34AE"/>
+<colUsage columnID="A46176AA-F6E2-E0E1-BBA6-A0F9E10F8A60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1CAB2995-52E2-1697-0862-97E5958B6ABF" name="Service_Entreprise_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:26:46 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A46176AA-F6E2-E0E1-BBA6-A0F9E10F8A60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

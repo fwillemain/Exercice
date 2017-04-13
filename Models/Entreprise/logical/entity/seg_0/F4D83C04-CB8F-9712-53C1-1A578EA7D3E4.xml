@@ -5,6 +5,7 @@
 <ownerDesignName>Entreprise</ownerDesignName>
 <engineerTo>
 <item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+<item key="7B894A84-1A38-7670-3CD3-8DEEA440F3A1" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -21,8 +22,11 @@
 <ownerDesignName>Entreprise</ownerDesignName>
 <engineerTo>
 <item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+<item key="7B894A84-1A38-7670-3CD3-8DEEA440F3A1" value="true"/>
 </engineerTo>
 <use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>6D1C2157-754A-83DD-4B48-2AF727A94D15</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Nom" id="9C548005-7B18-A813-C68F-0A8C4D7E90FE">
@@ -31,8 +35,11 @@
 <ownerDesignName>Entreprise</ownerDesignName>
 <engineerTo>
 <item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+<item key="7B894A84-1A38-7670-3CD3-8DEEA440F3A1" value="true"/>
 </engineerTo>
 <use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>6D1C2157-754A-83DD-4B48-2AF727A94D15</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Prénom" id="AB6E5628-B59F-DA9D-0815-12423CA82EDB">
@@ -41,8 +48,11 @@
 <ownerDesignName>Entreprise</ownerDesignName>
 <engineerTo>
 <item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+<item key="7B894A84-1A38-7670-3CD3-8DEEA440F3A1" value="true"/>
 </engineerTo>
 <use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>6D1C2157-754A-83DD-4B48-2AF727A94D15</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Sexe" id="2412C6ED-FD36-BB51-34BA-75C6EA3D8621">
@@ -51,9 +61,13 @@
 <ownerDesignName>Entreprise</ownerDesignName>
 <engineerTo>
 <item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+<item key="7B894A84-1A38-7670-3CD3-8DEEA440F3A1" value="true"/>
 </engineerTo>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Adresse" id="A8DE7DEA-E2DE-6AA7-F716-BE19AA7D3B10">
 <createdBy>fwillemain</createdBy>
@@ -61,8 +75,11 @@
 <ownerDesignName>Entreprise</ownerDesignName>
 <engineerTo>
 <item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+<item key="7B894A84-1A38-7670-3CD3-8DEEA440F3A1" value="true"/>
 </engineerTo>
 <use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>B7068136-5693-33BA-92E9-A6641F047A7B</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="N°Tel" id="35C1F2F9-A4FB-42D9-3677-9EE5AD947CE3">
@@ -71,8 +88,11 @@
 <ownerDesignName>Entreprise</ownerDesignName>
 <engineerTo>
 <item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+<item key="7B894A84-1A38-7670-3CD3-8DEEA440F3A1" value="true"/>
 </engineerTo>
 <use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>6D1C2157-754A-83DD-4B48-2AF727A94D15</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Id1" id="0F59318B-5664-E420-56A0-07A2252EA7C0">
@@ -82,10 +102,13 @@
 <ownerDesignName>Entreprise</ownerDesignName>
 <engineerTo>
 <item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+<item key="7B894A84-1A38-7670-3CD3-8DEEA440F3A1" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>B5665958-B27A-D688-BE5B-DA7B060EB887</referedAttribute>
 <use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="N°Secu1" id="AAF6AAE7-7BF5-CCB7-710D-8150CCEB65FC">
@@ -95,10 +118,13 @@
 <ownerDesignName>Entreprise</ownerDesignName>
 <engineerTo>
 <item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+<item key="7B894A84-1A38-7670-3CD3-8DEEA440F3A1" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>03E9C07C-36CB-6B5C-353C-1CBCFB5D39C7</referedAttribute>
 <use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>6D1C2157-754A-83DD-4B48-2AF727A94D15</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Id11" id="650FD145-512F-E2AB-9914-ADA0DD1BDFBE">
@@ -108,10 +134,13 @@
 <ownerDesignName>Entreprise</ownerDesignName>
 <engineerTo>
 <item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+<item key="7B894A84-1A38-7670-3CD3-8DEEA440F3A1" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>97C37575-2194-258E-A97A-75D8F887DAD7</referedAttribute>
 <use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -120,8 +149,10 @@
 <createdBy>fwillemain</createdBy>
 <createdTime>2017-04-06 12:10:02 UTC</createdTime>
 <ownerDesignName>Entreprise</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
 <item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+<item key="7B894A84-1A38-7670-3CD3-8DEEA440F3A1" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

@@ -22,9 +22,9 @@
 <engineerTo>
 <item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
 </engineerTo>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<domain>C12ED81C-82AF-1FAF-5F61-558D4710BBC1</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Nom" id="768770CE-6D5C-0E47-EDDB-1EF709BE04B3">
@@ -34,23 +34,10 @@
 <engineerTo>
 <item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
 <logicalDatatype>LOGDT037</logicalDatatype>
-<domain>0DA7911D-08BA-FABF-FEDB-358A480C9EC1</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="NbSalariés" id="58E099D0-7AE4-A11F-E635-2FF5AF99EC9E">
-<createdBy>Cyril</createdBy>
-<createdTime>2017-03-16 20:43:38 UTC</createdTime>
-<ownerDesignName>Marchand</ownerDesignName>
-<engineerTo>
-<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>F09CCBF4-7EDC-C2BD-35E1-A7380CFD3230</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -59,8 +46,9 @@
 <createdBy>Cyril</createdBy>
 <createdTime>2017-03-16 20:36:12 UTC</createdTime>
 <ownerDesignName>Marchand</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
+<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

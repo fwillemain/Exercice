@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="575D5408-7E69-DF26-6DC0-A23C5B08A1E4" name="Conseil">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-09 16:37:33 UTC</createdTime>
+<generatorID>8CD37907-A99A-597C-5DF0-7CC529022C68</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="1F93658C-E968-24D2-9FC6-BD46523D3715">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-09 16:37:33 UTC</createdTime>
+<generatorID>892C1AED-5F23-B1E3-6B2F-7B3BA8D34DEA</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C12ED81C-82AF-1FAF-5F61-558D4710BBC1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Date" id="8D11510B-E0BF-5C5A-AF6F-F7DE44111689">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-09 16:37:33 UTC</createdTime>
+<generatorID>61E97916-BF9A-E5B0-ED94-3A1C613E2122</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Classe_Code" id="0CD8DB44-6CF6-0DA1-BD27-583E58D1622A">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-09 16:37:33 UTC</createdTime>
+<generatorID>C4E025ED-6367-D9B4-9ACD-B5A14A37658B</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5412AD9F-6422-FDBF-6956-FFF1ABCAE16E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="340E4ACA-7490-AACD-B7CC-1D66510A3EC9" referredColumn="D365F976-DB12-EE03-F10F-4BAAE90DF693"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E5209617-BE18-0459-09A8-CBC9A7D9D69C" name="Conseil_PK">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-09 16:37:33 UTC</createdTime>
+<generatorID>4E8B82C2-F1B2-97A2-39C3-A614BFD9B151</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F93658C-E968-24D2-9FC6-BD46523D3715"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E408F310-AD8F-E85D-8ECE-E3B9C0A12918" name="Conseil_Classe_FK">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-09 16:37:33 UTC</createdTime>
+<generatorID>6E2A2F7F-5D1F-03BD-B4C7-8F434716E6BB</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0CD8DB44-6CF6-0DA1-BD27-583E58D1622A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

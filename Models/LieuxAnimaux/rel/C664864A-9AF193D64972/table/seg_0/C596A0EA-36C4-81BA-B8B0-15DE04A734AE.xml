@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C596A0EA-36C4-81BA-B8B0-15DE04A734AE" schemaObject="18DEDD48-A41B-2509-BE67-054948CDD933" name="Lieu">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-11 09:03:31 UTC</createdTime>
+<generatorID>416C671C-6E48-2BCE-81A6-EDF1D0A17AE6</generatorID>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="37101FE8-238F-EE27-7E7E-17B588C6218D">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-11 09:03:31 UTC</createdTime>
+<generatorID>4D76CF54-0294-D565-3893-C4DB783FC452</generatorID>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nom" id="DB312932-E575-E329-4507-1CFE834AFF1D">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-11 09:03:31 UTC</createdTime>
+<generatorID>7BB074A4-9D56-F115-DCB1-B417F5A23857</generatorID>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>6D1C2157-754A-83DD-4B48-2AF727A94D15</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Surface" id="BAFE50B6-7E71-6E65-F80B-0521A3B751E7">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-11 09:03:31 UTC</createdTime>
+<generatorID>CF985F76-DB66-F344-63C3-5821BCC60DC7</generatorID>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TypeLieu" id="0F799163-75BF-1FB5-C2BA-4DFA39DDF5AD">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-11 09:03:31 UTC</createdTime>
+<generatorID>C65F9366-4713-9675-0145-780E3141D014</generatorID>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<listOfValues>
+<valueDef value="1" description="Pré"/>
+<valueDef value="2" description="Batiment"/>
+<valueDef value="3" description="Box"/>
+</listOfValues>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="998F08ED-F849-271E-3F9F-EF57E6783A1A" name="Lieu_PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-11 09:03:31 UTC</createdTime>
+<generatorID>8BEF18E9-B6A7-B26F-DC2B-20535C2F7E9D</generatorID>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="37101FE8-238F-EE27-7E7E-17B588C6218D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

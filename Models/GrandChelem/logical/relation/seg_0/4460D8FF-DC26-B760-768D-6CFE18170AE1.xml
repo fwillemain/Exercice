@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_4" directorySegmentName="seg_0" id="4460D8FF-DC26-B760-768D-6CFE18170AE1">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="JoueurMatch" directorySegmentName="seg_0" id="4460D8FF-DC26-B760-768D-6CFE18170AE1">
 <createdBy>Formateur_DEV</createdBy>
 <createdTime>2017-04-07 12:25:23 UTC</createdTime>
 <ownerDesignName>GrandChelem</ownerDesignName>
@@ -10,7 +10,7 @@
 <identifying>false</identifying>
 <optionalSource>false</optionalSource>
 <optionalTarget>true</optionalTarget>
-<sourceCardinality>1</sourceCardinality>
+<sourceCardinality>*</sourceCardinality>
 <sourceEntity>0E0E83DF-640D-CC07-E039-C32D56B83F80</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
 <targetEntity>1B99A3F2-A1A5-2702-2F4E-D2838E32AC5F</targetEntity>

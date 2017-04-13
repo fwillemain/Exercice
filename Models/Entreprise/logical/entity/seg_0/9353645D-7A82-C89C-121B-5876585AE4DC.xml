@@ -5,6 +5,7 @@
 <ownerDesignName>Entreprise</ownerDesignName>
 <engineerTo>
 <item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+<item key="7B894A84-1A38-7670-3CD3-8DEEA440F3A1" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -21,8 +22,11 @@
 <ownerDesignName>Entreprise</ownerDesignName>
 <engineerTo>
 <item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+<item key="7B894A84-1A38-7670-3CD3-8DEEA440F3A1" value="true"/>
 </engineerTo>
 <use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Nom" id="F2098254-437E-7C67-80AE-C6CFF0240452">
@@ -31,8 +35,11 @@
 <ownerDesignName>Entreprise</ownerDesignName>
 <engineerTo>
 <item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+<item key="7B894A84-1A38-7670-3CD3-8DEEA440F3A1" value="true"/>
 </engineerTo>
 <use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>6D1C2157-754A-83DD-4B48-2AF727A94D15</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Id1" id="97C37575-2194-258E-A97A-75D8F887DAD7">
@@ -42,9 +49,12 @@
 <ownerDesignName>Entreprise</ownerDesignName>
 <engineerTo>
 <item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+<item key="7B894A84-1A38-7670-3CD3-8DEEA440F3A1" value="true"/>
 </engineerTo>
 <referedAttribute>14B46907-F9E9-9610-7805-2DB0D97A424C</referedAttribute>
 <use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -53,8 +63,10 @@
 <createdBy>fwillemain</createdBy>
 <createdTime>2017-04-06 12:07:43 UTC</createdTime>
 <ownerDesignName>Entreprise</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
 <item key="D0955619-5D7B-CCC5-C89F-DE2FC6B1358C" value="true"/>
+<item key="7B894A84-1A38-7670-3CD3-8DEEA440F3A1" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

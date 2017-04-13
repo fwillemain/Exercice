@@ -22,9 +22,9 @@
 <engineerTo>
 <item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
 </engineerTo>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<domain>C12ED81C-82AF-1FAF-5F61-558D4710BBC1</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="DateCmde" id="3E85D1EC-AC2A-69B6-CA18-7EA54FA553A1">
@@ -39,16 +39,17 @@
 <logicalDatatype>LOGDT008</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="PrixTotal" id="FD5B8ECE-62A1-FE67-F4E7-FAFC09F6F65D">
-<createdBy>Cyril</createdBy>
-<createdTime>2017-03-16 21:01:48 UTC</createdTime>
+<Attribute name="DatePréparation" id="C769D1A1-DBCD-4F66-8A6D-BE0E5BB6F602">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-07 07:48:22 UTC</createdTime>
 <ownerDesignName>Marchand</ownerDesignName>
 <engineerTo>
 <item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
 </engineerTo>
-<use>0</use>
-<logicalDatatype>LOGDT043</logicalDatatype>
-<domain>FAFCBEBA-E87A-904F-F76B-D7A590DD90A9</domain>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Id1" id="88D2F07E-1D28-3555-800F-4C641F7CB555">
@@ -61,22 +62,10 @@
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>E457B386-5413-E2EA-2F9F-40470E1951FF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<domain>C12ED81C-82AF-1FAF-5F61-558D4710BBC1</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="MontantChèqueCadeau" id="32088C5B-AFF0-5EF7-2278-2A33BB1D4DE0">
-<createdBy>Cyril</createdBy>
-<createdTime>2017-03-16 21:55:29 UTC</createdTime>
-<ownerDesignName>Marchand</ownerDesignName>
-<engineerTo>
-<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<logicalDatatype>LOGDT043</logicalDatatype>
-<domain>FAFCBEBA-E87A-904F-F76B-D7A590DD90A9</domain>
+<domain>58C558AA-944A-9E5E-2EF8-8080C457B1D9</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Cloturée" id="45628FC4-CA09-7B6E-98F5-495A362451CA">
@@ -91,19 +80,32 @@
 <logicalDatatype>LOGDT034</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Id2" id="4DDE0816-579B-23D4-6836-EE148C3A1D76">
-<createdBy>Cyril</createdBy>
-<createdTime>2017-03-16 22:38:28 UTC</createdTime>
-<generatorID>1290AF50-3229-6407-3775-92C7AEAE0A88</generatorID>
+<Attribute name="Id3" id="F8A67D8B-2F20-5B74-5F3A-8C8F901C8DBF">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-07 07:57:02 UTC</createdTime>
+<generatorID>10ACF18E-028E-E7E5-C55B-3A0275662AE3</generatorID>
 <ownerDesignName>Marchand</ownerDesignName>
 <engineerTo>
 <item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <referedAttribute>39887ED0-47B4-8367-33D5-1923373048C3</referedAttribute>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<domain>C12ED81C-82AF-1FAF-5F61-558D4710BBC1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id2" id="81ECD739-8877-A7F6-C1DF-C92427DDCE09">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:24:24 UTC</createdTime>
+<generatorID>D69E787A-E814-B757-FC8E-DFFDAD050ADB</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<engineerTo>
+<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
+</engineerTo>
+<referedAttribute>39887ED0-47B4-8367-33D5-1923373048C3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -112,8 +114,9 @@
 <createdBy>Cyril</createdBy>
 <createdTime>2017-03-16 20:52:02 UTC</createdTime>
 <ownerDesignName>Marchand</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
+<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

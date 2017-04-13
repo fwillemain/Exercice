@@ -15,14 +15,17 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Id_2" id="244560D2-5141-930E-4832-A86F1326BB65">
+<Attribute name="Numéro" id="244560D2-5141-930E-4832-A86F1326BB65">
 <createdBy>Formateur_DEV</createdBy>
 <createdTime>2017-04-07 12:32:41 UTC</createdTime>
 <ownerDesignName>GrandChelem</ownerDesignName>
 <engineerTo>
 <item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
 </engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C473CA17-FD47-5170-4376-4822F9175FD8</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Rang" id="00AEDBC5-CD83-0C0D-6A77-98B98D1CA327">
@@ -32,8 +35,9 @@
 <engineerTo>
 <item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Date" id="ABB71D9F-E2C6-D4E3-C983-32DC3563A9C4">
@@ -43,7 +47,21 @@
 <engineerTo>
 <item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
 </engineerTo>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Type" id="89D11427-DAF4-0554-21D4-1D72DB7305CF">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-07 12:38:46 UTC</createdTime>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<engineerTo>
+<item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Score" id="3725C468-3F9C-2E12-677A-B99392350C40">
@@ -54,7 +72,9 @@
 <item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Id" id="4D957358-CEAC-5A86-9745-CEDC0089E557">
@@ -65,22 +85,26 @@
 <engineerTo>
 <item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <referedAttribute>E3F180B1-4837-9A89-B6A1-BAD4A558E8BD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C473CA17-FD47-5170-4376-4822F9175FD8</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Type" id="89D11427-DAF4-0554-21D4-1D72DB7305CF">
-<createdBy>Formateur_DEV</createdBy>
-<createdTime>2017-04-07 12:38:46 UTC</createdTime>
+<Attribute name="Id1" id="37A66CB3-16D5-5711-ADBD-380BE9F4B856">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-09 17:58:03 UTC</createdTime>
+<generatorID>5BB05A2C-31A2-FB30-5A6A-3E5B9CA32E02</generatorID>
 <ownerDesignName>GrandChelem</ownerDesignName>
 <engineerTo>
 <item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
+<referedAttribute>43A53C82-8DD5-7E9C-206B-3AB41BFE874E</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT042</logicalDatatype>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C473CA17-FD47-5170-4376-4822F9175FD8</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -89,8 +113,9 @@
 <createdBy>Formateur_DEV</createdBy>
 <createdTime>2017-04-07 12:32:44 UTC</createdTime>
 <ownerDesignName>GrandChelem</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
+<item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

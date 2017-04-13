@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="721F4B96-E3C0-53FF-7772-CF3933D8FB48" name="MoyenPaiement">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<generatorID>E8552350-393D-AA24-5E0B-8D13B56F7DD5</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="2F8E324E-CAE5-ECC1-B0EE-E5E568F24B98">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<generatorID>E457B386-5413-E2EA-2F9F-40470E1951FF</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Client_Id" id="2E89A49D-9851-7590-D594-37281B62426A">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<generatorID>CEAD7BB8-1913-F385-D35C-6D9F0F6153FF</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F83E6799-F1BA-AC7A-A35D-A391DB086591" referredColumn="3CAD478D-EF1A-607E-26BB-9F9108093FC4"/>
+</associations>
+</Column>
+<Column name="Libellé" id="412C26F1-58F1-D3CA-84AB-E70E9A120F48">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<generatorID>4EAEE027-37F2-A370-EBFE-55CB6524D81C</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7CE14275-20F7-6F29-A2A0-D023EBC698C8" name="MoyenPaiement_PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<generatorID>5A0E0DDE-867C-DB5C-3A60-805AE80DF9FE</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F8E324E-CAE5-ECC1-B0EE-E5E568F24B98"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4514E6D0-9CCD-399C-41CE-61B8C7627466" name="MoyenPaiement_Client_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<generatorID>557C3884-DA10-54DC-0A0F-F9D21ED4D2AC</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E89A49D-9851-7590-D594-37281B62426A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
