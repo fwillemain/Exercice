@@ -22,16 +22,12 @@ PU money,
 QtyStock smallint
 )
 
---drop table #Produits
-
 insert #Produits values
 (1, 'Produit 1', 10.50, 10),
 (2, 'Produit 2', 20.50, 5),
 (80, 'Produit 80', 10.00, 5),
 (81, 'Produit 81', 10.00, 5),
 (82, 'Produit 82', 10.00, 5)
-
-commit
 
 begin tran
 merge Products as C
@@ -41,12 +37,6 @@ when matched then
 update set C.ProductName = source.Nom, C.UnitsInStock = source.QtyStock, C.UnitPrice = source.PU
 when not matched by target then 
 insert(ProductName, UnitsInStock, UnitPrice) values (source.Nom, source.QtyStock, source.PU);
-
-select * from #Produits
-
-select * from Products
-
-commit
 
 -- 3. Supprimer les lignes de commandes qui portent sur des produits
 -- livrés par le fournisseur 'Ma maison'
@@ -58,4 +48,3 @@ from Suppliers S
 inner join Products P on S.SupplierID = P.SupplierID
 inner join Order_Details OD on P.ProductID = OD.ProductID
 where S.CompanyName = 'Ma maison'
-rollback

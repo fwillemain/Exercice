@@ -19,9 +19,12 @@ namespace JeuPendu
             while (string.IsNullOrWhiteSpace(mot) || mot.Contains(' '))
             {
                 Console.Clear();
+                
+                // Affiche le message d'erreur en rouge
                 Console.ForegroundColor = ConsoleColor.DarkRed;
                 Console.WriteLine("Le mot ne doit pas contenir d'espace ni être vide.");
                 Console.ResetColor();
+
                 Console.WriteLine("Saisissez un mot : ");
                 mot = Console.ReadLine();
             }
@@ -35,7 +38,7 @@ namespace JeuPendu
             {
                 Console.WriteLine("Proposer une lettre.");
                 string res = Console.ReadLine();
-                
+
                 // Si la lettre est vide ou null met par defaut un espace, sinon prendre le premier caractère
                 char lettre = string.IsNullOrEmpty(res) ? ' ' : res[0];
                 jeu.ProposerLettre(lettre);
@@ -43,12 +46,7 @@ namespace JeuPendu
 
                 // Choix de la couleur si gagné ou non quand le jeu est fini
                 if (jeu.Fini)
-                {
-                    if (!jeu.Gagné)
-                        Console.ForegroundColor = ConsoleColor.Red;
-                    else
-                        Console.ForegroundColor = ConsoleColor.Green;
-                }
+                    Console.ForegroundColor = jeu.Gagné ? ConsoleColor.Green : ConsoleColor.Red;
 
                 // Affichage de l'évolution du mot à déchiffrer
                 Console.WriteLine("Mot en cours de déchiffrage : {0}, ({1}/11 erreur(s))", jeu.MotAAfficher, jeu.CompteurErreur);
@@ -62,7 +60,7 @@ namespace JeuPendu
 
             // Affiche le mec vivant ou la tombe si tu as gagné ou non
             Console.WriteLine("{0}", jeu.Gagné ? jeu.RetournerHumain() : jeu.RetournerTombe());
-            
+
             // Affichage du message en fonction de si tu as gagné ou non
             Console.WriteLine("{0}! Tu es {1}!", jeu.Gagné ? "Bravo" : "Dommage", jeu.Gagné ? "vivant" : "mort");
             Console.WriteLine("Le mot à deviner était : {0}.", jeu.MotADeviner);
