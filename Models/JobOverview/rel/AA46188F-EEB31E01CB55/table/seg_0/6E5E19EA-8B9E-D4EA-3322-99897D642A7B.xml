@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6E5E19EA-8B9E-D4EA-3322-99897D642A7B" schemaObject="6D7C9FFC-C1C2-958B-0445-83B259FF5CD6" name="Logiciel">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>59E188D0-EB11-7FCF-4C46-37D4535DAF16</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Code" id="F6FF9C82-E81C-DC73-EB21-C92C6956F65B">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>35057604-2896-6144-128A-BA238A0DE644</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Filiere_Code" id="BFD47245-675A-1F3B-F528-B33026F190B9">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>06B38F61-78BB-BD2C-4CDD-29F41A351A4C</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="73289F50-DC9E-585B-1F71-22211EB43108" referredColumn="5B406C6E-46B5-821E-FB8C-0588D218D9C2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="428412C5-C4DC-AD5E-43BF-CE2B34B9B26B" name="Logiciel_PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>80F64BE7-AC41-80BF-14FB-C8879E0E80F0</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F6FF9C82-E81C-DC73-EB21-C92C6956F65B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AEC67395-19FF-57C3-BA1E-7900D418D99A" name="Logiciel_Filiere_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>BDE539C9-327D-F220-DDA6-DE835CDF3739</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BFD47245-675A-1F3B-F528-B33026F190B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

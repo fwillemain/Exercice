@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="71895F04-57AD-6272-00D5-552D2ECDA3E0" name="Module">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 07:27:16 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Code" id="7A23766A-1DD9-CF98-B41D-2DE5776C3C58">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 07:27:23 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Libellé" id="768F1F6C-92F4-ED7B-E029-FFE3EF869DF7">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 07:27:29 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>6D1C2157-754A-83DD-4B48-2AF727A94D15</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Code1" id="403205BF-DB99-6C6E-E75B-635661594CB6">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 07:27:47 UTC</createdTime>
+<generatorID>B7E2212D-59B4-1C8F-E968-EE59408C79C5</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>7A23766A-1DD9-CF98-B41D-2DE5776C3C58</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Code2" id="7E3C50D8-3FD0-1AB5-A4EF-3A18AA2D91A0">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 07:30:13 UTC</createdTime>
+<generatorID>89C9C685-EFA3-2DF9-F712-938685D45D9A</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<referedAttribute>35057604-2896-6144-128A-BA238A0DE644</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C59BC532-14E8-37C1-C16A-97EB830003F5" name="Module PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 07:27:37 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7A23766A-1DD9-CF98-B41D-2DE5776C3C58</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D04BE224-3767-3078-6F04-6BBEDE1C22F2" name="TravailPT">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 07:54:40 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Date" id="2451E305-9A92-B3A2-6817-CEF8B85847BA">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 07:55:17 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TauxProd" id="1D860C9F-EFC5-EA95-3E3A-0C935AA6EA46">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 07:55:47 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT022</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Temps" id="56755733-7268-0BE1-2837-0EA149F8A2BB">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 07:55:59 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Login" id="54907491-D5D3-CCD2-C7D1-BF7C925A8E52">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:56:53 UTC</createdTime>
+<generatorID>6AF3BAFB-45E2-89EB-5066-DF8CCFEEE95F</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<referedAttribute>BB164243-D70B-2B6F-BC4C-9D80EFEAD161</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Date1" id="23CB0E8E-2061-2689-FDFC-08B2850D64B6">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:56:53 UTC</createdTime>
+<generatorID>6AF3BAFB-45E2-89EB-5066-DF8CCFEEE95F</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<referedAttribute>783CDAF0-42D9-6A14-2109-0114B291AF78</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id" id="EC06FCEE-D26E-25A6-1EE5-68A9C1AF115D">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:57:03 UTC</createdTime>
+<generatorID>5624FB5E-413F-1901-5AC9-D51EAD341EBB</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<referedAttribute>C2BAFD77-958B-C91E-74C8-09C6A0B82C06</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Date2" id="11AA371D-F5C6-35FA-503D-BAF05735AE9D">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:57:03 UTC</createdTime>
+<generatorID>5624FB5E-413F-1901-5AC9-D51EAD341EBB</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<referedAttribute>7FA25229-B4AE-216A-80A9-A340938FBFA6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3A7DFF5B-5CF0-2E17-E5EA-B28BBFF49D8A" name="TravailPT PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 07:55:26 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>54907491-D5D3-CCD2-C7D1-BF7C925A8E52</attributeRef>
+<attributeRef>EC06FCEE-D26E-25A6-1EE5-68A9C1AF115D</attributeRef>
+<attributeRef>2451E305-9A92-B3A2-6817-CEF8B85847BA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EC49CFC2-F382-4EFD-A99B-BE72DED78379" schemaObject="6D7C9FFC-C1C2-958B-0445-83B259FF5CD6" name="MetierActivite">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Metier_Code" id="93C88687-7B8B-0FB7-E934-01FBB80C48B3">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B2A17274-AC74-1632-AC5D-311B7512D1F6" referredColumn="5EC7A096-250D-14A9-BF0F-0109DCA88D30"/>
+</associations>
+</Column>
+<Column name="Activite_Code" id="A31C424D-3B77-93F4-177A-E95C50D89BF1">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F030E1BE-8F6E-6406-B459-F86863B8884C" referredColumn="795E9693-6A0E-6B3D-912D-1DAECA9D94B5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E2E87B2C-397C-3F47-A153-36EFA398A43B" name="MetierActivite_PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="93C88687-7B8B-0FB7-E934-01FBB80C48B3"/>
+<colUsage columnID="A31C424D-3B77-93F4-177A-E95C50D89BF1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="77EFEBC9-1248-73D1-CA0E-D54F971FAAA2" name="FK_ASS_3">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>F9BDE0C8-B641-EA3D-FC22-05F15B2A8142</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="93C88687-7B8B-0FB7-E934-01FBB80C48B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="13623124-6644-8DDE-A4BA-6963DDB06E5D" name="FK_ASS_4">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>F9BDE0C8-B641-EA3D-FC22-05F15B2A8142</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A31C424D-3B77-93F4-177A-E95C50D89BF1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

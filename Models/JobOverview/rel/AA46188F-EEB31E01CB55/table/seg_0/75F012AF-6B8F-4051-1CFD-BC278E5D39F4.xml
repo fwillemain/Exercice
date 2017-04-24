@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="75F012AF-6B8F-4051-1CFD-BC278E5D39F4" schemaObject="6D7C9FFC-C1C2-958B-0445-83B259FF5CD6" name="Release">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>0F7377C1-4B35-7151-63EE-7DA0208F52FB</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="86FA3254-E629-AA8B-E4CC-30DD4ECF18DB">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>27AE8351-D5D2-B6C0-6A85-AF45B9E265E4</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementMinValue>1</autoIncrementMinValue>
+<autoIncrementMaxValue>999</autoIncrementMaxValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="Version_Version" id="3A7DB6E7-887B-5F21-EE6D-55F86302EF66">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>447F29C8-0E22-0BAB-98B9-DBA095941D69</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5B8C2E4A-77D3-6700-D414-2847D220F49F" referredColumn="7C3C817B-CD6C-4EEE-C468-1C828973A579"/>
+</associations>
+</Column>
+<Column name="Logiciel_Code" id="FD997ABD-B83C-47C9-5A91-DD78339BD4A2">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 16:50:05 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5B8C2E4A-77D3-6700-D414-2847D220F49F" referredColumn="D319B6B1-1C46-F6E1-E780-1247FAB315D3"/>
+</associations>
+</Column>
+<Column name="DateCreation" id="81E0E0AE-2C57-92EF-ABDA-74D773926C16">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>6EA31E19-B022-27EB-C753-295D5C44324B</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="951C1D12-E3D2-9D34-FEC8-981C707D863C" name="Release_PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>A1A84A96-6E1B-7A8D-09EB-17E77D007EFF</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86FA3254-E629-AA8B-E4CC-30DD4ECF18DB"/>
+<colUsage columnID="3A7DB6E7-887B-5F21-EE6D-55F86302EF66"/>
+<colUsage columnID="FD997ABD-B83C-47C9-5A91-DD78339BD4A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="24E22375-F3A8-D54A-A420-66F6EE56CA53" name="Release_Version_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>2F1F947D-82D6-0CF6-5D70-9FAD32C4A44B</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A7DB6E7-887B-5F21-EE6D-55F86302EF66"/>
+<colUsage columnID="FD997ABD-B83C-47C9-5A91-DD78339BD4A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

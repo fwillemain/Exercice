@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="MetierActivite" directorySegmentName="seg_0" id="F9BDE0C8-B641-EA3D-FC22-05F15B2A8142">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:45:29 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>0EE7DC6D-BD07-2208-F3B1-202B921C8D7E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>50F4C135-AD89-1B51-C9C1-DD6047EF31C6</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

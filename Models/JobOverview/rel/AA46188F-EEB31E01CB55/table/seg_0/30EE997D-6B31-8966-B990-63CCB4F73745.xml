@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="30EE997D-6B31-8966-B990-63CCB4F73745" schemaObject="6D7C9FFC-C1C2-958B-0445-83B259FF5CD6" name="TacheProd">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>66F3A5BC-EA61-A8FF-D837-F6B03D0840EC</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="9B44AAC1-7A36-F0A2-2A6F-2F7BBE328614">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>C2BAFD77-958B-C91E-74C8-09C6A0B82C06</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9C7872BA-64A2-7458-06C3-964331457AD5" referredColumn="D6FFE18D-5B53-BFB8-1489-C833AAE7B6AD"/>
+</associations>
+</Column>
+<Column name="Version_Version" id="035392CB-F7BE-F6DD-CF60-BBEF7FE89465">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>2205AABE-3480-961B-6FEF-F20658B387C8</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8E3BF879-CC4E-92E6-C25C-C126F4048E7B" referredColumn="7C3C817B-CD6C-4EEE-C468-1C828973A579"/>
+</associations>
+</Column>
+<Column name="Module_Code" id="958B8EC4-4234-3E6D-7E12-FC6EC55CA72C">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>71E4784B-AFA5-A505-3140-7D6D41993988</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="83430456-CB6A-AADC-1335-2C6E697888DB" referredColumn="09D812CD-E257-3485-5ACD-F625138AD4EC"/>
+</associations>
+</Column>
+<Column name="Logiciel_Code" id="58FA3560-793E-751C-F1A1-1C4CCAF97D25">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 16:50:05 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8E3BF879-CC4E-92E6-C25C-C126F4048E7B" referredColumn="D319B6B1-1C46-F6E1-E780-1247FAB315D3"/>
+</associations>
+</Column>
+<Column name="DureePrevu" id="A88EF323-0F38-B41F-C02A-2E369C07A4E0">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>3C927B66-D03F-05C3-B217-6794B7357819</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TempsRestantEstime" id="DA598F28-1E73-B36D-8D5A-D3C9E641802C">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>CEEB5B43-FD20-D955-5AB5-2DF0B186D3CE</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8F583C2B-8A6F-A915-6D5B-A971F1CB20F6" name="TacheProd_PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>DE8D2531-1454-01BD-81F6-8A714DA60F2B</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9B44AAC1-7A36-F0A2-2A6F-2F7BBE328614"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4BAE6C63-18D4-DAC7-DB2A-2C2405E1F30A" name="TacheProd_Tache_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>94435CEE-2D04-6FFC-7992-6E9546DFFE8C</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9B44AAC1-7A36-F0A2-2A6F-2F7BBE328614"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E9B3668E-198F-59FD-46B8-095AC16E67F4" name="TacheProd_Version_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>A3284919-D3FF-C6AB-3ED3-516C1F7C0A3E</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="035392CB-F7BE-F6DD-CF60-BBEF7FE89465"/>
+<colUsage columnID="58FA3560-793E-751C-F1A1-1C4CCAF97D25"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A3EFA205-02D6-9E4A-9B26-81AAD8DDFB5C" name="TacheProd_Module_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>C6D2B8B9-9955-BF88-15A3-3D4CE5C279E8</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="958B8EC4-4234-3E6D-7E12-FC6EC55CA72C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,249 @@
+--insert dbo.Lieu(Nom,Surface,TypeLieu)
+--values 
+--('Batiment 1', 10000, 1),
+--('Box 1', 10000, 3),
+--('pré 1', 10000, 2)
+
+--delete from dbo.Lieu where ID =4
+
+--insert dbo.Vache(Id,Nom)
+--values
+--(1, 'Roger')
+
+insert dbo.HistoriqueLieu(DateDébut,DateFin,HeuresParJourPrincipal,Id,Lieu_Id,Lieu_Id1,Vache_Id)
+values ('2017-04-11', '2017-04-12', 18, 1, 1, 3, 1)
+
+
+--ALTER TABLE "Case"
+--DROP
+--  CONSTRAINT Case_Batiment_FK
+--GO
+
+
+--ALTER TABLE Batiment
+--DROP
+--  CONSTRAINT Batiment_Lieu_FK
+--GO
+--ALTER TABLE "Case"
+--DROP
+--  CONSTRAINT Case_Lieu_FK
+--GO
+--ALTER TABLE HistoriqueLieu
+--DROP
+--  CONSTRAINT HistoriqueLieu_Lieu_FK
+--GO
+--ALTER TABLE HistoriqueLieu
+--DROP
+--  CONSTRAINT HistoriqueLieu_Lieu_FKv1
+--GO
+
+
+--ALTER TABLE HistoriqueLieu
+--DROP
+--  CONSTRAINT HistoriqueLieu_Vache_FK
+--GO
+--DROP TABLE Vache
+--GO
+--DROP
+--  TABLE Batiment
+--GO
+
+--DROP TABLE "Case"
+--GO
+
+--DROP
+--  TABLE HistoriqueLieu
+--GO
+--DROP TABLE Lieu
+--GO
+--CREATE
+--  TABLE Batiment
+--  (
+--    Id               INTEGER NOT NULL ,
+--    QuantitéFourrage SMALLINT NOT NULL ,
+--    NombreAllées     TINYINT NOT NULL
+--  )
+--  ON "default"
+--GO
+--ALTER TABLE Batiment ADD CONSTRAINT Batiment_PK PRIMARY KEY CLUSTERED (Id)
+--WITH
+--  (
+--    ALLOW_PAGE_LOCKS = ON ,
+--    ALLOW_ROW_LOCKS  = ON
+--  )
+--  ON "default"
+--GO
+
+--CREATE
+--  TABLE "Case"
+--  (
+--    Id           INTEGER NOT NULL ,
+--    NombrePlaces SMALLINT NOT NULL ,
+--    Batiment_Id  INTEGER NOT NULL
+--  )
+--  ON "default"
+--GO
+--ALTER TABLE "Case" ADD CONSTRAINT Case_PK PRIMARY KEY CLUSTERED (Id)
+--WITH
+--  (
+--    ALLOW_PAGE_LOCKS = ON ,
+--    ALLOW_ROW_LOCKS  = ON
+--  )
+--  ON "default"
+--GO
+--ALTER TABLE "Case" ADD CONSTRAINT Case_PKv1 UNIQUE NONCLUSTERED (Batiment_Id)
+--ON "default"
+--GO
+
+--CREATE
+--  TABLE HistoriqueLieu
+--  (
+--    Id                     INTEGER NOT NULL ,
+--    DateDébut              DATE NOT NULL ,
+--    DateFin                DATE ,
+--    HeuresParJourPrincipal INTEGER NOT NULL ,
+--    Lieu_Id                INTEGER ,
+--    Lieu_Id1               INTEGER ,
+--    Vache_Id               VARCHAR NOT NULL
+--  )
+--  ON "default"
+--GO
+--ALTER TABLE HistoriqueLieu ADD CONSTRAINT HistoriqueLieu_PK PRIMARY KEY
+--CLUSTERED (Id)
+--WITH
+--  (
+--    ALLOW_PAGE_LOCKS = ON ,
+--    ALLOW_ROW_LOCKS  = ON
+--  )
+--  ON "default"
+--GO
+
+--CREATE
+--  TABLE Lieu
+--  (
+--    Id INTEGER NOT NULL IDENTITY NOT FOR REPLICATION ,
+--    Nom NVARCHAR (100) NOT NULL ,
+--    Surface  SMALLINT NOT NULL ,
+--    TypeLieu TINYINT NOT NULL DEFAULT 1
+--  )
+--  ON "default"
+--GO
+--ALTER TABLE Lieu
+--ADD
+--CHECK ( TypeLieu IN (1, 2, 3) )
+--GO
+--ALTER TABLE Lieu ADD CONSTRAINT Lieu_PK PRIMARY KEY CLUSTERED (Id)
+--WITH
+--  (
+--    ALLOW_PAGE_LOCKS = ON ,
+--    ALLOW_ROW_LOCKS  = ON
+--  )
+--  ON "default"
+--GO
+
+--CREATE
+--  TABLE Vache
+--  (
+--    Id VARCHAR NOT NULL ,
+--    Nom NVARCHAR (100)
+--  )
+--  ON "default"
+--GO
+--ALTER TABLE Vache ADD CONSTRAINT Vache_PK PRIMARY KEY CLUSTERED (Id)
+--WITH
+--  (
+--    ALLOW_PAGE_LOCKS = ON ,
+--    ALLOW_ROW_LOCKS  = ON
+--  )
+--  ON "default"
+--GO
+
+--ALTER TABLE Batiment
+--ADD CONSTRAINT Batiment_Lieu_FK FOREIGN KEY
+--(
+--Id
+--)
+--REFERENCES Lieu
+--(
+--Id
+--)
+--ON
+--DELETE
+--  NO ACTION ON
+--UPDATE NO ACTION
+--GO
+
+--ALTER TABLE "Case"
+--ADD CONSTRAINT Case_Batiment_FK FOREIGN KEY
+--(
+--Batiment_Id
+--)
+--REFERENCES Batiment
+--(
+--Id
+--)
+--ON
+--DELETE
+--  NO ACTION ON
+--UPDATE NO ACTION
+--GO
+
+--ALTER TABLE "Case"
+--ADD CONSTRAINT Case_Lieu_FK FOREIGN KEY
+--(
+--Id
+--)
+--REFERENCES Lieu
+--(
+--Id
+--)
+--ON
+--DELETE
+--  NO ACTION ON
+--UPDATE NO ACTION
+--GO
+
+--ALTER TABLE HistoriqueLieu
+--ADD CONSTRAINT HistoriqueLieu_Lieu_FK FOREIGN KEY
+--(
+--Lieu_Id
+--)
+--REFERENCES Lieu
+--(
+--Id
+--)
+--ON
+--DELETE
+--  NO ACTION ON
+--UPDATE NO ACTION
+--GO
+
+--ALTER TABLE HistoriqueLieu
+--ADD CONSTRAINT HistoriqueLieu_Lieu_FKv1 FOREIGN KEY
+--(
+--Lieu_Id1
+--)
+--REFERENCES Lieu
+--(
+--Id
+--)
+--ON
+--DELETE
+--  NO ACTION ON
+--UPDATE NO ACTION
+--GO
+
+--ALTER TABLE HistoriqueLieu
+--ADD CONSTRAINT HistoriqueLieu_Vache_FK FOREIGN KEY
+--(
+--Vache_Id
+--)
+--REFERENCES Vache
+--(
+--Id
+--)
+--ON
+--DELETE
+--  NO ACTION ON
+--UPDATE NO ACTION
+--GO

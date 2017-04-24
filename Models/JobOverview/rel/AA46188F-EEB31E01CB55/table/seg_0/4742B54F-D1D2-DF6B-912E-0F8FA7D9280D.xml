@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4742B54F-D1D2-DF6B-912E-0F8FA7D9280D" schemaObject="6D7C9FFC-C1C2-958B-0445-83B259FF5CD6" name="Module">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>71895F04-57AD-6272-00D5-552D2ECDA3E0</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Code" id="09D812CD-E257-3485-5ACD-F625138AD4EC">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>7A23766A-1DD9-CF98-B41D-2DE5776C3C58</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SurModule_Code" id="1C4A8F0D-9ED0-3893-D6C3-F41CCC991247">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>403205BF-DB99-6C6E-E75B-635661594CB6</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6A53C61E-98F9-7CB5-24B8-180E5AF75A9F" referredColumn="09D812CD-E257-3485-5ACD-F625138AD4EC"/>
+</associations>
+</Column>
+<Column name="Logiciel_Code" id="C668433E-7042-51E8-4F5C-19762B9BFDF9">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>7E3C50D8-3FD0-1AB5-A4EF-3A18AA2D91A0</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="215394E9-6FC9-F23D-96BE-DE82CD253D64" referredColumn="F6FF9C82-E81C-DC73-EB21-C92C6956F65B"/>
+</associations>
+</Column>
+<Column name="Libellé" id="6010265F-9246-A88E-E300-BB08EC64EA57">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>768F1F6C-92F4-ED7B-E029-FFE3EF869DF7</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>6D1C2157-754A-83DD-4B48-2AF727A94D15</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="911DA852-2850-C701-D726-154A6C812368" name="Module_PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>C59BC532-14E8-37C1-C16A-97EB830003F5</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="09D812CD-E257-3485-5ACD-F625138AD4EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="078B3DA9-EF77-E5BE-835D-FE5AC1BE76A3" name="Module_Logiciel_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>89C9C685-EFA3-2DF9-F712-938685D45D9A</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C668433E-7042-51E8-4F5C-19762B9BFDF9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="27FAFE40-ADEE-D9CE-255D-0A7B7FB38748" name="Module_SurModule_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>B7E2212D-59B4-1C8F-E968-EE59408C79C5</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C4A8F0D-9ED0-3893-D6C3-F41CCC991247"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

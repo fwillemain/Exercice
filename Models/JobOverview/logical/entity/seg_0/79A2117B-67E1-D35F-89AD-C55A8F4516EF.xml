@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="79A2117B-67E1-D35F-89AD-C55A8F4516EF" name="Filiere">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 07:13:26 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id1" id="C70E4DD2-8103-0204-1019-9ED450E3A2B3">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 07:21:41 UTC</createdTime>
+<generatorID>3CC566E1-5CCE-027B-0804-7D831C0D9A08</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<referedAttribute>A2A15639-E9ED-FFE1-7768-6E8A00291506</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Code" id="228B58C1-516D-9086-5C50-C0CFFC89528E">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 07:22:59 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Libellé" id="C9D1EA1F-7D1C-3213-9727-D4ECAFB05582">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 07:23:04 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>6D1C2157-754A-83DD-4B48-2AF727A94D15</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7E9AE724-D2D2-FC1C-D863-1C031556D4D7" name="Filière PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 07:17:35 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>228B58C1-516D-9086-5C50-C0CFFC89528E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

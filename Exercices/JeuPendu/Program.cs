@@ -41,6 +41,8 @@ namespace JeuPendu
 
                 // Si la lettre est vide ou null met par defaut un espace, sinon prendre le premier caractère
                 char lettre = string.IsNullOrEmpty(res) ? ' ' : res[0];
+
+
                 jeu.ProposerLettre(lettre);
                 Console.Clear();
 

@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="50F4C135-AD89-1B51-C9C1-DD6047EF31C6" name="Activite">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:05:58 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Code" id="B4799493-D39D-7EDE-6339-7BE56E0169A1">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:06:58 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Libellé" id="251E7365-660F-D248-6D42-C5CA4D97CA41">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:17:42 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>6D1C2157-754A-83DD-4B48-2AF727A94D15</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Type" id="5763D192-D210-F718-7946-45A9AB165FCB">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:27:38 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>6D1C2157-754A-83DD-4B48-2AF727A94D15</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CB534375-D229-8AF2-7821-B84F46CF5383" name="Activite PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:07:05 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B4799493-D39D-7EDE-6339-7BE56E0169A1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

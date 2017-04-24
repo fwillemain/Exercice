@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="241C761B-2901-978E-AF32-78F36262190D" schemaObject="6D7C9FFC-C1C2-958B-0445-83B259FF5CD6" name="Filiere">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>79A2117B-67E1-D35F-89AD-C55A8F4516EF</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Code" id="5B406C6E-46B5-821E-FB8C-0588D218D9C2">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>228B58C1-516D-9086-5C50-C0CFFC89528E</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Production_Id" id="FF9C3B01-D1C4-C661-3CC3-BEB16BC5F7C6">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>C70E4DD2-8103-0204-1019-9ED450E3A2B3</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="94C8C8DC-67C1-0538-AED0-ADE122CE0E51" referredColumn="BA7DD9BA-B207-D210-A848-EAF1E505B0BB"/>
+</associations>
+</Column>
+<Column name="Libellé" id="5BDC4F5F-1D7B-9D25-B8C4-77F33AE7934D">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>C9D1EA1F-7D1C-3213-9727-D4ECAFB05582</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>6D1C2157-754A-83DD-4B48-2AF727A94D15</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="69D7431E-AAFA-B769-727F-0A72CA9E363B" name="Filiere_PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>7E9AE724-D2D2-FC1C-D863-1C031556D4D7</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5B406C6E-46B5-821E-FB8C-0588D218D9C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4DE346C9-BDA7-06F7-EC96-FB749513D4F1" name="Filiere_Production_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>3CC566E1-5CCE-027B-0804-7D831C0D9A08</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF9C3B01-D1C4-C661-3CC3-BEB16BC5F7C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

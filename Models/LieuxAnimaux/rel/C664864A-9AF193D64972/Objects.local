@@ -1,5 +1,6 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="SchemaObject" objectID="18DEDD48-A41B-2509-BE67-054948CDD933" name="" seqName="seg_0"/>
    <object objectType="Table" objectID="6C7E5BD4-AA82-32CE-CEFF-F37CF7CFEE7E" name="Vache" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="C664864A-B0DB-C2BD-9758-9AF193D64972" propertySourceId="" propertyTargetId=""/>
    <object objectType="Table" objectID="8375F9AD-60C6-ABB3-4F7B-A43984BC7C73" name="Batiment" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="C664864A-B0DB-C2BD-9758-9AF193D64972" propertySourceId="" propertyTargetId=""/>
    <object objectType="Table" objectID="8F1DD6A9-0D83-8912-BD5D-95AD95704509" name="HistoriqueLieu" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="C664864A-B0DB-C2BD-9758-9AF193D64972" propertySourceId="" propertyTargetId=""/>
