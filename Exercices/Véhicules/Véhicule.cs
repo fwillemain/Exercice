@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace Véhicules
 {
+    public delegate void DelegueEntretien(Véhicule v);
+
     public abstract class Véhicule : IComparable
     {
         #region Propriétés
@@ -18,19 +20,21 @@ namespace Véhicules
         }
         public abstract int PRK { get; }
         public float Prix { get; set; }
+        public Dictionary<DateTime, String> CarnetEntretien { get; }
         #endregion
 
         #region Constructeurs
         public Véhicule()
         {
             NbRoues = 4;
+            CarnetEntretien = new Dictionary<DateTime, string>();
         }
-        public Véhicule(string nom, float prix)
+        public Véhicule(string nom, float prix) : this()
         {
             Nom = nom;
             Prix = prix;
         }
-        public Véhicule(string nom, int nbRoues, Energies energie)
+        public Véhicule(string nom, int nbRoues, Energies energie) : this()
         {
             Nom = nom;
             NbRoues = nbRoues;
@@ -47,6 +51,23 @@ namespace Véhicules
                 return Prix.CompareTo(((Véhicule)v).Prix);
             else
                 throw new ArgumentException();
+        }
+
+        public void Entretenir(DateTime d, DelegueEntretien entretien)
+        {
+            if (!CarnetEntretien.ContainsKey(d))
+                CarnetEntretien.Add(d, string.Empty);
+
+            entretien(this);
+        }
+
+        public override string ToString()
+        {
+            string res = string.Empty;
+            foreach (var a in CarnetEntretien)
+                res += string.Format("Entretien du véhicule {0} du {1} :\n{2}", Nom, a.Key.ToShortDateString(), a.Value);
+
+            return res;
         }
         #endregion
     }
