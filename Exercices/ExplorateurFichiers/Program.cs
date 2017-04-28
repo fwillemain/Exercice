@@ -11,7 +11,7 @@ namespace ExplorateurFichiers
     {
         static void Main(string[] args)
         {
-            Explorateur explorateur = null;
+
             string path;
             bool correct = false;
 
@@ -21,7 +21,7 @@ namespace ExplorateurFichiers
                 path = Console.ReadLine();
                 if (Directory.Exists(path))
                 {
-                    explorateur = new Explorateur(path);
+                    Analyseur.AnalyserDossier(path);
                     correct = true;
                 }
                 else
@@ -29,12 +29,6 @@ namespace ExplorateurFichiers
             }
 
 
-            DelegueAnalyser delegue = null;
-            delegue += Analyseur.NbFichiersDontCs;
-            delegue += Analyseur.NomFichierCSharp;
-            delegue += Analyseur.NomFichierPlusLong;
-
-            explorateur.Analyser(delegue);
             Console.WriteLine(Analyseur.ToString());
 
             Console.ReadKey();
@@ -57,7 +51,7 @@ namespace ExplorateurFichiers
         #endregion
 
         #region Méthodes publiques
-        public void Analyser(DelegueAnalyser analyser)
+        public void Explorer(DelegueAnalyser analyser)
         {
             analyser(this);
         }
@@ -73,23 +67,39 @@ namespace ExplorateurFichiers
         public static FileInfo[] ListeFichiersProj { get; private set; }
         #endregion
 
-        #region Méthodes publiques
-        public static void NbFichiersDontCs(Explorateur e)
+        #region Méthodes privées
+        private static void NbFichiersDontCs(Explorateur e)
         {
             CompteFichiers = e.dir.GetFiles("*", SearchOption.AllDirectories).Length;
             CompteFichiersCs = e.dir.GetFiles("*.cs", SearchOption.AllDirectories).Length;
         }
 
-        public static void NomFichierPlusLong(Explorateur e)
+        private static void NomFichierPlusLong(Explorateur e)
         {
             var FileList = e.dir.GetFiles("*", SearchOption.AllDirectories);
             long tailleMax = FileList.Max(a => a.Length);
-            FichierLePlusLong = FileList.Where(a => a.Length == tailleMax).ToString();
+            FichierLePlusLong = FileList.Where(a => a.Length == tailleMax).First().Name; 
         }
 
-        public static void NomFichierCSharp(Explorateur e)
+        private static void NomFichierCSharp(Explorateur e)
         {
             ListeFichiersProj = e.dir.GetFiles("*.csproj", SearchOption.AllDirectories);
+        }
+
+        #endregion
+
+        #region Méthodes publiques
+        public static void AnalyserDossier(string path)
+        {
+            Explorateur explorateur = null;
+            explorateur = new Explorateur(path);
+
+            DelegueAnalyser delegue = null;
+            delegue += Analyseur.NbFichiersDontCs;
+            delegue += Analyseur.NomFichierCSharp;
+            delegue += Analyseur.NomFichierPlusLong;
+
+            explorateur.Explorer(delegue);
         }
 
         public static string ToString()
@@ -98,7 +108,7 @@ namespace ExplorateurFichiers
             res += string.Format("Nom de fichier le plus long : {0}", FichierLePlusLong);
             res += "Fichiers projets C# :\n";
             foreach (var a in ListeFichiersProj)
-                res += a.ToString() + "\n";
+                res += Path.GetFileNameWithoutExtension(a.Name) + "\n";
 
             return res;
         }
