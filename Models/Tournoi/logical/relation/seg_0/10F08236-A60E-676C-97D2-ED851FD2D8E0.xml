@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_11" directorySegmentName="seg_0" id="10F08236-A60E-676C-97D2-ED851FD2D8E0">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 14:05:22 UTC</createdTime>
+<ownerDesignName>Tournoi</ownerDesignName>
+<engineerTo>
+<item key="8220ECDF-168B-44EC-B378-D82ECAF0AE09" value="true"/>
+</engineerTo>
+<sourcePk>8BCBAD3F-D2FE-9475-B5A5-999763542CE3</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B18CF672-6CD6-BFB6-931A-33F6163404E4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>266B2DE9-111A-CE4C-38B7-AA7335CA40CB</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

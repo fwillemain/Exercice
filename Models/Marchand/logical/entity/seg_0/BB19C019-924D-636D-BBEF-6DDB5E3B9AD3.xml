@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BB19C019-924D-636D-BBEF-6DDB5E3B9AD3" name="Client">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-03-16 20:29:28 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<engineerTo>
+<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>42C9D5A0-FBE1-44EB-9116-E71A0E8272EA</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Numero" id="DA5558E2-B2D7-9172-9579-63DEB2140111">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-03-16 20:29:37 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<engineerTo>
+<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>58C558AA-944A-9E5E-2EF8-8080C457B1D9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id" id="99F53577-DE1A-F48C-98EA-6B16429DEF4A">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 13:30:51 UTC</createdTime>
+<generatorID>8291B92C-5B1B-8DDE-5021-C7FCF9692C25</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<engineerTo>
+<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
+</engineerTo>
+<referedAttribute>7A5849F0-D4EC-AE86-414D-6184474BE6AE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id1" id="33338857-6AA4-46B0-1C15-9E23DC9468D5">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 13:30:57 UTC</createdTime>
+<generatorID>CC73AF1E-1A93-1C4E-F66A-F0DC9C1CC054</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<engineerTo>
+<item key="2F30993B-38A8-1BBC-F96E-AF39455C989F" value="true"/>
+</engineerTo>
+<referedAttribute>7A5849F0-D4EC-AE86-414D-6184474BE6AE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

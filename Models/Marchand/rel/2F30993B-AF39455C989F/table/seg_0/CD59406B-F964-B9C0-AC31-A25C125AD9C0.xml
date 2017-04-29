@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CD59406B-F964-B9C0-AC31-A25C125AD9C0" name="CommandeChèque">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Commande_Id" id="AA29C13A-22E5-F45A-CE1B-97961B2D0E56">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E96514CA-2000-E2D6-0E75-A444D97D79E2" referredColumn="86DCF09B-F218-795E-3403-A185D50DFD7B"/>
+</associations>
+</Column>
+<Column name="Chèque_cadeau_NumChèque" id="D3122086-1C20-C718-9B30-F387332FA207">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>58C558AA-944A-9E5E-2EF8-8080C457B1D9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="34CAAEDE-4138-9C70-5662-ACA69121F40B" referredColumn="A976A933-D212-526B-B1AA-C375C5B81B8D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="30C04062-D5F8-342B-2D57-FC501DE51A84" name="CommandeChèque_PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA29C13A-22E5-F45A-CE1B-97961B2D0E56"/>
+<colUsage columnID="D3122086-1C20-C718-9B30-F387332FA207"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BAEA9519-82C5-1F30-76D7-C4AD848CDC3B" name="FK_ASS_77">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>52193F16-B4DB-D6B2-D658-3CA90A2DC144</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA29C13A-22E5-F45A-CE1B-97961B2D0E56"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6138D766-B790-6F27-D536-C0ECC39B6CDC" name="FK_ASS_78">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>52193F16-B4DB-D6B2-D658-3CA90A2DC144</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3122086-1C20-C718-9B30-F387332FA207"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

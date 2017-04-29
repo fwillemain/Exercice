@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BF8549DC-2843-5319-E646-06CA11F26C3B" name="Site">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 12:16:54 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D686763B-43DF-3978-1B0C-E11F65007FE3" value="true"/>
+<item key="A73FB2C5-CA3B-8FB2-5A3E-FC5A41009102" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="7574D3B6-7ED2-EEF7-D542-6A4250DF3A86">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 14:44:48 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D686763B-43DF-3978-1B0C-E11F65007FE3" value="true"/>
+<item key="A73FB2C5-CA3B-8FB2-5A3E-FC5A41009102" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>58C558AA-944A-9E5E-2EF8-8080C457B1D9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nom" id="80466CF5-E114-A7FE-F683-833F3D5412E5">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 14:44:36 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D686763B-43DF-3978-1B0C-E11F65007FE3" value="true"/>
+<item key="A73FB2C5-CA3B-8FB2-5A3E-FC5A41009102" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>F09CCBF4-7EDC-C2BD-35E1-A7380CFD3230</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Code" id="9E7954BC-9099-82A2-B616-D59ADCF7E583">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 12:21:32 UTC</createdTime>
+<generatorID>6F67B074-B1E6-87FF-D8FB-1F77E56888A0</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D686763B-43DF-3978-1B0C-E11F65007FE3" value="true"/>
+<item key="A73FB2C5-CA3B-8FB2-5A3E-FC5A41009102" value="true"/>
+</engineerTo>
+<referedAttribute>E8960B71-4D93-C733-3836-5B53C10A749E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3C8D8AD8-B00E-140B-22A3-62EEC3F7C8B1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Adresse" id="14CC8E9A-21E4-4C58-F10C-7866A9F16DE7">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 14:45:12 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D686763B-43DF-3978-1B0C-E11F65007FE3" value="true"/>
+<item key="A73FB2C5-CA3B-8FB2-5A3E-FC5A41009102" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>0CB5EFB0-AD54-1DC8-ED7E-5EEBEDC93A2B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B7042DED-E564-CF55-7D0B-51D928B89308" name="Site PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 14:44:51 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="D686763B-43DF-3978-1B0C-E11F65007FE3" value="true"/>
+<item key="A73FB2C5-CA3B-8FB2-5A3E-FC5A41009102" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7574D3B6-7ED2-EEF7-D542-6A4250DF3A86</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

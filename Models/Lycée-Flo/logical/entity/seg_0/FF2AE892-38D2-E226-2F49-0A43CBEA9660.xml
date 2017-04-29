@@ -1,0 +1,30 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FF2AE892-38D2-E226-2F49-0A43CBEA9660" name="Professeur">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 08:33:41 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="A1E60E06-70E9-5F72-F48A-CA2F3C358097" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>C8A7D98A-B578-718A-5757-E6DC732C4409</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Date arrivée" id="A0B15277-5FAF-3C6B-C417-4BB4A55A5ACB">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 09:21:25 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="A1E60E06-70E9-5F72-F48A-CA2F3C358097" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

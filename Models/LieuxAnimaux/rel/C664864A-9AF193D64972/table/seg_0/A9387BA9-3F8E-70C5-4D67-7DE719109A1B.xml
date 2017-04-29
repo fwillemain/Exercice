@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A9387BA9-3F8E-70C5-4D67-7DE719109A1B" schemaObject="18DEDD48-A41B-2509-BE67-054948CDD933" name="Box">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-11 09:03:31 UTC</createdTime>
+<generatorID>02059CCE-3A76-2D7C-0B21-3A5A6F2C9B4B</generatorID>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="098BB6D7-771D-C6F2-5703-82B03CB0B346">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-11 09:03:31 UTC</createdTime>
+<generatorID>4D76CF54-0294-D565-3893-C4DB783FC452</generatorID>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2BF40130-D3F7-0098-8BB5-C047A165849C" referredColumn="37101FE8-238F-EE27-7E7E-17B588C6218D"/>
+</associations>
+</Column>
+<Column name="NombrePlaces" id="C72F9011-09D7-E8D2-63F2-3A2497C6F98C">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-11 09:03:31 UTC</createdTime>
+<generatorID>62581C3E-2413-276E-3F20-BEB3E5D1AAB2</generatorID>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Batiment_Id" id="C133E06C-76C6-20BF-3B7F-029C2ACAB59B">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-11 09:03:31 UTC</createdTime>
+<generatorID>F97A4F70-73E3-BB7C-7738-5E2A2D645F0E</generatorID>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C9E13D3A-A51D-F6C6-9917-6E5074B43896" referredColumn="6106C064-FAD6-097C-3E41-4349A86840A0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EE284F32-3531-A2D8-1186-2677D7CCDA32" name="Box_PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-11 09:03:31 UTC</createdTime>
+<generatorID>8BEF18E9-B6A7-B26F-DC2B-20535C2F7E9D</generatorID>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="098BB6D7-771D-C6F2-5703-82B03CB0B346"/>
+<colUsage columnID="C133E06C-76C6-20BF-3B7F-029C2ACAB59B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DED17E13-85ED-8507-AACD-5E1CA0C362DB" name="Box_Lieu_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-11 09:03:31 UTC</createdTime>
+<generatorID>6C548819-8266-C05B-AE4B-5D4D8E88629E</generatorID>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="098BB6D7-771D-C6F2-5703-82B03CB0B346"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B3E59ADC-7C89-6536-60C8-F965A841D888" name="Box_Batiment_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-11 09:03:31 UTC</createdTime>
+<generatorID>FC091DB4-8AA8-DB29-559E-CEB1CD9999DF</generatorID>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C133E06C-76C6-20BF-3B7F-029C2ACAB59B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

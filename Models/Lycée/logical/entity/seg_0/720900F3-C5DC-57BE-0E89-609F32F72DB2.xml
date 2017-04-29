@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="720900F3-C5DC-57BE-0E89-609F32F72DB2" name="Evaluation">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:13:29 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="875B20A3-DE2C-E494-9F94-EE30D02CE557" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="DateEval" id="8A951BC7-A288-79FC-7909-35F8E0817B7B">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:13:39 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="875B20A3-DE2C-E494-9F94-EE30D02CE557" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Note" id="281FE1F3-1E7E-9D44-15EB-F440575EA596">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:13:53 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="875B20A3-DE2C-E494-9F94-EE30D02CE557" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DateEval1" id="33AE2C28-45C5-D32E-33D8-43339D465973">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:05 UTC</createdTime>
+<generatorID>3F1BDA95-C177-71A0-1CB6-FECFC9C6C64B</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="875B20A3-DE2C-E494-9F94-EE30D02CE557" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>3AD41E83-7D59-8D7C-B3E8-3F41DBBC0991</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id" id="3FFC448C-168E-519C-DDF5-A2CFCFAA8044">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:11 UTC</createdTime>
+<generatorID>46EC2976-992A-877A-5AF2-3A7906D81656</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="875B20A3-DE2C-E494-9F94-EE30D02CE557" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>E41B96E6-7901-FD68-E5D4-CAC4A0D90EF9</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DateEval2" id="FEC0C2E4-C552-A403-2A7D-70E6000C0ECF">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:11 UTC</createdTime>
+<generatorID>46EC2976-992A-877A-5AF2-3A7906D81656</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="875B20A3-DE2C-E494-9F94-EE30D02CE557" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>1EF969A1-D0DD-96A8-44CD-9FC31C5CBC7C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BB601EAB-36EB-0658-0654-C990BB550EC3" name="Evaluation PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:14:26 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="875B20A3-DE2C-E494-9F94-EE30D02CE557" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8A951BC7-A288-79FC-7909-35F8E0817B7B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

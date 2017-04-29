@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4E40B157-8721-AC81-4D8D-1D4D13710924" name="CatégorieArticle">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Catégorie_Id" id="CD37E1F4-A2FA-FCE5-6109-51039C946E84">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DEDB52EF-61D7-B005-462A-52B3D88C3F51" referredColumn="EA3100D4-9194-2DC3-78CD-2A750CC1E28B"/>
+</associations>
+</Column>
+<Column name="Article_Code" id="2813EBF7-E09E-C9FB-E5B7-0980F8C69D41">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3C8D8AD8-B00E-140B-22A3-62EEC3F7C8B1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="262F8587-5169-999D-4BDD-56F2B13010E9" referredColumn="23BF157A-08B6-F524-7D62-2944B9B84D60"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EA56F5C6-6F80-E729-E046-52EBDEDDEB50" name="CatégorieArticle_PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD37E1F4-A2FA-FCE5-6109-51039C946E84"/>
+<colUsage columnID="2813EBF7-E09E-C9FB-E5B7-0980F8C69D41"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="645C776C-B07D-3D9E-9ACC-8801E5C830C1" name="FK_ASS_74">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>B549CB35-842E-30FA-9247-6ACFCFE3F16A</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD37E1F4-A2FA-FCE5-6109-51039C946E84"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="535B5357-33D5-7C47-DFC6-3867D9D2A95F" name="FK_ASS_75">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>B549CB35-842E-30FA-9247-6ACFCFE3F16A</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2813EBF7-E09E-C9FB-E5B7-0980F8C69D41"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

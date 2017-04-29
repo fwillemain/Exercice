@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A30148D6-5E27-63A1-7308-71B0A20F7512" containerWithKeyObject="D26F414B-DEB5-E378-2132-CCAD2EF4017F" localFKIndex="EE419838-C99B-E3D3-E5D8-9ADDDE65C25E" name="LigneCommande_Commande_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:12:00 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>ED1E7A73-F0E4-089D-38E7-356F20581FDC</referredTableID>
+<keyObject>D13CB3DA-B725-4E94-2D93-99558AF63DDC</keyObject>
+<referredKeyID>D13CB3DA-B725-4E94-2D93-99558AF63DDC</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

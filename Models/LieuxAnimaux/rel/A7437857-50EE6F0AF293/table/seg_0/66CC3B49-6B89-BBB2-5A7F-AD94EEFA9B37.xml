@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="66CC3B49-6B89-BBB2-5A7F-AD94EEFA9B37" schemaObject="BCDA7C52-AC4A-21F7-FC56-FCDF841B5D12" name="Batimentv2">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 10:21:21 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="BF1E9A8E-DC11-519B-D5F2-28A77532D5BB">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 10:25:58 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ABB7C96F-A240-545E-44CC-5712D54F0415" referredColumn="F49893F2-EF89-254B-C4D3-1221C1404570"/>
+</associations>
+</Column>
+<Column name="QuantitéFourrage" id="490BD072-A222-B58C-C77C-93E3042DB7ED">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 10:22:34 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NbAllées" id="B90E9346-C56B-7543-F405-0DC087061011">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 10:23:03 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="419DFE2C-BBF9-5B77-352C-DB0C70BDBD01" name="Batiment_PKv1">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 10:26:18 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF1E9A8E-DC11-519B-D5F2-28A77532D5BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BB157483-C52D-AE58-FAC3-7E935F0374EF" name="Batiment_Lieu_FKv1">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 10:26:27 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF1E9A8E-DC11-519B-D5F2-28A77532D5BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

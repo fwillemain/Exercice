@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0B9ABD20-9F49-A451-CD6D-4360038CBC4F" name="Hotel">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 10:26:03 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="BDC7AC73-CC70-22C9-93F3-026591349A43" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="561F0DE3-2311-5279-A1AF-CEB1D6B881AE">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 10:28:53 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="BDC7AC73-CC70-22C9-93F3-026591349A43" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nom" id="69A9E7BF-59F5-6D9E-2ECD-380D6B19AC54">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 10:28:37 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="BDC7AC73-CC70-22C9-93F3-026591349A43" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F78752FB-DC8B-7BE4-D0D7-35639BCA221D" name="Hotel PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 10:28:59 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="BDC7AC73-CC70-22C9-93F3-026591349A43" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>561F0DE3-2311-5279-A1AF-CEB1D6B881AE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

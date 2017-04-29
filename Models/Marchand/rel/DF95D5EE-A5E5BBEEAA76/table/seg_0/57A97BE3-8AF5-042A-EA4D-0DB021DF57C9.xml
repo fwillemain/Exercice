@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="57A97BE3-8AF5-042A-EA4D-0DB021DF57C9" name="Client">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<generatorID>BB19C019-924D-636D-BBEF-6DDB5E3B9AD3</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="3CAD478D-EF1A-607E-26BB-9F9108093FC4">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<generatorID>39887ED0-47B4-8367-33D5-1923373048C3</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8B370BA7-2254-141B-365F-7399CD5927DB" referredColumn="F9A90C45-FEFC-662F-FF09-9EA2418A0C4A"/>
+</associations>
+</Column>
+<Column name="Adresse_Id1" id="7B2066FC-E0CF-56D8-2053-2247AAE05C41">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<generatorID>97FFB0CA-8DCA-1A6F-6551-2A059EF8DB45</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="70C2B374-73B5-F803-8F4B-2EBA420211A6" referredColumn="B194EF7C-0491-11B7-8AF1-B38B30293791"/>
+</associations>
+</Column>
+<Column name="Adresse_Id" id="D7C9B554-9FE4-60C5-D706-9F9FEEBEB4D2">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<generatorID>F51D3129-1F0B-F549-1F88-19041A594760</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C71B95BF-1733-D601-7D8D-C25818F3B5F0" referredColumn="B194EF7C-0491-11B7-8AF1-B38B30293791"/>
+</associations>
+</Column>
+<Column name="Numero" id="7771F69C-A5F1-244A-1E5D-02B4CAC38F68">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<generatorID>DA5558E2-B2D7-9172-9579-63DEB2140111</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BF729E14-D182-774A-B7ED-E6373CF46A72" name="Client_PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<generatorID>0310EF2E-A852-999F-98B9-5CA53B001EB3</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3CAD478D-EF1A-607E-26BB-9F9108093FC4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9EBDC52C-87A5-6EB8-791D-CC837C27C170" name="Client__IDX">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>CC73AF1E-1A93-1C4E-F66A-F0DC9C1CC054</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="D7C9B554-9FE4-60C5-D706-9F9FEEBEB4D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C95F3C70-8488-6251-2BB7-D24E49421928" name="Client__IDXv1">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>8291B92C-5B1B-8DDE-5021-C7FCF9692C25</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="7B2066FC-E0CF-56D8-2053-2247AAE05C41"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F30BA1E2-2E93-45BF-8BE5-95AE27954BC6" name="Client_Personne_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<generatorID>DD9BA5D1-6A35-D7C6-628F-3B148AC4F45C</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3CAD478D-EF1A-607E-26BB-9F9108093FC4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BBE6DFAC-C57D-C6AC-23D3-EE7542E90424" name="Client_Adresse_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<generatorID>CC73AF1E-1A93-1C4E-F66A-F0DC9C1CC054</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7C9B554-9FE4-60C5-D706-9F9FEEBEB4D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D60096C3-A52E-E7AC-F7DC-79919296F579" name="Client_Adresse_FKv1">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<generatorID>8291B92C-5B1B-8DDE-5021-C7FCF9692C25</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B2066FC-E0CF-56D8-2053-2247AAE05C41"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

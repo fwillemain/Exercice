@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="185B65CF-AFC8-D202-E0E8-61A390E5B3D3" name="JoueurMatch">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 13:00:49 UTC</createdTime>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Match_Numéro" id="A30656A9-48DE-5E73-5577-21D0A1784108">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 13:00:49 UTC</createdTime>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="92D19A6A-BDF7-C178-8CF1-6252B5CC2CEE" referredColumn="5B1D327A-032F-3889-B9B4-A6C35F0BAA7D"/>
+</associations>
+</Column>
+<Column name="Joueur_Id" id="28DCE080-32C8-9A2E-7D57-7BDDE79A3F56">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 13:00:49 UTC</createdTime>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>58C558AA-944A-9E5E-2EF8-8080C457B1D9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FF5AAC05-62F9-6E5C-42C4-7B4F371E0C4E" referredColumn="AE2961C2-2CA8-C94F-3158-BE45DE97A08F"/>
+</associations>
+</Column>
+<Column name="Gagné" id="D8089B9E-4D84-FFFA-775E-DBFD88A71BF2">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 13:00:49 UTC</createdTime>
+<generatorID>365DE489-118C-EB7F-F9AE-EAA5A7DA08F6</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DF2018DD-2EAF-B49F-3C61-686B152F53B4" name="JoueurMatch_PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 13:00:49 UTC</createdTime>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A30656A9-48DE-5E73-5577-21D0A1784108"/>
+<colUsage columnID="28DCE080-32C8-9A2E-7D57-7BDDE79A3F56"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C679203E-6E35-B673-894E-936C93706963" name="FK_ASS_11">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 13:00:49 UTC</createdTime>
+<generatorID>4460D8FF-DC26-B760-768D-6CFE18170AE1</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A30656A9-48DE-5E73-5577-21D0A1784108"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FD304F82-6E0B-E090-F74A-BA792417D2D7" name="FK_ASS_12">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 13:00:49 UTC</createdTime>
+<generatorID>4460D8FF-DC26-B760-768D-6CFE18170AE1</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="28DCE080-32C8-9A2E-7D57-7BDDE79A3F56"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

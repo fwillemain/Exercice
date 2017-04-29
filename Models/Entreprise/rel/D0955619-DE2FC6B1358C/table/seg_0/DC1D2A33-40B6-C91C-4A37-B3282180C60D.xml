@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DC1D2A33-40B6-C91C-4A37-B3282180C60D" name="ServiceSite">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:29:40 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Service_Id" id="7F0999FE-F408-B412-25AD-EC7432ADCACD">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:31:01 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="185772AE-5FA6-CCEE-9914-5C39C9317146" referredColumn="FF9D5E8C-DC26-C6BE-34A5-8E327C2D34AE"/>
+</associations>
+</Column>
+<Column name="Service_Entreprise_Id" id="E77FBBEA-7ED0-91AA-2302-56C6EDD209CB">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:31:01 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="185772AE-5FA6-CCEE-9914-5C39C9317146" referredColumn="A46176AA-F6E2-E0E1-BBA6-A0F9E10F8A60"/>
+</associations>
+</Column>
+<Column name="Site_Id" id="ECD656AA-5D3F-2CFD-8FD5-2FF1DE7AB940">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:31:04 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B47986F2-D1A8-3D4F-BF80-5AE0E084156C" referredColumn="2E04B92A-4848-2F3A-E226-034EEBC5329F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F4A133C4-9E7D-6E7A-DC3F-85AE17C730E4" name="ServiceSite_PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:31:48 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F0999FE-F408-B412-25AD-EC7432ADCACD"/>
+<colUsage columnID="E77FBBEA-7ED0-91AA-2302-56C6EDD209CB"/>
+<colUsage columnID="ECD656AA-5D3F-2CFD-8FD5-2FF1DE7AB940"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="90C84B59-AD0C-7C3A-30AF-C32B95172972" name="ServiceSite_Service_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:31:01 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F0999FE-F408-B412-25AD-EC7432ADCACD"/>
+<colUsage columnID="E77FBBEA-7ED0-91AA-2302-56C6EDD209CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="98CFE6D3-89B8-5A6B-BFAA-CB5ED8D2075B" name="ServiceSite_Site_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:31:04 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ECD656AA-5D3F-2CFD-8FD5-2FF1DE7AB940"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

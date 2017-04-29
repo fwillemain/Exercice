@@ -1,0 +1,40 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_2" directorySegmentName="seg_0" id="6D55F377-DE81-7C7A-3143-16FD07983810">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 12:25:52 UTC</createdTime>
+<ownerDesignName>Tournoi</ownerDesignName>
+<engineerTo>
+<item key="8220ECDF-168B-44EC-B378-D82ECAF0AE09" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>0E36977B-49B3-94D0-86CA-1B4566DD549D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6A46641F-1D0C-5B20-5D9A-D174D5706C92</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="Vainqueur?" id="02325B5D-DE89-9372-B2ED-70F43AE8923D">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 13:07:09 UTC</createdTime>
+<ownerDesignName>Tournoi</ownerDesignName>
+<engineerTo>
+<item key="8220ECDF-168B-44EC-B378-D82ECAF0AE09" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+<attribute name="Nationalité" id="D8B96798-4C2C-5BCD-BC2D-60FCA6A37E37">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 13:07:44 UTC</createdTime>
+<ownerDesignName>Tournoi</ownerDesignName>
+<engineerTo>
+<item key="8220ECDF-168B-44EC-B378-D82ECAF0AE09" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

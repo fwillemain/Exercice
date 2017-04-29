@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E9AE5FCA-54B4-EA8F-30CE-3BEAC962DE39" name="Matière">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-09 16:02:08 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="9229DB60-B50C-0CBF-6A00-B32FC0AEF6EA">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-09 16:02:27 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C12ED81C-82AF-1FAF-5F61-558D4710BBC1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Libellé" id="526D4EC4-6880-1952-4903-6F6001E35DEC">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-09 16:02:46 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>680A30BF-342B-4E15-4F53-EB84BFCF4A74</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A5A6BEA5-4C05-2E10-5709-B56462E739B9" name="Matière_PK">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-09 16:02:27 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9229DB60-B50C-0CBF-6A00-B32FC0AEF6EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="47EA6ED4-CFE7-3AC1-B289-A52F4B391572" name="Arbitre">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-07 12:21:13 UTC</createdTime>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<engineerTo>
+<item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>7ECF3658-ABFA-99BA-228F-73F0CE5DDAF0</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+</Entity>

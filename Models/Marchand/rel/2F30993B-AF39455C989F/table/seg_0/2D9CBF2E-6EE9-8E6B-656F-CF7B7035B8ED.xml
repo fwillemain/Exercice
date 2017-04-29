@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2D9CBF2E-6EE9-8E6B-656F-CF7B7035B8ED" name="Client">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>BB19C019-924D-636D-BBEF-6DDB5E3B9AD3</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="0B876BB6-004B-8E31-2E2C-52EF8C7A1BDD">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>39887ED0-47B4-8367-33D5-1923373048C3</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="75DA02A7-DF86-3028-0002-E7509F2CA182" referredColumn="AC274853-C5C0-44F2-8690-4EE752205C19"/>
+</associations>
+</Column>
+<Column name="Numero" id="686D25F1-125B-CD7C-B9AE-D789C33C0015">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>DA5558E2-B2D7-9172-9579-63DEB2140111</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>58C558AA-944A-9E5E-2EF8-8080C457B1D9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Adresse_Id1" id="42C01572-6351-1364-7152-0DCCAD204449">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>99F53577-DE1A-F48C-98EA-6B16429DEF4A</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1F5110B4-2111-218E-7657-A0B6E8125231" referredColumn="61B0B9FA-E6FA-4B09-DFCD-C9FEEEE2CF16"/>
+</associations>
+</Column>
+<Column name="Adresse_Id" id="8147A28C-3018-6D0B-3ADB-9C14B9F70283">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>33338857-6AA4-46B0-1C15-9E23DC9468D5</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7906B37E-BCA5-7DDC-56CD-EC0728C4102C" referredColumn="61B0B9FA-E6FA-4B09-DFCD-C9FEEEE2CF16"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E367CB52-6657-A1AE-7794-9212B7CA3E65" name="Client_PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>0310EF2E-A852-999F-98B9-5CA53B001EB3</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B876BB6-004B-8E31-2E2C-52EF8C7A1BDD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="75627430-54C4-06D7-8309-CEE4A46B9F9A" name="Client__IDX">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>CC73AF1E-1A93-1C4E-F66A-F0DC9C1CC054</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="8147A28C-3018-6D0B-3ADB-9C14B9F70283"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BB165263-7A42-5E07-7831-7837FB10130A" name="Client__IDXv1">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<ownerDesignName>Marchand</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>8291B92C-5B1B-8DDE-5021-C7FCF9692C25</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="42C01572-6351-1364-7152-0DCCAD204449"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BEE7B951-FF7F-963D-6347-E7F6BF3A2CBD" name="Client_Personne_FK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>DD9BA5D1-6A35-D7C6-628F-3B148AC4F45C</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B876BB6-004B-8E31-2E2C-52EF8C7A1BDD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="17B742EA-74EE-6F55-EDB2-B04854CA1814" name="Client_Adresse_FK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>CC73AF1E-1A93-1C4E-F66A-F0DC9C1CC054</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8147A28C-3018-6D0B-3ADB-9C14B9F70283"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5B336ECE-632A-1B85-1D01-EF2188C91C82" name="Client_Adresse_FKv1">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>8291B92C-5B1B-8DDE-5021-C7FCF9692C25</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="42C01572-6351-1364-7152-0DCCAD204449"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

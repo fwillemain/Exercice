@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C4089AD1-FC5A-70C0-E079-C6B0FEF4A458" name="ProjetSite">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Site_Id" id="2B27B04C-5922-033E-F2F0-EF42B8204E9F">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>58C558AA-944A-9E5E-2EF8-8080C457B1D9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="05DB2FC5-3B5E-A4F2-6551-708F615FDD8B" referredColumn="6124BCF0-95E5-67A7-B834-16C6F34F993C"/>
+</associations>
+</Column>
+<Column name="Projet_Code" id="D5440060-DAF4-3868-5512-912DEE5CAEEF">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3C8D8AD8-B00E-140B-22A3-62EEC3F7C8B1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B9AB7760-0BD4-21EB-165E-A3088B927897" referredColumn="937DEF91-43C3-9102-57C2-CD794AD42D9A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2C87BE4B-5FBB-1CFD-0F57-06580F994DD4" name="Relation_7_PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B27B04C-5922-033E-F2F0-EF42B8204E9F"/>
+<colUsage columnID="D5440060-DAF4-3868-5512-912DEE5CAEEF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B7E291D9-AFAA-DE92-0409-02D19CD93C9D" name="FK_ASS_5">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<generatorID>4A01B259-2372-659C-50DB-5D75A2BD64C9</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B27B04C-5922-033E-F2F0-EF42B8204E9F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8A4260E9-6B20-814B-8F84-DE7EC963D134" name="FK_ASS_6">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<generatorID>4A01B259-2372-659C-50DB-5D75A2BD64C9</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D5440060-DAF4-3868-5512-912DEE5CAEEF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

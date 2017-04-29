@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8838890D-1397-FDF9-701C-92ECE5459184" schemaObject="6D7C9FFC-C1C2-958B-0445-83B259FF5CD6" name="Version">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>61029284-7059-C10C-F1B4-A7D05FF879B3</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Version" id="7C3C817B-CD6C-4EEE-C468-1C828973A579">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>1EF6B723-4AC0-A768-D9A7-10C355E2EBC8</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Logiciel_Code" id="D319B6B1-1C46-F6E1-E780-1247FAB315D3">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>16EE2E41-0E5B-1B10-61E3-239567045532</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="847B5656-6468-E7D7-A89B-CDA727BB32D9" referredColumn="F6FF9C82-E81C-DC73-EB21-C92C6956F65B"/>
+</associations>
+</Column>
+<Column name="Millesime" id="A192D0CE-FF4D-4819-4832-49729A43D44D">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>4FC08518-3C2F-72D8-9EB6-4B29755310B7</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>6D1C2157-754A-83DD-4B48-2AF727A94D15</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DateOuverture" id="58D0276E-5196-F842-5DD2-DCEEE07427F9">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>CBD0A6E5-DAD1-BE79-1C04-7908FD11A62F</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DateSortieEstimee" id="8D2C1911-307C-905B-7B6D-55D9AE3FE3ED">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>161AA290-9BBB-D43C-FD37-20B1F35F485B</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DateSortieReelle" id="EAB0097A-3BD8-65E0-2937-72ABFFA52978">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>6FE1CAB2-7EC9-D4D6-1684-DDAF7D4052A3</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E250A037-E5FE-011E-20B1-3A6A28DB82F1" name="Version_PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>43834BCD-1747-0A05-DA26-27FE78B50B4C</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C3C817B-CD6C-4EEE-C468-1C828973A579"/>
+<colUsage columnID="D319B6B1-1C46-F6E1-E780-1247FAB315D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="32732FF1-3E3F-3DB7-5BF6-22D6C84F2960" name="Version_Logiciel_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>15F1500B-8AAB-F188-FB15-6AF16A74EBE3</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D319B6B1-1C46-F6E1-E780-1247FAB315D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

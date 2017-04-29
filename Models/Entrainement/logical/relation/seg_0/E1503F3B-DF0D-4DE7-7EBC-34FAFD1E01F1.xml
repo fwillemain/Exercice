@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Passe" directorySegmentName="seg_0" id="E1503F3B-DF0D-4DE7-7EBC-34FAFD1E01F1">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 10:16:06 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="97480CC8-6592-DCDC-CD11-5AC8D7A0FE9A" value="true"/>
+</engineerTo>
+<sourcePk>41B7DA23-7C24-66AA-219E-6F1D2181647B</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9BB6C61B-3951-0B04-76D5-AAB4CABA6DC8</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8BABBD79-4754-2F4C-5FA6-14C12E053DAD</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

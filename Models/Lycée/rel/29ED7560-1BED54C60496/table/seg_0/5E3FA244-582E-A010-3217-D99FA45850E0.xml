@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5E3FA244-582E-A010-3217-D99FA45850E0" name="Classe">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-09 15:04:45 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Code" id="BBA4BBF6-DD0F-13E6-230B-4340C32E475F">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-09 16:00:49 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5412AD9F-6422-FDBF-6956-FFF1ABCAE16E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Professeur_Id" id="823FAE5E-8FB2-52B7-15FA-231CED966866">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-09 16:08:48 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C12ED81C-82AF-1FAF-5F61-558D4710BBC1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9DF6E6B7-09ED-146B-CAF3-16559554BD3F" referredColumn="4D1E8732-D423-41CF-776F-90DAC5ECCC17"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2C7C73DF-7E61-EF94-2673-4640E3D1B836" name="Classe_PK">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-09 16:00:49 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BBA4BBF6-DD0F-13E6-230B-4340C32E475F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="94161BE1-0E24-2E62-71F6-9C2EAB23BD35" name="Classe_Professeur_FK">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-09 16:08:48 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="823FAE5E-8FB2-52B7-15FA-231CED966866"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

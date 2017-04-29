@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0F7377C1-4B35-7151-63EE-7DA0208F52FB" name="Release">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 07:37:27 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Version" id="447F29C8-0E22-0BAB-98B9-DBA095941D69">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 07:37:47 UTC</createdTime>
+<generatorID>2F1F947D-82D6-0CF6-5D70-9FAD32C4A44B</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<referedAttribute>1EF6B723-4AC0-A768-D9A7-10C355E2EBC8</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id" id="27AE8351-D5D2-B6C0-6A85-AF45B9E265E4">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 07:38:02 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DateCreation" id="6EA31E19-B022-27EB-C753-295D5C44324B">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 07:40:50 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Code" id="CBD528CA-818D-F4D4-31C9-1C993445B592">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 16:49:13 UTC</createdTime>
+<generatorID>2F1F947D-82D6-0CF6-5D70-9FAD32C4A44B</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<referedAttribute>45C90B6F-17EC-3A13-A8B3-E1520AF3BD92</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A1A84A96-6E1B-7A8D-09EB-17E77D007EFF" name="Release PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 07:38:07 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>27AE8351-D5D2-B6C0-6A85-AF45B9E265E4</attributeRef>
+<attributeRef>447F29C8-0E22-0BAB-98B9-DBA095941D69</attributeRef>
+<attributeRef>CBD528CA-818D-F4D4-31C9-1C993445B592</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

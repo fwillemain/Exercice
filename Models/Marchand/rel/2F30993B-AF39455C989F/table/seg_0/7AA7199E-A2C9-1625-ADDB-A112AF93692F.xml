@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7AA7199E-A2C9-1625-ADDB-A112AF93692F" name="LigneCommande">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>BE39B9B2-693B-65C7-9156-4FC83E095014</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Quantité" id="B47C5AB5-8FF8-9C61-80AD-75C654569BD5">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>ADB3166A-B2FF-B7E2-137F-CBA97A8F7C40</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PrixUnitaire" id="086EA3CC-1AEF-DD32-87A9-85F6A70573E3">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>C9FD330E-5AA1-9B07-F1E3-AE8F9C73E7A3</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PourcentRemise" id="A17F990D-7AAD-F59D-B43B-D4D33127AF50">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>3C6750F2-04F3-06D7-8802-F5A46317B9AB</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Commande_Id" id="DBBD9F3B-1934-F56D-E40E-4ED20F1FF7A5">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>01935470-D211-EF4A-6187-AF0180BA76A3</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B705B5F3-FD94-3D40-6FCE-6DC56A12B2F5" referredColumn="86DCF09B-F218-795E-3403-A185D50DFD7B"/>
+</associations>
+</Column>
+<Column name="Article_Code" id="A46C53F1-F3C6-DE69-7F3A-4D71775073E1">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>E0DC8457-B859-617C-3273-5557A520C5B0</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3C8D8AD8-B00E-140B-22A3-62EEC3F7C8B1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="548EF025-1AAD-6F67-5355-56D2177A3F8D" referredColumn="23BF157A-08B6-F524-7D62-2944B9B84D60"/>
+</associations>
+</Column>
+<Column name="EtatLivraison" id="F79F0B25-A094-52C8-A671-596064D17BCF">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>FDFD23FA-E6A0-5A78-CDBF-EE466B24869B</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AE5310DC-CC94-DB9D-7F24-762DFF18884D" name="LigneCommande_PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>9205C483-BF7B-E050-B6BD-81BE6B431F96</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBBD9F3B-1934-F56D-E40E-4ED20F1FF7A5"/>
+<colUsage columnID="A46C53F1-F3C6-DE69-7F3A-4D71775073E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="445E4BDD-DD81-9DDA-AC4A-6E6CCF516098" name="LigneCommande_Commande_FK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>6863FCC7-013E-49BF-F626-B73F42478ABD</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBBD9F3B-1934-F56D-E40E-4ED20F1FF7A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ADB0BBB9-2805-EFC5-0A60-D34EBC99CE08" name="LigneCommande_Article_FK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 14:25:11 UTC</createdTime>
+<generatorID>7231F305-EB86-64CF-8A58-A53142B6C6AB</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A46C53F1-F3C6-DE69-7F3A-4D71775073E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

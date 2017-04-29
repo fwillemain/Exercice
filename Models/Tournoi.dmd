@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Tournoi" id="20CE1F1C-A604-72CB-1DE2-B5FFDFEC631C" version="3.5">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 12:19:38 UTC</createdTime>
+<ownerDesignName>Tournoi</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>20CE1F1C-A604-72CB-1DE2-B5FFDFEC631C</designId>
+</OSDM_Design>

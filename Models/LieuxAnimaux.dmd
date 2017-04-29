@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="LieuxAnimaux" id="939B1D7E-B2A9-C5E3-B296-51E96EE67202" version="3.5">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-06 21:36:05 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>939B1D7E-B2A9-C5E3-B296-51E96EE67202</designId>
+</OSDM_Design>

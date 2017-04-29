@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C6A5E596-2A0A-9A0C-258A-AF54CAB4A10D" name="Elève">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>C967E846-39B5-6629-8C97-CC5565F0E45F</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="26FF75C5-64F0-5190-304C-CF0FEF7AB670">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>525B9622-CCA3-6412-A2EF-9C6FA90135F5</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FFF6510A-4344-57AF-B448-E0D6380E7CC6" referredColumn="6DB43DC7-6903-8204-A4F1-3BF9ED6F94B3"/>
+</associations>
+</Column>
+<Column name="Classe_Code" id="9BA58423-E1A4-37CC-A593-4985F96645EE">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>B0CA7668-C78F-E931-D4D7-70369ECF886A</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7116999B-6027-63FF-9317-0B6C1883618D" referredColumn="B02F6064-38E3-81CE-897D-785FD1686FCA"/>
+</associations>
+</Column>
+<Column name="Délégué" id="1792FD61-5685-997C-65B7-DD1BB5DAD282">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>BF817371-8E47-1DCC-3874-FCBE647BEE2D</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<dependOnForeignKeyID>7116999B-6027-63FF-9317-0B6C1883618D</dependOnForeignKeyID>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2E8AE71F-7A28-1102-2586-1B809FE3EA91" name="Elève_PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>EF55444E-729F-76DD-4477-28206758AD2D</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26FF75C5-64F0-5190-304C-CF0FEF7AB670"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="62836054-F538-CB66-C5E8-BD05B2305034" name="Elève_PKv1">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>8D179DE6-55BD-9EBA-D814-3EF0DECB8E7D</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="23E0DAE1-FF6D-4AE4-7771-43709F1F6CA2" name="Elève_Personne_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>A57127FB-C50D-04CB-AB59-15957126A145</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26FF75C5-64F0-5190-304C-CF0FEF7AB670"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C3F5177A-B201-7340-532E-794E62471A22" name="Elève_Classe_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 13:18:33 UTC</createdTime>
+<generatorID>8C1EE5E1-A871-6194-45FB-3511F65EEF8B</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9BA58423-E1A4-37CC-A593-4985F96645EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

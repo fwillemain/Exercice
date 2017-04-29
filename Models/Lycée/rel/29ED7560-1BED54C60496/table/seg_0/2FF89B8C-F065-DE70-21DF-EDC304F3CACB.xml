@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2FF89B8C-F065-DE70-21DF-EDC304F3CACB" name="Professeur">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-09 15:53:06 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="4D1E8732-D423-41CF-776F-90DAC5ECCC17">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-09 15:53:44 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C12ED81C-82AF-1FAF-5F61-558D4710BBC1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ADAFF722-9726-4CAD-4E12-547330CC05B8" referredColumn="D96D3630-5DEA-88F1-7710-BB199BB78D21"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8D57D15A-9549-78A0-6BEB-E56E82C6E501" name="Professeur_PK">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-09 15:55:50 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D1E8732-D423-41CF-776F-90DAC5ECCC17"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E019EF5F-3FBE-908C-2C20-089CE46A7C61" name="Professeur_Personne_FK">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-09 15:53:44 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D1E8732-D423-41CF-776F-90DAC5ECCC17"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

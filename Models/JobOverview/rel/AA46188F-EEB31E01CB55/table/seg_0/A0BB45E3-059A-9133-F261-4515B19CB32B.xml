@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A0BB45E3-059A-9133-F261-4515B19CB32B" schemaObject="6D7C9FFC-C1C2-958B-0445-83B259FF5CD6" name="TravailPT">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>D04BE224-3767-3078-6F04-6BBEDE1C22F2</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<ordsAlias>travailpersonnetache</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Date" id="4140C588-DCE7-E038-FE95-2DFE826E897E">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>2451E305-9A92-B3A2-6817-CEF8B85847BA</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Personne_Login" id="664A101B-D938-A538-F555-97AA2CAB243A">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>54907491-D5D3-CCD2-C7D1-BF7C925A8E52</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8C00B29B-91C8-646F-9CE7-79F4D8EABEF2" referredColumn="01B1FF16-4B5A-3255-A840-43BCD018D613"/>
+</associations>
+</Column>
+<Column name="Tache_Id" id="B2F20C4D-16CC-D6F7-3CB0-504D893D36E9">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>EC06FCEE-D26E-25A6-1EE5-68A9C1AF115D</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C25299C2-3C0E-6E39-E8C9-384C4BAD7675" referredColumn="D6FFE18D-5B53-BFB8-1489-C833AAE7B6AD"/>
+</associations>
+</Column>
+<Column name="TauxProd" id="C11C0890-9EFA-58CB-0567-692B401F1966">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>1D860C9F-EFC5-EA95-3E3A-0C935AA6EA46</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT022</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Temps" id="709B2CA4-FE9A-BA6E-E564-3C95A6CC3F5F">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>56755733-7268-0BE1-2837-0EA149F8A2BB</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CFEC6EEF-932B-F01D-F920-2C4BDC07218D" name="TravailPT_PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>3A7DFF5B-5CF0-2E17-E5EA-B28BBFF49D8A</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="664A101B-D938-A538-F555-97AA2CAB243A"/>
+<colUsage columnID="B2F20C4D-16CC-D6F7-3CB0-504D893D36E9"/>
+<colUsage columnID="4140C588-DCE7-E038-FE95-2DFE826E897E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A78CB759-6A3A-0D96-EF0A-624E08633AC1" name="TravailPT_Personne_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>6AF3BAFB-45E2-89EB-5066-DF8CCFEEE95F</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="664A101B-D938-A538-F555-97AA2CAB243A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0C8ACCAE-D7A7-ECF3-6B96-32128F066200" name="TravailPT_Tache_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>5624FB5E-413F-1901-5AC9-D51EAD341EBB</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B2F20C4D-16CC-D6F7-3CB0-504D893D36E9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

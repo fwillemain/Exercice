@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A7297E38-A2D4-7D17-AD9E-4A3AC628629E" name="Projet">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 12:37:16 UTC</createdTime>
+<generatorID>8A45003E-EEFF-F64E-67F0-AAD6EEB556C1</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Code" id="0AFC6476-5DAA-CC2E-7E30-C98A473676DE">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 12:37:16 UTC</createdTime>
+<generatorID>EF65FB8B-6FDC-C832-54FA-3C212E33F10C</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nom" id="6FA5BE4C-72C7-0501-A6E8-488331F6716F">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 12:37:16 UTC</createdTime>
+<generatorID>053DF88C-DDA5-5BE2-7E5B-942D541B46C8</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>6D1C2157-754A-83DD-4B48-2AF727A94D15</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Service_Id" id="12D954C3-1DFD-F70B-C1A1-E24AA576DF9D">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 12:37:16 UTC</createdTime>
+<generatorID>C69C5268-400F-46D4-EC3D-0CDD5FCE880D</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CF46E6AB-E796-FCA5-69AB-2FA772F69436" referredColumn="7D008AC9-964A-6F15-0D97-98B9B64E6B23"/>
+</associations>
+</Column>
+<Column name="Service_Entreprise_Id" id="9D8B9D05-A654-AC9F-98F6-813BEE934774">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 12:37:16 UTC</createdTime>
+<generatorID>4B398B30-D7C1-DD37-4A7C-759D1F3011F3</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CF46E6AB-E796-FCA5-69AB-2FA772F69436" referredColumn="FA3F6D04-D6F5-AE28-E2B9-B765E0229C39"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7988B730-2915-98B0-9E94-1228F79D99B7" name="Projet_PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 12:37:16 UTC</createdTime>
+<generatorID>0703CABF-E5FE-7E6A-4537-315924C92AC4</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0AFC6476-5DAA-CC2E-7E30-C98A473676DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="68C96593-B308-8A56-4A1B-B21D7D48314E" name="Projet_Service_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 12:37:16 UTC</createdTime>
+<generatorID>DC4E8020-D762-D00F-25EF-3F93B7DB1EF5</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="12D954C3-1DFD-F70B-C1A1-E24AA576DF9D"/>
+<colUsage columnID="9D8B9D05-A654-AC9F-98F6-813BEE934774"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

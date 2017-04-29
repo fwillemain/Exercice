@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1FDB231D-A70D-4292-1791-87FBFB6242E2" name="Enseignement">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 13:16:23 UTC</createdTime>
+<generatorID>AFB25FEC-3B4F-7B32-7398-3ADEFFF74A65</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Matière_Id" id="2AD8FAAA-2928-0FDE-AACC-3A0861398767">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 13:16:23 UTC</createdTime>
+<generatorID>1EC20D73-ECED-D47D-D8A9-8B2A8BB0176D</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="63453088-467B-75A2-BEEE-12701BA81169" referredColumn="B4E9FDC0-780D-A214-FDA7-9A42A7A2D706"/>
+</associations>
+</Column>
+<Column name="Professeur_Id" id="4D2A66B1-897F-5D4E-D547-2C388BDF47BB">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 13:16:23 UTC</createdTime>
+<generatorID>A933BBD5-5C4A-5C35-9BB6-BCBD403DAA52</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9E8F4C09-366B-0A3F-E4BA-4B8F921BF231" referredColumn="75BA96BD-4E2B-89D0-9627-FD7E56E3A9D8"/>
+</associations>
+</Column>
+<Column name="Classe_Code" id="3FD13A60-B45D-3728-86CB-3B24E728EFE2">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 13:16:23 UTC</createdTime>
+<generatorID>0E0ECC70-1F24-5430-9D9E-933B756CD06E</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3C8D8AD8-B00E-140B-22A3-62EEC3F7C8B1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="297DC205-7E30-3676-8030-ED76B2B1F4C1" referredColumn="7F8CE878-9EDB-1210-72B9-689A96730F8B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="912D3EDB-B0D8-C589-C94A-C33009B605A5" name="Enseignement_PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 13:16:23 UTC</createdTime>
+<generatorID>EBD13447-7A03-755C-7634-42B5D8166BC4</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2AD8FAAA-2928-0FDE-AACC-3A0861398767"/>
+<colUsage columnID="4D2A66B1-897F-5D4E-D547-2C388BDF47BB"/>
+<colUsage columnID="3FD13A60-B45D-3728-86CB-3B24E728EFE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AE56D922-0E04-421A-CF3E-8FAD6B37A166" name="Enseignement_Professeur_FK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 13:16:23 UTC</createdTime>
+<generatorID>FBEDA48F-7DAE-C13F-F2AD-1A8CEF91B704</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D2A66B1-897F-5D4E-D547-2C388BDF47BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE993544-302D-2816-E214-8776C5DA19DD" name="Enseignement_Classe_FK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 13:16:23 UTC</createdTime>
+<generatorID>A6D224AA-1D3B-1511-DD8C-2B6BB6A27E84</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3FD13A60-B45D-3728-86CB-3B24E728EFE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="738F6757-7A95-CF24-6E41-F9645731FCA4" name="Enseignement_Matière_FK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 13:16:23 UTC</createdTime>
+<generatorID>85AA0D50-35DA-82B2-52F3-7E558B735568</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2AD8FAAA-2928-0FDE-AACC-3A0861398767"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

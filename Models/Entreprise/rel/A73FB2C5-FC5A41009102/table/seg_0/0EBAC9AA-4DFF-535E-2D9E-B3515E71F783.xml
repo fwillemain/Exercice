@@ -1,0 +1,213 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0EBAC9AA-4DFF-535E-2D9E-B3515E71F783" name="Salarié">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<generatorID>81FD86E6-E2E2-017C-23F6-C88879C7184C</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Numéro_sécu" id="9B65133A-128A-85D7-AAF6-D5BCD9E1DAA9">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<generatorID>EE7C46FC-D8A6-9DA1-F0CA-D8A3E8096F01</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Sexe" id="78F29191-9CEA-3034-A50C-37C849A5EE18">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<generatorID>D7552DCE-6CBA-CE80-EA8C-8DDEE4BBD0CC</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nom" id="2AB86158-3882-12B1-5E74-16C37C47C415">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<generatorID>D045192F-E1B8-6AD5-FF16-2905B78EFE12</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Prénom" id="0A243CBB-706E-3BC3-3197-2F9D77505BBE">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<generatorID>8CE4B270-E3F5-8833-D6A4-A989AC5692E0</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DateNaissance" id="778A99E2-5B3B-6E2B-EEF5-AD8F43491948">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<generatorID>807EE07F-E52A-3025-D455-88EB8C4D6EF4</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Adresse" id="923DC869-3390-EAA7-574A-B846EE993ED8">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<generatorID>7C80CF12-E5BA-234B-C020-C3D797C3FFAC</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NumTel" id="7612164B-903B-E4EA-2126-32A827847C74">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<generatorID>544C599D-FDAF-F1A0-68EE-66446C397FD8</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Salaire" id="F73213EC-59EF-557A-4CD2-21FA48CD0419">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<generatorID>09916480-F656-D950-1AF9-A550D79B1D5D</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Service_Code" id="DD659E36-805A-9327-A67C-9DA342FC0ED7">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<generatorID>6FCD989E-01AC-9857-7B88-AEA057305A06</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3C8D8AD8-B00E-140B-22A3-62EEC3F7C8B1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FB24A27D-C0BC-4112-299B-508335DFF64A" referredColumn="44D896DD-9787-7BE2-51B3-62253B264C20"/>
+</associations>
+</Column>
+<Column name="Salarié_Numéro_sécu" id="2E268C6E-DBBC-B7E9-87D1-DB9B53AE35F2">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<generatorID>4A60E6F2-4491-5B90-E3C2-D0AB21DCD1E0</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="622686B2-0BDE-875D-46F5-1C1D2FB1DFE2" referredColumn="9B65133A-128A-85D7-AAF6-D5BCD9E1DAA9"/>
+</associations>
+</Column>
+<Column name="Salarié_Numéro_sécu1" id="3C0C2750-78AF-447D-137A-CA66D1F2FA89">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<generatorID>A84C9CAA-787D-9828-37F5-0F975EF5E723</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5D15B524-5468-8595-EE17-FD52AB017C75" referredColumn="9B65133A-128A-85D7-AAF6-D5BCD9E1DAA9"/>
+</associations>
+</Column>
+<Column name="DateAttribution" id="5C04B13B-7CFD-9427-8CF2-C1D8E4EE2FB2">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<generatorID>2BC2C555-A10A-CA2C-493D-90EAC6FB9191</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<dependOnForeignKeyID>7561BA38-0008-EAE0-82CB-07AADC42828C</dependOnForeignKeyID>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ED12376E-CCD7-1308-21BF-6090C1677501" name="Salarié_PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<generatorID>1A4AB022-95A8-0967-847F-E7C2EB7DD6BC</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9B65133A-128A-85D7-AAF6-D5BCD9E1DAA9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D57C5FD7-0824-E118-19DD-AE07E98421E5" name="Salarié_Salarié_FK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<generatorID>92D319F5-65F8-B4D8-EEAB-B41A759A182E</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E268C6E-DBBC-B7E9-87D1-DB9B53AE35F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A3397F72-F023-4124-8DEF-802C3FC7936F" name="Salarié_Service_FK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<generatorID>71007938-74BB-06D1-7A03-B793755365BB</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD659E36-805A-9327-A67C-9DA342FC0ED7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7619DC2E-123A-EADE-B9A2-F0F1839579DB" name="Salarié_Salarié_FKv1">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:37:11 UTC</createdTime>
+<generatorID>976069A2-2994-E601-2A25-DA8CBB299B1E</generatorID>
+<ownerDesignName>Entreprise</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C0C2750-78AF-447D-137A-CA66D1F2FA89"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

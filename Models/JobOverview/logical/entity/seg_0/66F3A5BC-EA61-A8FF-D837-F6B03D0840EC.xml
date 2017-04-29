@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="66F3A5BC-EA61-A8FF-D837-F6B03D0840EC" name="TacheProd">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 07:59:47 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>7F511D0E-E5B1-E216-9EBD-E819BB5F1C41</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Version" id="2205AABE-3480-961B-6FEF-F20658B387C8">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:01:09 UTC</createdTime>
+<generatorID>A3284919-D3FF-C6AB-3ED3-516C1F7C0A3E</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<referedAttribute>1EF6B723-4AC0-A768-D9A7-10C355E2EBC8</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Code" id="71E4784B-AFA5-A505-3140-7D6D41993988">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:01:28 UTC</createdTime>
+<generatorID>C6D2B8B9-9955-BF88-15A3-3D4CE5C279E8</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<referedAttribute>7A23766A-1DD9-CF98-B41D-2DE5776C3C58</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DureePrevu" id="3C927B66-D03F-05C3-B217-6794B7357819">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:07:59 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TempsRestantEstime" id="CEEB5B43-FD20-D955-5AB5-2DF0B186D3CE">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:15:20 UTC</createdTime>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Code1" id="25F13998-2D7F-2B6A-23A8-E0D6B3314B5D">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 16:49:13 UTC</createdTime>
+<generatorID>A3284919-D3FF-C6AB-3ED3-516C1F7C0A3E</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<engineerTo>
+<item key="AA46188F-2775-1563-5EE9-EEB31E01CB55" value="true"/>
+</engineerTo>
+<referedAttribute>45C90B6F-17EC-3A13-A8B3-E1520AF3BD92</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

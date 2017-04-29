@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1E1A167A-305C-4876-3EB6-74493F27BE63" name="Elève">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 08:33:37 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="A1E60E06-70E9-5F72-F48A-CA2F3C358097" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>C8A7D98A-B578-718A-5757-E6DC732C4409</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="CD696C74-3C48-6401-A700-1DAA01976053">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 08:55:17 UTC</createdTime>
+<generatorID>2D97CD62-EEBA-B051-13DD-0A3D2862B94A</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="A1E60E06-70E9-5F72-F48A-CA2F3C358097" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>0C3CB5E9-8F43-C32F-A93F-44665EABDFC1</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

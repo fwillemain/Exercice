@@ -11,7 +11,6 @@ namespace Entrainement
     {
         static void Main(string[] args)
         {
-            
 
             //Test pour Github
             try

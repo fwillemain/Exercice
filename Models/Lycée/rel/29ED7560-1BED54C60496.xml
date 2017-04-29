@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="MPD_Manuel" id="29ED7560-9C41-4D2A-BC13-1BED54C60496" mainViewID="8970A684-1730-A48A-4B89-51069C1F312A">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-09 15:02:57 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>22943E51-0387-1F2A-CED9-5FB738BA5A0C</selectedRDBMSSite>
+</relationalModel>

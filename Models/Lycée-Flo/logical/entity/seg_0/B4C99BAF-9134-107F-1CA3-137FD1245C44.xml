@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B4C99BAF-9134-107F-1CA3-137FD1245C44" name="Matière">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 08:34:51 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="A1E60E06-70E9-5F72-F48A-CA2F3C358097" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="53B6B672-0E99-1C68-42D3-335416337B0E">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 08:50:48 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="A1E60E06-70E9-5F72-F48A-CA2F3C358097" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Libellé" id="A622D09F-AC04-3882-B3A5-1EA219E0BCE3">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 08:50:56 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="A1E60E06-70E9-5F72-F48A-CA2F3C358097" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CF17ACEA-6A0C-AE0B-CC6C-ADCCA5063482" name="Matière PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 08:50:54 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="A1E60E06-70E9-5F72-F48A-CA2F3C358097" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>53B6B672-0E99-1C68-42D3-335416337B0E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

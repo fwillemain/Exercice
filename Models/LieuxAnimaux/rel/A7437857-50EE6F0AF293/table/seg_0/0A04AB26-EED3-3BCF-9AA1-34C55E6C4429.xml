@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0A04AB26-EED3-3BCF-9AA1-34C55E6C4429" schemaObject="BCDA7C52-AC4A-21F7-FC56-FCDF841B5D12" name="HistoriqueLieu">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 11:39:56 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="7101F9E3-74FF-E422-3ACC-F7282192B441">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 11:44:37 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Vache_Id" id="0AAC5FE4-AB5B-441B-8501-6DE6CA3D2C28">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 11:46:06 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FB9F24FD-B98D-FB88-73BC-4673FEFC132D" referredColumn="36EBEA88-F8F9-C0A6-BA3B-BC7E5ABE88D2"/>
+</associations>
+</Column>
+<Column name="LieuPrincipal_Id" id="4513820D-39D9-DD03-6B92-951F47C581CF">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 11:46:12 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A17BDC5B-0BE2-96FA-0568-968D2A16623A" referredColumn="AC882A27-2A8A-53F9-E57C-76EEB65345E1"/>
+</associations>
+</Column>
+<Column name="LieuSecondaire_Id" id="8B3B843A-47DE-DA31-099E-353D237265C8">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 11:46:21 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3521C6E5-2CFD-1323-310B-DA2238761B22" referredColumn="AC882A27-2A8A-53F9-E57C-76EEB65345E1"/>
+</associations>
+</Column>
+<Column name="DateDébut" id="914CEE44-3FED-1D8F-836B-DE3341C53360">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 11:44:37 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DateFin" id="389AE495-B91D-065F-C58E-154B1D8BFC45">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 11:44:37 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HeuresParJourDsPrincipal" id="A6C3D721-7F21-8E2F-2AB5-260B345B88F9">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 11:45:02 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="98361C62-B5B1-E69D-DEF7-8FCA47A08616" name="HistoriqueLieu_PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 11:44:37 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7101F9E3-74FF-E422-3ACC-F7282192B441"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="07DFC1CF-B1B7-C5C4-3EBF-CA7401D98E85" name="HistoriqueLieu_Vache_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 11:46:06 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0AAC5FE4-AB5B-441B-8501-6DE6CA3D2C28"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="881C10CB-F862-8AA4-FE63-3D951C40C1BB" name="HistoriqueLieu_LieuPrincipal_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 11:46:12 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4513820D-39D9-DD03-6B92-951F47C581CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F154FD35-71A4-6D81-EABD-4858EE8B530F" name="HistoriqueLieu_LieuSecondaire_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 11:46:21 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B3B843A-47DE-DA31-099E-353D237265C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

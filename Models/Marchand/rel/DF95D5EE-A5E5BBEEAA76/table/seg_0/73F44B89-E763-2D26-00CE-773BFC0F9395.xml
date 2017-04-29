@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="73F44B89-E763-2D26-00CE-773BFC0F9395" name="Catégorie">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<generatorID>4E559EAF-D757-6E08-0A94-94DAD4DE6B8F</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<ordsAlias>categorie</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="67C0E621-6A3A-DC1B-9AFE-057945C5CBE2">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<generatorID>A5B91576-88FA-3A66-CFE2-4FF29CFB3FA8</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Catégorie_Id" id="EB7068D9-F38E-9679-77C2-D38102C1B438">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<generatorID>F1F90684-F7D5-B5C4-9D85-83944BF78FE1</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="635326CD-F9FC-BF37-7E95-3753D7160E61" referredColumn="67C0E621-6A3A-DC1B-9AFE-057945C5CBE2"/>
+</associations>
+</Column>
+<Column name="Libellé" id="8BCF389C-7182-FE9D-C7E3-44ED06716DE8">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<generatorID>BEAC9239-17EF-D13E-17CF-32AC3DDF3FF3</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D21095E6-B335-3621-5F16-EE3E3E881C8F" name="Catégorie_PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<generatorID>9F16AAA5-4240-69EE-3F07-6D829E43892D</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="67C0E621-6A3A-DC1B-9AFE-057945C5CBE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="70B8C10D-E6BF-84DD-46A3-A210DCB38E42" name="Catégorie_Catégorie_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 14:25:09 UTC</createdTime>
+<generatorID>9E291799-252A-8C3A-2A06-BE9E6EAF9B1D</generatorID>
+<ownerDesignName>Marchand</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB7068D9-F38E-9679-77C2-D38102C1B438"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

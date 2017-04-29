@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="25796FA1-5095-AD6D-3672-0D6986E16AE1" name="LigneCommande">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 09:11:33 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PU" id="59292193-0C82-AB53-0215-4ADBE93DE129">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 09:13:02 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<domain>C50A6670-0BA6-BC8F-11D6-D385F381C1E9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Quantité" id="A647742A-4523-13E8-1F0F-E2FB5CF8B5CF">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 09:13:02 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Commande_Id" id="663B7F7D-F843-9819-7319-7D8018C74705">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 09:17:35 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>58C558AA-944A-9E5E-2EF8-8080C457B1D9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1141194C-B777-CF89-18ED-5E0B464FCCFA" referredColumn="339E6D49-EB79-ACB2-005E-7001B472AD71"/>
+</associations>
+</Column>
+<Column name="Article_Code" id="C9704E07-D675-85BE-72BF-F5B89076B769">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 09:18:28 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3C8D8AD8-B00E-140B-22A3-62EEC3F7C8B1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="69F73353-0F97-6C04-04B2-7A88AEF848CB" referredColumn="5B8B36BB-73CC-51B1-9472-304644DEF3D5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="54CEDDA4-A0DE-1BF5-CE8D-B716E2839E81" name="LigneCommande_PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 09:14:36 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="663B7F7D-F843-9819-7319-7D8018C74705"/>
+<colUsage columnID="C9704E07-D675-85BE-72BF-F5B89076B769"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FB90CF0E-8357-6C55-CCBC-F439263D1433" name="LigneCommande_Commande_FK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 09:17:35 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="663B7F7D-F843-9819-7319-7D8018C74705"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2EE4FDEB-62FA-E37D-F3DB-543A50CCE866" name="LigneCommande_Article_FK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 09:18:28 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9704E07-D675-85BE-72BF-F5B89076B769"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

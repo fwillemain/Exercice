@@ -1,0 +1,152 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8F1DD6A9-0D83-8912-BD5D-95AD95704509" schemaObject="18DEDD48-A41B-2509-BE67-054948CDD933" name="HistoriqueLieu">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-11 09:03:31 UTC</createdTime>
+<generatorID>C75B37F4-4978-F761-3A9A-45CC2385681B</generatorID>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="A5735794-4C87-295F-D6E7-B64705EF33BE">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-11 09:03:31 UTC</createdTime>
+<generatorID>0F1832FE-154E-D6DF-CF18-3F0B7D3FC00D</generatorID>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DateDébut" id="D706F09C-928E-C3FB-5D65-F980D8D03C59">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-11 09:03:31 UTC</createdTime>
+<generatorID>8BCA3D4F-2B54-86AC-8F94-93DA5BB46DC0</generatorID>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DateFin" id="ADC6B0CD-C9F6-EB81-5750-8980A7202484">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-11 09:03:31 UTC</createdTime>
+<generatorID>D0B5C4D2-30EE-BB30-99E7-912E637D79A3</generatorID>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HeuresParJourPrincipal" id="09990114-2284-69E9-0EBD-8BC3CD368659">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-11 09:03:31 UTC</createdTime>
+<generatorID>0E5DE24E-57EF-BFF3-7E25-CC9D7F2A63B4</generatorID>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LieuPrinc_Id" id="F62A7EE9-3E29-4A81-8A68-27C16D42DCD0">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-11 09:03:31 UTC</createdTime>
+<generatorID>3DD5CC3B-73F8-6B37-C8E7-4182CFF8C1E9</generatorID>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="57761A21-B71F-00E9-E41D-07C17D991B34" referredColumn="37101FE8-238F-EE27-7E7E-17B588C6218D"/>
+</associations>
+</Column>
+<Column name="LieuSec_Id" id="B723EB4B-2751-E493-916E-8E210C9563A9">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-11 09:03:31 UTC</createdTime>
+<generatorID>373EE1FB-3633-E7EF-47A5-000302BFADED</generatorID>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1375C1A1-B170-BD66-81A1-6B1903F75874" referredColumn="37101FE8-238F-EE27-7E7E-17B588C6218D"/>
+</associations>
+</Column>
+<Column name="Vache_Id" id="534FF8B0-34CE-C981-6726-3837E98D6B87">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-11 09:03:31 UTC</createdTime>
+<generatorID>8A74840D-25BC-A747-B7A1-A3DD76DE85CE</generatorID>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C99F9FC2-B73E-7559-F27D-1952249743CD" referredColumn="B464F171-3C17-0018-3234-981E99C7B7C1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E6BE2516-998F-E431-915F-30A0251980BC" name="HistoriqueLieu_PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-11 09:03:31 UTC</createdTime>
+<generatorID>E881595C-B044-F49F-B049-5AB2C3B42FEC</generatorID>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5735794-4C87-295F-D6E7-B64705EF33BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B517AA0E-4ABB-1AE0-FD62-ED6FF9C92332" name="HistoriqueLieu_LieuPrinc_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-11 09:03:31 UTC</createdTime>
+<generatorID>6CE9DF7A-EBAC-043D-B2C2-7C02E396CD17</generatorID>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F62A7EE9-3E29-4A81-8A68-27C16D42DCD0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FB60BA4E-4390-6FA0-814E-DD294632E915" name="HistoriqueLieu_Vache_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-11 09:03:31 UTC</createdTime>
+<generatorID>34C93B06-6A86-030E-8622-245B2B830BE1</generatorID>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="534FF8B0-34CE-C981-6726-3837E98D6B87"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4775CC2A-9DA5-8B11-E585-664785CFF0F2" name="HistoriqueLieu_LieuSec_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-11 09:03:31 UTC</createdTime>
+<generatorID>39EA971D-948E-8CA3-FCCE-41BDA0EDE7A4</generatorID>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B723EB4B-2751-E493-916E-8E210C9563A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

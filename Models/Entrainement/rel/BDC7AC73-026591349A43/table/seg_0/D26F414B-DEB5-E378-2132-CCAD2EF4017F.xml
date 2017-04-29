@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D26F414B-DEB5-E378-2132-CCAD2EF4017F" name="LigneCommande">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:11:38 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Commande_Id" id="E7706301-3F7A-76B9-87D4-61C203C12F47">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:12:00 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A30148D6-5E27-63A1-7308-71B0A20F7512" referredColumn="E743F749-62EB-1305-6BCF-E8CB144EF695"/>
+</associations>
+</Column>
+<Column name="Article_Code" id="BD9C1339-8029-D4A1-E189-433D7EFB9016">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:12:09 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="92DDA10D-C5E1-FCBA-6516-08AAED107730" referredColumn="FEB8D99A-C932-D8F6-45EB-DE14ED55641A"/>
+</associations>
+</Column>
+<Column name="PU" id="42B48D94-B996-999A-978E-496097C02C83">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:12:53 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<domain>BC7DF8F1-F927-7927-2CEE-EB9C01E86DC5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Quantité" id="E331B374-86C3-91EC-DE80-9B2D24B43B89">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:13:07 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D99AA5DC-AAAB-AA9E-4236-BC917F37B03A" name="LigneCommande_PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:12:18 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7706301-3F7A-76B9-87D4-61C203C12F47"/>
+<colUsage columnID="BD9C1339-8029-D4A1-E189-433D7EFB9016"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE419838-C99B-E3D3-E5D8-9ADDDE65C25E" name="LigneCommande_Commande_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:12:00 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7706301-3F7A-76B9-87D4-61C203C12F47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="478B61F6-2778-5C5A-BE1D-537263D79951" name="LigneCommande_Article_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-10 09:12:09 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD9C1339-8029-D4A1-E189-433D7EFB9016"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

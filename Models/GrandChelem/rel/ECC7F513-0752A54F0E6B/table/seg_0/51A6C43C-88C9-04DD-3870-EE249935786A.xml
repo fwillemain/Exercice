@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="51A6C43C-88C9-04DD-3870-EE249935786A" name="Match">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:56:20 UTC</createdTime>
+<generatorID>0E0E83DF-640D-CC07-E039-C32D56B83F80</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Numéro" id="5B1D327A-032F-3889-B9B4-A6C35F0BAA7D">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:56:20 UTC</createdTime>
+<generatorID>244560D2-5141-930E-4832-A86F1326BB65</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rang" id="FAE31433-78C1-3E0F-F6DD-35099B71BA27">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:56:20 UTC</createdTime>
+<generatorID>00AEDBC5-CD83-0C0D-6A77-98B98D1CA327</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Date" id="64456BED-A6EC-42ED-2F53-3E437654475F">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:56:20 UTC</createdTime>
+<generatorID>ABB71D9F-E2C6-D4E3-C983-32DC3563A9C4</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Type" id="38309BFF-D124-81A9-D638-EE5455B7DE52">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:56:20 UTC</createdTime>
+<generatorID>89D11427-DAF4-0554-21D4-1D72DB7305CF</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Score" id="17EA30D7-FABF-5F9F-F175-CCCF12E776C1">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:56:20 UTC</createdTime>
+<generatorID>3725C468-3F9C-2E12-677A-B99392350C40</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>F09CCBF4-7EDC-C2BD-35E1-A7380CFD3230</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tournoi_Id" id="8B440B06-CB26-1658-E49D-C0677D23BA20">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:56:20 UTC</createdTime>
+<generatorID>4D957358-CEAC-5A86-9745-CEDC0089E557</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>58C558AA-944A-9E5E-2EF8-8080C457B1D9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E83B3942-644A-AEE0-8E2C-02D8D05BBBB0" referredColumn="E8079482-D8BC-3788-4C3C-AD26734AA8EC"/>
+</associations>
+</Column>
+<Column name="Arbitre_Id" id="63FCCF80-8AB5-B7B1-480E-6B89B84C1A72">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:56:20 UTC</createdTime>
+<generatorID>37A66CB3-16D5-5711-ADBD-380BE9F4B856</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>58C558AA-944A-9E5E-2EF8-8080C457B1D9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B05B85F2-FEA4-BAF0-621D-344DF8876BFC" referredColumn="AD7FF2DF-FCD8-A47C-9276-EC0C40CF4487"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4ABA1E15-6128-2B65-AD35-133EFA05E829" name="Match_PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:56:20 UTC</createdTime>
+<generatorID>97DF89FE-852E-36F0-AACA-90FA11E778D8</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5B1D327A-032F-3889-B9B4-A6C35F0BAA7D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C56472B6-A0D5-72D7-00B4-A402F5F8F3A9" name="Match_Tournoi_FK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:56:20 UTC</createdTime>
+<generatorID>2AEFE270-E9FF-8F00-4065-BEF93389174A</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B440B06-CB26-1658-E49D-C0677D23BA20"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D7C3A0E2-5666-22E1-E8C8-1BF1C0D19C92" name="Match_Arbitre_FK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:56:20 UTC</createdTime>
+<generatorID>5BB05A2C-31A2-FB30-5A6A-3E5B9CA32E02</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63FCCF80-8AB5-B7B1-480E-6B89B84C1A72"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

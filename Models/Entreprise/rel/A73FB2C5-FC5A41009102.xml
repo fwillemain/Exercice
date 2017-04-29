@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="MPD_auto" id="A73FB2C5-CA3B-8FB2-5A3E-FC5A41009102" mainViewID="339D0F7E-8D85-D211-DD9B-80BC59F6DF02">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:36:47 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>22943E51-0387-1F2A-CED9-5FB738BA5A0C</selectedRDBMSSite>
+</relationalModel>

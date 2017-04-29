@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FD30F7C0-C1AA-2A39-3C9E-74244C0E68C6" name="Chambre">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 10:26:13 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="97480CC8-6592-DCDC-CD11-5AC8D7A0FE9A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Numéro" id="113733EB-DDDD-E785-C85F-8E157D37DB61">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 10:29:09 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="97480CC8-6592-DCDC-CD11-5AC8D7A0FE9A" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id" id="F45AFA80-F482-086A-6E8B-34101C6108E5">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 11:37:41 UTC</createdTime>
+<generatorID>E2C101D0-8B1C-77CF-349A-9B0F07026391</generatorID>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="97480CC8-6592-DCDC-CD11-5AC8D7A0FE9A" value="true"/>
+</engineerTo>
+<referedAttribute>A88506A5-1F40-F2CE-1381-683F981D3B7F</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id1" id="D1572FE9-31D5-AA70-140F-9C4ADF5CC6CB">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 11:43:33 UTC</createdTime>
+<generatorID>19292897-64E1-DA29-1311-FE636C6CE87A</generatorID>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="97480CC8-6592-DCDC-CD11-5AC8D7A0FE9A" value="true"/>
+</engineerTo>
+<referedAttribute>DEBD5048-1131-0329-9EB1-F3645C0DFE5F</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="556BE969-C2BF-F4E4-1E52-8DA984C1F494" name="Chambre PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 10:29:23 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="97480CC8-6592-DCDC-CD11-5AC8D7A0FE9A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>113733EB-DDDD-E785-C85F-8E157D37DB61</attributeRef>
+<attributeRef>D1572FE9-31D5-AA70-140F-9C4ADF5CC6CB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

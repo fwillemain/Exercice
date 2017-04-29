@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="GrandChelem" id="ECD49105-50E7-D89E-CB44-14BC843087E4" version="3.5">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-07 12:19:54 UTC</createdTime>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>ECD49105-50E7-D89E-CB44-14BC843087E4</designId>
+</OSDM_Design>

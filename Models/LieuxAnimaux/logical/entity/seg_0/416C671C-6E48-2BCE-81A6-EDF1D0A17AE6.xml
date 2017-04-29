@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="416C671C-6E48-2BCE-81A6-EDF1D0A17AE6" name="Lieu">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-06 21:36:47 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<engineerTo>
+<item key="A7437857-EAA1-7F69-5923-50EE6F0AF293" value="true"/>
+<item key="C664864A-B0DB-C2BD-9758-9AF193D64972" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<discriminatorAttributeID>C65F9366-4713-9675-0145-780E3141D014</discriminatorAttributeID>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="4D76CF54-0294-D565-3893-C4DB783FC452">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-06 21:38:02 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<engineerTo>
+<item key="A7437857-EAA1-7F69-5923-50EE6F0AF293" value="true"/>
+<item key="C664864A-B0DB-C2BD-9758-9AF193D64972" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nom" id="7BB074A4-9D56-F115-DCB1-B417F5A23857">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-06 21:38:12 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<engineerTo>
+<item key="A7437857-EAA1-7F69-5923-50EE6F0AF293" value="true"/>
+<item key="C664864A-B0DB-C2BD-9758-9AF193D64972" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>6D1C2157-754A-83DD-4B48-2AF727A94D15</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Surface" id="CF985F76-DB66-F344-63C3-5821BCC60DC7">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-06 21:45:05 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<engineerTo>
+<item key="A7437857-EAA1-7F69-5923-50EE6F0AF293" value="true"/>
+<item key="C664864A-B0DB-C2BD-9758-9AF193D64972" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TypeLieu" id="C65F9366-4713-9675-0145-780E3141D014">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-06 21:49:35 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<engineerTo>
+<item key="A7437857-EAA1-7F69-5923-50EE6F0AF293" value="true"/>
+<item key="C664864A-B0DB-C2BD-9758-9AF193D64972" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<listOfValues>
+<valueDef value="1" description="Pré"/>
+<valueDef value="2" description="Batiment"/>
+<valueDef value="3" description="Box"/>
+</listOfValues>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8BEF18E9-B6A7-B26F-DC2B-20535C2F7E9D" name="Lieu PK">
+<createdBy>Cyril</createdBy>
+<createdTime>2017-04-06 21:38:05 UTC</createdTime>
+<ownerDesignName>LieuxAnimaux</ownerDesignName>
+<engineerTo>
+<item key="A7437857-EAA1-7F69-5923-50EE6F0AF293" value="true"/>
+<item key="C664864A-B0DB-C2BD-9758-9AF193D64972" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4D76CF54-0294-D565-3893-C4DB783FC452</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

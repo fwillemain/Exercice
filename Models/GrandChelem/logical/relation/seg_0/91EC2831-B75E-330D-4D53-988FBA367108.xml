@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PaysJoueur" directorySegmentName="seg_0" id="91EC2831-B75E-330D-4D53-988FBA367108">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-07 12:28:27 UTC</createdTime>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<engineerTo>
+<item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
+</engineerTo>
+<sourcePk>F3D7BBF2-5F4E-8444-C897-BA6DB10BF8EB</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>77C6146F-6EF1-0C70-9873-6515C9EBBBBF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1B99A3F2-A1A5-2702-2F4E-D2838E32AC5F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="DateAcquisitionNationalité" id="4F2569D0-B769-A093-E50F-6FD3323EB6F3">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-07 13:02:52 UTC</createdTime>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<engineerTo>
+<item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

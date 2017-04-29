@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="381230A1-E593-D76D-C387-9DB51D6FB86B" name="Tournoi">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:56:20 UTC</createdTime>
+<generatorID>8ACC0A39-BBAE-5123-A2BF-B80208966113</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="E8079482-D8BC-3788-4C3C-AD26734AA8EC">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:56:20 UTC</createdTime>
+<generatorID>E3F180B1-4837-9A89-B6A1-BAD4A558E8BD</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>58C558AA-944A-9E5E-2EF8-8080C457B1D9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Année" id="05C33D1D-9CF3-AD69-05BB-661D153415D0">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:56:20 UTC</createdTime>
+<generatorID>626D9F02-66A0-8A5A-86C7-137F2FBED6C5</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Prix" id="A7A84D68-4807-4F8B-3C8F-17CB888A0D06">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:56:20 UTC</createdTime>
+<generatorID>11BAE4DF-7B38-11D3-D6C7-368360DDCA23</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Lieu_Id" id="CE28EC17-676C-22B1-3809-319356BDDB63">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:56:20 UTC</createdTime>
+<generatorID>56E3D8B0-4AF0-FFAE-AD0E-2A8D38D564EA</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1B1BFA54-8A8A-DA57-50CF-5EB34A7319A4" referredColumn="189CFD7D-7ADD-DD2C-B19B-2CE2EECEB0AC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3D8EB04B-27F8-7645-BABD-1158BA2C960B" name="Tournoi_PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:56:20 UTC</createdTime>
+<generatorID>E2D9EE9D-AF10-B19C-EBDD-347A1490646A</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E8079482-D8BC-3788-4C3C-AD26734AA8EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0AF8508C-F41F-84BE-8E9F-BC3B51E1ED0C" name="Tournoi_Lieu_FK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:56:20 UTC</createdTime>
+<generatorID>0C351A93-0312-9CE8-1CC2-FB67AD4803B7</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE28EC17-676C-22B1-3809-319356BDDB63"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

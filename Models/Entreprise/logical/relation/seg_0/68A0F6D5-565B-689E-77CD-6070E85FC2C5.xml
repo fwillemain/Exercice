@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FonctionSalarié" directorySegmentName="seg_0" id="68A0F6D5-565B-689E-77CD-6070E85FC2C5">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 12:15:03 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D686763B-43DF-3978-1B0C-E11F65007FE3" value="true"/>
+<item key="A73FB2C5-CA3B-8FB2-5A3E-FC5A41009102" value="true"/>
+</engineerTo>
+<sourcePk>CCE7568A-CA6D-E9D5-0488-1A9BAF978820</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>DBDBE8F1-04D9-3BF9-C2D9-570813812E79</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>81FD86E6-E2E2-017C-23F6-C88879C7184C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="DateAttribution" id="2BC2C555-A10A-CA2C-493D-90EAC6FB9191">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 12:22:17 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<engineerTo>
+<item key="D686763B-43DF-3978-1B0C-E11F65007FE3" value="true"/>
+<item key="A73FB2C5-CA3B-8FB2-5A3E-FC5A41009102" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

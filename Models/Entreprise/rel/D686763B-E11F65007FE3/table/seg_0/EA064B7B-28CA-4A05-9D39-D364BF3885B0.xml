@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EA064B7B-28CA-4A05-9D39-D364BF3885B0" name="Service">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 09:23:45 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Code" id="9A8B22DB-3BB9-55DE-3104-6147F97B5CAD">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 09:31:36 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3C8D8AD8-B00E-140B-22A3-62EEC3F7C8B1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nom" id="806B5EFD-8696-3AFA-3358-F80AA0F7BA6D">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 09:31:36 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>F09CCBF4-7EDC-C2BD-35E1-A7380CFD3230</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="708D5AA2-C1AF-8612-BE7F-F7EA9E136BC8" name="Service_PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 09:31:36 UTC</createdTime>
+<ownerDesignName>Entreprise</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A8B22DB-3BB9-55DE-3104-6147F97B5CAD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

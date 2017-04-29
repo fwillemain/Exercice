@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D72BB73E-8DC9-61D2-E732-60B5B9ED1BD0" name="Article">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 10:19:38 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="97480CC8-6592-DCDC-CD11-5AC8D7A0FE9A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Code" id="93CB2FF4-61FE-30C4-5208-CFD202A3C3EF">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 10:19:53 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="97480CC8-6592-DCDC-CD11-5AC8D7A0FE9A" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Libellé" id="E6827C4F-CCAB-82E9-5B02-C25B6E53BB69">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 10:20:10 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="97480CC8-6592-DCDC-CD11-5AC8D7A0FE9A" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PrixUnitaire" id="CCCA8B50-09C1-36C2-0D63-BAB9D459B6C5">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 10:20:30 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="97480CC8-6592-DCDC-CD11-5AC8D7A0FE9A" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="ECCC87CD-7A74-8E40-9323-C72AE98B2795" name="Article PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-06 10:20:06 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="97480CC8-6592-DCDC-CD11-5AC8D7A0FE9A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>93CB2FF4-61FE-30C4-5208-CFD202A3C3EF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

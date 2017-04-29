@@ -14,40 +14,69 @@ namespace Véhicules
 
         static void Main(string[] args)
         {
+            DelegueEntretien delegue = null;
+            delegue += ChangerPneus;
+            delegue += Vidanger;
+            delegue += RetoucherPeinture;
+
             var vMégane = new Voiture("Mégane", 19000);
-            var mIntru = new Moto("Intrudeur", 13000);
-            var vEnzo = new Voiture("Enzo", 380000);
-            var mYama = new Moto("Yamaha XJR1300", 11000);
-
-            //Avec Dictionary
-            Dictionary<string, Véhicule> dico = new Dictionary<string, Véhicule>();
-            dico.Add(vMégane.Nom, vMégane);
-            dico.Add(mIntru.Nom, mIntru);
-            dico.Add(vEnzo.Nom, vEnzo);
-            dico.Add(mYama.Nom, mYama);
-
-            Console.WriteLine("Affichage avec Dictionary :");
-            foreach (var a in dico)
-                Console.WriteLine("{0} : {1}", a.Value.Nom, a.Value.Prix);
-
-            SortedList<string, Véhicule> sList = new SortedList<string, Véhicule>(dico);
-
-            Console.WriteLine();
-            Console.WriteLine("Affichage avec SortedList :");
-            foreach (var a in sList)
-                Console.WriteLine("{0} : {1}", a.Value.Nom, a.Value.Prix);
-
-            string[] marque = { "Clio", "Mégane", "Golf", "Enzo", "Polo" };
-
-            Console.WriteLine();
-            {
-                Véhicule v;
-                foreach (var m in marque)
-                    if (sList.TryGetValue(m, out v))
-                        Console.WriteLine("{0} : {1}", v.Nom, v.Prix);
-            }
+            vMégane.Entretenir(DateTime.Today, delegue);
+            Console.WriteLine(vMégane);
             
+
+            //var vMégane = new Voiture("Mégane", 19000);
+            //var mIntru = new Moto("Intrudeur", 13000);
+            //var vEnzo = new Voiture("Enzo", 380000);
+            //var mYama = new Moto("Yamaha XJR1300", 11000);
+
+            ////Avec Dictionary
+            //Dictionary<string, Véhicule> dico = new Dictionary<string, Véhicule>();
+            //dico.Add(vMégane.Nom, vMégane);
+            //dico.Add(mIntru.Nom, mIntru);
+            //dico.Add(vEnzo.Nom, vEnzo);
+            //dico.Add(mYama.Nom, mYama);
+
+            //Console.WriteLine("Affichage avec Dictionary :");
+            //foreach (var a in dico)
+            //    Console.WriteLine("{0} : {1}", a.Value.Nom, a.Value.Prix);
+
+            //SortedList<string, Véhicule> sList = new SortedList<string, Véhicule>(dico);
+
+            //Console.WriteLine();
+            //Console.WriteLine("Affichage avec SortedList :");
+            //foreach (var a in sList)
+            //    Console.WriteLine("{0} : {1}", a.Value.Nom, a.Value.Prix);
+
+            //string[] marque = { "Clio", "Mégane", "Golf", "Enzo", "Polo" };
+
+            //Console.WriteLine();
+            //{
+            //    Véhicule v;
+            //    foreach (var m in marque)
+            //        if (sList.TryGetValue(m, out v))
+            //            Console.WriteLine("{0} : {1}", v.Nom, v.Prix);
+            //}
+
             Console.ReadKey();
         }
+
+        static public void ChangerPneus(Véhicule v)
+        {
+            var last = v.CarnetEntretien.Keys.Last();
+            v.CarnetEntretien[last] += "- Changement des pneus\n";
+        }
+
+        static public void Vidanger(Véhicule v)
+        {
+            var last = v.CarnetEntretien.Keys.Last();
+            v.CarnetEntretien[last] += "- Vidange\n";
+        }
+
+        static public void RetoucherPeinture(Véhicule v)
+        {
+            var last = v.CarnetEntretien.Keys.Last();
+            v.CarnetEntretien[last] += "- Retouche de peinture\n";
+        }
+
     }
 }

@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1A339760-1D07-6CD1-DCAC-D8FCFE5BEB06" name="Article">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 10:19:41 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="BDC7AC73-CC70-22C9-93F3-026591349A43" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="538FD233-EDBC-F1B4-4D54-EB8C79CDAFB9">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 10:19:53 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="BDC7AC73-CC70-22C9-93F3-026591349A43" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Libellé" id="C86F934F-A8C9-53A5-B8CD-9A057CE5A8E8">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 10:20:11 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="BDC7AC73-CC70-22C9-93F3-026591349A43" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PrixUnitaire" id="B38EB5FE-8913-1FC7-08AC-9D632D2A24FC">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-06 10:20:30 UTC</createdTime>
+<ownerDesignName>Entrainement</ownerDesignName>
+<engineerTo>
+<item key="BDC7AC73-CC70-22C9-93F3-026591349A43" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

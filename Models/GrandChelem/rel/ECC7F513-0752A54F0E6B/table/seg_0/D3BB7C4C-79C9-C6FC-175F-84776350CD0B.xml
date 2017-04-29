@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D3BB7C4C-79C9-C6FC-175F-84776350CD0B" name="Joueur">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:56:20 UTC</createdTime>
+<generatorID>1B99A3F2-A1A5-2702-2F4E-D2838E32AC5F</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="AE2961C2-2CA8-C94F-3158-BE45DE97A08F">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:56:20 UTC</createdTime>
+<generatorID>43A53C82-8DD5-7E9C-206B-3AB41BFE874E</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>58C558AA-944A-9E5E-2EF8-8080C457B1D9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0CFE6614-988D-A9E4-42A0-93659B7C6690" referredColumn="B6A9ABCF-C159-F3BE-BF99-A36A13E15CFA"/>
+</associations>
+</Column>
+<Column name="Gagné" id="9DE736DC-E968-0547-EDD2-5077BDB09119">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:56:20 UTC</createdTime>
+<generatorID>365DE489-118C-EB7F-F9AE-EAA5A7DA08F6</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<dependOnForeignKeyID>CCBB7D44-79E2-3A1F-88A2-58070B79D17D</dependOnForeignKeyID>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="07B89E7B-3F77-4A16-1E79-BDCC4A2D3549" name="Joueur_PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:56:20 UTC</createdTime>
+<generatorID>AB2C7A52-5169-50E2-F5C3-D2BAAC2E3D44</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE2961C2-2CA8-C94F-3158-BE45DE97A08F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B40E47D-9647-EC92-2F20-873749044DC5" name="Joueur_Personne_FK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-10 12:56:20 UTC</createdTime>
+<generatorID>9360145F-8358-3E5F-7BDB-DA7079DA65BD</generatorID>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE2961C2-2CA8-C94F-3158-BE45DE97A08F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

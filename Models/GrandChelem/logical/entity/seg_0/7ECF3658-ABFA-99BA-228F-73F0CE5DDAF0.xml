@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7ECF3658-ABFA-99BA-228F-73F0CE5DDAF0" name="Personne">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-07 12:29:04 UTC</createdTime>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<engineerTo>
+<item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="43A53C82-8DD5-7E9C-206B-3AB41BFE874E">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-07 12:31:33 UTC</createdTime>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<engineerTo>
+<item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>C473CA17-FD47-5170-4376-4822F9175FD8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nom" id="4144BF13-6973-3551-C0B7-E433EE91A908">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-07 12:31:35 UTC</createdTime>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<engineerTo>
+<item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>B50956F4-7C3F-31CE-F6D8-AD20C1D54CB4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Prénom" id="E0804303-B58F-D73E-AE0B-34C33F4CAAA2">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-07 12:31:40 UTC</createdTime>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<engineerTo>
+<item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>B50956F4-7C3F-31CE-F6D8-AD20C1D54CB4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AB2C7A52-5169-50E2-F5C3-D2BAAC2E3D44" name="Personne PK">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-07 12:31:47 UTC</createdTime>
+<ownerDesignName>GrandChelem</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="ECC7F513-5DFA-04B0-CB5C-0752A54F0E6B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>43A53C82-8DD5-7E9C-206B-3AB41BFE874E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F29785F5-E9B2-A049-1673-C9862C56A82D" schemaObject="6D7C9FFC-C1C2-958B-0445-83B259FF5CD6" name="Equipe">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>D2A382D2-1C81-702C-E15C-D06A3BCC07C6</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="BB6E6EE2-D1AA-2DF5-7FCD-C490B80515FA">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>FBDB6F6B-F594-0B62-F0D0-93E680E5161D</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>45986FA8-BD53-26BE-AEB8-813600A4BD85</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Service_Code" id="FCB273BA-4CB6-8D95-5F4A-033EE20EB506">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>12112357-E3E9-9C83-905C-96BCC8C0ADD7</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="88E0DA00-73F7-31BA-F792-CBA32D178256" referredColumn="262EC073-E588-1E5F-EB57-AB03B4C2A154"/>
+</associations>
+</Column>
+<Column name="Filiere_Code" id="290EBFB7-9584-0ED2-3E46-726126FCC027">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>34C4C85B-B4CC-937D-96D3-78CE97CBA77D</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>96854BC3-E7F4-0BD5-3B6E-060A921E7704</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ACD30557-852B-091E-2594-09EAFE02FD40" referredColumn="5B406C6E-46B5-821E-FB8C-0588D218D9C2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8FFA5ADE-23CD-2649-4903-1F3386E801D6" name="Equipe_PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>EC407105-FDF7-E189-0CA4-A14B3577A183</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BB6E6EE2-D1AA-2DF5-7FCD-C490B80515FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="92D6E41F-7EA7-FD44-0EBC-82CE1AD7E998" name="Equipe_Service_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>CCED4135-0EA7-A01C-9379-FFD398C6245B</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FCB273BA-4CB6-8D95-5F4A-033EE20EB506"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C38361BA-F6D7-D4C6-CB21-A3E1D4E34E75" name="Equipe_Filiere_FK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-20 08:59:45 UTC</createdTime>
+<generatorID>AFD342A5-4B7F-8B44-85D9-443D8FB9DA74</generatorID>
+<ownerDesignName>JobOverview</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="290EBFB7-9584-0ED2-3E46-726126FCC027"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

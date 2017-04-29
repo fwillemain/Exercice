@@ -1,0 +1,40 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6A46641F-1D0C-5B20-5D9A-D174D5706C92" name="Joueur(se)">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 12:23:09 UTC</createdTime>
+<ownerDesignName>Tournoi</ownerDesignName>
+<engineerTo>
+<item key="8220ECDF-168B-44EC-B378-D82ECAF0AE09" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>DF41484D-E39F-F5ED-831E-5D5A77B3A85D</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Classement ATP" id="4A85B88C-0A84-546F-CB2D-27A745C9EB87">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 12:29:00 UTC</createdTime>
+<ownerDesignName>Tournoi</ownerDesignName>
+<engineerTo>
+<item key="8220ECDF-168B-44EC-B378-D82ECAF0AE09" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nationalité" id="BFA5BFEC-19D5-E857-A005-AB0AEE4F2F05">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 12:31:39 UTC</createdTime>
+<ownerDesignName>Tournoi</ownerDesignName>
+<engineerTo>
+<item key="8220ECDF-168B-44EC-B378-D82ECAF0AE09" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ClasseElève" directorySegmentName="seg_0" id="8C1EE5E1-A871-6194-45FB-3511F65EEF8B">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-07 08:59:46 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="29ED7560-9C41-4D2A-BC13-1BED54C60496" value="true"/>
+<item key="875B20A3-DE2C-E494-9F94-EE30D02CE557" value="true"/>
+</engineerTo>
+<sourcePk>2E96ED5D-469F-1AE9-71FD-A92E01E67A48</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B36C867F-766A-7577-FCAA-060BEBF7BB56</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C967E846-39B5-6629-8C97-CC5565F0E45F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="Délégué" id="BF817371-8E47-1DCC-3874-FCBE647BEE2D">
+<createdBy>Formateur_DEV</createdBy>
+<createdTime>2017-04-07 09:00:34 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="29ED7560-9C41-4D2A-BC13-1BED54C60496" value="true"/>
+<item key="875B20A3-DE2C-E494-9F94-EE30D02CE557" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

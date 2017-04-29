@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3F1C2ED7-60FE-C1AD-F88B-0C249EE62ECD" name="Note">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 08:34:23 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="A1E60E06-70E9-5F72-F48A-CA2F3C358097" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="5F156FFF-DE83-90B2-9EF3-665381F24977">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 09:03:58 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="A1E60E06-70E9-5F72-F48A-CA2F3C358097" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Valeur" id="9FB9ED1C-6635-2D0C-1FBB-70669028DF89">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 09:04:03 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="A1E60E06-70E9-5F72-F48A-CA2F3C358097" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Date note" id="17A55940-4FE5-CFAA-AEEB-BBBEFD7E83F7">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 09:04:10 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="A1E60E06-70E9-5F72-F48A-CA2F3C358097" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id1" id="0BE5C0AF-F155-71CA-2B87-A03B3CEF6714">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 09:22:43 UTC</createdTime>
+<generatorID>378838B9-F815-1394-2FA4-74676DC764C3</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="A1E60E06-70E9-5F72-F48A-CA2F3C358097" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>4C067382-4F81-3FBD-8AB2-3A27D9B20FCF</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id2" id="1A1F731B-8CD4-00DD-AF5C-188C033A2400">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 09:23:18 UTC</createdTime>
+<generatorID>CD282148-93E1-123E-61E0-B231B8BF3582</generatorID>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="A1E60E06-70E9-5F72-F48A-CA2F3C358097" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>53B6B672-0E99-1C68-42D3-335416337B0E</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EDADC081-7284-49B6-DDB3-6E8D05E5A75D" name="Note PK">
+<createdBy>fwillemain</createdBy>
+<createdTime>2017-04-07 09:04:27 UTC</createdTime>
+<ownerDesignName>Lycée</ownerDesignName>
+<engineerTo>
+<item key="A1E60E06-70E9-5F72-F48A-CA2F3C358097" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5F156FFF-DE83-90B2-9EF3-665381F24977</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
