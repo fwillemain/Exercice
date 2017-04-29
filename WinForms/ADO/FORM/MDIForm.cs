@@ -18,6 +18,7 @@ namespace ADO
 			menu1.Click += (object sender, EventArgs e) => ShowChild("ADO.FormFournisseurs");
             menu2.Click += (object sender, EventArgs e) => ShowChild("ADO.FormCommandes");
             menu3.Click += (object sender, EventArgs e) => ShowChild("ADO.FormProduits");
+            menuEmployée.Click += (object sender, EventArgs e) => ShowChild("ADO.FormEmployée");
         }
 
 		// Affichage d'une fenêtre fille

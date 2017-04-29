@@ -114,6 +114,44 @@ namespace ADO
             }
         }
 
+        private static void RécupérerEmployéesDepuisSqlDataReader(SqlDataReader reader, List<Employée> lstEmployées)
+        {
+            while (reader.Read())
+            {
+                Employée emp = new Employée();
+                emp.Id = (int)reader["EmployeeID"];
+                emp.NomComplet = reader["FirstName"].ToString() + " " + reader["LastName"].ToString();
+
+                lstEmployées.Add(emp);
+            }
+        }
+
+        private static void RécupérerTerritoiresRégionsDepuisSqlDataReader(SqlDataReader reader, BindingList<TerritoireRégion> lstTerritoires)
+        {
+            while (reader.Read())
+            {
+                TerritoireRégion ter = new TerritoireRégion();
+                ter.CodeTerritoire = reader["TerritoryID"].ToString();
+                ter.DescriptionTerritoire = reader["TerritoryDescription"].ToString();
+                ter.IdRégion = (int)reader["RegionID"];
+                ter.DescriptionRégion = reader["RegionDescription"].ToString();
+
+                lstTerritoires.Add(ter);
+            }
+        }
+
+        private static void RécupérerTerritoiresEmployésDepuisSqlDataReader(SqlDataReader reader, List<TerritoireEmployé> lstTerritoiresEmployés)
+        {
+            while (reader.Read())
+            {
+                TerritoireEmployé terE = new TerritoireEmployé();
+                terE.CodeTerritoire = reader["TerritoryID"].ToString();
+                terE.IdEmployé = (int)reader["EmployeeID"];
+
+                lstTerritoiresEmployés.Add(terE);
+            }
+        }
+
         /// <summary>
         /// Renvoi une DataTable de type TypeTableProduit
         /// </summary>
@@ -194,6 +232,33 @@ namespace ADO
                 DataRow ligne = table.NewRow();
 
                 ligne["Id"] = i;
+                table.Rows.Add(ligne);
+            }
+
+            return table;
+        }
+
+        /// <summary>
+        /// Renvoi une DataTable de type TypeTableTerrEmp
+        /// </summary>
+        /// <param name="lstTerritoiresEmployés"></param>
+        /// <returns></returns>
+        private static object RécupérerDataTableTTTEDepuisListeTerritoiresEmployés(List<TerritoireEmployé> lte)
+        {
+            DataTable table = new DataTable();
+
+            table.Columns.Add(new DataColumn("EmployeeId", typeof(int)));
+            table.Columns["EmployeeId"].AllowDBNull = false;
+
+            table.Columns.Add(new DataColumn("TerritoryId", typeof(string)));
+            table.Columns["TerritoryId"].AllowDBNull = false;
+
+            foreach (var te in lte)
+            {
+                DataRow ligne = table.NewRow();
+                ligne["EmployeeId"] = te.IdEmployé;
+                ligne["TerritoryId"] = te.CodeTerritoire;
+
                 table.Rows.Add(ligne);
             }
 
@@ -577,7 +642,118 @@ namespace ADO
             }
             return lstCatégories;
         }
-    #endregion
+
+        static public List<Employée> RécupérerEmployées()
+        {
+            List<Employée> lstEmployées = new List<Employée>();
+
+            string queryString = @"select EmployeeID, LastName, FirstName from Employees";
+
+            using (SqlConnection cnx = new SqlConnection(Properties.Settings.Default.NorthwindConnectionStringMaison))
+            {
+                cnx.Open();
+                var command = new SqlCommand(queryString, cnx);
+
+                using (var reader = command.ExecuteReader())
+                {
+                    RécupérerEmployéesDepuisSqlDataReader(reader, lstEmployées);
+                }
+            }
+
+            return lstEmployées;
+        }
+
+        #region Attention ConnexionString de la maison !!!
+        // TODO : Penser à créer le type TableTypeTerrEmp as table ( EmployeeId int, TerritoryId nvarchar(20)) chez ISAGRI
+        // TODO : Penser à mettre la bonne chaine de connexion chez ISAGRI
+        static public BindingList<TerritoireRégion> RécupérerTerritoiresRégions()
+        {
+            BindingList<TerritoireRégion> lstTerritoiresRégions = new BindingList<TerritoireRégion>();
+
+            string queryString = @"select t.TerritoryID, t.TerritoryDescription, r.RegionID, r.RegionDescription 
+                                   from Territories t 
+                                   inner join Region r on t.RegionID = r.RegionID
+                                   order by 3";
+
+            using (SqlConnection cnx = new SqlConnection(Properties.Settings.Default.NorthwindConnectionStringMaison))
+            {
+                cnx.Open();
+                var command = new SqlCommand(queryString, cnx);
+
+                using (var reader = command.ExecuteReader())
+                {
+                    RécupérerTerritoiresRégionsDepuisSqlDataReader(reader, lstTerritoiresRégions);
+                }
+            }
+
+            return lstTerritoiresRégions;
+        }
+
+        static public List<TerritoireEmployé> RécupérerTerritoiresEmployés()
+        {
+            List<TerritoireEmployé> lstTerritoiresEmployés = new List<TerritoireEmployé>();
+
+            string queryString = @"select et.TerritoryID, e.EmployeeID
+                                   from EmployeeTerritories et 
+                                   inner join Employees e on et.EmployeeID = e.EmployeeID";
+
+            using (SqlConnection cnx = new SqlConnection(Properties.Settings.Default.NorthwindConnectionStringMaison))
+            {
+                cnx.Open();
+                var command = new SqlCommand(queryString, cnx);
+
+                using (var reader = command.ExecuteReader())
+                {
+                    RécupérerTerritoiresEmployésDepuisSqlDataReader(reader, lstTerritoiresEmployés);
+                }
+            }
+
+            return lstTerritoiresEmployés;
+        }
+
+        static public void MajTerritoireEmployéBDD(List<TerritoireEmployé> lstTerritoiresEmployés)
+        {
+            // Si la liste est vide, ne rien faire
+            if (!lstTerritoiresEmployés.Any())
+                return;
+
+            using (SqlConnection connexion = new SqlConnection(Properties.Settings.Default.NorthwindConnectionStringMaison))
+            {
+                connexion.Open();
+                var tran = connexion.BeginTransaction();
+
+                string query = @"MERGE EmployeeTerritories AS Cible
+                                 USING (SELECT EmployeeId, TerritoryId FROM @table) AS Source
+                                 ON (Cible.TerritoryId = Source.TerritoryId and Cible.EmployeeId = Source.EmployeeId)
+                                 WHEN MATCHED THEN
+	                                delete
+                                 WHEN NOT MATCHED BY TARGET THEN
+                                    INSERT (TerritoryId, EmployeeId)
+                                    VALUES (Source.TerritoryId, Source.EmployeeId);";
+
+                var command = new SqlCommand(query, connexion, tran);
+
+                #region Ajout des paramètres
+                command.Parameters.Add(new SqlParameter("@table", SqlDbType.Structured));
+                command.Parameters["@table"].TypeName = "TypeTableTerrEmp";
+                command.Parameters["@table"].Value = RécupérerDataTableTTTEDepuisListeTerritoiresEmployés(lstTerritoiresEmployés);
+                #endregion
+
+                try
+                {
+                    command.ExecuteNonQuery();
+                    tran.Commit();
+                }
+                catch (Exception)
+                {
+                    tran.Rollback();
+                    throw;
+                }
+            }
+        }
+        #endregion
+
+        #endregion
     }
 }
 
