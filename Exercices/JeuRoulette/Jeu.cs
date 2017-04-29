@@ -47,7 +47,7 @@ namespace JeuRoulette
         /// <summary>
         /// Fait saisir le montant de la mise à l'utilisateur.
         /// </summary>
-        /// <param name="mise"></param>
+        /// <param name="mise"></param> 
         private void SaisirMise(out Mise mise)
         {
             int miseJetons = 0;
