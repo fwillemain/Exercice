@@ -32,9 +32,6 @@ namespace ADO
             dgvRegTerr.Click += DgvRegTerr_Click;
             btnEnregistrer.Click += BtnEnregistrer_Click;
             btnAnnuler.Click += BtnAnnuler_Click;
-
-            // TODO : gérer le clic sur la Cell en haut à gauche ou la desactiver
-            // Nécessaire de dériver la classe DataGridView et override OnCellClickMouse()
         }
 
         protected override void OnLoad(EventArgs e)
@@ -88,10 +85,37 @@ namespace ADO
             base.OnLoad(e);
         }
 
+        protected override void OnClosing(CancelEventArgs e)
+        {
+            // Si il y a des modifications, demandez à l'utilisateur si il souhaite les enregistrer dans la BDD avant de fermer l'appli
+            if (_lstTerritoiresEmployésAModifier.Any())
+            {
+                var result = MessageBox.Show("Souhaitez-vous mettre à jour la base de données avant de quitter l'application?", "Quitter", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+                switch (result)
+                {
+                    case DialogResult.Yes:
+                        Enregistrer();
+                        break;
+                    case DialogResult.No:
+                        break;
+                    default:
+                        // Annuler la fermeture de la form (DialogResult.Cancel && DialogResult.Abort)
+                        e.Cancel = true;
+                        break;
+                }
+            }
+            base.OnClosing(e);
+        }
+
         private void BtnAnnuler_Click(object sender, EventArgs e)
         {
-            // Appelle le gestionnaire d'event de la cb sans changer l'employé donc reset de toutes les variables utiles pour la dgv
-            CbEmployée_SelectionChangeCommitted(cbEmployée, null);
+
+            // Déselectionne juste les lignes de la dgv si aucune employé n'a été sélectionné
+            if (cbEmployée.SelectedItem == null)
+                dgvRegTerr.ClearSelection();
+            else
+                // Appelle le gestionnaire d'event de la cb sans changer l'employé donc reset de toutes les variables utiles pour la dgv
+                CbEmployée_SelectionChangeCommitted(cbEmployée, null);
         }
 
         private void DgvRegTerr_Click(object sender, EventArgs e)
@@ -125,27 +149,42 @@ namespace ADO
 
         private void BtnEnregistrer_Click(object sender, EventArgs e)
         {
-            try
+            // Désactive le bouton enregistrer tant qu'un employé n'est pas sélectionné
+            if (cbEmployée.SelectedItem == null)
+                return;
+
+            var result = MessageBox.Show("Voulez-vous mettre à jour la base de données?", "Confirmation", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
             {
-                // Maj la BDD
-                DAL.MajTerritoireEmployéBDD(_lstTerritoiresEmployésAModifier);
-
-                // Raz la liste des modifs à effectuer
-                _lstTerritoiresEmployésAModifier.Clear();
-
-                // Maj de la liste avec le contenu de la BDD
-                _lstTerritoiresEmployés = DAL.RécupérerTerritoiresEmployés();
-
-                // Desélectionne toutes les lignes de la dgv
-                dgvRegTerr.ClearSelection();
-
-                MessageBox.Show("Enregistrement réussi", "Information");
+                try
+                {
+                    Enregistrer();
+                    MessageBox.Show("Enregistrement réussi", "Information");
+                }
+                catch (SqlException)
+                {
+                    MessageBox.Show("Echec de l'enregistrement", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    // Gestion plus poussée des erreurs possibles
+                }
             }
-            catch (SqlException)
-            {
-                MessageBox.Show("Echec de l'enregistrement", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                // Gestion plus poussée des erreurs possibles
-            }
+        }
+
+        /// <summary>
+        /// Maj la BDD et les listes qui vont avec
+        /// </summary>
+        private void Enregistrer()
+        {
+            // Maj la BDD
+            DAL.MajTerritoireEmployéBDD(_lstTerritoiresEmployésAModifier);
+
+            // Raz la liste des modifs à effectuer
+            _lstTerritoiresEmployésAModifier.Clear();
+
+            // Maj de la liste avec le contenu de la BDD
+            _lstTerritoiresEmployés = DAL.RécupérerTerritoiresEmployés();
+
+            // Desélectionne toutes les lignes de la dgv
+            dgvRegTerr.ClearSelection();
         }
 
         private void CbEmployée_SelectionChangeCommitted(object sender, EventArgs e)
@@ -189,10 +228,11 @@ namespace ADO
             // Se place au centre du header
             rect.X = rect.Location.X + (rect.Width / 6);
 
-            CheckBox checkboxHeader = new CheckBox();
+            //CheckBox 
+            var checkboxHeader = new CheckBox();
             checkboxHeader.Name = "checkboxHeader";
             checkboxHeader.Size = new Size(18, 18);
-            
+
             // Place la checkbox à la place du rectangle
             checkboxHeader.Location = rect.Location;
 
