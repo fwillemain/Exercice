@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercicesWF", "ExercicesWF\ExercicesWF.csproj", "{0F6C75F4-42A7-43B4-A02F-52ACE444A85C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADO", "ADO\ADO.csproj", "{7E14EED6-56FD-4ADF-B55F-7F0646C9D18E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMéthodeExtension", "TestMéthodeExtension\TestMéthodeExtension.csproj", "{05A089EC-F737-4BBE-81E9-055F3683F5B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7E14EED6-56FD-4ADF-B55F-7F0646C9D18E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E14EED6-56FD-4ADF-B55F-7F0646C9D18E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E14EED6-56FD-4ADF-B55F-7F0646C9D18E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05A089EC-F737-4BBE-81E9-055F3683F5B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05A089EC-F737-4BBE-81E9-055F3683F5B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05A089EC-F737-4BBE-81E9-055F3683F5B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05A089EC-F737-4BBE-81E9-055F3683F5B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
