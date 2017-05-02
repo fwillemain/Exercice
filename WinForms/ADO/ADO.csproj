@@ -45,13 +45,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Employé.cs" />
-    <Compile Include="POCO\RégionsTerritoires.cs" />
+    <Compile Include="POCO\TerritoireEmployé.cs" />
+    <Compile Include="POCO\Employée.cs" />
     <Compile Include="FORM\FormPersonne.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FORM\FormPersonne.Designer.cs">
       <DependentUpon>FormPersonne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\FormEmployée.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\FormEmployée.Designer.cs">
+      <DependentUpon>FormEmployée.cs</DependentUpon>
     </Compile>
     <Compile Include="POCO\Catégorie.cs" />
     <Compile Include="POCO\Client.cs" />
@@ -91,6 +97,7 @@
     <Compile Include="POCO\Produit.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="POCO\TerritoireRégion.cs" />
     <EmbeddedResource Include="FORM\FormAjouterProduit.resx">
       <DependentUpon>FormAjouterProduit.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +109,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FORM\FormPersonne.resx">
       <DependentUpon>FormPersonne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\FormEmployée.resx">
+      <DependentUpon>FormEmployée.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FORM\FormProduits.resx">
       <DependentUpon>FormProduits.cs</DependentUpon>

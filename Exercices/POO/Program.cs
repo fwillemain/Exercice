@@ -24,8 +24,11 @@ namespace POO
                 NumPremierChèque = 102001
             };
 
-            var c = new CompteBancaireAltertable(new CompteBancaire(11221321));
+
+            var cb = new CompteBancaire(11221321);
+            var c = new CompteBancaireAltertable(cb);
             c.AlerterClient();
+            cb.Etendre();
 
             //Console.WriteLine(carte.ToString());
             //Console.WriteLine(chq.ToString());

@@ -33,7 +33,7 @@
             this.menu2 = new System.Windows.Forms.ToolStripMenuItem();
             this.menu3 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuWindows = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuPersonne = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuEmployée = new System.Windows.Forms.ToolStripMenuItem();
             this.menuGeneral.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,7 +43,7 @@
             this.menu1,
             this.menu2,
             this.menu3,
-            this.menuPersonne,
+            this.menuEmployée,
             this.menuWindows});
             this.menuGeneral.Location = new System.Drawing.Point(0, 0);
             this.menuGeneral.Name = "menuGeneral";
@@ -75,11 +75,11 @@
             this.menuWindows.Size = new System.Drawing.Size(63, 20);
             this.menuWindows.Text = "Fenêtres";
             // 
-            // menuPersonne
+            // menuEmployée
             // 
-            this.menuPersonne.Name = "menuPersonne";
-            this.menuPersonne.Size = new System.Drawing.Size(68, 20);
-            this.menuPersonne.Text = "Personne";
+            this.menuEmployée.Name = "menuEmployée";
+            this.menuEmployée.Size = new System.Drawing.Size(71, 20);
+            this.menuEmployée.Text = "Employée";
             // 
             // MDIForm
             // 
@@ -105,7 +105,7 @@
 		private System.Windows.Forms.ToolStripMenuItem menuWindows;
 		private System.Windows.Forms.ToolStripMenuItem menu2;
         private System.Windows.Forms.ToolStripMenuItem menu3;
-        private System.Windows.Forms.ToolStripMenuItem menuPersonne;
+        private System.Windows.Forms.ToolStripMenuItem menuEmployée;
     }
 }
 
