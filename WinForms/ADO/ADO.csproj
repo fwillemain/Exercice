@@ -45,6 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Employé.cs" />
+    <Compile Include="POCO\RégionsTerritoires.cs" />
     <Compile Include="FORM\FormPersonne.cs">
       <SubType>Form</SubType>
     </Compile>

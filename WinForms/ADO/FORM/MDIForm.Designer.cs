@@ -31,8 +31,9 @@
             this.menuGeneral = new System.Windows.Forms.MenuStrip();
             this.menu1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menu2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuWindows = new System.Windows.Forms.ToolStripMenuItem();
             this.menu3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuWindows = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuPersonne = new System.Windows.Forms.ToolStripMenuItem();
             this.menuGeneral.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,6 +43,7 @@
             this.menu1,
             this.menu2,
             this.menu3,
+            this.menuPersonne,
             this.menuWindows});
             this.menuGeneral.Location = new System.Drawing.Point(0, 0);
             this.menuGeneral.Name = "menuGeneral";
@@ -61,17 +63,23 @@
             this.menu2.Size = new System.Drawing.Size(82, 20);
             this.menu2.Text = "Commande";
             // 
+            // menu3
+            // 
+            this.menu3.Name = "menu3";
+            this.menu3.Size = new System.Drawing.Size(63, 20);
+            this.menu3.Text = "Produits";
+            // 
             // menuWindows
             // 
             this.menuWindows.Name = "menuWindows";
             this.menuWindows.Size = new System.Drawing.Size(63, 20);
             this.menuWindows.Text = "Fenêtres";
             // 
-            // menu3
+            // menuPersonne
             // 
-            this.menu3.Name = "menu3";
-            this.menu3.Size = new System.Drawing.Size(63, 20);
-            this.menu3.Text = "Produits";
+            this.menuPersonne.Name = "menuPersonne";
+            this.menuPersonne.Size = new System.Drawing.Size(68, 20);
+            this.menuPersonne.Text = "Personne";
             // 
             // MDIForm
             // 
@@ -97,6 +105,7 @@
 		private System.Windows.Forms.ToolStripMenuItem menuWindows;
 		private System.Windows.Forms.ToolStripMenuItem menu2;
         private System.Windows.Forms.ToolStripMenuItem menu3;
+        private System.Windows.Forms.ToolStripMenuItem menuPersonne;
     }
 }
 

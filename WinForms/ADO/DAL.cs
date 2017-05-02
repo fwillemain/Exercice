@@ -70,6 +70,32 @@ namespace ADO
             }
         }
 
+        static private void RécupRTDepuisSqlDataReader(SqlDataReader reader, List<RegionsTerritoires> lstEmployé)
+        {
+            while (reader.Read())
+            {
+                RegionsTerritoires ert = new RegionsTerritoires();
+                ert.IdRegion = (int) reader["RegionID"];
+                ert.DescriptionRegion = reader["RegionDescription"].ToString();
+                ert.IdTerritoire = reader["TerritoryID"].ToString();
+                ert.DescriptionTerritoire = reader["TerritoryDescription"].ToString();
+
+                lstEmployé.Add(ert);
+            }
+        }
+
+        static private void RécupEmployésDepuisSqlDataReader(SqlDataReader reader, List<Employé> lstEmployé)
+        {
+            while (reader.Read())
+            {
+                Employé e = new Employé();
+                e.Id = (int)reader["EmployeeID"];
+                e.NomComplet = reader["FirstName"].ToString() + " " + reader["LastName"].ToString();
+
+                lstEmployé.Add(e);
+            }
+        }
+
         static private void RécupProduitsDepuisSqlDataReader(SqlDataReader reader, BindingList<Produit> lstProduit)
         {
             while (reader.Read())
@@ -356,6 +382,67 @@ namespace ADO
             }
 
             return lstClients;
+        }
+
+        static public List<Employé> RécupérerEmployés()
+        {
+            List<Employé> lstEmployés = new List<Employé>();
+            using (SqlConnection connection = new SqlConnection(Properties.Settings.Default.NorthwindConnectionString))
+            {
+                string requete = @"select EmployeeID, LastName, FirstName from Employees";
+
+                var commande = new SqlCommand(requete, connection);
+                connection.Open();
+
+                using (SqlDataReader reader = commande.ExecuteReader())
+                {
+                    RécupEmployésDepuisSqlDataReader(reader, lstEmployés);
+                }
+            }
+
+            return lstEmployés;
+        }
+
+        static public List<RegionsTerritoires> RécupérerRégionsTerritoires()
+        {
+            List<RegionsTerritoires> lstEmployés = new List<RegionsTerritoires>();
+            using (SqlConnection connection = new SqlConnection(Properties.Settings.Default.NorthwindConnectionString))
+            {
+                string requete = @"select r.RegionID, r.RegionDescription, t.TerritoryID, t.TerritoryDescription 
+                                   from Region r
+                                   inner join Territories t on t.RegionID = r.RegionID";
+
+                var commande = new SqlCommand(requete, connection);
+                connection.Open();
+
+                using (SqlDataReader reader = commande.ExecuteReader())
+                {
+                    RécupRTDepuisSqlDataReader(reader, lstEmployés);
+                }
+            }
+
+            return lstEmployés;
+        }
+
+        static public List<RegionsTerritoires> RécupérerRégionsTerritoiresDeLEmployé(int IdEmployé)
+        {
+            List<RegionsTerritoires> lstEmployés = new List<RegionsTerritoires>();
+            using (SqlConnection connection = new SqlConnection(Properties.Settings.Default.NorthwindConnectionString))
+            {
+                string requete = @"select e.EmployeeID, t.RegionID, t.TerritoryID 
+                                   from EmployeeTerritories et
+                                   inner join Territories t on t.TerritoryID = et.TerritoryID";
+
+                var commande = new SqlCommand(requete, connection);
+                connection.Open();
+
+                using (SqlDataReader reader = commande.ExecuteReader())
+                {
+                    RécupRTDepuisSqlDataReader(reader, lstEmployés);
+                }
+            }
+
+            return lstEmployés;
         }
 
         static public BindingList<Produit> RécupérerProduits()
