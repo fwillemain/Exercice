@@ -190,6 +190,7 @@ namespace ADO
         private void CbEmployée_SelectionChangeCommitted(object sender, EventArgs e)
         {
             // Maj de l'affichage de la dgv en fonction de l'employé sélectionné
+            // TODO : Voir pourquoi le SelectedValue ne fonctionne pas
             MajListeTR(((Employée)cbEmployée.SelectedItem).Id);
 
             // Réinitialise la liste des employés/territoires à modifier

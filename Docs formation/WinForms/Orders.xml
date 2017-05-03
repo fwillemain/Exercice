@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CollectionCustomer>
+	<Customer CustomerId="ALFKI" CompanyName="Alfreds Futterkiste" ContactName="Maria Anders"/>
+	<Customer CustomerId="ANATR" CompanyName="Ana Trujillo Emparedados y helados" ContactName="Ana Trujillo"/>
+	<Customer CustomerId="ANTON" CompanyName="Antonio Moreno Taquería" ContactName="Antonio Moreno"/>
+	<Customer CustomerId="AROUT" CompanyName="Around the Horn" ContactName="Thomas Hardy"/>
+	<Customer CustomerId="VICTE" CompanyName="Victuailles en stock" ContactName="Mary Saveley">
+		<CollectionOrder>
+			<Order OrderId="10251" OrderDate="1996-07-08" ShipVia="1"/>
+		</CollectionOrder>
+	</Customer>
+	<Customer CustomerId="VINET" CompanyName="Vins et alcools Chevalier" ContactName="Paul Henriot">
+		<CollectionOrder>
+			<Order OrderId="10248" OrderDate="1996-07-04" ShipVia="3">
+				<CollectionOrderDetail>
+					<OrderDetails ProductId="11" UnitPrice="14,00" Quantity="12" Discount="0"/>
+					<OrderDetails ProductId="42" UnitPrice="9,80" Quantity="10" Discount="0"/>
+					<OrderDetails ProductId="72" UnitPrice="34,80" Quantity="5" Discount="0"/>
+				</CollectionOrderDetail>
+			</Order>
+		</CollectionOrder>
+	</Customer>
+</CollectionCustomer>

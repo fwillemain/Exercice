@@ -7,6 +7,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
 using System.Windows.Forms;
+using System.Xml.Serialization;
+using System.IO;
 
 namespace ADO
 {
@@ -40,23 +42,23 @@ namespace ADO
             }
         }
 
-        static private void RécupCommandesDepuisSqlDataReader(SqlDataReader reader, List<Commande> lstCommande)
-        {
-            while (reader.Read())
-            {
-                Commande c = new Commande();
-                c.Id = reader["Id"].ToString();
-                if (reader["Date"] != DBNull.Value)
-                    c.Date = (DateTime)reader["Date"];
-                if (reader["DateEnvoi"] != DBNull.Value)
-                    c.DateEnvoi = (DateTime)reader["DateEnvoi"];
-                c.NbArticles = (int)reader["NbArticles"];
-                c.MontantTot = (decimal)reader["MontantTot"];
-                c.FraisEnvoi = (decimal)reader["FraisEnvoi"];
+        //static private void RécupCommandesDepuisSqlDataReader(SqlDataReader reader, List<Commande> lstCommande)
+        //{
+        //    while (reader.Read())
+        //    {
+        //        Commande c = new Commande();
+        //        c.Id = reader["Id"].ToString();
+        //        if (reader["Date"] != DBNull.Value)
+        //            c.Date = (DateTime)reader["Date"];
+        //        if (reader["DateEnvoi"] != DBNull.Value)
+        //            c.DateEnvoi = (DateTime)reader["DateEnvoi"];
+        //        c.NbArticles = (int)reader["NbArticles"];
+        //        c.MontantTot = (decimal)reader["MontantTot"];
+        //        c.FraisEnvoi = (decimal)reader["FraisEnvoi"];
 
-                lstCommande.Add(c);
-            }
-        }
+        //        lstCommande.Add(c);
+        //    }
+        //}
 
         static private void RécupClientsDepuisSqlDataReader(SqlDataReader reader, List<Client> lstClient)
         {
@@ -70,29 +72,33 @@ namespace ADO
             }
         }
 
-        static private void RécupRTDepuisSqlDataReader(SqlDataReader reader, List<RegionsTerritoires> lstEmployé)
+        private static void RécupérerCommandesDepuisSqlDataReader(SqlDataReader reader, List<Commande> lstCommandes)
         {
             while (reader.Read())
             {
-                RegionsTerritoires ert = new RegionsTerritoires();
-                ert.IdRegion = (int) reader["RegionID"];
-                ert.DescriptionRegion = reader["RegionDescription"].ToString();
-                ert.IdTerritoire = reader["TerritoryID"].ToString();
-                ert.DescriptionTerritoire = reader["TerritoryDescription"].ToString();
+                int currentIdCommande = (int)reader["OrderID"];
 
-                lstEmployé.Add(ert);
-            }
-        }
+                if (lstCommandes.Count == 0 || currentIdCommande != lstCommandes.Last().IdCommande)
+                {
+                    var com = new Commande() { LstLignesCommandes = new List<LigneCommande>() };
+                    com.IdCommande = currentIdCommande;
 
-        static private void RécupEmployésDepuisSqlDataReader(SqlDataReader reader, List<Employé> lstEmployé)
-        {
-            while (reader.Read())
-            {
-                Employé e = new Employé();
-                e.Id = (int)reader["EmployeeID"];
-                e.NomComplet = reader["FirstName"].ToString() + " " + reader["LastName"].ToString();
+                    if (reader["CustomerID"] != DBNull.Value)
+                        com.IdClient = reader["CustomerID"].ToString();
+                    if (reader["OrderDate"] != DBNull.Value)
+                        com.Date = (DateTime)reader["OrderDate"];
 
-                lstEmployé.Add(e);
+                    lstCommandes.Add(com);
+                }
+
+                var ligne = new LigneCommande();
+
+                ligne.IdProduit = (int)reader["ProductID"];
+                ligne.PrixUnitaire = (decimal)reader["UnitPrice"];
+                ligne.Quantité = (Int16)reader["Quantity"];
+                ligne.Réduction = (float)reader["Discount"];
+
+                lstCommandes.Last().LstLignesCommandes.Add(ligne);
             }
         }
 
@@ -424,7 +430,7 @@ namespace ADO
 
                 using (SqlDataReader reader = commande.ExecuteReader())
                 {
-                    RécupCommandesDepuisSqlDataReader(reader, lstCommandeClient);
+                    //RécupCommandesDepuisSqlDataReader(reader, lstCommandeClient);
                 }
             }
             return lstCommandeClient;
@@ -447,67 +453,6 @@ namespace ADO
             }
 
             return lstClients;
-        }
-
-        static public List<Employé> RécupérerEmployés()
-        {
-            List<Employé> lstEmployés = new List<Employé>();
-            using (SqlConnection connection = new SqlConnection(Properties.Settings.Default.NorthwindConnectionString))
-            {
-                string requete = @"select EmployeeID, LastName, FirstName from Employees";
-
-                var commande = new SqlCommand(requete, connection);
-                connection.Open();
-
-                using (SqlDataReader reader = commande.ExecuteReader())
-                {
-                    RécupEmployésDepuisSqlDataReader(reader, lstEmployés);
-                }
-            }
-
-            return lstEmployés;
-        }
-
-        static public List<RegionsTerritoires> RécupérerRégionsTerritoires()
-        {
-            List<RegionsTerritoires> lstEmployés = new List<RegionsTerritoires>();
-            using (SqlConnection connection = new SqlConnection(Properties.Settings.Default.NorthwindConnectionString))
-            {
-                string requete = @"select r.RegionID, r.RegionDescription, t.TerritoryID, t.TerritoryDescription 
-                                   from Region r
-                                   inner join Territories t on t.RegionID = r.RegionID";
-
-                var commande = new SqlCommand(requete, connection);
-                connection.Open();
-
-                using (SqlDataReader reader = commande.ExecuteReader())
-                {
-                    RécupRTDepuisSqlDataReader(reader, lstEmployés);
-                }
-            }
-
-            return lstEmployés;
-        }
-
-        static public List<RegionsTerritoires> RécupérerRégionsTerritoiresDeLEmployé(int IdEmployé)
-        {
-            List<RegionsTerritoires> lstEmployés = new List<RegionsTerritoires>();
-            using (SqlConnection connection = new SqlConnection(Properties.Settings.Default.NorthwindConnectionString))
-            {
-                string requete = @"select e.EmployeeID, t.RegionID, t.TerritoryID 
-                                   from EmployeeTerritories et
-                                   inner join Territories t on t.TerritoryID = et.TerritoryID";
-
-                var commande = new SqlCommand(requete, connection);
-                connection.Open();
-
-                using (SqlDataReader reader = commande.ExecuteReader())
-                {
-                    RécupRTDepuisSqlDataReader(reader, lstEmployés);
-                }
-            }
-
-            return lstEmployés;
         }
 
         static public BindingList<Produit> RécupérerProduits()
@@ -736,7 +681,7 @@ namespace ADO
 
             string queryString = @"select EmployeeID, LastName, FirstName from Employees";
 
-            using (SqlConnection cnx = new SqlConnection(Properties.Settings.Default.NorthwindConnectionStringMaison))
+            using (SqlConnection cnx = new SqlConnection(Properties.Settings.Default.NorthwindConnectionString))
             {
                 cnx.Open();
                 var command = new SqlCommand(queryString, cnx);
@@ -752,7 +697,6 @@ namespace ADO
 
         #region Attention ConnexionString de la maison !!!
         // TODO : Penser à créer le type TableTypeTerrEmp as table ( EmployeeId int, TerritoryId nvarchar(20)) chez ISAGRI
-        // TODO : Penser à mettre la bonne chaine de connexion chez ISAGRI
         static public BindingList<TerritoireRégion> RécupérerTerritoiresRégions()
         {
             BindingList<TerritoireRégion> lstTerritoiresRégions = new BindingList<TerritoireRégion>();
@@ -762,7 +706,7 @@ namespace ADO
                                    inner join Region r on t.RegionID = r.RegionID
                                    order by 3";
 
-            using (SqlConnection cnx = new SqlConnection(Properties.Settings.Default.NorthwindConnectionStringMaison))
+            using (SqlConnection cnx = new SqlConnection(Properties.Settings.Default.NorthwindConnectionString))
             {
                 cnx.Open();
                 var command = new SqlCommand(queryString, cnx);
@@ -784,7 +728,7 @@ namespace ADO
                                    from EmployeeTerritories et 
                                    inner join Employees e on et.EmployeeID = e.EmployeeID";
 
-            using (SqlConnection cnx = new SqlConnection(Properties.Settings.Default.NorthwindConnectionStringMaison))
+            using (SqlConnection cnx = new SqlConnection(Properties.Settings.Default.NorthwindConnectionString))
             {
                 cnx.Open();
                 var command = new SqlCommand(queryString, cnx);
@@ -804,7 +748,7 @@ namespace ADO
             if (!lstTerritoiresEmployés.Any())
                 return;
 
-            using (SqlConnection connexion = new SqlConnection(Properties.Settings.Default.NorthwindConnectionStringMaison))
+            using (SqlConnection connexion = new SqlConnection(Properties.Settings.Default.NorthwindConnectionString))
             {
                 connexion.Open();
                 var tran = connexion.BeginTransaction();
@@ -839,6 +783,54 @@ namespace ADO
             }
         }
         #endregion
+
+        static public List<Commande> RécupérerCommandes()
+        {
+            var lstCommandes = new List<Commande>();
+
+
+            string queryString = @"select o.OrderID, o.CustomerID, o.OrderDate,
+                                            od.ProductID, od.UnitPrice, od.Quantity, od.Discount
+                                   from Orders o
+                                   inner join Order_Details od on o.OrderID = od.OrderID
+                                   order by 1";
+
+            using (SqlConnection cnx = new SqlConnection(Properties.Settings.Default.NorthwindConnectionString))
+            {
+                cnx.Open();
+                var command = new SqlCommand(queryString, cnx);
+
+                using (var reader = command.ExecuteReader())
+                {
+                    RécupérerCommandesDepuisSqlDataReader(reader, lstCommandes);
+                }
+            }
+
+            return lstCommandes;
+        }
+
+        static public void ExporterXml(List<Commande> lstCommandes)
+        {
+            XmlSerializer serial = new XmlSerializer(typeof(List<Commande>), new XmlRootAttribute("ListeCommandes"));
+
+            using (var sw = new StreamWriter(@"../../ListeCommandes.xml"))
+            {
+                serial.Serialize(sw, lstCommandes);
+            }
+        }
+
+        static public List<Commande> ImporterXml()
+        {
+            List<Commande> lstCommandes = null;
+
+            XmlSerializer serial = new XmlSerializer(typeof(List<Commande>), new XmlRootAttribute("ListeCommandes"));
+            using (var sr = new StreamReader(@"../../ListeCommandes.xml"))
+            {
+                lstCommandes = (List<Commande>)serial.Deserialize(sr);
+            }
+
+            return lstCommandes;
+        }
 
         #endregion
     }

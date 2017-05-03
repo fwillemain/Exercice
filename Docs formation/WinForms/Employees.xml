@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CollectionEmployee>
+	<Employee EmployeeId="1" LastName="Davolio" FirstName="Nancy" ReportsTo="2">
+		<CollectionTerritory>
+			<Territory TerritoryID="06897" TerritoryDescription="Wilton" RegionId="1"/>
+			<Territory TerritoryID="19713" TerritoryDescription="Neward" RegionId="1"/>
+			<Territory TerritoryID="48084" TerritoryDescription="Troy" RegionId="3"/>
+		</CollectionTerritory>
+	</Employee>
+	<Employee EmployeeId="2" LastName="Fuller" FirstName="Andrew"/>
+	<Employee EmployeeId="3" LastName="Leverling" FirstName="Janet" ReportsTo="2"/>
+</CollectionEmployee>
+
