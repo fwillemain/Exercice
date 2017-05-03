@@ -119,7 +119,6 @@
             this.btnExportXML.TabIndex = 8;
             this.btnExportXML.Text = "Exporter XML";
             this.btnExportXML.UseVisualStyleBackColor = true;
-            this.btnExportXML.Click += new System.EventHandler(this.button2_Click);
             // 
             // FormCommandesBis
             // 

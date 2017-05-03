@@ -3,20 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 using System.Xml.Serialization;
 
 namespace ADO
 {
     public class Commande
     {
-        [XmlIgnore]
-        public string Id { get; set; }
         [XmlAttribute]
         public int IdCommande { get; set; }
         [XmlAttribute]
         public string IdClient { get; set; }
         [XmlElement]
-        public DateTime? Date { get; set; }
+        public DateTime Date { get; set; }
+        public List<LigneCommande> LstLignesCommandes { get; set; }
+
+        [XmlIgnore]
+        public string Id { get; set; }
         [XmlIgnore]
         public DateTime DateEnvoi { get; set; }
         [XmlIgnore]
@@ -25,7 +28,6 @@ namespace ADO
         public decimal MontantTot { get; set; }
         [XmlIgnore]
         public decimal FraisEnvoi { get; set; }
-        public List<LigneCommande> LstLignesCommandes { get; set; }
     }
 
     public class LigneCommande

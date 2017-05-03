@@ -19,18 +19,8 @@ namespace ADO
             InitializeComponent();
             dgvCommandes.SelectionChanged += DgvCommandes_SelectionChanged;
             btnRechercheOK.Click += BtnRechercheOK_Click;
-            btnImportXML.Click += BtnImportXML_Click;
-            btnExportXML.Click += BtnExportXML_Click;
-        }
-
-        private void BtnExportXML_Click(object sender, EventArgs e)
-        {
-            DAL.ExporterXml(_lstCommandes);
-        }
-
-        private void BtnImportXML_Click(object sender, EventArgs e)
-        {
-            _lstCommandes = DAL.ImporterXml();
+            btnImportXML.Click += (object sender, EventArgs e) => _lstCommandes = DAL.ImporterXml();
+            btnExportXML.Click += (object sender, EventArgs e) => DAL.ExporterXml(_lstCommandes);
         }
 
         private void BtnRechercheOK_Click(object sender, EventArgs e)
@@ -49,28 +39,6 @@ namespace ADO
             }
         }
 
-        protected override void OnLoad(EventArgs e)
-        {
-            _lstCommandes = DAL.RécupérerCommandes();
-            dgvCommandes.DataSource = _lstCommandes; //.Select(c => new { c.IdCommande, c.IdClient, c.Date }) ;
-
-            #region Paramétrage dgvCommandes
-            dgvCommandes.Columns["Id"].Visible = false;
-            dgvCommandes.Columns["DateEnvoi"].Visible = false;
-            dgvCommandes.Columns["NbArticles"].Visible = false;
-            dgvCommandes.Columns["MontantTot"].Visible = false;
-            dgvCommandes.Columns["FraisEnvoi"].Visible = false;
-            dgvCommandes.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvCommandes.ReadOnly = true;
-            dgvCommandes.MultiSelect = false;
-            #endregion
-
-            dgvDetailsCommande.MultiSelect = false;
-            dgvDetailsCommande.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvDetailsCommande.ReadOnly = true;
-
-            base.OnLoad(e);
-        }
         private void DgvCommandes_SelectionChanged(object sender, EventArgs e)
         {
             if (!dgvCommandes.Focused) return;
@@ -80,9 +48,27 @@ namespace ADO
             dgvDetailsCommande.DataSource = lst;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        protected override void OnLoad(EventArgs e)
         {
+            _lstCommandes = DAL.RécupérerCommandes();
+            dgvCommandes.DataSource = _lstCommandes.Select(c => new { c.IdCommande, c.IdClient, c.Date }).ToList() ;
 
+            #region Paramétrage dgvCommandes
+            dgvCommandes.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvCommandes.ReadOnly = true;
+            dgvCommandes.MultiSelect = false;
+            #endregion
+
+            #region Paramétrage dgvDetailsCommande
+            dgvDetailsCommande.MultiSelect = false;
+            dgvDetailsCommande.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvDetailsCommande.ReadOnly = true;
+            #endregion
+
+            DAL.ExporterXmlDatesCommandes(_lstCommandes);
+
+            _lstCommandes = DAL.ImporterXmlAvecLINQ();
+            base.OnLoad(e);
         }
     }
 }

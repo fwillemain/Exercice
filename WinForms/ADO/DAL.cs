@@ -9,11 +9,14 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using System.Xml.Serialization;
 using System.IO;
+using System.Xml;
+using System.Xml.Linq;
 
 namespace ADO
 {
     static public class DAL
     {
+
         #region Méthodes privées
         static private void RécupFournisseursDepuisSqlDataReader(SqlDataReader reader, List<Fournisseur> lstFournisseur)
         {
@@ -832,6 +835,93 @@ namespace ADO
             return lstCommandes;
         }
 
+        static public void ExporterXmlDatesCommandes(List<Commande> lstCommandes)
+        {
+            // Tri de ma liste de commande par date de commande
+            List<Commande> lstCommandeTriées = lstCommandes.OrderBy(c => c.Date).ToList();
+
+            XmlWriterSettings settings = new XmlWriterSettings();
+            settings.Indent = true;
+            settings.IndentChars = "\t";
+
+            using (XmlWriter writer = XmlWriter.Create(@"../../DatesCommandes.xml", settings))
+            {
+                writer.WriteStartDocument();
+                writer.WriteStartElement("DatesCommandes");
+                DateTime dateCourante = DateTime.MinValue;
+
+                foreach (var com in lstCommandeTriées)
+                {
+                    // Je vérifie si je viens de commencer à écrire le XML ou que le mois/l'année à traiter est différent(e) de
+                    // ceux du précédent élément traité
+                    if (dateCourante.Month != com.Date.Month || dateCourante.Date.Year != com.Date.Year)
+                    {
+                        // Si on ne débute pas le document, il faut fermer la précédente balise avec </DateCommande>
+                        if (dateCourante != DateTime.MinValue)
+                            writer.WriteEndElement();
+
+                        // Création d'une balise <DateCommande>
+                        writer.WriteStartElement("DateCommande");
+                        writer.WriteAttributeString("mois", com.Date.Month.ToString());
+                        writer.WriteAttributeString("annee", com.Date.Year.ToString());
+
+                        // Mise à jour de la dateCourante puisqu'elle est différente de la valeur précédente
+                        dateCourante = com.Date;
+                    }
+
+                    // Création d'une balise <Commande>
+                    writer.WriteStartElement("Commande");
+                    //com.LstLignesCommandes.Sum(c => c.Quantité * c.PrixUnitaire);
+                    writer.WriteAttributeString("Montant", com.MontantTot.ToString());
+                    writer.WriteAttributeString("Id", com.IdCommande.ToString());
+                    // Fermeture de la base avec </Commande>
+                    writer.WriteEndElement();
+                }
+
+                // Fermeture de la dernière balise avec </DateCommande> si la liste n'était pas vide
+                if (lstCommandeTriées.Any())
+                    writer.WriteEndElement();
+
+                // Fermeture de la balise avec </DatesCommandes>
+                writer.WriteEndElement();
+
+                // Fermeture du document (ferme les éléments encore ouvert, si on oublis de fermer les dernières balises.
+                // Du coup les WriteEndElement() sont optionnels
+                writer.WriteEndDocument();
+            }
+        }
+
+        static public List<Commande> ImporterXmlAvecLINQ()
+        {
+            List<Commande> lstCommandes = new List<Commande>();
+            XDocument doc = XDocument.Load("../../ListeCommandes.xml");
+
+            foreach(var c in doc.Descendants("Commande"))
+            {
+                Commande com = new Commande() { LstLignesCommandes = new List<LigneCommande>() };
+
+                com.IdCommande = int.Parse(c.Attribute("IdCommande").Value);
+                com.IdClient = c.Attribute("IdClient").Value;
+                com.Date = DateTime.Parse(c.Element("Date").Value);
+
+                foreach(var lc in c.Descendants("LigneCommande"))
+                {
+                    LigneCommande ligne = new LigneCommande();
+
+                    ligne.IdProduit = int.Parse(lc.Attribute("IdProduit").Value);
+                    ligne.Quantité = int.Parse(lc.Attribute("Quantité").Value);
+                    // Nécessaire si CultureInfo = "fr-FR"
+                    ligne.PrixUnitaire = decimal.Parse(lc.Attribute("PrixUnitaire").Value.Replace('.', ','));
+                    ligne.Réduction = float.Parse(lc.Attribute("Réduction").Value.Replace('.', ','));
+
+                    com.LstLignesCommandes.Add(ligne);
+                }
+
+                lstCommandes.Add(com);
+            }
+
+            return lstCommandes;
+        }
         #endregion
     }
 }
