@@ -7,11 +7,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
 using System.Windows.Forms;
+using System.Xml.Serialization;
+using System.IO;
+using System.Xml;
+using System.Xml.Linq;
 
 namespace ADO
 {
     static public class DAL
     {
+
         #region Méthodes privées
         static private void RécupFournisseursDepuisSqlDataReader(SqlDataReader reader, List<Fournisseur> lstFournisseur)
         {
@@ -40,23 +45,23 @@ namespace ADO
             }
         }
 
-        static private void RécupCommandesDepuisSqlDataReader(SqlDataReader reader, List<Commande> lstCommande)
-        {
-            while (reader.Read())
-            {
-                Commande c = new Commande();
-                c.Id = reader["Id"].ToString();
-                if (reader["Date"] != DBNull.Value)
-                    c.Date = (DateTime)reader["Date"];
-                if (reader["DateEnvoi"] != DBNull.Value)
-                    c.DateEnvoi = (DateTime)reader["DateEnvoi"];
-                c.NbArticles = (int)reader["NbArticles"];
-                c.MontantTot = (decimal)reader["MontantTot"];
-                c.FraisEnvoi = (decimal)reader["FraisEnvoi"];
+        //static private void RécupCommandesDepuisSqlDataReader(SqlDataReader reader, List<Commande> lstCommande)
+        //{
+        //    while (reader.Read())
+        //    {
+        //        Commande c = new Commande();
+        //        c.Id = reader["Id"].ToString();
+        //        if (reader["Date"] != DBNull.Value)
+        //            c.Date = (DateTime)reader["Date"];
+        //        if (reader["DateEnvoi"] != DBNull.Value)
+        //            c.DateEnvoi = (DateTime)reader["DateEnvoi"];
+        //        c.NbArticles = (int)reader["NbArticles"];
+        //        c.MontantTot = (decimal)reader["MontantTot"];
+        //        c.FraisEnvoi = (decimal)reader["FraisEnvoi"];
 
-                lstCommande.Add(c);
-            }
-        }
+        //        lstCommande.Add(c);
+        //    }
+        //}
 
         static private void RécupClientsDepuisSqlDataReader(SqlDataReader reader, List<Client> lstClient)
         {
@@ -67,6 +72,36 @@ namespace ADO
                 c.NomEntreprise = reader["CompanyName"].ToString();
 
                 lstClient.Add(c);
+            }
+        }
+
+        private static void RécupérerCommandesDepuisSqlDataReader(SqlDataReader reader, List<Commande> lstCommandes)
+        {
+            while (reader.Read())
+            {
+                int currentIdCommande = (int)reader["OrderID"];
+
+                if (lstCommandes.Count == 0 || currentIdCommande != lstCommandes.Last().IdCommande)
+                {
+                    var com = new Commande() { LstLignesCommandes = new List<LigneCommande>() };
+                    com.IdCommande = currentIdCommande;
+
+                    if (reader["CustomerID"] != DBNull.Value)
+                        com.IdClient = reader["CustomerID"].ToString();
+                    if (reader["OrderDate"] != DBNull.Value)
+                        com.Date = (DateTime)reader["OrderDate"];
+
+                    lstCommandes.Add(com);
+                }
+
+                var ligne = new LigneCommande();
+
+                ligne.IdProduit = (int)reader["ProductID"];
+                ligne.PrixUnitaire = (decimal)reader["UnitPrice"];
+                ligne.Quantité = (Int16)reader["Quantity"];
+                ligne.Réduction = (float)reader["Discount"];
+
+                lstCommandes.Last().LstLignesCommandes.Add(ligne);
             }
         }
 
@@ -398,7 +433,7 @@ namespace ADO
 
                 using (SqlDataReader reader = commande.ExecuteReader())
                 {
-                    RécupCommandesDepuisSqlDataReader(reader, lstCommandeClient);
+                    //RécupCommandesDepuisSqlDataReader(reader, lstCommandeClient);
                 }
             }
             return lstCommandeClient;
@@ -649,7 +684,7 @@ namespace ADO
 
             string queryString = @"select EmployeeID, LastName, FirstName from Employees";
 
-            using (SqlConnection cnx = new SqlConnection(Properties.Settings.Default.NorthwindConnectionStringMaison))
+            using (SqlConnection cnx = new SqlConnection(Properties.Settings.Default.NorthwindConnectionString))
             {
                 cnx.Open();
                 var command = new SqlCommand(queryString, cnx);
@@ -665,7 +700,6 @@ namespace ADO
 
         #region Attention ConnexionString de la maison !!!
         // TODO : Penser à créer le type TableTypeTerrEmp as table ( EmployeeId int, TerritoryId nvarchar(20)) chez ISAGRI
-        // TODO : Penser à mettre la bonne chaine de connexion chez ISAGRI
         static public BindingList<TerritoireRégion> RécupérerTerritoiresRégions()
         {
             BindingList<TerritoireRégion> lstTerritoiresRégions = new BindingList<TerritoireRégion>();
@@ -675,7 +709,7 @@ namespace ADO
                                    inner join Region r on t.RegionID = r.RegionID
                                    order by 3";
 
-            using (SqlConnection cnx = new SqlConnection(Properties.Settings.Default.NorthwindConnectionStringMaison))
+            using (SqlConnection cnx = new SqlConnection(Properties.Settings.Default.NorthwindConnectionString))
             {
                 cnx.Open();
                 var command = new SqlCommand(queryString, cnx);
@@ -697,7 +731,7 @@ namespace ADO
                                    from EmployeeTerritories et 
                                    inner join Employees e on et.EmployeeID = e.EmployeeID";
 
-            using (SqlConnection cnx = new SqlConnection(Properties.Settings.Default.NorthwindConnectionStringMaison))
+            using (SqlConnection cnx = new SqlConnection(Properties.Settings.Default.NorthwindConnectionString))
             {
                 cnx.Open();
                 var command = new SqlCommand(queryString, cnx);
@@ -717,7 +751,7 @@ namespace ADO
             if (!lstTerritoiresEmployés.Any())
                 return;
 
-            using (SqlConnection connexion = new SqlConnection(Properties.Settings.Default.NorthwindConnectionStringMaison))
+            using (SqlConnection connexion = new SqlConnection(Properties.Settings.Default.NorthwindConnectionString))
             {
                 connexion.Open();
                 var tran = connexion.BeginTransaction();
@@ -753,6 +787,141 @@ namespace ADO
         }
         #endregion
 
+        static public List<Commande> RécupérerCommandes()
+        {
+            var lstCommandes = new List<Commande>();
+
+
+            string queryString = @"select o.OrderID, o.CustomerID, o.OrderDate,
+                                            od.ProductID, od.UnitPrice, od.Quantity, od.Discount
+                                   from Orders o
+                                   inner join Order_Details od on o.OrderID = od.OrderID
+                                   order by 1";
+
+            using (SqlConnection cnx = new SqlConnection(Properties.Settings.Default.NorthwindConnectionString))
+            {
+                cnx.Open();
+                var command = new SqlCommand(queryString, cnx);
+
+                using (var reader = command.ExecuteReader())
+                {
+                    RécupérerCommandesDepuisSqlDataReader(reader, lstCommandes);
+                }
+            }
+
+            return lstCommandes;
+        }
+
+        static public void ExporterXml(List<Commande> lstCommandes)
+        {
+            XmlSerializer serial = new XmlSerializer(typeof(List<Commande>), new XmlRootAttribute("ListeCommandes"));
+
+            using (var sw = new StreamWriter(@"../../ListeCommandes.xml"))
+            {
+                serial.Serialize(sw, lstCommandes);
+            }
+        }
+
+        static public List<Commande> ImporterXml()
+        {
+            List<Commande> lstCommandes = null;
+
+            XmlSerializer serial = new XmlSerializer(typeof(List<Commande>), new XmlRootAttribute("ListeCommandes"));
+            using (var sr = new StreamReader(@"../../ListeCommandes.xml"))
+            {
+                lstCommandes = (List<Commande>)serial.Deserialize(sr);
+            }
+
+            return lstCommandes;
+        }
+
+        static public void ExporterXmlDatesCommandes(List<Commande> lstCommandes)
+        {
+            // Tri de ma liste de commande par date de commande
+            List<Commande> lstCommandeTriées = lstCommandes.OrderBy(c => c.Date).ToList();
+
+            XmlWriterSettings settings = new XmlWriterSettings();
+            settings.Indent = true;
+            settings.IndentChars = "\t";
+
+            using (XmlWriter writer = XmlWriter.Create(@"../../DatesCommandes.xml", settings))
+            {
+                writer.WriteStartDocument();
+                writer.WriteStartElement("DatesCommandes");
+                DateTime dateCourante = DateTime.MinValue;
+
+                foreach (var com in lstCommandeTriées)
+                {
+                    // Je vérifie si je viens de commencer à écrire le XML ou que le mois/l'année à traiter est différent(e) de
+                    // ceux du précédent élément traité
+                    if (dateCourante.Month != com.Date.Month || dateCourante.Date.Year != com.Date.Year)
+                    {
+                        // Si on ne débute pas le document, il faut fermer la précédente balise avec </DateCommande>
+                        if (dateCourante != DateTime.MinValue)
+                            writer.WriteEndElement();
+
+                        // Création d'une balise <DateCommande>
+                        writer.WriteStartElement("DateCommande");
+                        writer.WriteAttributeString("mois", com.Date.Month.ToString());
+                        writer.WriteAttributeString("annee", com.Date.Year.ToString());
+
+                        // Mise à jour de la dateCourante puisqu'elle est différente de la valeur précédente
+                        dateCourante = com.Date;
+                    }
+
+                    // Création d'une balise <Commande>
+                    writer.WriteStartElement("Commande");
+                    //com.LstLignesCommandes.Sum(c => c.Quantité * c.PrixUnitaire);
+                    writer.WriteAttributeString("Montant", com.MontantTot.ToString());
+                    writer.WriteAttributeString("Id", com.IdCommande.ToString());
+                    // Fermeture de la base avec </Commande>
+                    writer.WriteEndElement();
+                }
+
+                // Fermeture de la dernière balise avec </DateCommande> si la liste n'était pas vide
+                if (lstCommandeTriées.Any())
+                    writer.WriteEndElement();
+
+                // Fermeture de la balise avec </DatesCommandes>
+                writer.WriteEndElement();
+
+                // Fermeture du document (ferme les éléments encore ouvert, si on oublis de fermer les dernières balises.
+                // Du coup les WriteEndElement() sont optionnels
+                writer.WriteEndDocument();
+            }
+        }
+
+        static public List<Commande> ImporterXmlAvecLINQ()
+        {
+            List<Commande> lstCommandes = new List<Commande>();
+            XDocument doc = XDocument.Load("../../ListeCommandes.xml");
+
+            foreach(var c in doc.Descendants("Commande"))
+            {
+                Commande com = new Commande() { LstLignesCommandes = new List<LigneCommande>() };
+
+                com.IdCommande = int.Parse(c.Attribute("IdCommande").Value);
+                com.IdClient = c.Attribute("IdClient").Value;
+                com.Date = DateTime.Parse(c.Element("Date").Value);
+
+                foreach(var lc in c.Descendants("LigneCommande"))
+                {
+                    LigneCommande ligne = new LigneCommande();
+
+                    ligne.IdProduit = int.Parse(lc.Attribute("IdProduit").Value);
+                    ligne.Quantité = int.Parse(lc.Attribute("Quantité").Value);
+                    // Nécessaire si CultureInfo = "fr-FR"
+                    ligne.PrixUnitaire = decimal.Parse(lc.Attribute("PrixUnitaire").Value.Replace('.', ','));
+                    ligne.Réduction = float.Parse(lc.Attribute("Réduction").Value.Replace('.', ','));
+
+                    com.LstLignesCommandes.Add(ligne);
+                }
+
+                lstCommandes.Add(com);
+            }
+
+            return lstCommandes;
+        }
         #endregion
     }
 }

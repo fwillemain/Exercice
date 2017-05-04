@@ -32,8 +32,10 @@
             this.menu1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menu2 = new System.Windows.Forms.ToolStripMenuItem();
             this.menu3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuWindows = new System.Windows.Forms.ToolStripMenuItem();
             this.menuEmployée = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuWindows = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemListeCommande = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemDétailCommande = new System.Windows.Forms.ToolStripMenuItem();
             this.menuGeneral.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,6 +61,9 @@
             // 
             // menu2
             // 
+            this.menu2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuItemListeCommande,
+            this.menuItemDétailCommande});
             this.menu2.Name = "menu2";
             this.menu2.Size = new System.Drawing.Size(82, 20);
             this.menu2.Text = "Commande";
@@ -69,17 +74,29 @@
             this.menu3.Size = new System.Drawing.Size(63, 20);
             this.menu3.Text = "Produits";
             // 
+            // menuEmployée
+            // 
+            this.menuEmployée.Name = "menuEmployée";
+            this.menuEmployée.Size = new System.Drawing.Size(71, 20);
+            this.menuEmployée.Text = "Employée";
+            // 
             // menuWindows
             // 
             this.menuWindows.Name = "menuWindows";
             this.menuWindows.Size = new System.Drawing.Size(63, 20);
             this.menuWindows.Text = "Fenêtres";
             // 
-            // menuEmployée
+            // menuItemListeCommande
             // 
-            this.menuEmployée.Name = "menuEmployée";
-            this.menuEmployée.Size = new System.Drawing.Size(71, 20);
-            this.menuEmployée.Text = "Employée";
+            this.menuItemListeCommande.Name = "menuItemListeCommande";
+            this.menuItemListeCommande.Size = new System.Drawing.Size(168, 22);
+            this.menuItemListeCommande.Text = "Liste commande";
+            // 
+            // menuItemDétailCommande
+            // 
+            this.menuItemDétailCommande.Name = "menuItemDétailCommande";
+            this.menuItemDétailCommande.Size = new System.Drawing.Size(168, 22);
+            this.menuItemDétailCommande.Text = "Détail commande";
             // 
             // MDIForm
             // 
@@ -106,6 +123,8 @@
 		private System.Windows.Forms.ToolStripMenuItem menu2;
         private System.Windows.Forms.ToolStripMenuItem menu3;
         private System.Windows.Forms.ToolStripMenuItem menuEmployée;
+        private System.Windows.Forms.ToolStripMenuItem menuItemListeCommande;
+        private System.Windows.Forms.ToolStripMenuItem menuItemDétailCommande;
     }
 }
 
