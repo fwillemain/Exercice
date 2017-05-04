@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADO", "ADO\ADO.csproj", "{7
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMéthodeExtension", "TestMéthodeExtension\TestMéthodeExtension.csproj", "{05A089EC-F737-4BBE-81E9-055F3683F5B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestYieldIterator", "TestYieldIterator\TestYieldIterator.csproj", "{C030655B-842F-4765-A9DF-2157E7BCDA2E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{05A089EC-F737-4BBE-81E9-055F3683F5B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05A089EC-F737-4BBE-81E9-055F3683F5B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05A089EC-F737-4BBE-81E9-055F3683F5B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C030655B-842F-4765-A9DF-2157E7BCDA2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C030655B-842F-4765-A9DF-2157E7BCDA2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C030655B-842F-4765-A9DF-2157E7BCDA2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C030655B-842F-4765-A9DF-2157E7BCDA2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

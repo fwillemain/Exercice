@@ -104,12 +104,12 @@ namespace ADO
                         break;
                 }
             }
+
             base.OnClosing(e);
         }
 
         private void BtnAnnuler_Click(object sender, EventArgs e)
         {
-
             // Déselectionne juste les lignes de la dgv si aucune employé n'a été sélectionné
             if (cbEmployée.SelectedItem == null)
                 dgvRegTerr.ClearSelection();
@@ -121,8 +121,7 @@ namespace ADO
         private void DgvRegTerr_Click(object sender, EventArgs e)
         {
             // Désactive le clic sur la dgv tant qu'un employé n'a pas été sélectionné
-            if (cbEmployée.SelectedValue == null)
-                return;
+            if (cbEmployée.SelectedValue == null) return;
 
             // Pour toutes les lignes sélectionnées dans la dgv (sélection multiples possible)
             foreach (DataGridViewRow row in dgvRegTerr.SelectedRows)
@@ -150,8 +149,7 @@ namespace ADO
         private void BtnEnregistrer_Click(object sender, EventArgs e)
         {
             // Désactive le bouton enregistrer tant qu'un employé n'est pas sélectionné
-            if (cbEmployée.SelectedItem == null)
-                return;
+            if (cbEmployée.SelectedItem == null) return;
 
             var result = MessageBox.Show("Voulez-vous mettre à jour la base de données?", "Confirmation", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)

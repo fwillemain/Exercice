@@ -6,18 +6,21 @@ using System.Threading.Tasks;
 
 namespace TestMéthodeExtension
 {
-    static class TestExtensions
+    static class ObjetHelper
     {
-        // Méthodes d'extensions très utile pour remplace un décorateur quand il n'est pas nécessaire d'accéder à des champs privés ou de modifier
-        // des propriétés en get only 
+        // Méthodes d'extensions très utiles pour remplace un décorateur quand il n'est pas nécessaire d'accéder à des champs privés, de modifier
+        // des propriétés en get only ou de rajouter de nouvelles propriétés à la classe
+        // Il est possible de les déplacer directement dans la classe concernée sans modifier le code appelant.
+
+
         /// <summary>
-        /// Retourne true si le nom de l'objet contient "default"
+        /// Retourne true si les propriétés de l'objet ont toutes leurs valeurs par défaut
         /// </summary>
         /// <param name="t"></param>
         /// <returns></returns>
-        static public bool IsNameDefault(this Objet t)
+        static public bool IsDefault(this Objet t)
         {
-            return t.Nom.StartsWith("default");
+            return t.Nom.StartsWith("default") && t.X == 0 && t.Y == 0;
         }
 
         // Comme plus haut mais possible sur des Collections génériques d'objet implémentant l'interface nécessaire à 
@@ -52,7 +55,7 @@ namespace TestMéthodeExtension
         {
             foreach(var o in col)
             {
-                if (o.IsNameDefault())
+                if (o.IsDefault())
                     return o;
             }
 
