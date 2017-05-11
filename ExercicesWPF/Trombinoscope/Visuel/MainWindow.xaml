@@ -1,0 +1,17 @@
+﻿<Window x:Class="Trombinoscope.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Trombinoscope"
+        xmlns:resx="clr-namespace:Trombinoscope.Properties"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="700">
+    <DockPanel Margin="2">
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Name="miTrombi" Header="{x:Static resx:Resources.HeaderMenuTrombi}"/>
+            <MenuItem Name="miEmployés" Header="{x:Static resx:Resources.HeaderMenuEmployés}"/>
+        </Menu>
+        <ContentControl Name="contentCtrl"></ContentControl>
+    </DockPanel>
+</Window>

@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entrainement", "Entrainemen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExplorateurFichiers", "ExplorateurFichiers\ExplorateurFichiers.csproj", "{5EDED75E-E9F7-4035-BC65-5A325B74E691}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trombinoscope", "Trombinoscope\Trombinoscope.csproj", "{D4614601-D4AA-4046-B233-84C59A289AC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paramétrage", "Paramétrage\Paramétrage.csproj", "{8BF585E1-E232-49EF-8ABC-DA34C4357225}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{5EDED75E-E9F7-4035-BC65-5A325B74E691}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EDED75E-E9F7-4035-BC65-5A325B74E691}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5EDED75E-E9F7-4035-BC65-5A325B74E691}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4614601-D4AA-4046-B233-84C59A289AC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4614601-D4AA-4046-B233-84C59A289AC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4614601-D4AA-4046-B233-84C59A289AC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4614601-D4AA-4046-B233-84C59A289AC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BF585E1-E232-49EF-8ABC-DA34C4357225}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BF585E1-E232-49EF-8ABC-DA34C4357225}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BF585E1-E232-49EF-8ABC-DA34C4357225}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BF585E1-E232-49EF-8ABC-DA34C4357225}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
