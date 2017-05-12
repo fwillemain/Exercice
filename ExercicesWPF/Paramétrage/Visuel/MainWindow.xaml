@@ -8,13 +8,15 @@
         Title="Options Word" Height="580" Width="800">
     <DockPanel Margin="5">
         <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button Width="100" Height="30" Content="OK" Margin="5,5,5,0"></Button>
-            <Button Width="100" Height="30" Content="Annuler" Margin="0,5,5,0"></Button>
+            <Button Content="OK"></Button>
+            <Button Content="Annuler"></Button>
         </StackPanel>
         <TabControl Name="tcMenu" TabStripPlacement="Left">
             <TabItem Name="tiGénéral" Header="Général" Padding="35,2"/>
             <TabItem Name="tiAffichage" Header="Affichage"/>
-            <TabItem Header="Vérification"/>
+            <TabItem Header="Vérification">
+                <StaticResource ResourceKey="ImageJacky"/>
+            </TabItem> 
         </TabControl>
     </DockPanel>
 </Window>

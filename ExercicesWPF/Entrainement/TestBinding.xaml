@@ -1,0 +1,24 @@
+﻿<Window x:Class="Entrainement.TestBinding"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Entrainement"
+        mc:Ignorable="d"
+        Name="wdw"
+        Title="{Binding ElementName=tbTitre, Path=Text}"
+        Height="300"
+        Width="300">
+    <StackPanel>
+        <DockPanel>
+            <Label DockPanel.Dock="Left" Content="Titre de la fenêtre" Height="30"/>
+            <TextBox Name="tbTitre" Height="30" MinWidth="100" Text="Osef"/>
+        </DockPanel>
+        <StackPanel Orientation="Horizontal" Margin="0,5">
+            <Label Content="Dimension de la fenêtre" Height="30"/>
+            <TextBox Name="tbLargeur" Height="30" Width="40" Text="{Binding ElementName=wdw, Path=Width}"/>
+            <Label Content="x" Height="30"/>
+            <TextBox Name="tbHauteur" Height="30" Width="40" Text="{Binding ElementName=wdw, Path=Height}"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

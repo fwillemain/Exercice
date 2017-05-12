@@ -6,6 +6,19 @@
         xmlns:local="clr-namespace:ExplorateurFichiers"
         mc:Ignorable="d"
         Title="MainWindow" Height="400" Width="600">
+    <Window.Resources>
+        <Style TargetType="ListBoxItem">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Foreground" Value="Red"/>
+                </Trigger>
+                <Trigger Property="IsFocused" Value="True">
+                    <Setter Property="Foreground" Value="Red"/>
+                    <Setter Property="FontWeight" Value="Bold"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
     <Grid Margin="5">
 
         <!--#region Paramétrage grid-->

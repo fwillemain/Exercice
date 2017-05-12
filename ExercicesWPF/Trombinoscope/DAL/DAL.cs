@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.IO;
+using System.Linq;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
@@ -36,14 +37,27 @@ namespace Trombinoscope
         {
             while (reader.Read())
             {
-                Employé e = new Employé()
+
+                if (!lstEmployé.Any() || lstEmployé.Last().Id != (int)reader["EmployeeID"])
                 {
-                    Id = (int)reader["EmployeeID"],
-                    Prénom = reader["FirstName"].ToString(),
-                    Nom = reader["LastName"].ToString()
+                    Employé e = new Employé()
+                    {
+                        Id = (int)reader["EmployeeID"],
+                        Prénom = reader["FirstName"].ToString(),
+                        Nom = reader["LastName"].ToString(),
+                        LstTerritoire = new List<Territoire>()
+                    };
+
+                    lstEmployé.Add(e);
+                }
+
+                Territoire t = new Territoire()
+                {
+                    Id = reader["TerritoryID"].ToString(),
+                    Description = reader["TerritoryDescription"].ToString()
                 };
 
-                lstEmployé.Add(e);
+                lstEmployé.Last().LstTerritoire.Add(t);
             }
         }
         #endregion
@@ -76,7 +90,12 @@ namespace Trombinoscope
             {
                 cnx.Open();
 
-                string query = "select EmployeeID, LastName, FirstName from Employees";
+                string query = @"select e.EmployeeID, e.LastName, e.FirstName,
+                                            t.TerritoryID, t.TerritoryDescription
+                                 from Employees e
+                                 inner join EmployeeTerritories et on e.EmployeeID = et.EmployeeID
+                                 inner join Territories t on et.TerritoryID = t.TerritoryID";
+
                 SqlCommand cmd = new SqlCommand(query, cnx);
 
                 using (var reader = cmd.ExecuteReader())

@@ -10,22 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Trombinoscope
+namespace Entrainement
 {
     /// <summary>
-    /// Interaction logic for UCEmployés.xaml
+    /// Interaction logic for TestBinding.xaml
     /// </summary>
-    public partial class UCEmployés : UserControl
+    public partial class TestBinding : Window
     {
-        public UCEmployés()
+        public TestBinding()
         {
             InitializeComponent();
-
-            DataContext = DAL.GetEmployés();
         }
-
     }
 }
