@@ -1,0 +1,65 @@
+﻿<Window x:Class="SaisieTacheSansCours.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SaisieTacheSansCours"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <local:ConvModeEditionIsEnabled x:Key="ConvModeEditionIsEnabled"/>
+        <local:ConvBoolStringTerminée x:Key="ConvBoolStringTerminée"/>
+
+        <Style TargetType="Button">
+            <Setter Property="Width" Value="25"/>
+            <Setter Property="Height" Value="25"/>
+        </Style>
+    </Window.Resources>
+    <DockPanel>
+        <Expander DockPanel.Dock="Right" ExpandDirection="Left" MaxWidth="300" BorderThickness="1" BorderBrush="Black" Padding="5">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                    <Button Content="&#x2B;" Command="{Binding CommandeAjouterTache}"/>
+                    <Button Content="&#x2212;" Command="{Binding CommandeSupprimerTache}"/>
+                    <Button Content="&#x2713;" Command="{Binding CommandeEnregistrerTache}" IsEnabled="{Binding Path=ModeEditionCourant, Converter={StaticResource ConvModeEditionIsEnabled}}"/>
+                    <Button Content="&#x21b6;" Command="{Binding CommandeAnnulerTache}" IsEnabled="{Binding Path=ModeEditionCourant, Converter={StaticResource ConvModeEditionIsEnabled}}"/>
+                </StackPanel>
+                <DockPanel>
+                    <Label Content="Tâche N°" DockPanel.Dock="Left"/>
+                    <Label DockPanel.Dock="Left" Content="{Binding ListeTache/Id}"/>
+                    <Label DockPanel.Dock="Right" Content="{Binding ListeTache/DateCréation}"/>
+                    <Label Content="créé le" HorizontalAlignment="Right"/>
+                </DockPanel>
+                <Label Content="Echéance"/>
+                <DatePicker SelectedDate="{Binding ListeTache/DateEchéance}" IsEnabled="{Binding Path=ModeEditionCourant, Converter={StaticResource ConvModeEditionIsEnabled}}"/>
+                <DockPanel>
+                    <StackPanel DockPanel.Dock="Left" Orientation="Horizontal" Margin="0,10">
+                        <Label Content="Priorité"/>
+                        <TextBox VerticalContentAlignment="Center" Text="{Binding ListeTache/Priorité}" IsEnabled="{Binding Path=ModeEditionCourant, Converter={StaticResource ConvModeEditionIsEnabled}}"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                        <CheckBox VerticalAlignment="Center" IsChecked="{Binding ListeTache/Terminée}" IsEnabled="{Binding Path=ModeEditionCourant, Converter={StaticResource ConvModeEditionIsEnabled}}"/>
+                        <Label Content="Fait" VerticalContentAlignment="Center"/>
+                    </StackPanel>
+                </DockPanel>
+                <TextBox Height="100" TextWrapping="WrapWithOverflow" VerticalScrollBarVisibility="Visible" Text="{Binding ListeTache/Description}" IsEnabled="{Binding Path=ModeEditionCourant, Converter={StaticResource ConvModeEditionIsEnabled}}"/>
+            </StackPanel>
+        </Expander>
+        <ScrollViewer HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Hidden">
+            <StackPanel>
+                <Label Content="Liste des tâches"/>
+                <ListView ItemsSource="{Binding Path=ListeTache}" IsSynchronizedWithCurrentItem="True" SelectedItem="{Binding TacheCourante}">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Id" DisplayMemberBinding="{Binding Id}"/>
+                            <GridViewColumn Header="Echéance" DisplayMemberBinding="{Binding DateEchéance, StringFormat=d}"/>
+                            <GridViewColumn Header="Priorité" DisplayMemberBinding="{Binding Priorité}"/>
+                            <GridViewColumn Header="Fait" DisplayMemberBinding="{Binding Terminée, Converter={StaticResource ConvBoolStringTerminée}}"/>
+                            <GridViewColumn DisplayMemberBinding="{Binding Description}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </StackPanel>
+        </ScrollViewer>
+    </DockPanel>
+</Window>
