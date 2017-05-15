@@ -8,6 +8,9 @@
              d:DesignHeight="300" d:DesignWidth="300">
     <UserControl.Resources>
         <SolidColorBrush x:Key="CouleurEmploye" Color="Lavender"/>
+        <Style TargetType="ListViewItem">
+            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+        </Style>
     </UserControl.Resources>
     <Grid>
         <!--#region Param Grid-->
@@ -28,6 +31,16 @@
                     <GridViewColumn Header="Id" DisplayMemberBinding="{Binding Path=Id}"/>
                     <GridViewColumn Header="Nom" DisplayMemberBinding="{Binding Path=Nom}"/>
                     <GridViewColumn Header="Prénom" DisplayMemberBinding="{Binding Path=Prénom}"/>
+                    <GridViewColumn Header="Manager">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <DockPanel>
+                                    <Label Content="{Binding PrénomManager}"/>
+                                    <Label Content="{Binding NomManager}"/>
+                                </DockPanel>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
                 </GridView>
             </ListView.View>
         </ListView>

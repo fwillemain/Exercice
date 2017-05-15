@@ -1,0 +1,67 @@
+﻿<UserControl x:Class="RelevésMétéo.UCStatsVignette"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RelevésMétéo"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <!--#region Param Grid-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <!--#endregion-->
+
+        <!--Ligne 0-->
+        <TextBlock Text="Mois le plus froid"/>
+        <TextBlock Text="Année la plus sèche" Grid.Column="1"/>
+
+        <!--Ligne 1-->
+        <TextBlock Grid.Row="1">
+            <TextBlock.Text>
+                <MultiBinding StringFormat="{}{0:MM/yyyy} : {1} °C">
+                    <Binding Path="Stats.MoisPlusFroid"/>
+                    <Binding Path="Stats.TMin"/>
+                </MultiBinding>
+            </TextBlock.Text>
+        </TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="1">
+            <TextBlock.Text>
+                <MultiBinding StringFormat="{}{0} : {1} mm">
+                    <Binding Path="Stats.AnnéePlusSèche"/>
+                    <Binding Path="Stats.PrécipitationsMin"/>
+                </MultiBinding>
+            </TextBlock.Text>
+        </TextBlock>
+        <!--Ligne 2-->
+        <TextBlock Text="Mois le plus chaud" Grid.Row="2"/>
+        <TextBlock Text="Année la plus humide" Grid.Column="1" Grid.Row="2"/>
+
+        <!--Ligne 3-->
+        <TextBlock Grid.Row="3">
+            <TextBlock.Text>
+                <MultiBinding StringFormat="{}{0:MM/yyyy} : {1} °C">
+                    <Binding Path="Stats.MoisPlusChaud"/>
+                    <Binding Path="Stats.TMax"/>
+                </MultiBinding>
+            </TextBlock.Text>
+        </TextBlock>
+
+        <TextBlock Grid.Row="3" Grid.Column="1">
+            <TextBlock.Text>
+                <MultiBinding StringFormat="{}{0} : {1} mm">
+                    <Binding Path="Stats.AnnéePlusHumide"/>
+                    <Binding Path="Stats.PrécipitationsMax"/>
+                </MultiBinding>
+            </TextBlock.Text>
+        </TextBlock>
+    </Grid>
+</UserControl>

@@ -6,12 +6,30 @@
              xmlns:local="clr-namespace:Trombinoscope"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
-    <ListBox Name="lbPhotos" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+    <UserControl.Resources>
+        <local:DebugDummyConverter x:Key="DebugDummyConverter"/>
+    </UserControl.Resources>
+    <ListBox Name="lbPhotos" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemsSource="{Binding}">
         <ListBox.ItemsPanel>
             <ItemsPanelTemplate>
                 <WrapPanel Orientation="Horizontal"></WrapPanel>
             </ItemsPanelTemplate>
         </ListBox.ItemsPanel>
-            
+        <ListBox.ItemTemplate>
+            <DataTemplate>
+                <StackPanel>
+                    <Image Source="{Binding Path=Photo}" Width="200"/>
+                    <TextBlock HorizontalAlignment="Center" Foreground="Blue">
+                        <TextBlock.Text>
+                            <MultiBinding StringFormat="{}{0} {1}">
+                                <Binding Path="Prénom"/>
+                                <Binding Path="Nom"/>
+                            </MultiBinding>
+                        </TextBlock.Text>
+                    </TextBlock>
+                </StackPanel>
+            </DataTemplate>
+        </ListBox.ItemTemplate>
+
     </ListBox>
 </UserControl>

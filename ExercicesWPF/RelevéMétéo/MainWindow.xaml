@@ -1,0 +1,91 @@
+﻿<Window x:Class="RelevésMétéo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RelevésMétéo"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <local:DebugDummyConverter x:Key="DebugDummyConverter"/>
+        <local:UCStatsVignette x:Key="UCStatsVignette"/>
+        <local:ModToVisiblityConverter x:Key="ModToVisiblityConverter"/>
+        <local:DoubleToColorBrushConverter x:Key="DoubleToColorBrushConverter"/>
+        <sys:Double x:Key="Seuil">10</sys:Double>
+        <Style TargetType="ListBoxItem">
+            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+            <Setter Property="Margin" Value="2"/>
+            <Setter Property="Background" Value="{Binding Path=Précipitations, Converter={StaticResource DoubleToColorBrushConverter},
+                                            ConverterParameter={StaticResource Seuil}}"/>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="5,0"/>
+        </Style>
+        <DataTemplate x:Key="TemplateListVignette" >
+            <Border BorderThickness="1" BorderBrush="Blue">
+                <Grid>
+                    <!--#region Param Grid-->
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <!--#endregion-->
+                    <TextBlock Text="{Binding Date, StringFormat='\{0:MM/yyyy}'}"/>
+                    <TextBlock Text="{Binding TMin, StringFormat='&#x23F6; {0} °C'}" Grid.Column="1"/>
+                    <TextBlock Text="{Binding Précipitations, StringFormat='&#x263C; {0} mm'}" Grid.Column="2"/>
+                    <TextBlock Text="{Binding TMax, StringFormat='&#x23F7; {0} °C'}" Grid.Row="1" Grid.Column="1"/>
+                    <TextBlock Text="{Binding Ensoleillement, StringFormat='&#x1F4A7; {0} h'}" Grid.Row="1" Grid.Column="2"/>
+                </Grid>
+            </Border>
+        </DataTemplate>
+        <DataTemplate x:Key="TemplateListGroup">
+            <StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="{Binding Date, StringFormat='MMMM'}"/>
+                    <TextBlock Text="{Binding TMin, StringFormat='Minimale : {0} °C'}" Grid.Column="1"/>
+                    <TextBlock Text ="{Binding TMax, StringFormat='Maximale : {0} °C'}" Grid.Column="2"/>
+                </Grid>
+            </StackPanel>
+        </DataTemplate>
+    </Window.Resources>
+    <DockPanel Margin="5">
+
+        <DockPanel DockPanel.Dock="Top">
+            <Button Name="btnFichier" Content="..." DockPanel.Dock="Right" Width="50" Height="20"/>
+            <TextBox Name="tbFichier"></TextBox>
+        </DockPanel>
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="0,5">
+            <Label Content="Vue" />
+            <ComboBox Name="cbVue"  Width="150" SelectedValuePath="Tag">
+                <ComboBoxItem Content="Vignettes" IsSelected="True" Tag="TemplateListVignette"/>
+                <ComboBoxItem Content="Groupée par année" Tag="TemplateListGroup"/>
+            </ComboBox>
+        </StackPanel>
+        <Grid DockPanel.Dock="Bottom" >
+            <UserControl Name="GridVignette" Content="{StaticResource UCStatsVignette}" 
+                         Visibility="{Binding ElementName=cbVue, Path=SelectedValue, 
+                            Converter={StaticResource ModToVisiblityConverter}, ConverterParameter='GridVignette'}"/>
+            <!--<UserControl Name="GridGroup" Content="{StaticResource UCStatsGroup}"
+                         Visibility="{Binding ElementName=cbVue, Path=SelectedValue, 
+                            Converter={StaticResource ModToVisiblityConverter}, ConverterParameter='GridGroup'}"/>-->
+
+            <ContentControl Name="GridGroup" Content="{Binding Data}"
+                           ContentTemplate="{StaticResource TemplateListVignette}"
+                           Visibility="{Binding ElementName=cbVue, Path=SelectedValue, 
+                            Converter={StaticResource ModToVisiblityConverter}, ConverterParameter='GridGroup'}"/>
+        </Grid>
+        <ListBox Name="lbMétéo"  ItemsSource="{Binding Data}" ItemTemplate="{StaticResource TemplateListVignette}" IsSynchronizedWithCurrentItem="True">
+        </ListBox>
+    </DockPanel>
+</Window>

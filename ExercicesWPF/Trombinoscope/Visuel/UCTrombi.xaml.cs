@@ -13,17 +13,7 @@ namespace Trombinoscope
         {
             InitializeComponent();
 
-            var lstPhoto = DAL.GetPhotos();
-            foreach(var p in lstPhoto)
-            {
-                Image i = new Image() 
-                {
-                    Source = p,
-                    Width = 200
-                };
-
-                lbPhotos.Items.Add(i);
-            }
+            this.DataContext = DAL.GetEmployésWithPhoto();
         }
     }
 }

@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace Trombinoscope
 {
@@ -7,6 +9,9 @@ namespace Trombinoscope
         public int Id { get; set; }
         public string Nom { get; set; }
         public string Prénom { get; set; }
+        public ImageSource Photo { get; set; }
+        public string NomManager { get; set; }
+        public string PrénomManager { get; set; }
         public List<Territoire> LstTerritoire { get; set; }
     }
 
