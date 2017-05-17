@@ -24,11 +24,24 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <!--#endregion-->
-        <Image Source="pack://application:,,,/Images/images.jpg" Height="120"/>
-        <ListView ItemsSource="{Binding}" IsSynchronizedWithCurrentItem="True" Grid.Row="1" Grid.RowSpan="2">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Image Source="pack://application:,,,/Images/images.jpg" Height="120" Grid.ColumnSpan="2"/>
+            <Button Content="+" Grid.Row="1" HorizontalAlignment="Center" Width="30" Command="{Binding CmdAjouter}"/>
+            <Button Content="-" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" Width="30" Command="{Binding CmdSupprimer}"/>
+        </Grid>
+
+        <ListView ItemsSource="{Binding Employés}" IsSynchronizedWithCurrentItem="True" Grid.Row="1" Grid.RowSpan="2">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Id" DisplayMemberBinding="{Binding Path=Id}"/>
+                    <GridViewColumn Header="Id" DisplayMemberBinding="{Binding Path=Id}" Width="30"/>
                     <GridViewColumn Header="Nom" DisplayMemberBinding="{Binding Path=Nom}"/>
                     <GridViewColumn Header="Prénom" DisplayMemberBinding="{Binding Path=Prénom}"/>
                     <GridViewColumn Header="Manager">
@@ -45,10 +58,10 @@
             </ListView.View>
         </ListView>
         <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Right">
-            <Label Content="{Binding Path=LstTerritoire.Count}" />
+            <Label Content="{Binding Path=Employés/LstTerritoire.Count}" />
             <Label Content="territoires"/>
         </StackPanel>
-        <ListView ItemsSource="{Binding Path=LstTerritoire}" Grid.Row="2" Grid.Column="1">
+        <ListView ItemsSource="{Binding Path=Employés/LstTerritoire}" Grid.Row="2" Grid.Column="1">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Id" DisplayMemberBinding="{Binding Path=Id}"/>

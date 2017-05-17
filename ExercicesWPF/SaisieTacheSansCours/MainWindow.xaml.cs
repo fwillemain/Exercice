@@ -22,6 +22,7 @@ namespace SaisieTacheSansCours
     {
         public MainWindow()
         {
+
             InitializeComponent();
             this.DataContext = new Contexte();
         }

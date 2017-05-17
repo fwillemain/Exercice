@@ -13,19 +13,20 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Trombinoscope
+namespace TestPouet
 {
     /// <summary>
-    /// Interaction logic for UCEmployés.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class UCEmployés : UserControl
+    public partial class WindowToto : Window
     {
-        public UCEmployés()
+        public WindowToto()
         {
             InitializeComponent();
 
-            DataContext = new ContexteEmployé();
+            DataContext = new ContexteBis();
+            var a = new ContexteBis();
+            a.Employé = new Employé();
         }
-
     }
 }

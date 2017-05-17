@@ -24,6 +24,7 @@ namespace Trombinoscope
     {
         private UCEmployés _ucEmpCourant;
         private UCTrombi _ucTrombiCourant;
+        private UCTreeView _ucTreeViewCourant;
 
         public MainWindow()
         {
@@ -33,6 +34,15 @@ namespace Trombinoscope
 
             miTrombi.Click += MiTrombi_Click;
             miEmployés.Click += MiEmployés_Click;
+            miTreeView.Click += MiTreeView_Click;
+        }
+
+        private void MiTreeView_Click(object sender, RoutedEventArgs e)
+        {
+            if (_ucTreeViewCourant == null)
+                _ucTreeViewCourant = new UCTreeView();
+
+            contentCtrl.Content = _ucTreeViewCourant;
         }
 
         private void MiTrombi_Click(object sender, RoutedEventArgs e)

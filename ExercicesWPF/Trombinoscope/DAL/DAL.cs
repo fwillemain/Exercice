@@ -6,6 +6,7 @@ using System.Linq;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Data;
 
 namespace Trombinoscope
 {
@@ -49,13 +50,16 @@ namespace Trombinoscope
                     lstEmployé.Add(e);
                 }
 
-                Territoire t = new Territoire()
+                if (reader["TerritoryID"] != DBNull.Value && reader["TerritoryDescription"] != DBNull.Value)
                 {
-                    Id = reader["TerritoryID"].ToString(),
-                    Description = reader["TerritoryDescription"].ToString()
-                };
+                    Territoire t = new Territoire()
+                    {
+                        Id = reader["TerritoryID"].ToString(),
+                        Description = reader["TerritoryDescription"].ToString()
+                    };
 
-                lstEmployé.Last().LstTerritoire.Add(t);
+                    lstEmployé.Last().LstTerritoire.Add(t);
+                }
             }
         }
 
@@ -90,8 +94,8 @@ namespace Trombinoscope
                                             e1.FirstName ManagerFirstName, e1.LastName ManagerLastName
                                  from Employees e
                                  left outer join Employees e1 on e.ReportsTo = e1.EmployeeID
-                                 inner join EmployeeTerritories et on e.EmployeeID = et.EmployeeID
-                                 inner join Territories t on et.TerritoryID = t.TerritoryID";
+                                 left outer join EmployeeTerritories et on e.EmployeeID = et.EmployeeID
+                                 left outer join Territories t on et.TerritoryID = t.TerritoryID";
 
                 SqlCommand cmd = new SqlCommand(query, cnx);
 
@@ -124,6 +128,78 @@ namespace Trombinoscope
             }
 
             return lstEmployé;
+        }
+
+        static public void AjouterEmployé(Employé e)
+        {
+            using (SqlConnection cnx = new SqlConnection(Properties.Settings.Default.StringConnection))
+            {
+                cnx.Open();
+                var tran = cnx.BeginTransaction();
+
+                string query = @"insert Employees(LastName, FirstName) values (@Nom, @Prénom)";
+                SqlCommand command = new SqlCommand(query, cnx, tran);
+
+                command.Parameters.Add(new SqlParameter("@Nom", SqlDbType.NVarChar));
+                command.Parameters["@Nom"].Value = e.Nom;
+
+                command.Parameters.Add(new SqlParameter("@Prénom", SqlDbType.NVarChar));
+                command.Parameters["@Prénom"].Value = e.Prénom;
+
+                try
+                {
+                    command.ExecuteNonQuery();
+                    tran.Commit();
+                }
+                catch (Exception)
+                {
+                    tran.Rollback();
+                    throw;
+                }
+            }
+        }
+
+        static public void SupprimerEmployé(int id)
+        {
+            using (SqlConnection cnx = new SqlConnection(Properties.Settings.Default.StringConnection))
+            {
+                cnx.Open();
+                var tran = cnx.BeginTransaction();
+
+                string query = @"delete from Employees where EmployeeID = @Id";
+                SqlCommand command = new SqlCommand(query, cnx, tran);
+
+                command.Parameters.Add(new SqlParameter("@Id", SqlDbType.Int));
+                command.Parameters["@Id"].Value = id;
+
+                try
+                {
+                    command.ExecuteNonQuery();
+                    tran.Commit();
+                }
+                catch (Exception)
+                {
+                    tran.Rollback();
+                    throw;
+                }
+            }
+        }
+
+        static public int RécupérérIdDernierEmployé()
+        {
+            int res = 0;
+
+            using (SqlConnection cnx = new SqlConnection(Properties.Settings.Default.StringConnection))
+            {
+                cnx.Open();
+                string query = @"select top 1 EmployeeID from Employees
+                                 order by EmployeeID desc";
+                SqlCommand command = new SqlCommand(query, cnx);
+
+                res = (int) command.ExecuteScalar();
+            }
+
+            return res;
         }
         #endregion
     }

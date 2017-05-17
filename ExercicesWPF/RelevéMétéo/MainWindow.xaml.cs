@@ -26,6 +26,7 @@ namespace RelevésMétéo
         public MainWindow()
         {
             InitializeComponent();
+            Language = System.Windows.Markup.XmlLanguage.GetLanguage(System.Threading.Thread.CurrentThread.CurrentCulture.Name);
             _dal = new DALMeteo();
 
             btnFichier.Click += BtnFichier_Click;

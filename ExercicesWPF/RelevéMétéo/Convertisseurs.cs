@@ -5,23 +5,17 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Data;
 using System.Windows.Media;
 
 namespace RelevésMétéo
 {
-    public class ModToVisiblityConverter : IValueConverter
+    public class BoolToVisiblityConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            string res = null;
-
-            if(value.ToString() == "TemplateListVignette")
-                res = parameter.ToString() == "GridVignette" ? "Visible" : "Hidden";
-            else
-                res = parameter.ToString() == "GridGroup" ? "Visible" : "Hidden";
-
-            return res;
+            return (bool) value ? Visibility.Visible : Visibility.Hidden; 
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

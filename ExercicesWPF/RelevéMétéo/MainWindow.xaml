@@ -8,9 +8,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Window.Resources>
-        <local:DebugDummyConverter x:Key="DebugDummyConverter"/>
+        <local:DebugDummyConverter x:Key="DebugDummyConverter"/> 
         <local:UCStatsVignette x:Key="UCStatsVignette"/>
-        <local:ModToVisiblityConverter x:Key="ModToVisiblityConverter"/>
+        <local:BoolToVisiblityConverter x:Key="BoolToVisiblityConverter"/>
         <local:DoubleToColorBrushConverter x:Key="DoubleToColorBrushConverter"/>
         <sys:Double x:Key="Seuil">10</sys:Double>
         <Style TargetType="ListBoxItem">
@@ -38,9 +38,9 @@
                     <!--#endregion-->
                     <TextBlock Text="{Binding Date, StringFormat='\{0:MM/yyyy}'}"/>
                     <TextBlock Text="{Binding TMin, StringFormat='&#x23F6; {0} °C'}" Grid.Column="1"/>
-                    <TextBlock Text="{Binding Précipitations, StringFormat='&#x263C; {0} mm'}" Grid.Column="2"/>
+                    <TextBlock Text="{Binding Précipitations, StringFormat='&#x1F4A7; {0} mm'}" Grid.Column="2"/>
                     <TextBlock Text="{Binding TMax, StringFormat='&#x23F7; {0} °C'}" Grid.Row="1" Grid.Column="1"/>
-                    <TextBlock Text="{Binding Ensoleillement, StringFormat='&#x1F4A7; {0} h'}" Grid.Row="1" Grid.Column="2"/>
+                    <TextBlock Text="{Binding Ensoleillement, StringFormat='&#x263C; {0} h'}" Grid.Row="1" Grid.Column="2"/>
                 </Grid>
             </Border>
         </DataTemplate>
@@ -52,7 +52,7 @@
                         <ColumnDefinition/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <TextBlock Text="{Binding Date, StringFormat='MMMM'}"/>
+                    <TextBlock Text="{Binding Date, StringFormat='MMMM', ConverterCulture='fr-FR'}"/>
                     <TextBlock Text="{Binding TMin, StringFormat='Minimale : {0} °C'}" Grid.Column="1"/>
                     <TextBlock Text ="{Binding TMax, StringFormat='Maximale : {0} °C'}" Grid.Column="2"/>
                 </Grid>
@@ -63,29 +63,26 @@
 
         <DockPanel DockPanel.Dock="Top">
             <Button Name="btnFichier" Content="..." DockPanel.Dock="Right" Width="50" Height="20"/>
-            <TextBox Name="tbFichier"></TextBox>
+            <TextBox Name="tbFichier"/>
         </DockPanel>
         <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="0,5">
             <Label Content="Vue" />
             <ComboBox Name="cbVue"  Width="150" SelectedValuePath="Tag">
-                <ComboBoxItem Content="Vignettes" IsSelected="True" Tag="TemplateListVignette"/>
-                <ComboBoxItem Content="Groupée par année" Tag="TemplateListGroup"/>
+                <ComboBoxItem Name="cbiVignette" Content="Vignettes" IsSelected="True" Tag="TemplateListVignette"/>
+                <ComboBoxItem Name="cbiGroup" Content="Groupée par année" Tag="TemplateListGroup"/>
             </ComboBox>
         </StackPanel>
         <Grid DockPanel.Dock="Bottom" >
             <UserControl Name="GridVignette" Content="{StaticResource UCStatsVignette}" 
-                         Visibility="{Binding ElementName=cbVue, Path=SelectedValue, 
-                            Converter={StaticResource ModToVisiblityConverter}, ConverterParameter='GridVignette'}"/>
-            <!--<UserControl Name="GridGroup" Content="{StaticResource UCStatsGroup}"
-                         Visibility="{Binding ElementName=cbVue, Path=SelectedValue, 
-                            Converter={StaticResource ModToVisiblityConverter}, ConverterParameter='GridGroup'}"/>-->
+                         Visibility="{Binding ElementName=cbiVignette, Path=IsSelected, 
+                            Converter={StaticResource BoolToVisiblityConverter}}"/>
 
             <ContentControl Name="GridGroup" Content="{Binding Data}"
                            ContentTemplate="{StaticResource TemplateListVignette}"
-                           Visibility="{Binding ElementName=cbVue, Path=SelectedValue, 
-                            Converter={StaticResource ModToVisiblityConverter}, ConverterParameter='GridGroup'}"/>
+                           Visibility="{Binding ElementName=cbiGroup, Path=IsSelected, 
+                            Converter={StaticResource BoolToVisiblityConverter}}"/>
         </Grid>
-        <ListBox Name="lbMétéo"  ItemsSource="{Binding Data}" ItemTemplate="{StaticResource TemplateListVignette}" IsSynchronizedWithCurrentItem="True">
-        </ListBox>
+        <ListBox Name="lbMétéo"  ItemsSource="{Binding Data}" ItemTemplate="{StaticResource TemplateListVignette}" IsSynchronizedWithCurrentItem="True"/>
+
     </DockPanel>
 </Window>

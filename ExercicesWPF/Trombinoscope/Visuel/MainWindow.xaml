@@ -11,6 +11,7 @@
         <Menu DockPanel.Dock="Top">
             <MenuItem Name="miTrombi" Header="{x:Static resx:Resources.HeaderMenuTrombi}"/>
             <MenuItem Name="miEmployés" Header="{x:Static resx:Resources.HeaderMenuEmployés}"/>
+            <MenuItem Name="miTreeView" Header="TreeView"/>
         </Menu>
         <ContentControl Name="contentCtrl"></ContentControl>
     </DockPanel>
