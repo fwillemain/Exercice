@@ -65,7 +65,8 @@ namespace SaisieTacheMVVM.ViewModel
         {
             var tache = new Tache()
             {
-                Id = ListeTache.Any() ? ListeTache.Max(t => t.Id) + 1 : 1,
+                //Id = ListeTache.Any() ? ListeTache.Max(t => t.Id) + 1 : 1,
+                Id = ListeTache.Select(t => t.Id).DefaultIfEmpty(0).Max() + 1,
                 DateCréation = DateTime.Today,
                 DateEchéance = DateTime.Today,
                 Priorité = 1
