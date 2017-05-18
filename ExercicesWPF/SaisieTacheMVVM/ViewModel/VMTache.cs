@@ -56,7 +56,7 @@ namespace SaisieTacheMVVM.ViewModel
             get
             {
                 if (_ajouterTache == null)
-                    _ajouterTache = new RelayCommand(AjouterTache);
+                    _ajouterTache = new RelayCommand(AjouterTache, ActiverCommandeAjouterSupprimer);
 
                 return _ajouterTache;
             }
@@ -81,7 +81,7 @@ namespace SaisieTacheMVVM.ViewModel
             get
             {
                 if (_supprimerTache == null)
-                    _supprimerTache = new RelayCommand(SupprimerTache);
+                    _supprimerTache = new RelayCommand(SupprimerTache, ActiverCommandeAjouterSupprimer);
 
                 return _supprimerTache;
             }
@@ -89,6 +89,7 @@ namespace SaisieTacheMVVM.ViewModel
         private void SupprimerTache(object obj)
         {
             ListeTache.Remove(TacheCourante);
+            DAL.EnregistrerListeTache(ListeTache.ToList());
         }
 
         public ICommand CommandeEnregistrerTache
@@ -96,7 +97,7 @@ namespace SaisieTacheMVVM.ViewModel
             get
             {
                 if (_enregistrerTache == null)
-                    _enregistrerTache = new RelayCommand(EnregistrerTache, ActiverBouton);
+                    _enregistrerTache = new RelayCommand(EnregistrerTache, ActiverCommandeEnregistrementEtAnnuler);
 
                 return _enregistrerTache;
             }
@@ -112,7 +113,7 @@ namespace SaisieTacheMVVM.ViewModel
             get
             {
                 if (_annulerTache == null)
-                    _annulerTache = new RelayCommand(AnnulerCommande, ActiverBouton);
+                    _annulerTache = new RelayCommand(AnnulerCommande, ActiverCommandeEnregistrementEtAnnuler);
 
                 return _annulerTache;
             }
@@ -123,8 +124,14 @@ namespace SaisieTacheMVVM.ViewModel
             ModeEditionCourant = ModesEdition.Consultation;
         }
 
+        // CanExecute pour les commandes AjouterTache et SupprimerTache
+        private bool ActiverCommandeAjouterSupprimer(object obj)
+        {
+            return _modeEditionCourant == ModesEdition.Consultation;
+        }
+
         // CanExecute pour les commandes EnregistrerTache et AnnulerTache
-        private bool ActiverBouton(object obj)
+        private bool ActiverCommandeEnregistrementEtAnnuler(object obj)
         {
             return _modeEditionCourant == ModesEdition.Edition;
         }

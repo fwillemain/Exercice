@@ -5,4 +5,6 @@
   <Tache Id="3" Creation="2017-01-17T00:00:00" Term="2017-02-15T00:00:00" Prio="2" Fait="true">Faire un exercice sur la validation de donnnées et la notification</Tache>
   <Tache Id="4" Creation="2017-01-18T00:00:00" Term="2017-02-16T00:00:00" Prio="3" Fait="false">Lire la doc MSDN</Tache>
   <Tache Id="5" Creation="2017-05-17T00:00:00+02:00" Term="2017-05-19T00:00:00" Prio="1" Fait="true">Test</Tache>
+  <Tache Id="6" Creation="2017-05-18T00:00:00+02:00" Term="2017-05-18T00:00:00+02:00" Prio="1" Fait="true">TestBis</Tache>
+  <Tache Id="7" Creation="2017-05-18T00:00:00+02:00" Term="2017-05-03T00:00:00" Prio="3" Fait="true">Coucou</Tache>
 </Taches>
