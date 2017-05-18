@@ -240,3 +240,7 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/Docs formation/WinForms
+/Docs formation/WPF
+/Docs formation/WPF/.~lock.Cours WPF.docx#
+/Docs formation/WPF/.~lock.Exercices WPF.docx#
