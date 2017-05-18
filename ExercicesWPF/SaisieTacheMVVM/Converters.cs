@@ -23,6 +23,19 @@ namespace SaisieTacheMVVM
         }
     }
 
+    public class ConvModeEditionIsNotEnabled : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            return (ModesEdition)value != ModesEdition.Edition;
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
     public class ConvBoolStringTerminée : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)

@@ -9,6 +9,7 @@
              d:DesignHeight="300" d:DesignWidth="300">
     <UserControl.Resources>
         <global:ConvModeEditionIsEnabled x:Key="ConvModeEditionIsEnabled"/>
+        <global:ConvModeEditionIsNotEnabled x:Key="ConvModeEditionIsNotEnabled"/>
         <global:ConvBoolStringTerminée x:Key="ConvBoolStringTerminée"/>
 
         <Style TargetType="Button">
@@ -49,7 +50,7 @@
         <ScrollViewer HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Hidden">
             <StackPanel>
                 <Label Content="Liste des tâches"/>
-                <ListView ItemsSource="{Binding Path=ListeTache}" IsSynchronizedWithCurrentItem="True" SelectedItem="{Binding TacheCourante}">
+                <ListView ItemsSource="{Binding Path=ListeTache}" IsSynchronizedWithCurrentItem="True" SelectedItem="{Binding TacheCourante}" IsEnabled="{Binding Path=ModeEditionCourant, Converter={StaticResource ConvModeEditionIsNotEnabled}}">
                     <ListView.View>
                         <GridView>
                             <GridViewColumn Header="Id" DisplayMemberBinding="{Binding Id}"/>
