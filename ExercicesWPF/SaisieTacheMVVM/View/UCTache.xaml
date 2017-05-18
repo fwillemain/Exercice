@@ -53,7 +53,7 @@
                     <ListView.View>
                         <GridView>
                             <GridViewColumn Header="Id" DisplayMemberBinding="{Binding Id}"/>
-                            <GridViewColumn Header="Echéance" DisplayMemberBinding="{Binding DateEchéance, StringFormat=d}"/>
+                            <GridViewColumn Header="Echéance" DisplayMemberBinding="{Binding DateEchéance, StringFormat=d, ConverterCulture='fr'}"/>
                             <GridViewColumn Header="Priorité" DisplayMemberBinding="{Binding Priorité}"/>
                             <GridViewColumn Header="Fait" DisplayMemberBinding="{Binding Terminée, Converter={StaticResource ConvBoolStringTerminée}}"/>
                             <GridViewColumn DisplayMemberBinding="{Binding Description}"/>

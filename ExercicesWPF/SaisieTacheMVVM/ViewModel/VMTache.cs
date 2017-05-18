@@ -24,14 +24,11 @@ namespace SaisieTacheMVVM.ViewModel
         #endregion
 
         #region Propriétés
-        public ObservableCollection<Tache> ListeTache { get; set; }
+        public ObservableCollection<Tache> ListeTache { get; }
         public Tache TacheCourante
         {
             get { return _tacheCourante ?? ListeTache.FirstOrDefault(); }
-            set
-            {
-                SetProperty(ref _tacheCourante, value);
-            }
+            set { SetProperty(ref _tacheCourante, value); }
         }
         public ModesEdition ModeEditionCourant
         {
