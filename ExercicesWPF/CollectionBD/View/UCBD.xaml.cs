@@ -13,19 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Trombinoscope
+namespace ColBD.View
 {
     /// <summary>
-    /// Interaction logic for UCEmployés.xaml
+    /// Interaction logic for UCBD.xaml
     /// </summary>
-    public partial class UCEmployés : UserControl
+    public partial class UCBD : UserControl
     {
-        public UCEmployés()
+        public UCBD()
         {
             InitializeComponent();
-
-            DataContext = new ContexteEmployé();
         }
-
     }
 }

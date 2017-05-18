@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -16,15 +18,15 @@ using System.Windows.Shapes;
 namespace Trombinoscope
 {
     /// <summary>
-    /// Interaction logic for UCTreeView.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class UCTreeView : UserControl
+    public partial class MainWindow : Window
     {
-        public UCTreeView()
+        public MainWindow()
         {
             InitializeComponent();
 
-            DataContext = DAL.GetEmployés();
+            DataContext = new VMMain();
         }
     }
 }

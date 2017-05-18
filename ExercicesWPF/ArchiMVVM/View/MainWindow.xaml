@@ -1,0 +1,19 @@
+﻿<Window x:Class="Divers.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Divers"
+		  xmlns:vm="clr-namespace:Divers.ViewModel"
+        mc:Ignorable="d"
+        Title="Architecture MVVM" Height="350" Width="525">
+    <DockPanel>
+		 <!-- Barre de menus -->
+		<Menu DockPanel.Dock="Top">
+			<MenuItem Header="Personnes" Command="{Binding CmdPersonnes}"/>
+			<MenuItem Header="Régions" Command="{Binding CmdRegions}"/>
+		</Menu>
+		 <!-- Zone centrale -->
+		<ContentControl Content="{Binding Path=VMCourante}"/>
+	</DockPanel>
+</Window>

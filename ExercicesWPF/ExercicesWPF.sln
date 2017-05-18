@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaisieTacheSansCours", "Sai
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelevésMétéo", "RelevéMétéo\RelevésMétéo.csproj", "{2060CA9E-7949-4BE8-86E2-E933A11C1F61}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchiMVVM", "ArchiMVVM\ArchiMVVM.csproj", "{4778860A-13EE-412F-A3B1-18653A450ACC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionBD", "CollectionBD\CollectionBD.csproj", "{D5482AB3-DE5E-49E7-AE11-56C84E8A8320}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{2060CA9E-7949-4BE8-86E2-E933A11C1F61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2060CA9E-7949-4BE8-86E2-E933A11C1F61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2060CA9E-7949-4BE8-86E2-E933A11C1F61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4778860A-13EE-412F-A3B1-18653A450ACC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4778860A-13EE-412F-A3B1-18653A450ACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4778860A-13EE-412F-A3B1-18653A450ACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4778860A-13EE-412F-A3B1-18653A450ACC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5482AB3-DE5E-49E7-AE11-56C84E8A8320}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5482AB3-DE5E-49E7-AE11-56C84E8A8320}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5482AB3-DE5E-49E7-AE11-56C84E8A8320}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5482AB3-DE5E-49E7-AE11-56C84E8A8320}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

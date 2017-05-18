@@ -1,0 +1,13 @@
+﻿<Application x:Class="ColBD.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ColBD"
+             xmlns:vw="clr-namespace:ColBD.View"
+             xmlns:vm="clr-namespace:ColBD.ViewModel"
+             StartupUri="View/MainWindow.xaml">
+    <Application.Resources>
+        <DataTemplate DataType="{x:Type vm:VMMain}">
+            <vw:UCBD/>
+        </DataTemplate>
+    </Application.Resources>
+</Application>

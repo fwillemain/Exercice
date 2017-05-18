@@ -1,0 +1,83 @@
+﻿<UserControl x:Class="ColBD.View.UCBD"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ColBD.View"
+             xmlns:parent="clr-namespace:ColBD"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="Width" Value="35"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="ListViewItem">
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+        </Style>
+        <Style TargetType="ListBox">
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+        <parent:DebugDummyConverter x:Key="DebugDummyConverter"/>
+        <parent:ColNameToUriConverter x:Key="ColNameToUriConverter"/>
+
+        <Style x:Key="alternatingWithTriggers" TargetType="{x:Type ListViewItem}">
+            <Setter Property="Background" Value="AliceBlue"/>
+            <Style.Triggers>
+                <Trigger Property="ListBox.AlternationIndex" Value="1">
+                    <Setter Property="Background" Value="White"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+    </UserControl.Resources>
+    <DockPanel Margin="5">
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="&#x25C4;|" Command="{Binding CmdNavigation}" CommandParameter="F"/>
+            <Button Content="&#x25C4;" Command="{Binding CmdNavigation}" CommandParameter="N"/>
+            <Button Content="&#x25BA;" Command="{Binding CmdNavigation}" CommandParameter="P"/>
+            <Button Content="|&#x25BA;" Command="{Binding CmdNavigation}" CommandParameter="L"/>
+        </StackPanel>
+        <Grid DockPanel.Dock="Top">
+            <TextBlock Text="{Binding ListeCollectionBD/Nom}" HorizontalAlignment="Center"/>
+            <TextBlock Text="{Binding ListeCollectionBD/Albums.Count, StringFormat='\{0} albums'}" HorizontalAlignment="Right"/>
+        </Grid>
+        <Grid DockPanel.Dock="Top">
+            <!--#region Param Grid-->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <!--#endregion-->
+            <!--Ligne 0-->
+            <Image Grid.RowSpan="2" Source="{Binding ListeCollectionBD/Nom, Converter={StaticResource ColNameToUriConverter}}" Width="70"/>
+            <Label Content="Genres" Grid.Column="1"/>
+            <Label Content="Auteurs" Grid.Column="2"/>
+
+            <!--Ligne 1-->
+            <ListBox Grid.Column="1" Grid.Row="1" ItemsSource="{Binding ListeCollectionBD/Genres}" DisplayMemberPath="Libelle"/>
+            <ListBox Grid.Column="2" Grid.Row="1" ItemsSource="{Binding ListeCollectionBD/Auteurs}" DisplayMemberPath="Nom"/>
+        </Grid>
+        <ListView ItemsSource="{Binding ListeCollectionBD/Albums}" AlternationCount="2" ItemContainerStyle="{StaticResource alternatingWithTriggers}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="N°" DisplayMemberBinding="{Binding Id}" Width="30"/>
+                    <GridViewColumn Header="Année" DisplayMemberBinding="{Binding Année}"/>
+                    <GridViewColumn Header="Titre" DisplayMemberBinding="{Binding Titre}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </DockPanel>
+</UserControl>

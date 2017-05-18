@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D4614601-D4AA-4046-B233-84C59A289AC4}</ProjectGuid>
+    <ProjectGuid>{D5482AB3-DE5E-49E7-AE11-56C84E8A8320}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Trombinoscope</RootNamespace>
-    <AssemblyName>Trombinoscope</AssemblyName>
+    <RootNamespace>ColBD</RootNamespace>
+    <AssemblyName>CollectionBD</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -35,16 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MoreLinq, Version=2.4.20801.0, Culture=neutral, PublicKeyToken=384d532d7e88985d, processorArchitecture=MSIL">
-      <HintPath>..\packages\morelinq.2.4.1\lib\net40\MoreLinq.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.ValueTuple, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.ValueTuple.4.3.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -63,31 +55,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ViewModel\ViewModelBase.cs" />
-    <Compile Include="AjoutEmployeWindow.xaml.cs">
-      <DependentUpon>AjoutEmployeWindow.xaml</DependentUpon>
+    <Compile Include="Convertisseurs.cs" />
+    <Compile Include="ICollectionViewExpander.cs" />
+    <Compile Include="View\UCBD.xaml.cs">
+      <DependentUpon>UCBD.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Converters.cs" />
-    <Compile Include="Entites\Employé.cs" />
-    <Compile Include="Properties\Resources.en.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.en.resx</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModel\RelayCommand.cs" />
-    <Compile Include="View\UCEmployés.xaml.cs">
-      <DependentUpon>UCEmployés.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\UCTrombi.xaml.cs">
-      <DependentUpon>UCTrombi.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModel\VMEmployés.cs" />
-    <Compile Include="ViewModel\VMMain.cs" />
-    <Compile Include="ViewModel\VMTrombi.cs" />
-    <Page Include="AjoutEmployeWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="View\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -96,16 +68,15 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Model\DAL.cs" />
+    <Compile Include="Entités\BD_DAL.cs" />
+    <Compile Include="ViewModel\RelayCommand.cs" />
+    <Compile Include="ViewModel\ViewModelBase.cs" />
+    <Compile Include="ViewModel\VMMain.cs" />
     <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="View\UCEmployés.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\UCTrombi.xaml">
+    <Page Include="View\UCBD.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -125,14 +96,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
+      <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.en.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.en.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -143,12 +109,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\images.jpg" />
+    <Resource Include="Images\Astérix.jpg" />
+    <Resource Include="Images\Les aventures de Tintin.jpg" />
+    <Resource Include="Images\Lucky Luke.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\ImageEmployés.jpg" />
+    <Folder Include="Model\" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

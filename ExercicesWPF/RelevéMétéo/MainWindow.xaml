@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Window.Resources>
-        <local:DebugDummyConverter x:Key="DebugDummyConverter"/> 
+        <local:DebugDummyConverter x:Key="DebugDummyConverter"/>
         <local:UCStatsVignette x:Key="UCStatsVignette"/>
         <local:BoolToVisiblityConverter x:Key="BoolToVisiblityConverter"/>
         <local:DoubleToColorBrushConverter x:Key="DoubleToColorBrushConverter"/>
@@ -65,13 +65,25 @@
             <Button Name="btnFichier" Content="..." DockPanel.Dock="Right" Width="50" Height="20"/>
             <TextBox Name="tbFichier"/>
         </DockPanel>
-        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="0,5">
-            <Label Content="Vue" />
-            <ComboBox Name="cbVue"  Width="150" SelectedValuePath="Tag">
+        <DockPanel DockPanel.Dock="Top" Margin="0,5">
+            <Label Content="Vue" DockPanel.Dock="Left"/>
+            <ComboBox Name="cbVue"  Width="150" SelectedValuePath="Tag" DockPanel.Dock="Left">
                 <ComboBoxItem Name="cbiVignette" Content="Vignettes" IsSelected="True" Tag="TemplateListVignette"/>
                 <ComboBoxItem Name="cbiGroup" Content="Groupée par année" Tag="TemplateListGroup"/>
             </ComboBox>
-        </StackPanel>
+            <ComboBox Name="cbTriSens"  Width="50" SelectedValuePath="Tag" DockPanel.Dock="Right">
+                <ComboBoxItem Content=" &#x25b2;" IsSelected="True"/>
+                <ComboBoxItem Content=" &#x25bc;"/>
+            </ComboBox>
+            <ComboBox Name="cbTri"  Width="150" SelectedValuePath="Tag" DockPanel.Dock="Right">
+                <ComboBoxItem Name="cbiMois" Content="Mois" IsSelected="True" Tag="Mois"/>
+                <ComboBoxItem Name="cbiTMin" Content="T° min" Tag="TMin"/>
+                <ComboBoxItem Name="cbiTMax" Content="T° max" Tag="TMax"/>
+                <ComboBoxItem Name="cbiPrec" Content="Précipitations" Tag="Précipitations"/>
+                <ComboBoxItem Name="cbiSoleil" Content="Durée ensoleillement" Tag="Ensoleillement"/>
+            </ComboBox>
+            <Label Content="Trier par" DockPanel.Dock="Right" HorizontalAlignment="Right"/>
+        </DockPanel>
         <Grid DockPanel.Dock="Bottom" >
             <UserControl Name="GridVignette" Content="{StaticResource UCStatsVignette}" 
                          Visibility="{Binding ElementName=cbiVignette, Path=IsSelected, 
@@ -82,7 +94,17 @@
                            Visibility="{Binding ElementName=cbiGroup, Path=IsSelected, 
                             Converter={StaticResource BoolToVisiblityConverter}}"/>
         </Grid>
-        <ListBox Name="lbMétéo"  ItemsSource="{Binding Data}" ItemTemplate="{StaticResource TemplateListVignette}" IsSynchronizedWithCurrentItem="True"/>
+        <ListBox Name="lbMétéo"  ItemsSource="{Binding Data}" ItemTemplate="{StaticResource TemplateListVignette}" IsSynchronizedWithCurrentItem="True">
+            <ListBox.GroupStyle>
+                <GroupStyle>
+                    <GroupStyle.HeaderTemplate>
+                        <DataTemplate>
+                            <TextBlock Background="LightSteelBlue" FontWeight="Bold" Padding="3" Text="{Binding Path=Name}"/>
+                        </DataTemplate>
+                    </GroupStyle.HeaderTemplate>
+                </GroupStyle>
+            </ListBox.GroupStyle>
+        </ListBox>
 
     </DockPanel>
 </Window>

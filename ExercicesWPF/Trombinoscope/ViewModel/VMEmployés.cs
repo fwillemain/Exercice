@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -12,9 +10,8 @@ using System.Windows.Input;
 
 namespace Trombinoscope
 {
-    public class ContexteEmployé : INotifyPropertyChanged
+    public class VMEmployés : ViewModelBase
     {
-        public event PropertyChangedEventHandler PropertyChanged;
         public ObservableCollection<Employé> Employés { get; }
 
         private Employé _nouvelEmployé;
@@ -23,20 +20,11 @@ namespace Trombinoscope
             get { return _nouvelEmployé; }
             private set
             {
-                if (value != _nouvelEmployé)
-                {
-                    _nouvelEmployé = value;
-                    RaisePropertyChanged();
-                }
+                SetProperty(ref _nouvelEmployé, value);
             }
         }
 
-        private void RaisePropertyChanged([CallerMemberName] string name = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
-        }
-
-        public ContexteEmployé()
+        public VMEmployés()
         {
             Employés = new ObservableCollection<Employé>(DAL.GetEmployés());
             NouvelEmployé = new Employé();
@@ -62,8 +50,6 @@ namespace Trombinoscope
 
             if (wdw.ShowDialog().Value)
             {
-                //NouvelEmployé = wdw.NouvelEmployé;
-
                 try
                 {
                     DAL.AjouterEmployé(NouvelEmployé);
@@ -102,6 +88,5 @@ namespace Trombinoscope
                 MessageBox.Show("Impossible de supprimer l'employé!", "Erreur", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
-
     }
 }

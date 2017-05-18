@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Windows.Controls;
 
 
@@ -12,8 +13,7 @@ namespace Trombinoscope
         public UCTrombi()
         {
             InitializeComponent();
-
-            this.DataContext = DAL.GetEmployésWithPhoto();
+      //      this.DataContext = DAL.GetEmployésWithPhoto();
         }
     }
 }

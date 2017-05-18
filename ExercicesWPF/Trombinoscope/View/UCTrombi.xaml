@@ -9,7 +9,7 @@
     <UserControl.Resources>
         <local:DebugDummyConverter x:Key="DebugDummyConverter"/>
     </UserControl.Resources>
-    <ListBox Name="lbPhotos" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemsSource="{Binding}">
+        <ListBox Name="lbPhotos" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemsSource="{Binding LstEmployé}">
         <ListBox.ItemsPanel>
             <ItemsPanelTemplate>
                 <WrapPanel Orientation="Horizontal"></WrapPanel>
@@ -32,4 +32,5 @@
         </ListBox.ItemTemplate>
 
     </ListBox>
+
 </UserControl>

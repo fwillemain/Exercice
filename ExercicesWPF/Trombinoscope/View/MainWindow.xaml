@@ -9,10 +9,9 @@
         Title="MainWindow" Height="500" Width="700">
     <DockPanel Margin="2">
         <Menu DockPanel.Dock="Top">
-            <MenuItem Name="miTrombi" Header="{x:Static resx:Resources.HeaderMenuTrombi}"/>
-            <MenuItem Name="miEmployés" Header="{x:Static resx:Resources.HeaderMenuEmployés}"/>
-            <MenuItem Name="miTreeView" Header="TreeView"/>
+            <MenuItem Name="miTrombi" Header="Trombi" Command="{Binding CmdTrombi}"/>
+            <MenuItem Name="miEmployés" Header="Employés" Command="{Binding CmdEmployés}"/>
         </Menu>
-        <ContentControl Name="contentCtrl"></ContentControl>
+        <ContentControl Name="contentCtrl" Content="{Binding VMCourante}"/>
     </DockPanel>
 </Window>
