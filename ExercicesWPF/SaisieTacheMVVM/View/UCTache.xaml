@@ -44,7 +44,7 @@
                         <Label Content="Fait" VerticalContentAlignment="Center"/>
                     </StackPanel>
                 </DockPanel>
-                <TextBox Height="100" Width="200" TextWrapping="WrapWithOverflow" VerticalScrollBarVisibility="Visible" Text="{Binding ListeTache/Description}" IsEnabled="{Binding Path=ModeEditionCourant, Converter={StaticResource ConvModeEditionIsEnabled}}"/>
+                <TextBox Height="100" Width="200" TextWrapping="WrapWithOverflow" VerticalScrollBarVisibility="Visible" Text="{Binding ListeTache/Description}" IsReadOnly="{Binding Path=ModeEditionCourant, Converter={StaticResource ConvModeEditionIsNotEnabled}}"/>
             </StackPanel>
         </Expander>
         <ScrollViewer HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Hidden">
