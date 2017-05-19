@@ -14,6 +14,9 @@ namespace SaisieTacheMVVM
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
+            if (targetType != typeof(bool))
+                throw new InvalidOperationException("Le convertisseur doit prendre un booléen");
+
             return (ModesEdition)value == ModesEdition.Edition;
         }
 
